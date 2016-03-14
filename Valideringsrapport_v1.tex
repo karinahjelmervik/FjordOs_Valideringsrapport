@@ -1,0 +1,543 @@
+\documentclass[12pt,a4paper,english]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage{graphicx}
+\usepackage{epsfig}            % To allow figures
+\usepackage{pstricks}          % To draw color pictures directly
+\usepackage{fancyhdr}
+\usepackage[verbose,a4paper,tmargin=30mm,bmargin=37.5mm,lmargin=30mm,rmargin=30mm]{geometry}
+\usepackage{helvet}
+\usepackage{mathptmx}
+\usepackage[T1]{fontenc}
+\usepackage{rotating}
+\usepackage{amssymb}       % More special characters          
+\usepackage{amsmath}       % More mathematical characters
+\usepackage{natbib} % Needed e.g. for \citep
+\usepackage{multirow}
+\usepackage{verbatim}          % Use the verbatim styles
+\definecolor{METblue}{cmyk}{0.85,0,0.2,0.2}
+\usepackage{titlesec}
+\titleformat{\section}
+  [block]
+  { \normalfont\sffamily\Large\bfseries\color{METblue} }
+  {\makebox[2em][r]{\thesection}}
+  {5mm}
+  {\vspace{5mm}}
+
+\titleformat{\subsection}[block]%
+  {\normalfont\sffamily\bfseries}%
+  {\makebox[2em][r]{\thesubsection}}%
+  {5mm}
+  {\vspace{3mm}}[]
+\titleformat{\subsubsection}[block]%
+  {\normalfont\sffamily\bfseries}%
+  {\makebox[3em][r]{\thesubsubsection}}%
+  {5mm}
+  {\vspace{3mm}}[]
+
+% Titlespacing syntax: 
+\titlespacing*{\section}{-17mm}{5mm}{0mm}
+\titlespacing*{\subsection}{-13.5mm}{5mm}{0mm}
+\titlespacing*{\subsubsection}{-17.5mm}{5mm}{0mm}
+
+%%% Formatting the table of contents
+\usepackage{tocloft}
+\renewcommand{\cfttoctitlefont}{\sffamily\bfseries\color{METblue}\Large}
+\providecommand{\cftchapfont}{\sffamily\bfseries }
+\renewcommand{\cftsecfont}{\sffamily\bfseries }
+\renewcommand{\cftsubsecfont}{\sffamily }
+\renewcommand{\cftsubsubsecfont}{\sffamily }
+\providecommand{\cftsubsubsubsecfont}{\sffamily }
+\renewcommand{\cftfigfont}{Figure }
+\renewcommand{\cfttabfont}{Table }
+\providecommand{\cftchappagefont}{\sffamily}
+\renewcommand{\cftsecpagefont}{\sffamily\bfseries}
+\renewcommand{\cftsubsecpagefont}{\sffamily}
+\renewcommand{\cftsubsubsecpagefont}{\sffamily}
+\providecommand{\cftsubsubsubsecpagefont}{\sffamily}
+
+\renewcommand{\baselinestretch}{1.33}
+
+% --------------------------------------
+
+\begin{document}
+
+\bibliographystyle{ams}
+\thispagestyle{empty}  % Hide page numbers
+
+\noindent
+\begin{tabular}{@{} p{63mm} p{50mm} r}
+\includegraphics*[]{met_rapport_logo_eng} % Automatically uses PDF or EPS in same directory depending on latex or pdflatex.
+&
+\fontsize{27.5pt}{33pt} \selectfont \bf \sffamily MET{\color{gray} report}
+&
+ \begin{minipage}[b]{28mm}
+  \begin{flushright}
+   \footnotesize \sffamily No. X/2016 \\ ISSN 2387-4201 \\ Category              % Report number and Category
+  \end{flushright}
+ \end{minipage}
+\end{tabular}
+
+\vfill
+
+\begin{flushright}
+{\fontsize{30pt}{36pt}\selectfont \bf \sffamily Evaluation of the FjordOs-model}          % Title
+
+\vspace{5mm}
+{\fontsize{12.5pt}{15pt}\selectfont \sffamily January 2016                                          % Subtitle
+\\
+\sffamily Karina Hjelmervik, Nils M. Kristensen, Andr\'{e} Staalstr\o m, Lars Petter R\o ed                                         % Author name(s)
+}
+\end{flushright}
+
+%\vspace{25mm}
+\vspace{2mm}
+
+\begin{figure}[!h]
+\begin{center}
+\includegraphics*{met_rapport_monster}          % Graphic. Automatically uses PDF or EPS in same directory depending on latex or pdflatex.
+\end{center}
+\end{figure}
+
+%\newpage
+
+%\thispagestyle{empty}  % Hide page numbers
+
+\clearpage
+
+\setlength{\unitlength}{1mm}  %Needed for picture environment
+
+\begin{table}[!ht]
+
+\begin{tabular}[c]{lr}
+\vspace{5mm}
+\includegraphics*{met_rapport_logo_eng} & \hspace{43mm}
+{\fontsize{27.5pt}{33pt}\selectfont \bf \sffamily MET{\color{gray} report}}\\
+\end{tabular}
+
+\sffamily{
+\begin{tabular}[t]{|p{110mm}|p{40mm}|} \hline
+{\bf \sffamily Title}                  & {\bf \sffamily Date}               \\ 
+Evaluation of the FjordOs-model
+                             & \today                   \\ \hline
+{\bf \sffamily Section}                & {\bf \sffamily Report no.}         \\ 
+ Type                        &  X/2015                  \\ \hline
+{\bf \sffamily Author(s)}                 & {\bf \sffamily Classification}     \\ 
+Karina Hjelmervik, Nils Melsom Kristensen, Andr\'{e} Staalstr\o m, Lars Petter R\o ed                 
+                             & \begin{picture}(20,4)(-2,-1.0)
+                               \put (0,0){\circle*{4}}
+                               \put (7,0){\makebox(0,0){Free}}
+                               \put (15,0){\circle{4}}
+                               \put (27,0){\makebox(0,0){Restricted}}
+                               \end{picture}
+                               \\ \hline
+{\bf \sffamily Client(s)}              & {\bf \sffamily Client's reference} \\ 
+Client name                  &               \\ \hline
+\end{tabular}
+
+\begin{tabular}[t]{|p{154.3mm}|}
+{\bf \sffamily Abstract}                                          \\
+Abstract text...
+\\
+\\
+\\
+%\\[50mm] % Add whitespace if necessary
+\\ \hline
+{\bf \sffamily Keywords}                                          \\ 
+  relevant, keywords, here    \\ 
+\hline
+\end{tabular}
+}
+
+\begin{tabular}[t]{cc}
+                             &                            \\
+                             &                            \\
+                             &                            \\
+\line(1,0){70}               & \line(1,0){70}             \\ 
+Disciplinary signature       & Responsible signature      \\
+%Jan Erik Haugen             & \O{}ystein Hov             \\       % Add names if needed
+\hspace{75mm}                & \hspace{75mm}              \\
+
+\end{tabular}
+\end{table}
+
+\clearpage
+
+\thispagestyle{fancy} % footer from fancyhdr package
+\headheight=15pt
+\renewcommand{\headrulewidth}{0pt}
+
+%\clearpage
+\section*{\hspace{17mm}Abstract}
+Abstract text...
+
+%\clearpage
+
+\vfill
+
+\fancyfoot{
+% If abstract on separate page is not needed, move the following table to the page before
+\begin{tabular}[b]{p{40mm}p{25mm}p{25mm}p{25mm}p{25mm}}
+ \begin{minipage}[l]{40mm} \tiny \color{METblue} {\bf Norwegian Meteorological Institute}\\ Org.no 971274042\\ post@met.no\\ www.met.no / www.yr.no
+ \end{minipage} & 
+ \begin{minipage}[l]{25mm} \tiny \color{METblue} {\bf Oslo}\\ P.O. Box 43, Blindern\\ 0313 Oslo, Norway\\ T. +47 22 96 30 00
+ \end{minipage} &
+ \begin{minipage}[l]{25mm} \tiny \color{METblue} {\bf Bergen}\\ All\'egaten 70\\ 5007 Bergen, Norway\\ T. +47 55 23 66 00
+ \end{minipage} & 
+ \begin{minipage}[l]{25mm} \tiny \color{METblue} {\bf Troms\o}\\ P.O. Box 6314, Langnes\\ 9293 Troms\o, Norway\\ T. +47 77 62 13 00
+ \end{minipage} & 
+ \begin{minipage}[l]{25mm} \tiny \color{METblue} 
+ \end{minipage}
+\end{tabular}
+}
+
+\clearpage
+\tableofcontents
+
+\clearpage
+% Begin arabic page numbering (starts on 1)
+%\pagenumbering{arabic}
+
+\section{Introduction - Andr\'{e}}
+Provided is an evaluation of the FjordOs-model (ref. teknisk rapport). 
+
+To be continued...
+
+
+\section{Model - Karina}
+
+Kort om modellen. Vise til teknisk rapport.
+
+
+\section{Observed data}
+
+
+Hvilke observasjoner har vi?
+
+Figur som viser modelomr\aa det samt alle relevante posisjoner der vi har observasjoner som vi bruker i rapporten.
+
+\begin{figure}[t]
+\centerline{
+}
+\caption{\small
+The simulation area. (Karina: Marker posisjoner for observasjoner)}
+\label{fig:kart}
+\end{figure}
+
+
+
+\clearpage
+\section{Evaluation}
+\subsection{Water level and tide - Karina}
+
+\begin{figure}[t]
+\centerline{
+\includegraphics*[trim=3cm 0cm 2.5cm 0cm,clip=true,width=\textwidth]{Figurer/Viker_WL} 
+}
+\centerline{
+\includegraphics*[trim=3cm 0cm 2.5cm 0cm,clip=true,width=\textwidth]{Figurer/Oscarsborg_WL}
+}
+\caption{\small
+Observed and simulated water level for Viker (upper) and Oscarsborg (lower)}
+\label{fig:Waterlevel}
+\end{figure}
+
+
+\begin{figure}[t]
+\centerline{
+\includegraphics*[trim=3cm 0cm 2.5cm 0cm,clip=true,width=\textwidth]{Figurer/Oscarsborg_Tide_selected}
+}
+\centerline{
+\includegraphics*[trim=3cm 0cm 2.5cm 0cm,clip=true,width=\textwidth]{Figurer/Oscarsborg_Tide_NorKyst800} 
+}
+\caption{\small
+Timeseries at Oscarsborg of the tidal components included (upper) and not included (lower) in the explicit tidal forcing.}
+\label{fig:Waterlevel_tide}
+\end{figure}
+
+\begin{figure}[t]
+\centerline{
+\includegraphics*[trim=3cm 0cm 2.5cm 0cm,clip=true,width=\textwidth]{Figurer/Oscarsborg_Tide_selected_jan15} 
+}
+\centerline{
+\includegraphics*[trim=3cm 0cm 2.5cm 0cm,clip=true,width=\textwidth]{Figurer/Oscarsborg_WL_rest_jan15}
+}
+\caption{\small
+Timeseries of tides originating from explicit tidal forcing (upper) and the residual (lower) at Oscarsborg}
+\label{fig:Waterlevel_jan15}
+\end{figure}
+
+\begin{figure}[t]
+\centerline{
+\includegraphics*[trim=3cm 0cm 2.5cm 0cm,clip=true,width=\textwidth]{Figurer/Oscarsborg_Tide_Frequency_obs.png} 
+}
+\centerline{
+\includegraphics*[trim=3cm 0cm 2.5cm 0cm,clip=true,width=\textwidth]{Figurer/Oscarsborg_Tide_Frequency_sim.png}
+}
+\caption{\small
+Frequency series of Fourier transformed observed (upper) and simulated (lower) water levels at Oscarsborg}
+\label{fig:Waterlevel_freq}
+\end{figure}
+
+The Norwegian Mapping Authority has three permanent stations measureing sea level in the area of interest. Time series from these three stations have been analysed and compared with simulated time series of waterlevel from the same period in time.
+
+Tides are included in the model at the southern open boundary in two ways. The FjordOs model is nested into NorKyst800 through daily mean forced on the boundary. This forcing includes the tidal components with longer periods. In addition 11 components with shorter periods are introduced explicitly using their corresponding amplitudes and phases for both depth integrated currents and water level (ref. tidevannsartikkel?). The timeseries of tides originating from explicit tidal forcing are in fairly good agreement (Fig.~\ref{fig:Waterlevel_tide}, upper, and Fig.~\ref{fig:Waterlevel_jan15},upper). The main characteristics of the remainding tidal components are present in both the observed and the simulated timeseries (Fig.~\ref{fig:Waterlevel_tide}, lower).
+%, but the simulated time series seem to include a half-year component that is not found dominant in the observations, and the observation include more components with shorter periods than those included in the explicit tidal forcing.
+ 
+\begin{table}[ht]
+%\vspace{-1.5cm}
+\caption{Simulated and observed tidal amplitude and phase for selected tidal components.}
+\label{tab:Tide}
+\centering
+\begin{tabular}{|c|c|l|cc|cc|cc|c|}
+\hline 
+&&& \multicolumn{2}{|c|}{\bf Viker} & \multicolumn{2}{|c|}{\bf Oscarsborg} & \multicolumn{2}{|c|}{\bf Oslo} & {\bf Included} \\ 
+{\bf Comp.} & {\bf Period} &  {\bf sim/} & {\bf amp.} & {\bf phase.} & {\bf amp.} & {\bf phase.} & {\bf amp.} & {\bf phase.} & {\bf in tidal} \\
+& {\bf [h]} & {\bf obs} & {\bf [cm]} & {\bf [deg]} & {\bf [cm]} & {\bf [deg]} & {\bf [cm]} & {\bf [deg]} & {\bf forcing} \\ \hline
+\small SA   & 365 days & sim & 15.5 & 284 & 15.5 & 286 & 15.2 & 286 & no   \\
+\small      &        & obs & 10 & 319 & 11 & 322 & 11.3 & 324 &    \\
+\small SSA  & 182 days & sim & 8.8 & 198 & 9.2 & 199 & 9.3 & 200 & no  \\
+\small      &        & obs & 7.5 & 188 & 7.9 & 188 & 8.2 & 190 &    \\
+\small K2   & 11.9672 & sim & 1.6 & 32 & 1.9 & 35 & 2.1 & 37 & yes  \\
+\small      &        & obs & 0.7 & 46 & 0.8 & 66 & 0.9 & 67 &    \\
+\small S2   & 12.0000 & sim & 3.3 & 87 & 3.8 & 91 & 4.1 & 92 & yes  \\
+\small      &        & obs & 2.9 & 46 & 3.3 & 65 & 3.5 & 69 &    \\
+\small M2   & 12.4206 & sim & 11.2 & 127 & 12.9 & 134 & 13.6 & 135 & yes  \\
+\small      &        & obs & 11.9 & 105 & 13.8 & 121 & 14.4 & 125 &    \\
+\small N2   & 12.6584 & sim & 2.9 & 91 & 3.4 & 96 & 3.6 & 98 & yes  \\
+\small      &        & obs & 3 & 60 & 3.4 & 76 & 3.6 & 80 &    \\
+\small K1   & 23.9345 & sim & 0.2 & 194 & 0.1 & 185 & 0.1 & 165 & yes  \\
+\small      &        & obs & 0.4 & 125 & 0.7 & 128 & 0.8 & 129 &    \\
+\small P1   & 24.0659 & sim & 0.6 & 335 & 0.7 & 346 & 0.7 & 352 & yes  \\
+\small      &        & obs & 0.2 & 123 & 0.4 & 100 & 0.4 & 95 &    \\
+\small O1   & 25.8193 & sim & 3.5 & 347 & 3.8 & 348 & 3.8 & 349 & yes  \\
+\small      &        & obs & 2.3 & 276 & 2.3 & 281 & 2.4 & 282 &    \\
+\small Q1   & 26.8684 & sim & 0 & 177 & 0 & 188 & 0.1 & 201 & no   \\
+\small      &        & obs & 1.1 & 189 & 1.2 & 197 & 1.3 & 199 &    \\
+\small MN4  & 6.2692 & sim & 0.2 & 50 & 0.4 & 76 & 0.6 & 78 & yes  \\
+\small      &        & obs & 0.4 & 249 & 0.6 & 289 & 0.7 & 297 &    \\
+\small M4   & 6.2103 & sim & 0.9 & 37 & 1.7 & 61 & 2.2 & 65 & yes  \\
+\small      &        & obs & 1.2 & 281 & 1.8 & 324 & 2.3 & 332 &    \\
+\small MS4  & 6.1033 & sim & 0.5 & 123 & 1.1 & 150 & 1.4 & 154 & yes  \\
+\small      &        & obs & 0.3 & 360 & 0.5 & 44 & 0.7 & 56 &    \\
+\hline
+\end{tabular}
+\end{table}
+
+
+ 
+
+
+
+To be continued... Karina (Figurer og tabeller er laget og satt inn, men en del tekst mangler fortsatt)
+
+
+\clearpage 
+\subsection{Current}
+
+\subsubsection{Current measurements performed by Statnett - Andr\'{e}/Karina ?}
+To be continued... Andr\'{e}?
+
+\subsubsection{Current measurements performed by Exxonmobil AS - Karina}
+Using a bottom-mounted doppler Exxonmobil has measured the currents in two depths since 1997. The device is placed 50-80 meters northwest of Turning Dolphin at the Slagen Refinery (Fig.~\ref{fig:Slagen-kart}). The observations are compared with simulated data from 1st October 2014 until 30th November 2015 at aproximately the same location and depth.
+
+\begin{figure}[t]
+\centerline{
+\includegraphics*[trim=1cm 0cm 1cm 0cm,clip=true,width=0.5\textwidth]{Figurer/Slagen_kart}}
+\caption{\small
+Map retrived from the Norwegian Coastal Administration. The red dot marks the position corresponding to the extracted simulated data.}
+\label{fig:Slagen-kart}
+\end{figure}
+
+\begin{figure}[t]
+\centerline{
+\includegraphics*[trim=3cm 0cm 3cm 0cm,clip=true,width=\textwidth]{Figurer/Slagen_tid}}
+\caption{\small
+Timeseries of observed velocities at Slagen from 1st of January 2014 to 31st of December 2015.}
+\label{fig:Slagen-tid}
+\end{figure}
+
+\begin{figure}[t]
+\centerline{
+\includegraphics*[trim=2cm 1cm 1cm 0cm,clip=true,height=4cm]{Figurer/Slagen_Rose_obs} 
+\includegraphics*[trim=2cm 1cm 3cm 0cm,clip=true,height=4cm]{Figurer/Slagen_Rose_sim}
+}
+\caption{\small
+Current roses for observed (left) and simulated (right) velocities at two depths from 1st of October 2014 to 1st of October 2015.}
+\label{fig:Slagen-rose}
+\end{figure}
+
+\begin{figure}[t]
+\centerline{
+\includegraphics*[trim=3cm 0cm 3cm 0cm,clip=true,width=\textwidth]{Figurer/Slagen_pdf} 
+}
+\caption{\small
+Probability density functions of velocities and directions at Slagen for 1st of October 2014 to 1st of October 2015. The bin width is 0.01 knots for velocity and 3 degrees for direction.}
+\label{fig:Slagen-pdf}
+\end{figure}
+
+\begin{table}[ht]
+%\vspace{-1.5cm}
+\caption{Maximum oberved velocity at Slagen.}
+\label{tab:Slagen_max}
+\centering
+\begin{tabular}{|l|lll|lll|}
+\hline 
+& \multicolumn{3}{|l|}{\bf Max. velocity at 10m depth} & \multicolumn{3}{|l|}{\bf Max. velocdity at 2.5m depth} \\
+{\bf Year} & {\bf Date} & {\bf [knots]} & {\bf [deg]} & {\bf Date} & {\bf [knots]} & {\bf [deg]} \\ \hline 
+\small 2006 & 21 January  & 0.81 & 139 & 31 Octotber & 1.10 & 140 \\
+\small 2007 & 14 January  & 0.81 & 172 & 21 August   & 2.00 & 359 \\
+\small 2008 & 22 March    & 0.70 & 149 & 19 December & 1.10 & 160 \\
+\small 2009 & 17 December & 0.87 & 142 & 24 March    & 1.10 & 139 \\
+\small 2010 & 09 November & 0.81 & 138 & 09 November & 1.05 & 138 \\
+\small 2011 & 01 January  & 0.76 & 146 & 30 March    & 1.21 & 185 \\
+\small 2012 & 05 December & 0.75 & 138 & 29 May      & 1.11 & 140 \\
+\small 2013 & 10 October  & 0.82 & 143 & 10 Octotber & 0.95 & 144 \\
+\small 2014 & 18 April    & 0.85 & 147 & 26 March    & 1.07 & 143 \\
+\small 2015 & 24 January  & 0.65 & 128 & 21 March    & 1.07 & 141 \\
+\hline
+\end{tabular}
+\end{table}
+
+\begin{figure}[t]
+\centerline{
+\includegraphics*[trim=0cm 0cm 0cm 0cm,clip=true,width=0.5\textwidth]{Figurer/Slagen_QQ}}
+\caption{\small
+Combined QQ- and scatterplot of observed and simulated current at Slagen from 1st of October 2014 to 1st of October 2015.}
+\label{fig:Slagen_QQ}
+\end{figure}
+
+Time series show that the observed velocities varies and follows no striking pattern (Fig.~\ref{fig:Slagen-tid}).
+Current roses show that the both the observed and the simulated velocities are stronger in the upper layer (Fig.~\ref{fig:Slagen-rose}). The simulated velocities are stronger than the observed velocities. This is in accordance with the probability density functions (Fig.~\ref{fig:Slagen-pdf}). The maximum velocities are approximately 0.8 and 1.1 knots at 10 and 2.5 meters depth respectively (Tab.~\ref{tab:Slagen_max}). During 2014 and 2015 maximum observed velocity at 2.5 meters depth was 1.07 knots in southeast direction (143$^o$N) the 26th of March 2014. The velocity at 10 meters depth was 0.15 knot at the time of maximum velocity at 2.5 meters depth indicating that the velocities are different in the two layers.
+
+The mean directions are to the south east. At approximately 2.5 meters depth the mean directions are 146$^o$N and 141$^o$N for observed and simulated directions respectively which is in fairly good agreement. At approximately 10 meters depth the observed mean direction shifts to 170$^o$N while the simulated mean direction is 149$^o$N. The probability density functions reveals that the model captures the distribution of directions in the upper layer, but does not capture the change in direction between the two depths (Fig.~\ref{fig:Slagen-pdf}). The standard deviations  at 2.5 and 10 meters are 55 and 66 degrees respectively for the observed directions, and 58 and 65 for the simulated directions.
+
+The scatter plots reveal that the correlation in time is not satisfying (Fig.~\ref{fig:Slagen_QQ}). The model seen to have difficulties with capturing the right phenomena influencing the currents to the right time. This is a well known problem when it comes to forecating currents. The QQ-plots also confirmes that the simulated currents are stronger than the observed currents. 
+
+
+\clearpage
+\subsection{Temperature and Salinity}
+
+\subsubsection{CTD-measurements - Andr\'{e}?}
+To be continued... Andr\'{e}?
+
+\clearpage 
+
+\subsubsection{Temperature measurements performed by Scanmar AS - Karina}
+
+\begin{figure}[t]
+\centerline{
+\includegraphics*[trim=2cm 0cm 2cm 0cm,clip=true,width=\textwidth]{Figurer/Temperatur_1year}}
+\caption{\small
+Timeseries of observed and simulated temperature at \AA sg\aa dstrand from 1st of December 2014 to 1st of December 2015. The difference is smoothed over 10 days.}
+\label{fig:temp_1year}
+$\newline$
+\centerline{
+\includegraphics*[trim=2cm 0cm 2cm 0.6cm,clip=true,width=\textwidth]{Figurer/Temperatur-middel_1year}}
+\caption{\small
+Mean-subtracted timeseries of observed and simulated temperature using a gliding mean of one month.}
+\label{fig:temp-mean_1year}
+\end{figure}
+
+Hourly temperaturmeasurements at one meter depth for the last 10 years have been measured by Scanmar AS located south of \AA sg\aa rdstrand. The device has an acurracy of $\pm 0.15^o$C in the range from -5 to +30$^o$C. The observations are compared with simulated data from 1st October 2014 until 30th November 2015 at the same location at 1.15 meters depth.
+
+Timeseries show that the simulated temperatures are between 2 and 8 degrees lower than the observed temperatures \ref{fig:temp_1year}. The model captures the variations in temperature fairly good (Fig.~\ref{fig:temp-mean_1year}). Notice for example the variations in January with around three days period, and the local minimum around 1st of August. (Karina: Her b\o r det nevnes hva som for\aa rsaker disse variasjonene.)
+
+The probability density functions reveals that not only are the simulated temperatures lower than the observed temperatures, but the variation is larger in the observed temperatures (Fig.~\ref{fig:temp-PDF}). The mean of the observed and simulated temperatures are 10.1$^o$C and 5.5$^o$C respectively, while the variances are 27.2$^o$C and 16.4$^o$C respectively.
+
+
+\begin{figure}[t]
+\centerline{
+\includegraphics*[trim=1cm 0cm 1cm 0cm,clip=true,width=\textwidth]{Figurer/Temperatur_PDF_arstid}}
+\caption{\small
+Probability density functions of observed and simulated temperature at \AA sg\aa dstrand from 1st of December 2014 to 1st of December 2015.}
+\label{fig:temp-PDF}
+\end{figure}
+
+\begin{figure}[t]
+\centerline{
+\includegraphics*[trim=0cm 0cm 0cm 0cm,clip=true,width=0.5\textwidth]{Figurer/Temperatur_QQ_scatter}}
+\caption{\small
+Combined QQ- and scatterplot of observed and simulated temperature at \AA sg\aa dstrand from1st of December 2014 to 1st of December 2015.}
+\label{fig:temp-QQ_scatter}
+\end{figure}
+
+\clearpage
+
+\subsubsection{Ferrybox - Andr\'{e}?}
+To be continued... Andr\'{e}?
+
+\begin{figure}[t]
+\centerline{
+\includegraphics*[trim=1cm 0cm 1cm 0cm,clip=true,height=10cm]{Figurer/FjordOs_with_FA_track}}
+\caption{\small
+The track of Color Fantasy.}
+\label{fig:Ferrybox_track}
+\end{figure}
+
+\begin{figure}[t]
+\centerline{
+\includegraphics*[trim=1cm 0cm 1cm 0cm,clip=true,width=.5\textwidth]{Figurer/FjordOs_vs_Ferrybox_TEMP}
+\includegraphics*[trim=1cm 0cm 1cm 0cm,clip=true,width=.5\textwidth]{Figurer/FjordOs_vs_Ferrybox_SALT}}
+\caption{\small
+Simulated daily mean compared with observations from ferryboxes for temperature (left) and salinity (right).}
+\label{fig:Ferrybox_temp_salt}
+\end{figure}
+
+\clearpage 
+
+%\section{Drifting lanes - Nils?}
+%
+%\subsection{Godafoss}
+%Oppsummer v\ae rforhold og oljedriften etter Godefoss. Sammenlign med lignende tilfelle i 2014/15, samt alternative drivbaner under andre forhold.
+
+%Tracmass... Nils?
+
+%\subsection{Slagentangen}
+%Utslipp fra Slangentangen havner alltid i Bliksekilen if\o lge erfaring (Exxonmobil). Vi skal gj\o re noen beregninger om hvor utslipp fra Slagentangen havner if\o lge modellen. 
+
+%Tracmass... Nils?
+
+
+\section{Summary and final remarks}
+
+
+
+\clearpage
+\section*{\hspace{17mm}Acknowledgements}
+
+
+\clearpage
+\section*{\hspace{17mm}Appendix}
+
+
+
+
+
+%\begin{table}[h]
+%\vspace{-1.5cm}
+%{\bf Table A1: ESD statistics.}\\
+%\label{tab:1}
+%\begin{tabular}{llll}
+%\small OSLO - BLINDERN 18700 & 
+%\small $T_m$ $R^2$= 71 -- 86 $T_x$ $R^2$= 69 -- 82 $T_n$ $R^2$= 49 -- 76 \\
+%\small $\Delta T_m$ $q_{0.05}$= 3.21 $q_{0.50}$= 1.33 $q_{0.95}$= 1.75 \\  
+%\small $\Delta T_x$ $q_{0.05}$= 3.09 $q_{0.50}$= 1.38 $q_{0.95}$= 2.16 \\  
+%\small $\Delta T_n$ $q_{0.05}$= 3.15 $q_{0.50}$= 1.12 $q_{0.95}$= 1.01 \\
+%\end{tabular}
+%\end{table}
+
+\clearpage
+\pagebreak
+
+%\bibliography{refs}
+%\begin{thebibliography}{1}
+%\end{thebibliography}
+
+\clearpage
+\pagebreak
+ 
+
+\end{document}
+
+
