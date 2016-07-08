@@ -62,7 +62,8 @@
 
 \begin{document}
 
-\bibliographystyle{ams}
+\bibliographystyle{agufull04}
+%\bibliographystyle{ams}
 \thispagestyle{empty}  % Hide page numbers
 
 \noindent
@@ -73,7 +74,7 @@
 &
  \begin{minipage}[b]{28mm}
   \begin{flushright}
-   \footnotesize \sffamily No. X/2016 \\ ISSN 2387-4201 \\ Category              % Report number and Category
+   \footnotesize \sffamily No. X/2016 \\ ISSN 2387-4201 \\ Oceanography              % Report number and Category
   \end{flushright}
  \end{minipage}
 \end{tabular}
@@ -82,22 +83,36 @@
 
 \begin{flushright}
 {\fontsize{30pt}{36pt}\selectfont \bf \sffamily Evaluation of the FjordOs-model}          % Title
-
+ 
 \vspace{5mm}
-{\fontsize{12.5pt}{15pt}\selectfont \sffamily January 2016                                          % Subtitle
+{\fontsize{12.5pt}{15pt}\selectfont \sffamily July 2016                                          % Subtitle
 \\
-\sffamily Karina Hjelmervik, Nils M. Kristensen, Andr\'{e} Staalstr\o m, Lars Petter R\o ed                                         % Author name(s)
+\sffamily Karina Hjelmervik$^1$, Andr\'{e} Staalstr\o m$^2$, Nils M. Kristensen$^3$, Lars P. R\o ed$^{3,4}$% Author name(s)
 }
 \end{flushright}
 
 %\vspace{25mm}
 \vspace{2mm}
 
+
 \begin{figure}[!h]
+%\includegraphics*[height=5.5cm,angle=7]{Figurer/Driftere_ombord} \\
+\vspace{3.5cm}
 \begin{center}
-\includegraphics*{met_rapport_monster}          % Graphic. Automatically uses PDF or EPS in same directory depending on latex or pdflatex.
+\rput[bl](-7.5,0){\includegraphics[height=1.2cm]{Figurer/logo_met}} 
+\rput[b](0,-0.2){\includegraphics[height=1.7cm]{Figurer/logo_hsn}} 
+\rput[br](7.5,0){\includegraphics[height=1.2cm]{Figurer/logo_niva}} 
 \end{center}
 \end{figure}
+\vspace{-1cm}
+\noindent$^1$University College of Southeast Norway, 
+$^2$Norwegian Institute for Water Research, \\ 
+$^3$Norwegian Meteorological Institute,
+$^4$Department of Geosciences, University of Oslo
+\\
+
+
+
 
 %\newpage
 
@@ -198,31 +213,86 @@ Abstract text...
 % Begin arabic page numbering (starts on 1)
 %\pagenumbering{arabic}
 
-\section{Introduction - Andr\'{e}}
-Provided is an evaluation of the FjordOs-model (ref. teknisk rapport). 
+\section{Introduction - Andr\'{e}/Karina}
+Provided is an evaluation of the FjordOs-model \citep{roed:etal:2016}. This study is a part of the FjordOs project. FjordOs is a cooperation between MET Norway, University College of Southeast Norway (HSN), The Norwegian Institute for Water Research (NIVA), The Norwegian Coastal Administration (Kystverket), Exxonmobil, Norwegian Defence Research Establishment (FFI), Vestfold, Buskerud, and \O stfold county, and AGNES AB Milj\o konsulent.
+
 
 To be continued...
 
 
 \section{Model - Karina}
+The FjordOs model is a curviliniar, free-surface, and terrain-following model based on the Rutgers Regional Ocean Modeling System (ROMS) \citep{haidv:etal:2008,shche:mcwil:2003,shche:mcwil:2005,shche:mcwil:2009} adapted to the Oslofjord \citep{roed:etal:2016}. For details on the FjordOs model, see \cite{roed:etal:2016}.
 
-Kort om modellen. Vise til teknisk rapport.
+The model period is April 2014 to April 2015.
+
+
+
+To be continued...
 
 
 \section{Observed data}
 
+The area of interest is the Oslofjord including the Drammensfjord.
 
-Hvilke observasjoner har vi?
-
-Figur som viser modelomr\aa det samt alle relevante posisjoner der vi har observasjoner som vi bruker i rapporten.
+The relevant observed data in the area of interest is scattered. Observations over longer time period includes three stations measuring sea level, one bottom-mounted doppler measuring currents in two depths level, and one device measuring sea temperature. In addition more occasional observations includes CTD measurements, current measurements, ferrybox, some drifter experiemnts, and sea temperature at three beaches during the summer.  
 
 \begin{figure}[t]
 \centerline{
 }
 \caption{\small
-The simulation area. (Karina: Marker posisjoner for observasjoner)}
+Area of interest. Positions for observations are marked. (Karina)
+}
 \label{fig:kart}
 \end{figure}
+
+
+\subsection{Water level}
+The Norwegian Mapping Authority has three permanent stations measureing sea level in the area of interest. The station at Viker is placed close to the open boundary of the model area. The station at Oscarsborg is placed in the midle of the inner Oslofjord, and the station at Oslo is placed in the innermost part of the fjord.
+
+Water level is a result of both baroclinic and barotropic The difference between high and low tides 
+
+
+
+
+
+\subsubsection{Temperature measurements at three beaches in the inner Oslofjord - Karina}
+
+Temperature measurements at three beaches in the inner Oslofjord (Fig.~\ref{fig:kart_strand}) is performed in a cooperation between Asker and B\ae rum kommune, and Finnerud Elektronikk.  The devices have an acurracy of $\pm 0.5^o$C and are placed 40 cm beneath the water surface in positions where the water depths are several meters. Temperatures are measured every three hours from 09:00 to 18:00. 
+
+With some exceptions the mean temperature is higher at the southern beach, Sj\o strand, than at the northern beach, Stor\o yodden during the summer (Tab. \ref{tab:temp_strand}). The observed temperatures in 2014 were higher than in both 2013 and 2015. The temperature increases up to 2-3 degrees during the day and decreases during the night.
+
+\begin{figure}[ht]
+\centerline{
+\includegraphics*[trim=0 0 0 0,clip=true,width=0.8\textwidth]{Figurer/badestrand_kart.png}
+}
+\caption{\small
+The position of the temperature measurements performed at three beaches in the inner Oslofjord}
+\label{fig:kart_strand}
+\end{figure}
+
+\begin{table}[ht]
+\caption{Mean observed temperatures at three beaches in the inner Oslofjord. Only time periods with more than 8 days of observations during the given time period are included.}
+\label{tab:temp_strand}
+\begin{center}
+\begin{tabular}{|l|ccc|ccc|ccc|} \hline
+     & \multicolumn{3}{c|}{Stor\o yodden} & \multicolumn{3}{c|}{Hvalstrand} & \multicolumn{3}{c|}{Sj\o strand} \\ \hline
+Time period & 2013 & 2014 & 2015 & 2013 & 2014 & 2015 & 2013 & 2014 & 2015 \\ \hline
+%01 - 15 May & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\ 
+16 - 31 May & 13.7 &  -   & 11.6 &  -   &  -   & 12.2 &  -   &  -   & 12.8 \\ 
+01 - 15 Jun & 15.0 & 19.0 & 13.3 & 15.9 & 19.4 & 13.7 &  -   & 19.9 & 14.6 \\ 
+16 - 30 Jun & 16.2 & 17.3 & 17.1 & 16.7 & 17.7 & 17.5 &  -   & 17.9 & 18.0 \\ 
+01 - 15 Jul & 17.8 & 17.6 & 18.2 & 18.3 & 18.3 & 19.8 & 19.4 & 19.3 &  -   \\ 
+16 - 31 Jul & 20.1 & 22.2 & 18.1 & 19.7 &  -   & 18.9 & 21.2 & 23.9 & 18.4 \\ 
+01 - 15 Aug & 19.5 & 21.3 & 18.0 & 19.8 & 21.3 &  -   & 20.6 & 21.7 & 18.8 \\ 
+16 - 31 Aug & 18.9 & 19.6 & 19.1 & 18.9 & 19.6 & 19.3 & 19.5 & 19.4 & 19.0 \\ 
+01 - 15 Sep & 17.9 & 18.3 & 16.1 & 17.7 & 18.6 & 16.5 & 18.1 & 18.9 & 16.2 \\ 
+16 - 30 Sep &  -   & 15.9 & 14.1 &  -   & 16.2 & 14.1 & 15.1 & 16.3 & 13.7 \\ 
+01 - 15 Oct &  -   &  -   & 12.0 &  -   &  -   & 11.9 &  -   &  -   & 11.5 \\ 
+%16 - 31 Oct & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\ 
+\hline
+\end{tabular}
+\end{center}
+\end{table}
 
 
 
@@ -279,7 +349,7 @@ Frequency series of Fourier transformed observed (upper) and simulated (lower) w
 \label{fig:Waterlevel_freq}
 \end{figure}
 
-The Norwegian Mapping Authority has three permanent stations measureing sea level in the area of interest. Time series from these three stations have been analysed and compared with simulated time series of waterlevel from the same period in time.
+Time series from the three permanent stations measuring sea level have been analysed and compared with simulated time series of waterlevel from the same period in time.
 
 Tides are included in the model at the southern open boundary in two ways. The FjordOs model is nested into NorKyst800 through daily mean forced on the boundary. This forcing includes the tidal components with longer periods. In addition 11 components with shorter periods are introduced explicitly using their corresponding amplitudes and phases for both depth integrated currents and water level (ref. tidevannsartikkel?). The timeseries of tides originating from explicit tidal forcing are in fairly good agreement (Fig.~\ref{fig:Waterlevel_tide}, upper, and Fig.~\ref{fig:Waterlevel_jan15},upper). The main characteristics of the remainding tidal components are present in both the observed and the simulated timeseries (Fig.~\ref{fig:Waterlevel_tide}, lower).
 %, but the simulated time series seem to include a half-year component that is not found dominant in the observations, and the observation include more components with shorter periods than those included in the explicit tidal forcing.
@@ -439,7 +509,7 @@ Mean-subtracted timeseries of observed and simulated temperature using a gliding
 \label{fig:temp-mean_1year}
 \end{figure}
 
-Hourly temperaturmeasurements at one meter depth for the last 10 years have been measured by Scanmar AS located south of \AA sg\aa rdstrand. The device has an acurracy of $\pm 0.15^o$C in the range from -5 to +30$^o$C. The observations are compared with simulated data from 1st October 2014 until 30th November 2015 at the same location at 1.15 meters depth.
+Hourly temperature measurements at one meter depth for the last 10 years have been measured by Scanmar AS located south of \AA sg\aa rdstrand. The device has an acurracy of $\pm 0.15^o$C in the range from -5 to +30$^o$C. The observations are compared with simulated data from 1st October 2014 until 30th November 2015 at the same location at 1.15 meters depth.
 
 Timeseries show that the simulated temperatures are between 2 and 8 degrees lower than the observed temperatures \ref{fig:temp_1year}. The model captures the variations in temperature fairly good (Fig.~\ref{fig:temp-mean_1year}). Notice for example the variations in January with around three days period, and the local minimum around 1st of August. (Karina: Her b\o r det nevnes hva som for\aa rsaker disse variasjonene.)
 
@@ -463,6 +533,15 @@ Combined QQ- and scatterplot of observed and simulated temperature at \AA sg\aa 
 \end{figure}
 
 \clearpage
+
+\subsubsection{Temperature measurements at three beaches in the inner Oslofjord - Karina}
+
+Temperature measurements at three beaches in the inner Oslofjord is performed in a cooperation between Asker and B\ae rum kommune, and Finnerud Elektronikk.  The devices have an acurracy of $\pm 0.5^o$C and are placed 40 cm beneeth the water surface in positions where the water depths are several meters. Temperatures are measured every three hours from 09:00 to 18:00. 
+
+ 
+
+
+
 
 \subsubsection{Ferrybox - Andr\'{e}?}
 To be continued... Andr\'{e}?
@@ -530,7 +609,7 @@ Simulated daily mean compared with observations from ferryboxes for temperature 
 \clearpage
 \pagebreak
 
-%\bibliography{refs}
+\bibliography{referanse}
 %\begin{thebibliography}{1}
 %\end{thebibliography}
 
