@@ -64,6 +64,8 @@
 
 \bibliographystyle{agufull04}
 %\bibliographystyle{ams}
+
+\pagenumbering{roman} % Use roman numerals for page numbering before main content. OL: The new template begins with page 1 on the cover.
 \thispagestyle{empty}  % Hide page numbers
 
 \noindent
@@ -210,8 +212,8 @@ Abstract text...
 \tableofcontents
 
 \clearpage
-% Begin arabic page numbering (starts on 1)
-%\pagenumbering{arabic}
+\pagestyle{plain}
+\pagenumbering{arabic}
 
 \section{Introduction - Andr\'{e}/Karina}
 Provided is an evaluation of the FjordOs-model \citep{roed:etal:2016}. This study is a part of the FjordOs project. FjordOs is a cooperation between MET Norway, University College of Southeast Norway (HSN), The Norwegian Institute for Water Research (NIVA), The Norwegian Coastal Administration (Kystverket), Exxonmobil, Norwegian Defence Research Establishment (FFI), Vestfold, Buskerud, and \O stfold county, and AGNES AB Milj\o konsulent.
@@ -220,17 +222,18 @@ The evaluation is based on existing observations in the area of interst and resu
 
 The aim of this study is to reveal any weaknesses of the FjordOs and clarify the extent to which the model can be be trusted.
 
-
+\newpage
 \section{Area of interest - Karina}
+
 The area of interest is the Oslofjord including the Drammensfjord (Fig.~\ref{fig:kart}). The Oslofjord is located in Southern Norway with the capital of Norway, Oslo, in the innermost part of the fjord. 
 
 The Oslofjord is about 100 km long. Abouth halfway the fjord spilts into two branches, the Inner Oslofjord and the Drammensfjord. The width varies from about 25 km at the entrance to about 1-2 km at Dr\o bak Sound in the Inner Oslofjord and 180 meters at Svelvik in the Drammensfjord.
 
 Numerous smaller and larger islands combined with deeper and shallower basins (Fig.~\ref{fig:kart}) contributes to a complex circulation pattern. In addition several river discharge fresh water into the fjord, including two of Norway's largest rivers, namely Glomma (near Fredrikstad) and Drammenselva (near Drammen).
 
-\begin{figure}[t]
+\begin{figure}[htb]
 \centerline{
-\includegraphics*[trim=0cm 0.8cm 0cm 0cm,clip=true,width=0.75\textwidth]{Figurer/kart}
+\includegraphics*[trim=0cm 0.8cm 0cm 0cm,clip=true,width=0.7\textwidth]{Figurer/kart}
 }
 \caption{\small
 Area of interest. 
@@ -238,9 +241,18 @@ Area of interest.
 \label{fig:kart}
 \end{figure}
 
-\begin{figure}[t]
+\newpage
+\section{Model - Karina}
+
+The FjordOs model is a curviliniar, free-surface, and terrain-following model based on the Rutgers Regional Ocean Modeling System (ROMS) \citep{haidv:etal:2008,shche:mcwil:2003,shche:mcwil:2005,shche:mcwil:2009} adapted to the Oslofjord \citep{roed:etal:2016}. 
+
+The model applies several external inputs, such as atmospheric input, river input, tides, and input of sea level, currents and hydrography at the model's open lateral boundaries, in addition to bathymetry (Fig.~\ref{fig:oppbygging}). Mean values of sea level, currents, and hydrography from the NorKyst800 model \citep{albre:etal:2011} is applied on the open boundary towards Skagerak. The necessary atmospheric input is extracted from the AROME-MetCoOp model that runs operationally at MET Norway \citep{mulle:etal:2015}. The tidal input is based on the TPXO Atlantic database \citep{egber:erofe:2002} and modified using the measurements at Viker close to the southern boundary. The freshwater discharges from the rivers are based on the discharge data from a database constructed by use of the hydrological model HBV \citep{beldr:etal:2003}. For more details on the FjordOs model, see \cite{roed:etal:2016}.
+
+The FjordOs model covers the area of interest (Fig.~\ref{fig:kart}). The model period in this study is April 2014 to December 2015.
+
+\begin{figure}[htb]
 \centerline{
-\includegraphics*[width=\textwidth]{Figurer/oppbygging}
+\includegraphics*[width=0.9\textwidth]{Figurer/oppbygging}
 }
 \caption{\small
 Illustration of external inputs to the FjordOs model.
@@ -248,16 +260,10 @@ Illustration of external inputs to the FjordOs model.
 \label{fig:oppbygging}
 \end{figure}
 
-\clearpage
+\newpage
+\section{Observed data}
 
-\section{Model - Karina}
-The FjordOs model is a curviliniar, free-surface, and terrain-following model based on the Rutgers Regional Ocean Modeling System (ROMS) \citep{haidv:etal:2008,shche:mcwil:2003,shche:mcwil:2005,shche:mcwil:2009} adapted to the Oslofjord \citep{roed:etal:2016}. 
-
-The model applies several external inputs, such as atmospheric input, river input, tides, and input of sea level, currents and hydrography at the model's open lateral boundaries, in addition to bathymetry (Fig.~\ref{fig:oppbygging}). Mean values of sea level, currents, and hydrography from the NorKyst800 model \citep{albre:etal:2011} is applied on the open boundary towards Skagerak. The necessary atmospheric input is extracted from the AROME-MetCoOp model that runs operationally at MET Norway \citep{mulle:etal:2015}. The tidal input is based on the TPXO Atlantic database \citep{egber:erofe:2002} and modified using the measurements at Viker close to the southern boundary. The freshwater discharges from the rivers are based on the discharge data from a database constructed by use of the hydrological model HBV \citep{beldr:etal:2003}. For more details on the FjordOs model, see \cite{roed:etal:2016}.
-
-The FjordOs model covers the area of interest (Fig.~\ref{fig:kart}). The model period is April 2014 to December 2015.
-
-\begin{figure}[t]
+\begin{figure}[htb]
 \centerline{
 }
 \caption{\small
@@ -266,7 +272,6 @@ Area of interest. Positions for observations are marked. (Karina)
 \label{fig:kart_obs}
 \end{figure}
 
-\section{Observed data}
 The relevant observed data in the area of interest are scattered in both time and space (Fig.~\ref{fig:kart}). Observations over longer time period includes three stations measuring sea level, one bottom-mounted doppler measuring currents in two depths level, and one device measuring sea temperature. In addition more occasional observations includes CTD measurements, current measurements, ferrybox, some drifter experiemnts, and sea temperature at three beaches during the summer.  
 
 \subsection{Water level observations - Karina}
@@ -307,7 +312,14 @@ With some exceptions the mean temperature is higher at the southern beach, Sj\o 
 
 \begin{figure}[ht]
 \centerline{
-\includegraphics*[trim=0 0 0 0,clip=true,width=0.8\textwidth]{Figurer/badestrand_kart.png}
+\begin{minipage}[l]{0.59\textwidth}
+\includegraphics*[trim=0 0 0 1cm,clip=true,width=\textwidth]{Figurer/badestrand_kart}
+\end{minipage}
+\begin{minipage}[r]{0.4\textwidth}
+\fbox{\includegraphics*[trim=1 0 0 3cm,clip=true,width=\textwidth]{Figurer/kart_Storoyodden.png}} \\
+\fbox{\includegraphics*[trim=0 0 0 3cm,clip=true,width=\textwidth]{Figurer/kart_Hvalstrand.png}} \\
+\fbox{\includegraphics*[trim=1 1cm 0 1.5cm,clip=true,width=\textwidth]{Figurer/kart_Sjostrand.png}} \\
+\end{minipage}
 }
 \caption{\small
 The position of the temperature measurements performed at three beaches in the inner Oslofjord}
@@ -581,7 +593,11 @@ Combined QQ- and scatterplot of observed and simulated temperature at \AA sg\aa 
 
 \subsubsection{Beach temperature in the inner Oslofjord - Karina}
 
-The observed and modelled temperature at three beaches in the inner Oslofjord are in relativ good agreement (Fig.~\ref{fig:badetemp_2014} - \ref{fig:badetemp_2015}). Since the temperature is observed close to the shoreline, near river outlets, and only 40 cm under the surface, the observations are heavily influenced by the weather situation and local currents. The model is not expected to capture such detailed effects. Still there are similarities between the modelled and the observed temperatures both in temperature level and in fluctuations. There temeprature differences during the day are larger in the model than in the observations. Since the temperature is not measured during the night, but only from 09:00 to 18:00, this might explain some of the differences. 
+The observed and modelled temperature at three beaches in the inner Oslofjord are in relativ good agreement (Fig.~\ref{fig:badetemp_2014} - \ref{fig:badetemp_2015}). Since the temperature is observed close to the shoreline, near river outlets, and only 40 cm under the surface, the observations are heavily influenced by the weather situation and local circulation patterns. The model is not expected to capture such detailed effects. Still there are similarities between the modelled and the observed temperatures both in temperature level and in fluctuations. 
+
+During the summer 2014 the model predicts higher temperatures at Sj\o strand than was observed. The observations in Hvalstrand have some of the same trends as the modelled temperature with temperatures up to 25 degrees. The air temperatures in 2014 was higher than in 2015 and resulted in higher water temperatures, especially in shallow areas. 
+
+The temperature differences during the day are larger in the model than in the observations. Temperature is not measured during the night, but only from 09:00 to 18:00, and this might explain some of the differences in fluctuations.
 
 \begin{figure}[ht]
 \centerline{
@@ -594,7 +610,7 @@ The observed and modelled temperature at three beaches in the inner Oslofjord du
 
 \begin{figure}[ht]
 \centerline{
-\includegraphics*[trim=0 0 0 0,clip=true,width=0.8\textwidth]{Figurer/badetemp_2014}
+\includegraphics*[trim=0 0 0 0,clip=true,width=0.8\textwidth]{Figurer/badetemp_2015}
 }
 \caption{\small
 The observed and modelled temperature at three beaches in the inner Oslofjord during the summer 2015}

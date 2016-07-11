@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.3.9)  11 JUL 2016 09:43
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.3.9)  11 JUL 2016 10:57
 entering extended mode
 **Valideringsrapport_v1.tex
 
@@ -774,93 +774,93 @@ File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-LaTeX Font Info:    Try loading font information for OT1+ztmcm on input line 70
+LaTeX Font Info:    Try loading font information for OT1+ztmcm on input line 72
 .
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\psnfss\ot1ztmcm.fd"
 File: ot1ztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OT1/ztmcm.
 )
-LaTeX Font Info:    Try loading font information for OML+ztmcm on input line 70
+LaTeX Font Info:    Try loading font information for OML+ztmcm on input line 72
 .
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\psnfss\omlztmcm.fd"
 File: omlztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OML/ztmcm.
 )
-LaTeX Font Info:    Try loading font information for OMS+ztmcm on input line 70
+LaTeX Font Info:    Try loading font information for OMS+ztmcm on input line 72
 .
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\psnfss\omsztmcm.fd"
 File: omsztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMS/ztmcm.
 )
-LaTeX Font Info:    Try loading font information for OMX+ztmcm on input line 70
+LaTeX Font Info:    Try loading font information for OMX+ztmcm on input line 72
 .
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\psnfss\omxztmcm.fd"
 File: omxztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMX/ztmcm.
 )
-LaTeX Font Info:    Try loading font information for OT1+ptm on input line 70.
+LaTeX Font Info:    Try loading font information for OT1+ptm on input line 72.
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\psnfss\ot1ptm.fd"
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 )
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 70.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 72.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 70.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 72.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 70.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 72.
 
 <met_rapport_logo_eng.pdf, id=1, 89.133pt x 97.68495pt>
 File: met_rapport_logo_eng.pdf Graphic file (type pdf)
 
 <use met_rapport_logo_eng.pdf>
-Package pdftex.def Info: met_rapport_logo_eng.pdf used on input line 71.
+Package pdftex.def Info: met_rapport_logo_eng.pdf used on input line 73.
 (pdftex.def)             Requested size: 89.13277pt x 97.68471pt.
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <27.5> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 73.
-LaTeX Font Info:    Try loading font information for T1+phv on input line 73.
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 75.
+LaTeX Font Info:    Try loading font information for T1+phv on input line 75.
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\psnfss\t1phv.fd"
 File: t1phv.fd 2001/06/04 scalable font definitions for T1/phv.
 )
 LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <27.5> not available
-(Font)              Font shape `T1/phv/b/n' tried instead on input line 73.
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 75.
 
-Overfull \hbox (4.3925pt too wide) in paragraph at lines 69--81
+Overfull \hbox (4.3925pt too wide) in paragraph at lines 71--83
 [] 
  []
 
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <30> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 85.
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 87.
 LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <30> not available
-(Font)              Font shape `T1/phv/b/n' tried instead on input line 85.
-LaTeX Font Info:    Calculating math sizes for size <12.5> on input line 90.
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 87.
+LaTeX Font Info:    Calculating math sizes for size <12.5> on input line 92.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12.5> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 90.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 92.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9.25006> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 90.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 92.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7.50008> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 90.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 92.
 <Figurer/logo_met.png, id=3, 1551.7975pt x 548.0475pt>
 File: Figurer/logo_met.png Graphic file (type png)
 
 <use Figurer/logo_met.png>
-Package pdftex.def Info: Figurer/logo_met.png used on input line 102.
+Package pdftex.def Info: Figurer/logo_met.png used on input line 104.
 (pdftex.def)             Requested size: 96.65561pt x 34.14322pt.
 
 <Figurer/logo_hsn.png, id=5, 210.7875pt x 100.375pt>
 File: Figurer/logo_hsn.png Graphic file (type png)
 
 <use Figurer/logo_hsn.png>
-Package pdftex.def Info: Figurer/logo_hsn.png used on input line 103.
+Package pdftex.def Info: Figurer/logo_hsn.png used on input line 105.
 (pdftex.def)             Requested size: 101.57889pt x 48.36958pt.
  <Figurer/logo_niva.png, id=6, 180.675pt x 76.285pt>
 File: Figurer/logo_niva.png Graphic file (type png)
 
 <use Figurer/logo_niva.png>
-Package pdftex.def Info: Figurer/logo_niva.png used on input line 104.
+Package pdftex.def Info: Figurer/logo_niva.png used on input line 106.
 (pdftex.def)             Requested size: 80.8674pt x 34.14322pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 108--113
+Underfull \hbox (badness 10000) in paragraph at lines 110--115
 
  []
 
@@ -881,29 +881,29 @@ sn.png> <C:/Users/karh/Documents/GitHub/FjordOs_Valideringsrapport/Figurer/logo
 _niva.png>]
 File: met_rapport_logo_eng.pdf Graphic file (type pdf)
  <use met_rapport_logo_eng.pdf>
-Package pdftex.def Info: met_rapport_logo_eng.pdf used on input line 129.
+Package pdftex.def Info: met_rapport_logo_eng.pdf used on input line 131.
 (pdftex.def)             Requested size: 89.13277pt x 97.68471pt.
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <12> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 135.
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 137.
 LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <12> not available
-(Font)              Font shape `T1/phv/b/n' tried instead on input line 135.
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 137.
 
-Overfull \hbox (23.99997pt too wide) in paragraph at lines 134--152
+Overfull \hbox (23.99997pt too wide) in paragraph at lines 136--154
 [][] 
  []
 
 
-Overfull \hbox (24.23468pt too wide) in paragraph at lines 153--166
+Overfull \hbox (24.23468pt too wide) in paragraph at lines 155--168
 [][]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 153--166
+Underfull \hbox (badness 10000) in paragraph at lines 155--168
 
  []
 
 
-Overfull \hbox (23.99997pt too wide) in paragraph at lines 167--177
+Overfull \hbox (23.99997pt too wide) in paragraph at lines 169--179
 [][] 
  []
 
@@ -911,9 +911,9 @@ Overfull \hbox (23.99997pt too wide) in paragraph at lines 167--177
 
 ]
 LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <17.28> not available
-(Font)              Font shape `T1/phv/b/n' tried instead on input line 186.
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 188.
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <6> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 209.
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 211.
 
 Overfull \hbox (31.5472pt too wide) has occurred while \output is active
 [][] 
@@ -937,255 +937,302 @@ Overfull \hbox (31.5472pt too wide) has occurred while \output is active
 \tf@toc=\write3
  [4
 
-] [5]
-Overfull \hbox (1.01424pt too wide) in paragraph at lines 227--228
+] [5] [1
+
+]
+Overfull \hbox (1.01424pt too wide) in paragraph at lines 230--231
 []\T1/ptm/m/n/12 The Oslofjord is about 100 km long. Abouth halfway the fjord s
 pilts into two branches,
  []
 
-<Figurer/kart.png, id=43, 451.6875pt x 542.025pt>
+<Figurer/kart.png, id=47, 451.6875pt x 542.025pt>
 File: Figurer/kart.png Graphic file (type png)
  <use Figurer/kart.png>
-Package pdftex.def Info: Figurer/kart.png used on input line 234.
-(pdftex.def)             Requested size: 320.0935pt x 368.00563pt.
+Package pdftex.def Info: Figurer/kart.png used on input line 237.
+(pdftex.def)             Requested size: 298.75264pt x 343.46716pt.
 
-<Figurer/oppbygging.png, id=45, 571.53525pt x 360.74776pt>
+[2 <C:/Users/karh/Documents/GitHub/FjordOs_Valideringsrapport/Figurer/kart.png 
+(PNG copy)>] <Figurer/oppbygging.png, id=54, 571.53525pt x 360.74776pt>
 File: Figurer/oppbygging.png Graphic file (type png)
 
 <use Figurer/oppbygging.png>
-Package pdftex.def Info: Figurer/oppbygging.png used on input line 244.
-(pdftex.def)             Requested size: 426.79135pt x 269.38766pt.
- [6
-
-] [7 <C:/Users/karh/Documents/GitHub/FjordOs_Valideringsrapport/Figurer/kart.pn
-g (PNG copy)>] [8 <C:/Users/karh/Documents/GitHub/FjordOs_Valideringsrapport/Fi
-gurer/oppbygging.png>] [9
-
-]
-<Figurer/Slagen_kart.png, id=63, 561.297pt x 452.28975pt>
+Package pdftex.def Info: Figurer/oppbygging.png used on input line 256.
+(pdftex.def)             Requested size: 384.1096pt x 242.44284pt.
+ [3 <C:/Users/karh/Documents/GitHub/FjordOs_Valideringsrapport/Figurer/oppbyggi
+ng.png>]
+<Figurer/Slagen_kart.png, id=60, 561.297pt x 452.28975pt>
 File: Figurer/Slagen_kart.png Graphic file (type png)
 
 <use Figurer/Slagen_kart.png>
-Package pdftex.def Info: Figurer/Slagen_kart.png used on input line 288.
+Package pdftex.def Info: Figurer/Slagen_kart.png used on input line 293.
 (pdftex.def)             Requested size: 341.43437pt x 306.17268pt.
- [10 <C:/Users/karh/Documents/GitHub/FjordOs_Valideringsrapport/Figurer/Slagen_
-kart.png (PNG copy)>]
-<Figurer/badestrand_kart.png, id=69, 361.35pt x 385.44pt>
+ [4] [5 <C:/Users/karh/Documents/GitHub/FjordOs_Valideringsrapport/Figurer/Slag
+en_kart.png (PNG copy)>]
+<Figurer/badestrand_kart.png, id=70, 361.35pt x 385.44pt>
 File: Figurer/badestrand_kart.png Graphic file (type png)
 
 <use Figurer/badestrand_kart.png>
-Package pdftex.def Info: Figurer/badestrand_kart.png used on input line 311.
-(pdftex.def)             Requested size: 341.43437pt x 364.20155pt.
- [11] [12 <C:/Users/karh/Documents/GitHub/FjordOs_Valideringsrapport/Figurer/ba
-destrand_kart.png (PNG copy)>] [13]
-<Figurer/Viker_WL.png, id=83, 1005.7575pt x 249.93375pt>
+Package pdftex.def Info: Figurer/badestrand_kart.png used on input line 323.
+(pdftex.def)             Requested size: 251.80533pt x 248.76726pt.
+
+<Figurer/kart_Storoyodden.png, id=72, 431.211pt x 334.24875pt>
+File: Figurer/kart_Storoyodden.png Graphic file (type png)
+
+<use Figurer/kart_Storoyodden.png>
+Package pdftex.def Info: Figurer/kart_Storoyodden.png used on input line 323.
+(pdftex.def)             Requested size: 170.71393pt x 98.7645pt.
+
+<Figurer/kart_Hvalstrand.png, id=74, 552.26324pt x 324.61275pt>
+File: Figurer/kart_Hvalstrand.png Graphic file (type png)
+
+<use Figurer/kart_Hvalstrand.png>
+Package pdftex.def Info: Figurer/kart_Hvalstrand.png used on input line 323.
+(pdftex.def)             Requested size: 170.71393pt x 73.95638pt.
+
+<Figurer/kart_Sjostrand.png, id=76, 415.5525pt x 204.765pt>
+File: Figurer/kart_Sjostrand.png Graphic file (type png)
+
+<use Figurer/kart_Sjostrand.png>
+Package pdftex.def Info: Figurer/kart_Sjostrand.png used on input line 323.
+(pdftex.def)             Requested size: 170.71393pt x 55.03055pt.
+
+Overfull \hbox (6.79999pt too wide) in paragraph at lines 323--323
+[][] 
+ []
+
+
+Overfull \hbox (6.79999pt too wide) in paragraph at lines 323--323
+[] 
+ []
+
+
+Overfull \hbox (6.79999pt too wide) in paragraph at lines 323--323
+[] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 323--323
+
+ []
+
+[6 <C:/Users/karh/Documents/GitHub/FjordOs_Valideringsrapport/Figurer/badestran
+d_kart.png (PNG copy)> <C:/Users/karh/Documents/GitHub/FjordOs_Valideringsrappo
+rt/Figurer/kart_Storoyodden.png> <C:/Users/karh/Documents/GitHub/FjordOs_Valide
+ringsrapport/Figurer/kart_Hvalstrand.png> <C:/Users/karh/Documents/GitHub/Fjord
+Os_Valideringsrapport/Figurer/kart_Sjostrand.png>] [7]
+<Figurer/Viker_WL.png, id=91, 1005.7575pt x 249.93375pt>
 File: Figurer/Viker_WL.png Graphic file (type png)
 
 <use Figurer/Viker_WL.png>
-Package pdftex.def Info: Figurer/Viker_WL.png used on input line 354.
+Package pdftex.def Info: Figurer/Viker_WL.png used on input line 366.
 (pdftex.def)             Requested size: 426.79135pt x 125.60344pt.
 
-<Figurer/Oscarsborg_WL.png, id=85, 1005.7575pt x 249.93375pt>
+<Figurer/Oscarsborg_WL.png, id=93, 1005.7575pt x 249.93375pt>
 File: Figurer/Oscarsborg_WL.png Graphic file (type png)
 
 <use Figurer/Oscarsborg_WL.png>
-Package pdftex.def Info: Figurer/Oscarsborg_WL.png used on input line 357.
+Package pdftex.def Info: Figurer/Oscarsborg_WL.png used on input line 369.
 (pdftex.def)             Requested size: 426.79135pt x 125.60344pt.
 
-<Figurer/Oscarsborg_Tide_selected.png, id=87, 1005.7575pt x 249.93375pt>
+<Figurer/Oscarsborg_Tide_selected.png, id=95, 1005.7575pt x 249.93375pt>
 File: Figurer/Oscarsborg_Tide_selected.png Graphic file (type png)
 
 <use Figurer/Oscarsborg_Tide_selected.png>
 Package pdftex.def Info: Figurer/Oscarsborg_Tide_selected.png used on input lin
-e 367.
+e 379.
 (pdftex.def)             Requested size: 426.79135pt x 125.60344pt.
 
-<Figurer/Oscarsborg_Tide_NorKyst800.png, id=89, 1005.7575pt x 249.93375pt>
+<Figurer/Oscarsborg_Tide_NorKyst800.png, id=97, 1005.7575pt x 249.93375pt>
 File: Figurer/Oscarsborg_Tide_NorKyst800.png Graphic file (type png)
 
 <use Figurer/Oscarsborg_Tide_NorKyst800.png>
 Package pdftex.def Info: Figurer/Oscarsborg_Tide_NorKyst800.png used on input l
-ine 370.
+ine 382.
 (pdftex.def)             Requested size: 426.79135pt x 125.60344pt.
 
-<Figurer/Oscarsborg_Tide_selected_jan15.png, id=91, 1005.7575pt x 249.93375pt>
+<Figurer/Oscarsborg_Tide_selected_jan15.png, id=99, 1005.7575pt x 249.93375pt>
 File: Figurer/Oscarsborg_Tide_selected_jan15.png Graphic file (type png)
 
 <use Figurer/Oscarsborg_Tide_selected_jan15.png>
 Package pdftex.def Info: Figurer/Oscarsborg_Tide_selected_jan15.png used on inp
-ut line 379.
+ut line 391.
 (pdftex.def)             Requested size: 426.79135pt x 125.60344pt.
 
-<Figurer/Oscarsborg_WL_rest_jan15.png, id=93, 1005.7575pt x 249.93375pt>
+<Figurer/Oscarsborg_WL_rest_jan15.png, id=101, 1005.7575pt x 249.93375pt>
 File: Figurer/Oscarsborg_WL_rest_jan15.png Graphic file (type png)
 
 <use Figurer/Oscarsborg_WL_rest_jan15.png>
 Package pdftex.def Info: Figurer/Oscarsborg_WL_rest_jan15.png used on input lin
-e 382.
+e 394.
 (pdftex.def)             Requested size: 426.79135pt x 125.60344pt.
 
-<Figurer/Oscarsborg_Tide_Frequency_obs.png, id=95, 1005.7575pt x 249.93375pt>
+<Figurer/Oscarsborg_Tide_Frequency_obs.png, id=103, 1005.7575pt x 249.93375pt>
 File: Figurer/Oscarsborg_Tide_Frequency_obs.png Graphic file (type png)
 
 <use Figurer/Oscarsborg_Tide_Frequency_obs.png>
 Package pdftex.def Info: Figurer/Oscarsborg_Tide_Frequency_obs.png used on inpu
-t line 391.
+t line 403.
 (pdftex.def)             Requested size: 426.79135pt x 125.60344pt.
 
-<Figurer/Oscarsborg_Tide_Frequency_sim.png, id=97, 1005.7575pt x 249.93375pt>
+<Figurer/Oscarsborg_Tide_Frequency_sim.png, id=105, 1005.7575pt x 249.93375pt>
 File: Figurer/Oscarsborg_Tide_Frequency_sim.png Graphic file (type png)
 
 <use Figurer/Oscarsborg_Tide_Frequency_sim.png>
 Package pdftex.def Info: Figurer/Oscarsborg_Tide_Frequency_sim.png used on inpu
-t line 394.
+t line 406.
 (pdftex.def)             Requested size: 426.79135pt x 125.60344pt.
 
-Overfull \hbox (11.24174pt too wide) in paragraph at lines 410--443
+Overfull \hbox (11.24174pt too wide) in paragraph at lines 422--455
  [][] 
  []
 
-[14
+[8
 
  <C:/Users/karh/Documents/GitHub/FjordOs_Valideringsrapport/Figurer/Viker_WL.pn
 g (PNG copy)> <C:/Users/karh/Documents/GitHub/FjordOs_Valideringsrapport/Figure
-r/Oscarsborg_WL.png (PNG copy)>] [15 <C:/Users/karh/Documents/GitHub/FjordOs_Va
-lideringsrapport/Figurer/Oscarsborg_Tide_selected.png (PNG copy)> <C:/Users/kar
-h/Documents/GitHub/FjordOs_Valideringsrapport/Figurer/Oscarsborg_Tide_NorKyst80
-0.png (PNG copy)> <C:/Users/karh/Documents/GitHub/FjordOs_Valideringsrapport/Fi
-gurer/Oscarsborg_Tide_selected_jan15.png (PNG copy)> <C:/Users/karh/Documents/G
-itHub/FjordOs_Valideringsrapport/Figurer/Oscarsborg_WL_rest_jan15.png (PNG copy
-)>] [16 <C:/Users/karh/Documents/GitHub/FjordOs_Valideringsrapport/Figurer/Osca
-rsborg_Tide_Frequency_obs.png (PNG copy)> <C:/Users/karh/Documents/GitHub/Fjord
-Os_Valideringsrapport/Figurer/Oscarsborg_Tide_Frequency_sim.png (PNG copy)>] [1
-7] <Figurer/Slagen_tid.png, id=119, 1001.54175pt x 303.534pt>
+r/Oscarsborg_WL.png (PNG copy)>] [9 <C:/Users/karh/Documents/GitHub/FjordOs_Val
+ideringsrapport/Figurer/Oscarsborg_Tide_selected.png (PNG copy)> <C:/Users/karh
+/Documents/GitHub/FjordOs_Valideringsrapport/Figurer/Oscarsborg_Tide_NorKyst800
+.png (PNG copy)> <C:/Users/karh/Documents/GitHub/FjordOs_Valideringsrapport/Fig
+urer/Oscarsborg_Tide_selected_jan15.png (PNG copy)> <C:/Users/karh/Documents/Gi
+tHub/FjordOs_Valideringsrapport/Figurer/Oscarsborg_WL_rest_jan15.png (PNG copy)
+>] [10 <C:/Users/karh/Documents/GitHub/FjordOs_Valideringsrapport/Figurer/Oscar
+sborg_Tide_Frequency_obs.png (PNG copy)> <C:/Users/karh/Documents/GitHub/FjordO
+s_Valideringsrapport/Figurer/Oscarsborg_Tide_Frequency_sim.png (PNG copy)>]
+[11] <Figurer/Slagen_tid.png, id=128, 1001.54175pt x 303.534pt>
 File: Figurer/Slagen_tid.png Graphic file (type png)
 
 <use Figurer/Slagen_tid.png>
-Package pdftex.def Info: Figurer/Slagen_tid.png used on input line 469.
+Package pdftex.def Info: Figurer/Slagen_tid.png used on input line 481.
 (pdftex.def)             Requested size: 426.79135pt x 155.92575pt.
 
-<Figurer/Slagen_Rose_obs.png, id=121, 722.7pt x 331.2375pt>
+<Figurer/Slagen_Rose_obs.png, id=130, 722.7pt x 331.2375pt>
 File: Figurer/Slagen_Rose_obs.png Graphic file (type png)
 
 <use Figurer/Slagen_Rose_obs.png>
-Package pdftex.def Info: Figurer/Slagen_Rose_obs.png used on input line 479.
+Package pdftex.def Info: Figurer/Slagen_Rose_obs.png used on input line 491.
 (pdftex.def)             Requested size: 239.56662pt x 113.81102pt.
 
-<Figurer/Slagen_Rose_sim.png, id=123, 722.7pt x 331.2375pt>
+<Figurer/Slagen_Rose_sim.png, id=132, 722.7pt x 331.2375pt>
 File: Figurer/Slagen_Rose_sim.png Graphic file (type png)
 
 <use Figurer/Slagen_Rose_sim.png>
-Package pdftex.def Info: Figurer/Slagen_Rose_sim.png used on input line 479.
+Package pdftex.def Info: Figurer/Slagen_Rose_sim.png used on input line 491.
 (pdftex.def)             Requested size: 218.17674pt x 113.81102pt.
 
-<Figurer/Slagen_pdf.png, id=125, 1088.26575pt x 287.27325pt>
+<Figurer/Slagen_pdf.png, id=134, 1088.26575pt x 287.27325pt>
 File: Figurer/Slagen_pdf.png Graphic file (type png)
 
 <use Figurer/Slagen_pdf.png>
-Package pdftex.def Info: Figurer/Slagen_pdf.png used on input line 488.
+Package pdftex.def Info: Figurer/Slagen_pdf.png used on input line 500.
 (pdftex.def)             Requested size: 426.79135pt x 133.62451pt.
 
-<Figurer/Slagen_QQ.png, id=127, 542.025pt x 542.025pt>
+<Figurer/Slagen_QQ.png, id=136, 542.025pt x 542.025pt>
 File: Figurer/Slagen_QQ.png Graphic file (type png)
 
 <use Figurer/Slagen_QQ.png>
-Package pdftex.def Info: Figurer/Slagen_QQ.png used on input line 519.
+Package pdftex.def Info: Figurer/Slagen_QQ.png used on input line 531.
 (pdftex.def)             Requested size: 213.39568pt x 213.39865pt.
- [18
+ [12
 
  <C:/Users/karh/Documents/GitHub/FjordOs_Valideringsrapport/Figurer/Slagen_tid.
 png (PNG copy)> <C:/Users/karh/Documents/GitHub/FjordOs_Valideringsrapport/Figu
 rer/Slagen_Rose_obs.png (PNG copy)> <C:/Users/karh/Documents/GitHub/FjordOs_Val
-ideringsrapport/Figurer/Slagen_Rose_sim.png (PNG copy)>] [19 <C:/Users/karh/Doc
-uments/GitHub/FjordOs_Valideringsrapport/Figurer/Slagen_pdf.png (PNG copy)>] [2
-0 <C:/Users/karh/Documents/GitHub/FjordOs_Valideringsrapport/Figurer/Slagen_QQ.
-png (PNG copy)>] [21
+ideringsrapport/Figurer/Slagen_Rose_sim.png (PNG copy)>] [13 <C:/Users/karh/Doc
+uments/GitHub/FjordOs_Valideringsrapport/Figurer/Slagen_pdf.png (PNG copy)>] [1
+4 <C:/Users/karh/Documents/GitHub/FjordOs_Valideringsrapport/Figurer/Slagen_QQ.
+png (PNG copy)>] [15
 
 ]
-<Figurer/Temperatur_1year.png, id=147, 702.2235pt x 303.534pt>
+<Figurer/Temperatur_1year.png, id=156, 702.2235pt x 303.534pt>
 File: Figurer/Temperatur_1year.png Graphic file (type png)
 
 <use Figurer/Temperatur_1year.png>
-Package pdftex.def Info: Figurer/Temperatur_1year.png used on input line 545.
+Package pdftex.def Info: Figurer/Temperatur_1year.png used on input line 557.
 (pdftex.def)             Requested size: 426.79135pt x 220.1607pt.
 
-<Figurer/Temperatur-middel_1year.png, id=149, 700.41675pt x 303.534pt>
+<Figurer/Temperatur-middel_1year.png, id=158, 700.41675pt x 303.534pt>
 File: Figurer/Temperatur-middel_1year.png Graphic file (type png)
 
 <use Figurer/Temperatur-middel_1year.png>
 Package pdftex.def Info: Figurer/Temperatur-middel_1year.png used on input line
- 551.
+ 563.
 (pdftex.def)             Requested size: 426.79135pt x 208.42064pt.
 
-<Figurer/Temperatur_PDF_arstid.png, id=151, 699.21225pt x 303.534pt>
+<Figurer/Temperatur_PDF_arstid.png, id=160, 699.21225pt x 303.534pt>
 File: Figurer/Temperatur_PDF_arstid.png Graphic file (type png)
 
 <use Figurer/Temperatur_PDF_arstid.png>
 Package pdftex.def Info: Figurer/Temperatur_PDF_arstid.png used on input line 5
-66.
+78.
 (pdftex.def)             Requested size: 426.79135pt x 201.69472pt.
 
-<Figurer/Temperatur_QQ_scatter.png, id=153, 524.55975pt x 475.7775pt>
+<Figurer/Temperatur_QQ_scatter.png, id=162, 524.55975pt x 475.7775pt>
 File: Figurer/Temperatur_QQ_scatter.png Graphic file (type png)
 
 <use Figurer/Temperatur_QQ_scatter.png>
 Package pdftex.def Info: Figurer/Temperatur_QQ_scatter.png used on input line 5
-74.
+86.
 (pdftex.def)             Requested size: 213.39568pt x 193.55273pt.
- [22
+ [16
 
-] [23 <C:/Users/karh/Documents/GitHub/FjordOs_Valideringsrapport/Figurer/Temper
+] [17 <C:/Users/karh/Documents/GitHub/FjordOs_Valideringsrapport/Figurer/Temper
 atur_1year.png (PNG copy)> <C:/Users/karh/Documents/GitHub/FjordOs_Valideringsr
-apport/Figurer/Temperatur-middel_1year.png (PNG copy)>] [24 <C:/Users/karh/Docu
+apport/Figurer/Temperatur-middel_1year.png (PNG copy)>] [18 <C:/Users/karh/Docu
 ments/GitHub/FjordOs_Valideringsrapport/Figurer/Temperatur_PDF_arstid.png (PNG 
 copy)> <C:/Users/karh/Documents/GitHub/FjordOs_Valideringsrapport/Figurer/Tempe
 ratur_QQ_scatter.png (PNG copy)>]
-<Figurer/badetemp_2014.png, id=168, 770.88pt x 484.81125pt>
+<Figurer/badetemp_2014.png, id=177, 770.88pt x 484.81125pt>
 File: Figurer/badetemp_2014.png Graphic file (type png)
 
 <use Figurer/badetemp_2014.png>
-Package pdftex.def Info: Figurer/badetemp_2014.png used on input line 589.
-(pdftex.def)             Requested size: 341.43437pt x 214.73055pt.
-File: Figurer/badetemp_2014.png Graphic file (type png)
- <use Figurer/badetemp_2014.png>
-Package pdftex.def Info: Figurer/badetemp_2014.png used on input line 598.
+Package pdftex.def Info: Figurer/badetemp_2014.png used on input line 605.
 (pdftex.def)             Requested size: 341.43437pt x 214.73055pt.
 
-<Figurer/FjordOs_with_FA_track.jpg, id=171, 2735.21875pt x 5259.65pt>
+<Figurer/badetemp_2015.png, id=179, 770.88pt x 484.81125pt>
+File: Figurer/badetemp_2015.png Graphic file (type png)
+
+<use Figurer/badetemp_2015.png>
+Package pdftex.def Info: Figurer/badetemp_2015.png used on input line 614.
+(pdftex.def)             Requested size: 341.43437pt x 214.73055pt.
+
+<Figurer/FjordOs_with_FA_track.jpg, id=181, 2735.21875pt x 5259.65pt>
 File: Figurer/FjordOs_with_FA_track.jpg Graphic file (type jpg)
 
 <use Figurer/FjordOs_with_FA_track.jpg>
 Package pdftex.def Info: Figurer/FjordOs_with_FA_track.jpg used on input line 6
-10.
+26.
 (pdftex.def)             Requested size: 144.87605pt x 284.52756pt.
 
-<Figurer/FjordOs_vs_Ferrybox_TEMP.jpg, id=173, 4727.6625pt x 5259.65pt>
+<Figurer/FjordOs_vs_Ferrybox_TEMP.jpg, id=183, 4727.6625pt x 5259.65pt>
 File: Figurer/FjordOs_vs_Ferrybox_TEMP.jpg Graphic file (type jpg)
 
 <use Figurer/FjordOs_vs_Ferrybox_TEMP.jpg>
 Package pdftex.def Info: Figurer/FjordOs_vs_Ferrybox_TEMP.jpg used on input lin
-e 619.
+e 635.
 (pdftex.def)             Requested size: 213.39568pt x 240.28554pt.
 
-<Figurer/FjordOs_vs_Ferrybox_SALT.jpg, id=175, 4727.6625pt x 5259.65pt>
+<Figurer/FjordOs_vs_Ferrybox_SALT.jpg, id=185, 4727.6625pt x 5259.65pt>
 File: Figurer/FjordOs_vs_Ferrybox_SALT.jpg Graphic file (type jpg)
 
 <use Figurer/FjordOs_vs_Ferrybox_SALT.jpg>
 Package pdftex.def Info: Figurer/FjordOs_vs_Ferrybox_SALT.jpg used on input lin
-e 619.
+e 635.
 (pdftex.def)             Requested size: 213.39568pt x 240.28554pt.
- [25
+ [19
 
  <C:/Users/karh/Documents/GitHub/FjordOs_Valideringsrapport/Figurer/badetemp_20
-14.png (PNG copy)>] [26 <C:/Users/karh/Documents/GitHub/FjordOs_Valideringsrapp
-ort/Figurer/FjordOs_with_FA_track.jpg>] [27 <C:/Users/karh/Documents/GitHub/Fjo
-rdOs_Valideringsrapport/Figurer/FjordOs_vs_Ferrybox_TEMP.jpg> <C:/Users/karh/Do
-cuments/GitHub/FjordOs_Valideringsrapport/Figurer/FjordOs_vs_Ferrybox_SALT.jpg>
-] [28
+14.png (PNG copy)>] [20 <C:/Users/karh/Documents/GitHub/FjordOs_Valideringsrapp
+ort/Figurer/badetemp_2015.png (PNG copy)> <C:/Users/karh/Documents/GitHub/Fjord
+Os_Valideringsrapport/Figurer/FjordOs_with_FA_track.jpg>] [21 <C:/Users/karh/Do
+cuments/GitHub/FjordOs_Valideringsrapport/Figurer/FjordOs_vs_Ferrybox_TEMP.jpg>
+ <C:/Users/karh/Documents/GitHub/FjordOs_Valideringsrapport/Figurer/FjordOs_vs_
+Ferrybox_SALT.jpg>] [22
 
-] [29
+] [23
 
-] [30
+]
+[24
 
 ]
 (C:\Users\karh\Documents\GitHub\FjordOs_Valideringsrapport\Valideringsrapport_v
@@ -1207,16 +1254,16 @@ Underfull \hbox (badness 1077) in paragraph at lines 31--39
 Phys.\T1/ptm/m/n/12 , \T1/ptm/m/it/12 227\T1/ptm/m/n/12 (7), 3595--3624, doi:
  []
 
-[31
+[25
 
-]) [32]
+]) [26]
 (C:\Users\karh\Documents\GitHub\FjordOs_Valideringsrapport\Valideringsrapport_v
 1.aux) ) 
 Here is how much of TeX's memory you used:
- 11758 strings out of 493921
- 193063 string characters out of 3144880
- 267714 words of memory out of 3000000
- 14789 multiletter control sequences out of 15000+200000
+ 11778 strings out of 493921
+ 193637 string characters out of 3144880
+ 267708 words of memory out of 3000000
+ 14805 multiletter control sequences out of 15000+200000
  81922 words of font info for 116 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
  36i,20n,43p,956b,461s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1229,9 +1276,9 @@ m Files (x86)/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvr8a.pfb><C:/Program Files
 (x86)/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><C:/Program Files (x86)/MiKTe
 X 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts
 /type1/urw/times/utmri8a.pfb>
-Output written on Valideringsrapport_v1.pdf (32 pages, 5979545 bytes).
+Output written on Valideringsrapport_v1.pdf (31 pages, 7092042 bytes).
 PDF statistics:
- 235 PDF objects out of 1000 (max. 8388607)
+ 245 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 314 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 352 words of extra memory for PDF output out of 10000 (max. 10000000)
 
