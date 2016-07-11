@@ -23,7 +23,7 @@
 \contentsline {subsubsection}{\numberline {5.3.2}Water temperature 3km south of \r Asg\r ardstrand - Karina}{16}
 \contentsline {subsubsection}{\numberline {5.3.3}Beach temperature in the inner Oslofjord - Karina}{19}
 \contentsline {subsubsection}{\numberline {5.3.4}Ferrybox - Andr\'{e}?}{19}
-\contentsline {subsubsection}{\numberline {5.3.5}Drifting lanes - Karina/Nils}{22}
+\contentsline {subsubsection}{\numberline {5.3.5}Drifting lanes - Karina/Nils}{20}
 \contentsline {section}{\numberline {6}Summary and final remarks}{22}
 \contentsline {section}{Acknowledgements}{23}
 \contentsline {section}{Appendix}{24}
