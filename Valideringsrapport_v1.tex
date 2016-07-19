@@ -275,9 +275,7 @@ Area of interest. Positions for observations are marked. (Karina)
 The relevant observed data in the area of interest are scattered in both time and space (Fig.~\ref{fig:kart}). Observations over longer time period includes three stations measuring sea level, one bottom-mounted doppler measuring currents in two depths level, and one device measuring sea temperature. In addition more occasional observations includes CTD measurements, current measurements, ferrybox, some drifter experiemnts, and sea temperature at three beaches during the summer.  
 
 \subsection{Water level observations - Karina}
-The Norwegian Mapping Authority has three permanent stations measureing sea level in the area of interest. The station at Viker is placed close to the open boundary of the model area. The station at Oscarsborg is placed in the midle of the inner Oslofjord, and the station at Oslo is placed in the innermost part of the fjord.
-
-Water level is a result of both baroclinic and barotropic. The difference between high and low tides are ...	
+The Norwegian Mapping Authority has three permanent stations measureing sea level in the area of interest. The station at Viker is placed close to the open boundary of the model area. The station at Oscarsborg is placed halfway in the inner Oslofjord, and the station at Oslo is placed in the innermost part of the fjord.
 
 \subsection{Observations of currents}
 
@@ -369,103 +367,86 @@ Godafoss ...
 \section{Evaluation}
 \subsection{Water level and tide - Karina}
 
-\begin{figure}[t]
-\centerline{
-\includegraphics*[trim=3cm 0cm 2.5cm 0cm,clip=true,width=\textwidth]{Figurer/Viker_WL} 
-}
-\centerline{
-\includegraphics*[trim=3cm 0cm 2.5cm 0cm,clip=true,width=\textwidth]{Figurer/Oscarsborg_WL}
-}
-\caption{\small
-Observed and simulated water level for Viker (upper) and Oscarsborg (lower)}
-\label{fig:Waterlevel}
-\end{figure}
+Time series from the three permanent stations measuring water level have been analysed and compared with simulated time series of waterlevel extracted from locations near the three permanent stations. Time series of water level are analyzed using t\_tide \citep{pavlo:etal:2002} in order to extract the tidal components. The same period in time are applied for both the simulations and the observations. 
+
+\begin{figure}[hb] 
+\centerline{ 
+\includegraphics*[trim=3cm 0cm 2.5cm 0cm,clip=true,width=\textwidth]{Figurer/Oscarsborg_Tide_selected_jan15}  
+} 
+\centerline{ 
+\includegraphics*[trim=3cm 0cm 2.5cm 0cm,clip=true,width=\textwidth]{Figurer/Oscarsborg_WL_rest_jan15} 
+} 
+\caption{\small 
+Simulated (black) and observed (red) timeseries of tides (upper) and residual (lower) at Oscarsborg. The tidal elevation includes only the eleven components included in the tidal forcing. The residual includes the total water level minus the tidal elevation.} 
+\label{fig:Waterlevel_jan15} 
+\end{figure} 
+
+Eleven tidal components are included in the model at the southern open boundary using their corresponding amplitudes and phases for both depth integrated currents and water level \citep{roed:etal:2016}. The timeseries of tidal components included in the tidal forcing are in fairly good agreement (Fig.~\ref{fig:Waterlevel_jan15},upper, and Tab.\-\ref{tab:Tide}). In addtion to the tidal components included in the tidal forcing, more tidal components are present in the time series (Fig.~\ref{fig:Waterlevel_tide}). Tidal components with periods of approximately one year (SA) and half a year (SSA) respectively are present in both the observations and the simulations (Tab.\-\ref{tab:Tide}). In addtion, the observations have more components with shorter periods which are not included in the tidal forcing and thereby not present in the simulations. This is consistent with the frequency series of the Fourier transformed water level (Fig.~\ref{fig:Waterlevel_freq}).
 
 
-\begin{figure}[t]
-\centerline{
-\includegraphics*[trim=3cm 0cm 2.5cm 0cm,clip=true,width=\textwidth]{Figurer/Oscarsborg_Tide_selected}
-}
-\centerline{
-\includegraphics*[trim=3cm 0cm 2.5cm 0cm,clip=true,width=\textwidth]{Figurer/Oscarsborg_Tide_NorKyst800} 
-}
-\caption{\small
-Timeseries at Oscarsborg of the tidal components included (upper) and not included (lower) in the explicit tidal forcing.}
-\label{fig:Waterlevel_tide}
-\end{figure}
+\begin{figure}[tbh] 
+\centerline{ 
+\includegraphics*[trim=3cm 0cm 2.5cm 0cm,clip=true,width=\textwidth]{Figurer/Oscarsborg_Tide_not_included}  
+} 
+\caption{\small 
+Timeseries at Oscarsborg of the tidal components not included in the tidal tidal forcing.} 
+\label{fig:Waterlevel_tide} 
+\end{figure} 
 
-\begin{figure}[t]
-\centerline{
-\includegraphics*[trim=3cm 0cm 2.5cm 0cm,clip=true,width=\textwidth]{Figurer/Oscarsborg_Tide_selected_jan15} 
-}
-\centerline{
-\includegraphics*[trim=3cm 0cm 2.5cm 0cm,clip=true,width=\textwidth]{Figurer/Oscarsborg_WL_rest_jan15}
-}
-\caption{\small
-Timeseries of tides originating from explicit tidal forcing (upper) and the residual (lower) at Oscarsborg}
-\label{fig:Waterlevel_jan15}
-\end{figure}
+\begin{figure}[tbh] 
+\centerline{ 
+\includegraphics*[trim=3cm 0cm 2.5cm 0cm,clip=true,width=\textwidth]{Figurer/Oscarsborg_Tide_Frequency_obs.png}  
+} 
+\centerline{ 
+\includegraphics*[trim=3cm 0cm 2.5cm 0cm,clip=true,width=\textwidth]{Figurer/Oscarsborg_Tide_Frequency_sim.png} 
+} 
+\caption{\small 
+Frequency series of Fourier transformed observed (upper) and simulated (lower) water levels at Oscarsborg} 
+\label{fig:Waterlevel_freq} 
+\end{figure} 
 
-\begin{figure}[t]
-\centerline{
-\includegraphics*[trim=3cm 0cm 2.5cm 0cm,clip=true,width=\textwidth]{Figurer/Oscarsborg_Tide_Frequency_obs.png} 
-}
-\centerline{
-\includegraphics*[trim=3cm 0cm 2.5cm 0cm,clip=true,width=\textwidth]{Figurer/Oscarsborg_Tide_Frequency_sim.png}
-}
-\caption{\small
-Frequency series of Fourier transformed observed (upper) and simulated (lower) water levels at Oscarsborg}
-\label{fig:Waterlevel_freq}
-\end{figure}
 
-Time series from the three permanent stations measuring sea level have been analysed and compared with simulated time series of waterlevel from the same period in time.
 
-Tides are included in the model at the southern open boundary in two ways. The FjordOs model is nested into NorKyst800 through daily mean forced on the boundary. This forcing includes the tidal components with longer periods. In addition 11 components with shorter periods are introduced explicitly using their corresponding amplitudes and phases for both depth integrated currents and water level (ref. tidevannsartikkel?). The timeseries of tides originating from explicit tidal forcing are in fairly good agreement (Fig.~\ref{fig:Waterlevel_tide}, upper, and Fig.~\ref{fig:Waterlevel_jan15},upper). The main characteristics of the remainding tidal components are present in both the observed and the simulated timeseries (Fig.~\ref{fig:Waterlevel_tide}, lower).
-%, but the simulated time series seem to include a half-year component that is not found dominant in the observations, and the observation include more components with shorter periods than those included in the explicit tidal forcing.
- 
-\begin{table}[ht]
-%\vspace{-1.5cm}
-\caption{Simulated and observed tidal amplitude and phase for selected tidal components.}
-\label{tab:Tide}
-\centering
-\begin{tabular}{|c|c|l|cc|cc|cc|c|}
-\hline 
-&&& \multicolumn{2}{|c|}{\bf Viker} & \multicolumn{2}{|c|}{\bf Oscarsborg} & \multicolumn{2}{|c|}{\bf Oslo} & {\bf Included} \\ 
-{\bf Comp.} & {\bf Period} &  {\bf sim/} & {\bf amp.} & {\bf phase.} & {\bf amp.} & {\bf phase.} & {\bf amp.} & {\bf phase.} & {\bf in tidal} \\
-& {\bf [h]} & {\bf obs} & {\bf [cm]} & {\bf [deg]} & {\bf [cm]} & {\bf [deg]} & {\bf [cm]} & {\bf [deg]} & {\bf forcing} \\ \hline
-\small SA   & 365 days & sim & 15.5 & 284 & 15.5 & 286 & 15.2 & 286 & no   \\
-\small      &        & obs & 10 & 319 & 11 & 322 & 11.3 & 324 &    \\
-\small SSA  & 182 days & sim & 8.8 & 198 & 9.2 & 199 & 9.3 & 200 & no  \\
-\small      &        & obs & 7.5 & 188 & 7.9 & 188 & 8.2 & 190 &    \\
-\small K2   & 11.9672 & sim & 1.6 & 32 & 1.9 & 35 & 2.1 & 37 & yes  \\
-\small      &        & obs & 0.7 & 46 & 0.8 & 66 & 0.9 & 67 &    \\
-\small S2   & 12.0000 & sim & 3.3 & 87 & 3.8 & 91 & 4.1 & 92 & yes  \\
-\small      &        & obs & 2.9 & 46 & 3.3 & 65 & 3.5 & 69 &    \\
-\small M2   & 12.4206 & sim & 11.2 & 127 & 12.9 & 134 & 13.6 & 135 & yes  \\
-\small      &        & obs & 11.9 & 105 & 13.8 & 121 & 14.4 & 125 &    \\
-\small N2   & 12.6584 & sim & 2.9 & 91 & 3.4 & 96 & 3.6 & 98 & yes  \\
-\small      &        & obs & 3 & 60 & 3.4 & 76 & 3.6 & 80 &    \\
-\small K1   & 23.9345 & sim & 0.2 & 194 & 0.1 & 185 & 0.1 & 165 & yes  \\
-\small      &        & obs & 0.4 & 125 & 0.7 & 128 & 0.8 & 129 &    \\
-\small P1   & 24.0659 & sim & 0.6 & 335 & 0.7 & 346 & 0.7 & 352 & yes  \\
-\small      &        & obs & 0.2 & 123 & 0.4 & 100 & 0.4 & 95 &    \\
-\small O1   & 25.8193 & sim & 3.5 & 347 & 3.8 & 348 & 3.8 & 349 & yes  \\
-\small      &        & obs & 2.3 & 276 & 2.3 & 281 & 2.4 & 282 &    \\
-\small Q1   & 26.8684 & sim & 0 & 177 & 0 & 188 & 0.1 & 201 & no   \\
-\small      &        & obs & 1.1 & 189 & 1.2 & 197 & 1.3 & 199 &    \\
-\small MN4  & 6.2692 & sim & 0.2 & 50 & 0.4 & 76 & 0.6 & 78 & yes  \\
-\small      &        & obs & 0.4 & 249 & 0.6 & 289 & 0.7 & 297 &    \\
-\small M4   & 6.2103 & sim & 0.9 & 37 & 1.7 & 61 & 2.2 & 65 & yes  \\
-\small      &        & obs & 1.2 & 281 & 1.8 & 324 & 2.3 & 332 &    \\
-\small MS4  & 6.1033 & sim & 0.5 & 123 & 1.1 & 150 & 1.4 & 154 & yes  \\
-\small      &        & obs & 0.3 & 360 & 0.5 & 44 & 0.7 & 56 &    \\
+\begin{table}[ht] 
+%\vspace{-1.5cm} 
+\caption{Simulated and observed tidal amplitude and phase for selected tidal components.} 
+\label{tab:Tide} 
+\centering 
+\begin{tabular}{|c|c|l|cc|cc|cc|c|} 
+\hline  
+&&& \multicolumn{2}{|c|}{\bf Viker} & \multicolumn{2}{|c|}{\bf Oscarsborg} & \multicolumn{2}{|c|}{\bf Oslo} & {\bf Included} \\  
+{\bf Comp.} & {\bf Period} &  {\bf sim/} & {\bf amp.} & {\bf phase.} & {\bf amp.} & {\bf phase.} & {\bf amp.} & {\bf phase.} & {\bf in tidal} \\ 
+& {\bf [h]} & {\bf obs} & {\bf [cm]} & {\bf [deg]} & {\bf [cm]} & {\bf [deg]} & {\bf [cm]} & {\bf [deg]} & {\bf forcing} \\ \hline 
+\small SA   & 8764      & sim & 15.6 & 286 & 15.5 & 284 & 15.4 & 286 & no   \\
+\small      &           & obs & 11.0 & 322 & 10.0 & 319 & 11.4 & 324 &    \\
+\small SSA  & 4382      & sim & 9.2 & 200 & 8.8 & 197 & 9.4 & 200 & no   \\
+\small      &           & obs & 8.0 & 189 & 7.5 & 188 & 8.2 & 190 &    \\
+\small K2   & 11.9672   & sim & 2.0 & 13 & 1.6 & 10 & 2.1 & 15 & yes  \\
+\small      &           & obs & 0.8 & 66 & 0.7 & 45 & 0.9 & 66 &    \\
+\small S2   & 12.000    & sim & 3.9 & 69 & 3.3 & 64 & 4.2 & 70 & yes  \\
+\small      &           & obs & 3.3 & 65 & 2.9 & 46 & 3.5 & 69 &    \\
+\small M2   & 12.4206   & sim & 13.2 & 112 & 11.5 & 105 & 13.9 & 114 & yes  \\
+\small      &           & obs & 13.8 & 121 & 11.9 & 105 & 14.4 & 125 &    \\
+\small N2   & 12.6584   & sim & 3.5 & 75 & 3.0 & 69 & 3.7 & 76 & yes  \\
+\small      &           & obs & 3.4 & 76 & 3.0 & 60 & 3.6 & 80 &    \\
+\small K1   & 23.9345   & sim & 0.1 & 175 & 0.2 & 187 & 0.2 & 157 & yes  \\
+\small      &           & obs & 0.7 & 130 & 0.4 & 127 & 0.8 & 130 &    \\
+\small P1   & 24.0659   & sim & 0.6 & 334 & 0.6 & 322 & 0.7 & 342 & yes  \\
+\small      &           & obs & 0.3 & 102 & 0.2 & 129 & 0.4 & 97 &    \\
+\small O1   & 25.8193   & sim & 3.8 & 339 & 3.5 & 337 & 3.8 & 339 & yes  \\
+\small      &           & obs & 2.3 & 281 & 2.2 & 277 & 2.4 & 282 &    \\
+\small Q1   & 26.8684   & sim & 0.0 & 216 & 0.0 & 231 & 0.1 & 215 & no   \\
+\small      &           & obs & 1.2 & 198 & 1.1 & 190 & 1.3 & 200 &    \\
+\small MN4  & 6.2692    & sim & 0.5 & 32 & 0.2 & 5 & 0.6 & 35 & yes  \\
+\small      &           & obs & 0.6 & 289 & 0.4 & 249 & 0.7 & 297 &    \\
+\small M4   & 6.2103    & sim & 1.9 & 18 & 1.0 & 355 & 2.5 & 23 & yes  \\
+\small      &           & obs & 1.8 & 324 & 1.2 & 281 & 2.3 & 332 &    \\
+\small MS4  & 6.1033    & sim & 1.2 & 107 & 0.6 & 80 & 1.6 & 111 & yes  \\
+\small      &           & obs & 0.5 & 44 & 0.3 & 360 & 0.7 & 56 &    \\
 \hline
 \end{tabular}
 \end{table}
 
-
- 
-To be continued... Karina (Figurer og tabeller er laget og satt inn, men en del tekst mangler fortsatt)
 
 
 \clearpage 
