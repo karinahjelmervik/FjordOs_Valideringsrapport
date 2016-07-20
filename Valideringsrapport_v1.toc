@@ -1,31 +1,29 @@
 \select@language {english}
 \contentsline {section}{\numberline {1}Introduction - Andr\'{e}/Karina}{1}
-\contentsline {section}{\numberline {2}Area of interest - Karina}{2}
-\contentsline {section}{\numberline {3}Model - Karina}{3}
+\contentsline {section}{\numberline {2}Area of interest}{2}
+\contentsline {section}{\numberline {3}Model}{3}
 \contentsline {section}{\numberline {4}Observed data}{4}
-\contentsline {subsection}{\numberline {4.1}Water level - Karina}{4}
-\contentsline {subsection}{\numberline {4.2}Currents}{4}
-\contentsline {subsubsection}{\numberline {4.2.1}Currents in two cross sections - Andr\'{e}/Karina}{4}
-\contentsline {subsubsection}{\numberline {4.2.2}Currents at Slagentangen - Karina}{4}
-\contentsline {subsection}{\numberline {4.3}Hydrography}{4}
-\contentsline {subsubsection}{\numberline {4.3.1}CTD measurements - Andr\'{e}}{4}
+\contentsline {subsection}{\numberline {4.1}Water level}{5}
+\contentsline {subsection}{\numberline {4.2}Currents}{5}
+\contentsline {subsubsection}{\numberline {4.2.1}Currents in two cross sections - Andr\'{e}/Karina}{5}
+\contentsline {subsubsection}{\numberline {4.2.2}Currents at Slagentangen - Karina}{5}
+\contentsline {subsection}{\numberline {4.3}Hydrography}{5}
+\contentsline {subsubsection}{\numberline {4.3.1}CTD measurements - Andr\'{e}}{5}
 \contentsline {subsubsection}{\numberline {4.3.2}Water temperature near \r Asg\r ardstrand - Karina}{5}
-\contentsline {subsubsection}{\numberline {4.3.3}Water temperature in the inner Oslofjord - Karina}{5}
+\contentsline {subsubsection}{\numberline {4.3.3}Water temperature in the Inner Oslofjord}{5}
 \contentsline {subsubsection}{\numberline {4.3.4}Ferrybox - Andr\'{e}}{6}
-\contentsline {subsection}{\numberline {4.4}Drifting lanes - Karina}{6}
+\contentsline {subsection}{\numberline {4.4}Drifting lanes - Nils/Karina}{6}
 \contentsline {section}{\numberline {5}Evaluation}{8}
-\contentsline {subsection}{\numberline {5.1}Water level and tide - Karina}{8}
+\contentsline {subsection}{\numberline {5.1}Water level and tide}{8}
 \contentsline {subsection}{\numberline {5.2}Currents}{11}
 \contentsline {subsubsection}{\numberline {5.2.1}Currents in two cross sections - Andr\'{e}/Karina}{11}
 \contentsline {subsubsection}{\numberline {5.2.2}Current at Slagentangen - Karina}{11}
 \contentsline {subsection}{\numberline {5.3}Hydrography}{14}
 \contentsline {subsubsection}{\numberline {5.3.1}CTD-measurements - Andr\'{e}}{14}
 \contentsline {subsubsection}{\numberline {5.3.2}Water temperature near \r Asg\r ardstrand - Karina}{15}
-\contentsline {subsubsection}{\numberline {5.3.3}Water temperature in the inner Oslofjord - Karina}{18}
+\contentsline {subsubsection}{\numberline {5.3.3}Water temperature in the Inner Oslofjord}{18}
 \contentsline {subsubsection}{\numberline {5.3.4}Ferrybox - Andr\'{e}?}{18}
-\contentsline {subsubsection}{\numberline {5.3.5}Drifting lanes - Karina/Nils}{19}
-\contentsline {subsection}{\numberline {5.4}Godafoss}{21}
-\contentsline {subsection}{\numberline {5.5}Slagentangen}{21}
+\contentsline {subsection}{\numberline {5.4}Drifting lanes - Karina/Nils}{21}
 \contentsline {section}{\numberline {6}Summary and final remarks}{21}
 \contentsline {section}{Acknowledgements}{22}
 \contentsline {section}{Appendix}{23}

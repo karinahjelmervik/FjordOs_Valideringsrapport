@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.3.9)  20 JUL 2016 11:03
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.3.9)  20 JUL 2016 14:52
 entering extended mode
 **Valideringsrapport_v1.tex
 
@@ -933,11 +933,11 @@ Overfull \hbox (31.5472pt too wide) has occurred while \output is active
 
 ]
 (C:\Users\karh\Documents\GitHub\FjordOs_Valideringsrapport\Valideringsrapport_v
-1.toc [4
-
-])
+1.toc)
 \tf@toc=\write3
- [5] [1
+ [4
+
+] [5] [1
 
 ] <Figurer/kart.png, id=47, 451.6875pt x 542.025pt>
 File: Figurer/kart.png Graphic file (type png)
@@ -955,119 +955,127 @@ Package pdftex.def Info: Figurer/oppbygging.png used on input line 255.
 (pdftex.def)             Requested size: 384.1096pt x 242.44284pt.
  [3 <C:/Users/karh/Documents/GitHub/FjordOs_Valideringsrapport/Figurer/oppbyggi
 ng.png>]
-<Figurer/Slagen_kart.png, id=60, 561.297pt x 452.28975pt>
+<Figurer/kart_obs.png, id=60, 451.6875pt x 542.025pt>
+File: Figurer/kart_obs.png Graphic file (type png)
+
+<use Figurer/kart_obs.png>
+Package pdftex.def Info: Figurer/kart_obs.png used on input line 270.
+(pdftex.def)             Requested size: 298.75264pt x 343.46716pt.
+ [4 <C:/Users/karh/Documents/GitHub/FjordOs_Valideringsrapport/Figurer/kart_obs
+.png (PNG copy)>]
+<Figurer/Slagen_kart.png, id=66, 561.297pt x 452.28975pt>
 File: Figurer/Slagen_kart.png Graphic file (type png)
 
 <use Figurer/Slagen_kart.png>
-Package pdftex.def Info: Figurer/Slagen_kart.png used on input line 290.
+Package pdftex.def Info: Figurer/Slagen_kart.png used on input line 292.
 (pdftex.def)             Requested size: 341.43437pt x 306.17268pt.
- [4] [5 <C:/Users/karh/Documents/GitHub/FjordOs_Valideringsrapport/Figurer/Slag
-en_kart.png (PNG copy)>]
-<Figurer/badestrand_kart.png, id=70, 361.35pt x 385.44pt>
+ [5]
+<Figurer/badestrand_kart.png, id=72, 361.35pt x 385.44pt>
 File: Figurer/badestrand_kart.png Graphic file (type png)
 
 <use Figurer/badestrand_kart.png>
-Package pdftex.def Info: Figurer/badestrand_kart.png used on input line 320.
+Package pdftex.def Info: Figurer/badestrand_kart.png used on input line 322.
 (pdftex.def)             Requested size: 251.80533pt x 248.76726pt.
 
-<Figurer/kart_Storoyodden.png, id=72, 431.211pt x 334.24875pt>
+<Figurer/kart_Storoyodden.png, id=74, 431.211pt x 334.24875pt>
 File: Figurer/kart_Storoyodden.png Graphic file (type png)
 
 <use Figurer/kart_Storoyodden.png>
-Package pdftex.def Info: Figurer/kart_Storoyodden.png used on input line 320.
+Package pdftex.def Info: Figurer/kart_Storoyodden.png used on input line 322.
 (pdftex.def)             Requested size: 170.71393pt x 98.7645pt.
 
-<Figurer/kart_Hvalstrand.png, id=74, 552.26324pt x 324.61275pt>
+<Figurer/kart_Hvalstrand.png, id=76, 552.26324pt x 324.61275pt>
 File: Figurer/kart_Hvalstrand.png Graphic file (type png)
 
 <use Figurer/kart_Hvalstrand.png>
-Package pdftex.def Info: Figurer/kart_Hvalstrand.png used on input line 320.
+Package pdftex.def Info: Figurer/kart_Hvalstrand.png used on input line 322.
 (pdftex.def)             Requested size: 170.71393pt x 73.95638pt.
 
-<Figurer/kart_Sjostrand.png, id=76, 415.5525pt x 204.765pt>
+<Figurer/kart_Sjostrand.png, id=78, 415.5525pt x 204.765pt>
 File: Figurer/kart_Sjostrand.png Graphic file (type png)
 
 <use Figurer/kart_Sjostrand.png>
-Package pdftex.def Info: Figurer/kart_Sjostrand.png used on input line 320.
+Package pdftex.def Info: Figurer/kart_Sjostrand.png used on input line 322.
 (pdftex.def)             Requested size: 170.71393pt x 55.03055pt.
 
-Overfull \hbox (6.79999pt too wide) in paragraph at lines 320--320
+Overfull \hbox (6.79999pt too wide) in paragraph at lines 322--322
 [][] 
  []
 
 
-Overfull \hbox (6.79999pt too wide) in paragraph at lines 320--320
+Overfull \hbox (6.79999pt too wide) in paragraph at lines 322--322
 [] 
  []
 
 
-Overfull \hbox (6.79999pt too wide) in paragraph at lines 320--320
+Overfull \hbox (6.79999pt too wide) in paragraph at lines 322--322
 [] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 320--320
+Underfull \hbox (badness 10000) in paragraph at lines 322--322
 
  []
 
-<Figurer/badetemp.png, id=78, 716.6775pt x 390.258pt>
+<Figurer/badetemp.png, id=80, 716.6775pt x 390.258pt>
 File: Figurer/badetemp.png Graphic file (type png)
 
 <use Figurer/badetemp.png>
-Package pdftex.def Info: Figurer/badetemp.png used on input line 329.
-(pdftex.def)             Requested size: 426.79135pt x 252.45584pt.
- [6 <C:/Users/karh/Documents/GitHub/FjordOs_Valideringsrapport/Figurer/badestra
-nd_kart.png (PNG copy)> <C:/Users/karh/Documents/GitHub/FjordOs_Valideringsrapp
-ort/Figurer/kart_Storoyodden.png> <C:/Users/karh/Documents/GitHub/FjordOs_Valid
-eringsrapport/Figurer/kart_Hvalstrand.png> <C:/Users/karh/Documents/GitHub/Fjor
-dOs_Valideringsrapport/Figurer/kart_Sjostrand.png>]
-[7 <C:/Users/karh/Documents/GitHub/FjordOs_Valideringsrapport/Figurer/badetemp.
-png (PNG copy)>]
-<Figurer/Oscarsborg_Tide_selected_jan15.png, id=94, 1005.7575pt x 249.93375pt>
+Package pdftex.def Info: Figurer/badetemp.png used on input line 331.
+(pdftex.def)             Requested size: 426.79135pt x 276.28716pt.
+ [6 <C:/Users/karh/Documents/GitHub/FjordOs_Valideringsrapport/Figurer/Slagen_k
+art.png (PNG copy)>] [7 <C:/Users/karh/Documents/GitHub/FjordOs_Valideringsrapp
+ort/Figurer/badestrand_kart.png (PNG copy)> <C:/Users/karh/Documents/GitHub/Fjo
+rdOs_Valideringsrapport/Figurer/kart_Storoyodden.png> <C:/Users/karh/Documents/
+GitHub/FjordOs_Valideringsrapport/Figurer/kart_Hvalstrand.png> <C:/Users/karh/D
+ocuments/GitHub/FjordOs_Valideringsrapport/Figurer/kart_Sjostrand.png> <C:/User
+s/karh/Documents/GitHub/FjordOs_Valideringsrapport/Figurer/badetemp.png (PNG co
+py)>]
+<Figurer/Oscarsborg_Tide_selected_jan15.png, id=97, 1005.7575pt x 249.93375pt>
 File: Figurer/Oscarsborg_Tide_selected_jan15.png Graphic file (type png)
 
 <use Figurer/Oscarsborg_Tide_selected_jan15.png>
 Package pdftex.def Info: Figurer/Oscarsborg_Tide_selected_jan15.png used on inp
-ut line 374.
+ut line 377.
 (pdftex.def)             Requested size: 426.79135pt x 125.60344pt.
 
-<Figurer/Oscarsborg_WL_rest_jan15.png, id=96, 1005.7575pt x 249.93375pt>
+<Figurer/Oscarsborg_WL_rest_jan15.png, id=99, 1005.7575pt x 249.93375pt>
 File: Figurer/Oscarsborg_WL_rest_jan15.png Graphic file (type png)
 
 <use Figurer/Oscarsborg_WL_rest_jan15.png>
 Package pdftex.def Info: Figurer/Oscarsborg_WL_rest_jan15.png used on input lin
-e 377.
+e 380.
 (pdftex.def)             Requested size: 426.79135pt x 125.60344pt.
  [8
 
  <C:/Users/karh/Documents/GitHub/FjordOs_Valideringsrapport/Figurer/Oscarsborg_
 Tide_selected_jan15.png (PNG copy)> <C:/Users/karh/Documents/GitHub/FjordOs_Val
 ideringsrapport/Figurer/Oscarsborg_WL_rest_jan15.png (PNG copy)>]
-<Figurer/Oscarsborg_Tide_not_included.png, id=104, 1005.7575pt x 249.93375pt>
+<Figurer/Oscarsborg_Tide_not_included.png, id=107, 1005.7575pt x 249.93375pt>
 File: Figurer/Oscarsborg_Tide_not_included.png Graphic file (type png)
 
 <use Figurer/Oscarsborg_Tide_not_included.png>
 Package pdftex.def Info: Figurer/Oscarsborg_Tide_not_included.png used on input
- line 389.
+ line 392.
 (pdftex.def)             Requested size: 426.79135pt x 125.60344pt.
 
-<Figurer/Oscarsborg_Tide_Frequency_obs.png, id=106, 1005.7575pt x 249.93375pt>
+<Figurer/Oscarsborg_Tide_Frequency_obs.png, id=109, 1005.7575pt x 249.93375pt>
 File: Figurer/Oscarsborg_Tide_Frequency_obs.png Graphic file (type png)
 
 <use Figurer/Oscarsborg_Tide_Frequency_obs.png>
 Package pdftex.def Info: Figurer/Oscarsborg_Tide_Frequency_obs.png used on inpu
-t line 398.
+t line 401.
 (pdftex.def)             Requested size: 426.79135pt x 125.60344pt.
 
-<Figurer/Oscarsborg_Tide_Frequency_sim.png, id=108, 1005.7575pt x 249.93375pt>
+<Figurer/Oscarsborg_Tide_Frequency_sim.png, id=111, 1005.7575pt x 249.93375pt>
 File: Figurer/Oscarsborg_Tide_Frequency_sim.png Graphic file (type png)
 
 <use Figurer/Oscarsborg_Tide_Frequency_sim.png>
 Package pdftex.def Info: Figurer/Oscarsborg_Tide_Frequency_sim.png used on inpu
-t line 401.
+t line 404.
 (pdftex.def)             Requested size: 426.79135pt x 125.60344pt.
 
-Overfull \hbox (7.24594pt too wide) in paragraph at lines 414--447
+Overfull \hbox (7.24594pt too wide) in paragraph at lines 417--450
  [][] 
  []
 
@@ -1076,39 +1084,39 @@ g_Tide_not_included.png (PNG copy)> <C:/Users/karh/Documents/GitHub/FjordOs_Val
 ideringsrapport/Figurer/Oscarsborg_Tide_Frequency_obs.png (PNG copy)> <C:/Users
 /karh/Documents/GitHub/FjordOs_Valideringsrapport/Figurer/Oscarsborg_Tide_Frequ
 ency_sim.png (PNG copy)>] [10]
-<Figurer/Slagen_tid.png, id=119, 1001.54175pt x 303.534pt>
+<Figurer/Slagen_tid.png, id=122, 1001.54175pt x 303.534pt>
 File: Figurer/Slagen_tid.png Graphic file (type png)
 
 <use Figurer/Slagen_tid.png>
-Package pdftex.def Info: Figurer/Slagen_tid.png used on input line 470.
+Package pdftex.def Info: Figurer/Slagen_tid.png used on input line 473.
 (pdftex.def)             Requested size: 426.79135pt x 155.92575pt.
 
-<Figurer/Slagen_Rose_obs.png, id=121, 722.7pt x 331.2375pt>
+<Figurer/Slagen_Rose_obs.png, id=124, 722.7pt x 331.2375pt>
 File: Figurer/Slagen_Rose_obs.png Graphic file (type png)
 
 <use Figurer/Slagen_Rose_obs.png>
-Package pdftex.def Info: Figurer/Slagen_Rose_obs.png used on input line 480.
+Package pdftex.def Info: Figurer/Slagen_Rose_obs.png used on input line 483.
 (pdftex.def)             Requested size: 239.56662pt x 113.81102pt.
 
-<Figurer/Slagen_Rose_sim.png, id=123, 722.7pt x 331.2375pt>
+<Figurer/Slagen_Rose_sim.png, id=126, 722.7pt x 331.2375pt>
 File: Figurer/Slagen_Rose_sim.png Graphic file (type png)
 
 <use Figurer/Slagen_Rose_sim.png>
-Package pdftex.def Info: Figurer/Slagen_Rose_sim.png used on input line 480.
+Package pdftex.def Info: Figurer/Slagen_Rose_sim.png used on input line 483.
 (pdftex.def)             Requested size: 218.17674pt x 113.81102pt.
 
-<Figurer/Slagen_pdf.png, id=125, 1088.26575pt x 287.27325pt>
+<Figurer/Slagen_pdf.png, id=128, 1088.26575pt x 287.27325pt>
 File: Figurer/Slagen_pdf.png Graphic file (type png)
 
 <use Figurer/Slagen_pdf.png>
-Package pdftex.def Info: Figurer/Slagen_pdf.png used on input line 489.
+Package pdftex.def Info: Figurer/Slagen_pdf.png used on input line 492.
 (pdftex.def)             Requested size: 426.79135pt x 133.62451pt.
 
-<Figurer/Slagen_QQ.png, id=127, 542.025pt x 542.025pt>
+<Figurer/Slagen_QQ.png, id=130, 542.025pt x 542.025pt>
 File: Figurer/Slagen_QQ.png Graphic file (type png)
 
 <use Figurer/Slagen_QQ.png>
-Package pdftex.def Info: Figurer/Slagen_QQ.png used on input line 520.
+Package pdftex.def Info: Figurer/Slagen_QQ.png used on input line 523.
 (pdftex.def)             Requested size: 213.39568pt x 213.39865pt.
  [11
 
@@ -1121,35 +1129,35 @@ uments/GitHub/FjordOs_Valideringsrapport/Figurer/Slagen_pdf.png (PNG copy)>] [1
 png (PNG copy)>] [14
 
 ]
-<Figurer/Temperatur_1year.png, id=147, 702.2235pt x 303.534pt>
+<Figurer/Temperatur_1year.png, id=150, 702.2235pt x 303.534pt>
 File: Figurer/Temperatur_1year.png Graphic file (type png)
 
 <use Figurer/Temperatur_1year.png>
-Package pdftex.def Info: Figurer/Temperatur_1year.png used on input line 546.
+Package pdftex.def Info: Figurer/Temperatur_1year.png used on input line 549.
 (pdftex.def)             Requested size: 426.79135pt x 220.1607pt.
 
-<Figurer/Temperatur-middel_1year.png, id=149, 700.41675pt x 303.534pt>
+<Figurer/Temperatur-middel_1year.png, id=152, 700.41675pt x 303.534pt>
 File: Figurer/Temperatur-middel_1year.png Graphic file (type png)
 
 <use Figurer/Temperatur-middel_1year.png>
 Package pdftex.def Info: Figurer/Temperatur-middel_1year.png used on input line
- 552.
+ 555.
 (pdftex.def)             Requested size: 426.79135pt x 208.42064pt.
 
-<Figurer/Temperatur_PDF_arstid.png, id=151, 699.21225pt x 303.534pt>
+<Figurer/Temperatur_PDF_arstid.png, id=154, 699.21225pt x 303.534pt>
 File: Figurer/Temperatur_PDF_arstid.png Graphic file (type png)
 
 <use Figurer/Temperatur_PDF_arstid.png>
 Package pdftex.def Info: Figurer/Temperatur_PDF_arstid.png used on input line 5
-67.
+70.
 (pdftex.def)             Requested size: 426.79135pt x 201.69472pt.
 
-<Figurer/Temperatur_QQ_scatter.png, id=153, 524.55975pt x 475.7775pt>
+<Figurer/Temperatur_QQ_scatter.png, id=156, 524.55975pt x 475.7775pt>
 File: Figurer/Temperatur_QQ_scatter.png Graphic file (type png)
 
 <use Figurer/Temperatur_QQ_scatter.png>
 Package pdftex.def Info: Figurer/Temperatur_QQ_scatter.png used on input line 5
-75.
+78.
 (pdftex.def)             Requested size: 213.39568pt x 193.55273pt.
  [15
 
@@ -1159,49 +1167,49 @@ apport/Figurer/Temperatur-middel_1year.png (PNG copy)>] [17 <C:/Users/karh/Docu
 ments/GitHub/FjordOs_Valideringsrapport/Figurer/Temperatur_PDF_arstid.png (PNG 
 copy)> <C:/Users/karh/Documents/GitHub/FjordOs_Valideringsrapport/Figurer/Tempe
 ratur_QQ_scatter.png (PNG copy)>]
-<Figurer/badetemp_2014.png, id=168, 770.88pt x 484.81125pt>
+<Figurer/badetemp_2014.png, id=171, 770.88pt x 484.81125pt>
 File: Figurer/badetemp_2014.png Graphic file (type png)
 
 <use Figurer/badetemp_2014.png>
-Package pdftex.def Info: Figurer/badetemp_2014.png used on input line 600.
+Package pdftex.def Info: Figurer/badetemp_2014.png used on input line 603.
 (pdftex.def)             Requested size: 341.43437pt x 214.73055pt.
 
-<Figurer/badetemp_2015.png, id=170, 770.88pt x 484.81125pt>
+<Figurer/badetemp_2015.png, id=173, 770.88pt x 484.81125pt>
 File: Figurer/badetemp_2015.png Graphic file (type png)
 
 <use Figurer/badetemp_2015.png>
-Package pdftex.def Info: Figurer/badetemp_2015.png used on input line 609.
+Package pdftex.def Info: Figurer/badetemp_2015.png used on input line 612.
 (pdftex.def)             Requested size: 341.43437pt x 214.73055pt.
 
-<Figurer/FjordOs_with_FA_track.jpg, id=172, 2735.21875pt x 5259.65pt>
+<Figurer/FjordOs_with_FA_track.jpg, id=175, 2735.21875pt x 5259.65pt>
 File: Figurer/FjordOs_with_FA_track.jpg Graphic file (type jpg)
 
 <use Figurer/FjordOs_with_FA_track.jpg>
 Package pdftex.def Info: Figurer/FjordOs_with_FA_track.jpg used on input line 6
-21.
+24.
 (pdftex.def)             Requested size: 144.87605pt x 284.52756pt.
 
-<Figurer/FjordOs_vs_Ferrybox_TEMP.jpg, id=174, 4727.6625pt x 5259.65pt>
+<Figurer/FjordOs_vs_Ferrybox_TEMP.jpg, id=177, 4727.6625pt x 5259.65pt>
 File: Figurer/FjordOs_vs_Ferrybox_TEMP.jpg Graphic file (type jpg)
 
 <use Figurer/FjordOs_vs_Ferrybox_TEMP.jpg>
 Package pdftex.def Info: Figurer/FjordOs_vs_Ferrybox_TEMP.jpg used on input lin
-e 630.
+e 633.
 (pdftex.def)             Requested size: 213.39568pt x 240.28554pt.
 
-<Figurer/FjordOs_vs_Ferrybox_SALT.jpg, id=176, 4727.6625pt x 5259.65pt>
+<Figurer/FjordOs_vs_Ferrybox_SALT.jpg, id=179, 4727.6625pt x 5259.65pt>
 File: Figurer/FjordOs_vs_Ferrybox_SALT.jpg Graphic file (type jpg)
 
 <use Figurer/FjordOs_vs_Ferrybox_SALT.jpg>
 Package pdftex.def Info: Figurer/FjordOs_vs_Ferrybox_SALT.jpg used on input lin
-e 630.
+e 633.
 (pdftex.def)             Requested size: 213.39568pt x 240.28554pt.
  [18
 
  <C:/Users/karh/Documents/GitHub/FjordOs_Valideringsrapport/Figurer/badetemp_20
 14.png (PNG copy)>] [19 <C:/Users/karh/Documents/GitHub/FjordOs_Valideringsrapp
-ort/Figurer/badetemp_2015.png (PNG copy)>] [20 <C:/Users/karh/Documents/GitHub/
-FjordOs_Valideringsrapport/Figurer/FjordOs_with_FA_track.jpg> <C:/Users/karh/Do
+ort/Figurer/badetemp_2015.png (PNG copy)> <C:/Users/karh/Documents/GitHub/Fjord
+Os_Valideringsrapport/Figurer/FjordOs_with_FA_track.jpg>] [20 <C:/Users/karh/Do
 cuments/GitHub/FjordOs_Valideringsrapport/Figurer/FjordOs_vs_Ferrybox_TEMP.jpg>
  <C:/Users/karh/Documents/GitHub/FjordOs_Valideringsrapport/Figurer/FjordOs_vs_
 Ferrybox_SALT.jpg>] [21
@@ -1237,10 +1245,10 @@ Phys.\T1/ptm/m/n/12 , \T1/ptm/m/it/12 227\T1/ptm/m/n/12 (7), 3595--3624, doi:
 (C:\Users\karh\Documents\GitHub\FjordOs_Valideringsrapport\Valideringsrapport_v
 1.aux) ) 
 Here is how much of TeX's memory you used:
- 11770 strings out of 493921
- 193373 string characters out of 3144880
+ 11775 strings out of 493921
+ 193484 string characters out of 3144880
  265772 words of memory out of 3000000
- 14799 multiletter control sequences out of 15000+200000
+ 14803 multiletter control sequences out of 15000+200000
  81922 words of font info for 116 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
  36i,20n,43p,1024b,461s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1253,9 +1261,9 @@ m Files (x86)/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvr8a.pfb><C:/Program Files
 (x86)/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><C:/Program Files (x86)/MiKTe
 X 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts
 /type1/urw/times/utmri8a.pfb>
-Output written on Valideringsrapport_v1.pdf (30 pages, 6979743 bytes).
+Output written on Valideringsrapport_v1.pdf (30 pages, 7159793 bytes).
 PDF statistics:
- 235 PDF objects out of 1000 (max. 8388607)
+ 238 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 330 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 341 words of extra memory for PDF output out of 10000 (max. 10000000)
 
