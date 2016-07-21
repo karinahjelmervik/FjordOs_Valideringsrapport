@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.3.9)  20 JUL 2016 14:52
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.3.9)  21 JUL 2016 12:27
 entering extended mode
 **Valideringsrapport_v1.tex
 
@@ -1129,95 +1129,67 @@ uments/GitHub/FjordOs_Valideringsrapport/Figurer/Slagen_pdf.png (PNG copy)>] [1
 png (PNG copy)>] [14
 
 ]
-<Figurer/Temperatur_1year.png, id=150, 702.2235pt x 303.534pt>
-File: Figurer/Temperatur_1year.png Graphic file (type png)
+<Figurer/Temperatur_2015.png, id=150, 602.25pt x 268.00125pt>
+File: Figurer/Temperatur_2015.png Graphic file (type png)
 
-<use Figurer/Temperatur_1year.png>
-Package pdftex.def Info: Figurer/Temperatur_1year.png used on input line 549.
-(pdftex.def)             Requested size: 426.79135pt x 220.1607pt.
-
-<Figurer/Temperatur-middel_1year.png, id=152, 700.41675pt x 303.534pt>
-File: Figurer/Temperatur-middel_1year.png Graphic file (type png)
-
-<use Figurer/Temperatur-middel_1year.png>
-Package pdftex.def Info: Figurer/Temperatur-middel_1year.png used on input line
- 555.
-(pdftex.def)             Requested size: 426.79135pt x 208.42064pt.
-
-<Figurer/Temperatur_PDF_arstid.png, id=154, 699.21225pt x 303.534pt>
-File: Figurer/Temperatur_PDF_arstid.png Graphic file (type png)
-
-<use Figurer/Temperatur_PDF_arstid.png>
-Package pdftex.def Info: Figurer/Temperatur_PDF_arstid.png used on input line 5
-70.
-(pdftex.def)             Requested size: 426.79135pt x 201.69472pt.
-
-<Figurer/Temperatur_QQ_scatter.png, id=156, 524.55975pt x 475.7775pt>
-File: Figurer/Temperatur_QQ_scatter.png Graphic file (type png)
-
-<use Figurer/Temperatur_QQ_scatter.png>
-Package pdftex.def Info: Figurer/Temperatur_QQ_scatter.png used on input line 5
-78.
-(pdftex.def)             Requested size: 213.39568pt x 193.55273pt.
+<use Figurer/Temperatur_2015.png>
+Package pdftex.def Info: Figurer/Temperatur_2015.png used on input line 551.
+(pdftex.def)             Requested size: 426.79135pt x 189.93051pt.
  [15
 
-] [16 <C:/Users/karh/Documents/GitHub/FjordOs_Valideringsrapport/Figurer/Temper
-atur_1year.png (PNG copy)> <C:/Users/karh/Documents/GitHub/FjordOs_Valideringsr
-apport/Figurer/Temperatur-middel_1year.png (PNG copy)>] [17 <C:/Users/karh/Docu
-ments/GitHub/FjordOs_Valideringsrapport/Figurer/Temperatur_PDF_arstid.png (PNG 
-copy)> <C:/Users/karh/Documents/GitHub/FjordOs_Valideringsrapport/Figurer/Tempe
-ratur_QQ_scatter.png (PNG copy)>]
-<Figurer/badetemp_2014.png, id=171, 770.88pt x 484.81125pt>
+ <C:/Users/karh/Documents/GitHub/FjordOs_Valideringsrapport/Figurer/Temperatur_
+2015.png (PNG copy)>]
+<Figurer/badetemp_2014.png, id=156, 770.88pt x 484.81125pt>
 File: Figurer/badetemp_2014.png Graphic file (type png)
 
 <use Figurer/badetemp_2014.png>
-Package pdftex.def Info: Figurer/badetemp_2014.png used on input line 603.
+Package pdftex.def Info: Figurer/badetemp_2014.png used on input line 608.
 (pdftex.def)             Requested size: 341.43437pt x 214.73055pt.
 
-<Figurer/badetemp_2015.png, id=173, 770.88pt x 484.81125pt>
+<Figurer/badetemp_2015.png, id=158, 770.88pt x 484.81125pt>
 File: Figurer/badetemp_2015.png Graphic file (type png)
 
 <use Figurer/badetemp_2015.png>
-Package pdftex.def Info: Figurer/badetemp_2015.png used on input line 612.
+Package pdftex.def Info: Figurer/badetemp_2015.png used on input line 617.
 (pdftex.def)             Requested size: 341.43437pt x 214.73055pt.
 
-<Figurer/FjordOs_with_FA_track.jpg, id=175, 2735.21875pt x 5259.65pt>
+<Figurer/FjordOs_with_FA_track.jpg, id=160, 2735.21875pt x 5259.65pt>
 File: Figurer/FjordOs_with_FA_track.jpg Graphic file (type jpg)
 
 <use Figurer/FjordOs_with_FA_track.jpg>
 Package pdftex.def Info: Figurer/FjordOs_with_FA_track.jpg used on input line 6
-24.
+29.
 (pdftex.def)             Requested size: 144.87605pt x 284.52756pt.
 
-<Figurer/FjordOs_vs_Ferrybox_TEMP.jpg, id=177, 4727.6625pt x 5259.65pt>
+<Figurer/FjordOs_vs_Ferrybox_TEMP.jpg, id=162, 4727.6625pt x 5259.65pt>
 File: Figurer/FjordOs_vs_Ferrybox_TEMP.jpg Graphic file (type jpg)
 
 <use Figurer/FjordOs_vs_Ferrybox_TEMP.jpg>
 Package pdftex.def Info: Figurer/FjordOs_vs_Ferrybox_TEMP.jpg used on input lin
-e 633.
+e 638.
 (pdftex.def)             Requested size: 213.39568pt x 240.28554pt.
 
-<Figurer/FjordOs_vs_Ferrybox_SALT.jpg, id=179, 4727.6625pt x 5259.65pt>
+<Figurer/FjordOs_vs_Ferrybox_SALT.jpg, id=164, 4727.6625pt x 5259.65pt>
 File: Figurer/FjordOs_vs_Ferrybox_SALT.jpg Graphic file (type jpg)
 
 <use Figurer/FjordOs_vs_Ferrybox_SALT.jpg>
 Package pdftex.def Info: Figurer/FjordOs_vs_Ferrybox_SALT.jpg used on input lin
-e 633.
+e 638.
 (pdftex.def)             Requested size: 213.39568pt x 240.28554pt.
- [18
+ [16
 
  <C:/Users/karh/Documents/GitHub/FjordOs_Valideringsrapport/Figurer/badetemp_20
-14.png (PNG copy)>] [19 <C:/Users/karh/Documents/GitHub/FjordOs_Valideringsrapp
+14.png (PNG copy)>] [17 <C:/Users/karh/Documents/GitHub/FjordOs_Valideringsrapp
 ort/Figurer/badetemp_2015.png (PNG copy)> <C:/Users/karh/Documents/GitHub/Fjord
-Os_Valideringsrapport/Figurer/FjordOs_with_FA_track.jpg>] [20 <C:/Users/karh/Do
+Os_Valideringsrapport/Figurer/FjordOs_with_FA_track.jpg>] [18 <C:/Users/karh/Do
 cuments/GitHub/FjordOs_Valideringsrapport/Figurer/FjordOs_vs_Ferrybox_TEMP.jpg>
  <C:/Users/karh/Documents/GitHub/FjordOs_Valideringsrapport/Figurer/FjordOs_vs_
-Ferrybox_SALT.jpg>] [21
+Ferrybox_SALT.jpg>] [19
 
-] [22
+] [20
 
 ]
-[23
+[21
 
 ]
 (C:\Users\karh\Documents\GitHub\FjordOs_Valideringsrapport\Valideringsrapport_v
@@ -1239,16 +1211,16 @@ Underfull \hbox (badness 1077) in paragraph at lines 31--39
 Phys.\T1/ptm/m/n/12 , \T1/ptm/m/it/12 227\T1/ptm/m/n/12 (7), 3595--3624, doi:
  []
 
-[24
+[22
 
-]) [25]
+]) [23]
 (C:\Users\karh\Documents\GitHub\FjordOs_Valideringsrapport\Valideringsrapport_v
 1.aux) ) 
 Here is how much of TeX's memory you used:
- 11775 strings out of 493921
- 193484 string characters out of 3144880
- 265772 words of memory out of 3000000
- 14803 multiletter control sequences out of 15000+200000
+ 11757 strings out of 493921
+ 192884 string characters out of 3144880
+ 265742 words of memory out of 3000000
+ 14788 multiletter control sequences out of 15000+200000
  81922 words of font info for 116 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
  36i,20n,43p,1024b,461s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1261,9 +1233,9 @@ m Files (x86)/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvr8a.pfb><C:/Program Files
 (x86)/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><C:/Program Files (x86)/MiKTe
 X 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts
 /type1/urw/times/utmri8a.pfb>
-Output written on Valideringsrapport_v1.pdf (30 pages, 7159793 bytes).
+Output written on Valideringsrapport_v1.pdf (28 pages, 6981475 bytes).
 PDF statistics:
- 238 PDF objects out of 1000 (max. 8388607)
+ 223 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 341 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 308 words of extra memory for PDF output out of 10000 (max. 10000000)
 
