@@ -542,7 +542,13 @@ To be continued... Andr\'{e}
 
 \clearpage 
 
-\subsubsection{Water temperature near \AA sg\aa rdstrand - Karina}
+\subsubsection{Water temperature near \AA sg\aa rdstrand}
+
+The temperature observations from Scanmar AS are compared with simulated data extracted from 1.15 meters depth at approximately the same location as the observations.
+
+Time series reveal that the simulated and observed temperature are in fairly good agreement (Fig.~\ref{fig:temp_2015}). During winter and spring, but the model underestimate the temperature in the summer and fall with a few degrees  and \ref{fig:temp-QQ_scatter}). The model captures the timing of the daily variations in temperature, but seems to overestimate heating and cooling causing too large daily variations (Fig.~\ref{fig:temp_jun2015}). 
+
+2014 had a warmer summer than 2015. This is evident in both the observations and the simulations (Tab.~\ref{tab:temp}). The summer months of 2014 also had the largest variance in both the observed and the simulated temperature during 2014 and 2015. Generally, the simulated monthly temperature had a larger variance than the observed montly temperature. The mean of the observed and simulated temperatures are 10.0$^o$C and 8.6$^o$C respectively, while the variances are 27.2$^o$C and 21.1$^o$C respectively.  
 
 \begin{figure}[ht]
 %\centerline{
@@ -552,39 +558,62 @@ To be continued... Andr\'{e}
 \caption{\small
 Time series of observed and simulated temperature at \AA sg\aa dstrand. The difference is smoothed over 10 days.}
 \label{fig:temp_2015}
-%$\newline$
-%\centerline{
-%\includegraphics*[trim=2cm 0cm 2cm 0.6cm,clip=true,width=\textwidth]{Figurer/Temperatur-middel_1year}}
-%\caption{\small
-%Mean-subtracted time series of observed and simulated temperature using a gliding mean of one month.}
-%\label{fig:temp-mean_1year}
 \end{figure}
 
-The temperature observations from Scanmar AS are compared with simulated data extracted from 1.15 meters depth at approximately the same location as the observations.
+\begin{figure}[htb]
+\centerline{
+\includegraphics*[trim=1cm 0cm 1cm 0cm,clip=true,width=0.7\textwidth]{Figurer/Temperatur_QQ_scatter}}
+\caption{\small
+Combined QQ- and scatter plot of observed and simulated temperature at \AA sg\aa dstrand.}
+\label{fig:temp-QQ_scatter}
+\end{figure}
 
-Time series reveal that the simulated and observed temperature is in fairly good agreement during winter and spring, but the model underestimate the temperature in the summer and fall with a few degrees (Fig.~\ref{fig:temp_2015}). The model seems to overestimate the daily heating and cooling causing too large daily variations. 
+\begin{figure}[htb]
+\centerline{
+\includegraphics*[trim=0cm 0cm 0cm 0cm,clip=true,width=\textwidth]{Figurer/Temperatur_jun2015}}
+\caption{\small
+Time series of observed and simulated temperature at \AA sg\aa dstrand in June 2015.}
+\label{fig:temp_jun2015}
+\end{figure}
 
+\newpage 
 
-%Time series show that the simulated temperatures are between 2 and 8 degrees lower than the observed temperatures \ref{fig:temp_2015}. The model captures the variations in temperature fairly good (Fig.~\ref{fig:temp-mean_1year}). Notice for example the variations in January with around three days period, and the local minimum around 1st of August. (Karina: Her b\o r det nevnes hva som for\aa rsaker disse variasjonene.)
-
-%The probability density functions reveals that not only are the simulated temperatures lower than the observed temperatures, but the variation is larger in the observed temperatures (Fig.~\ref{fig:temp-PDF}). The mean of the observed and simulated temperatures are 10.1$^o$C and 5.5$^o$C respectively, while the variances are 27.2$^o$C and 16.4$^o$C respectively.
-
-
-%\begin{figure}[ht]
-%\centerline{
-%\includegraphics*[trim=1cm 0cm 1cm 0cm,clip=true,width=\textwidth]{Figurer/Temperatur_PDF_arstid}}
-%\caption{\small
-%Probability density functions of observed and simulated temperature at \AA sg\aa dstrand from 1st of December 2014 to 1st of December 2015.}
-%\label{fig:temp-PDF}
-%\end{figure}
-
-%\begin{figure}[ht]
-%\centerline{
-%\includegraphics*[trim=0cm 0cm 0cm 0cm,clip=true,width=0.5\textwidth]{Figurer/Temperatur_QQ_scatter}}
-%\caption{\small
-%Combined QQ- and scatter plot of observed and simulated temperature at \AA sg\aa dstrand from 1st of December 2014 to 1st of December 2015.}
-%\label{fig:temp-QQ_scatter}
-%\end{figure}
+\begin{table}
+\caption{Monthly statistics for observed and simulated temperature at \AA sg\aa rdstrand.}
+\label{tab:temp}
+\centering
+\begin{tabular}{|ll|rrr|rrr|}
+\hline 
+&& \multicolumn{3}{|c|}{\bf 2014} & \multicolumn{3}{|c|}{\bf 2015} \\
+&& {\bf quantity} & {\bf mean} & {\bf variance}  
+& {\bf quantity} & {\bf mean} & {\bf variance} \\ \hline 
+\small Jan & obs & 558 & 2.5 & 6.2 & 558 & 4.9 & 2.5 \\
+\small     & sim & 745 & - & - & 745 & 4 & 0.7 \\
+\small Feb & obs & 504 & 1.8 & 0.5 & 504 & 4 & 1.8 \\
+\small     & sim & 673 & - & - & 673 & 3.6 & 0.6 \\
+\small Mar & obs & 496 & 3.7 & 0.6 & 496 & 4.2 & 0.4 \\
+\small     & sim & 745 & - & - & 745 & 4.7 & 0.3 \\
+\small Apr & obs & 515 & 7.5 & 4.1 & 515 & 7 & 2.1 \\
+\small     & sim & 721 & 7.6 & 7.1 & 721 & 7.4 & 2.8 \\
+\small May & obs & 544 & 12.1 & 9.3 & 544 & 10.3 & 1.3 \\
+\small     & sim & 745 & 11.3 & 10.4 & 745 & 9.9 & 3.5 \\
+\small Jun & obs & 531 & 16.2 & 4.2 & 531 & 14 & 3.9 \\
+\small     & sim & 721 & 15.5 & 8.3 & 721 & 12.8 & 6 \\
+\small Jul & obs & 558 & 20.2 & 10.5 & 558 & 17.1 & 2 \\
+\small     & sim & 745 & 17 & 24.3 & 745 & 14.6 & 5.1 \\
+\small Aug & obs & 512 & 20 & 3.2 & 512 & 18.2 & 1.3 \\
+\small     & sim & 745 & 16.4 & 5.6 & 745 & 15.5 & 8.7 \\
+\small Sep & obs & 536 & 16.3 & 1.9 & 536 & 15.1 & 1.2 \\
+\small     & sim & 721 & 12.9 & 8.9 & 721 & 12.7 & 2.5 \\
+\small Oct & obs & 557 & 12.3 & 1.7 & 557 & 10.6 & 0.8 \\
+\small     & sim & 745 & 9 & 1.5 & 745 & 8.6 & 2.7 \\
+\small Nov & obs & 540 & 8.3 & 2.9 & 540 & 8.8 & 2.4 \\
+\small     & sim & 721 & 6.3 & 2 & 721 & 6.1 & 1.3 \\
+\small Dec & obs & 490 & 4.4 & 3.6 & 490 & 7.8 & 0.4 \\
+\small     & sim & 733 & 3.4 & 1.5 & 733 & 4.8 & 0.8 \\
+\hline
+\end{tabular}
+\end{table}
 
 \clearpage
 
@@ -600,11 +629,9 @@ The temperature differences during the day are larger in the model than in the o
 
 During the summer 2014 the model predicts higher temperatures at Sj\o strand than was observed. The observations in Hvalstrand have some of the same trends as the modelled temperature with temperatures up to 25 degrees. The air temperatures in 2014 was higher than in 2015 and resulted in higher water temperatures, especially in shallow areas. 
 
-
-
 \begin{figure}[ht]
 \centerline{
-\includegraphics*[trim=0 0 0 0,clip=true,width=0.8\textwidth]{Figurer/badetemp_2014}
+\includegraphics*[trim=0 0 0 0,clip=true,width=\textwidth]{Figurer/badetemp_2014}
 }
 \caption{\small
 The observed and modelled temperature at three beaches in the Inner Oslofjord during the summer 2014}
