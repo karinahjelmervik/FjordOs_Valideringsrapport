@@ -295,14 +295,48 @@ Map of Slagen Refinery. The red dot marks the position corresponding to the extr
 \label{fig:Slagen-kart}
 \end{figure}
 
+\clearpage
 \subsection{Hydrography}
 
 \subsubsection{CTD measurements - Andr\'{e}}
 
-\subsubsection{Water temperature near \AA sg\aa rdstrand - Karina}
+\subsubsection{Water temperature near \AA sg\aa rdstrand}
 
-Hourly temperature measurements at one meter depth for the last 10 years have been measured by Scanmar AS located three kilometres south of \AA sg\aa rdstrand. The device has an accuracy of $\pm 0.15^o$C in the range from -5 to +30$^o$C. 
+Hourly temperature measurements at one meter depth over the last 10 years have been measured by Scanmar AS located three kilometres south of \AA sg\aa rdstrand. The device has an accuracy of $\pm 0.15^o$C in the range from -5 to +30$^o$C. Note that 2014 had a warmer summer followed by a warm winter resulting in higher maximum and lower minimum than 2015 (Fig.~\ref{fig:Scan_temp}). 
+% Bør kanskje skrive noe om fluktuasjonene her...
 
+\begin{figure}[htb]
+\centerline{
+\includegraphics*[trim=2cm 0cm 2cm 0cm,clip=true,width=\textwidth]{Figurer/temp_Scanmar}}
+\caption{\small
+Observed temperature measured by Scanmar AS}
+\label{fig:Scan_temp}
+\end{figure}
+
+%\begin{table}[ht] 
+%\caption{Observed water temperature near \AA sg\aa rdstrand} 
+%\label{tab:Scan_temp} 
+%\centering 
+%\begin{tabular}{|cccccc|} 
+%\hline  
+%{\bf Year} & {\bf Minimum} & {\bf 5 percentile} & {\bf Mean} & {\bf 95 percentile} & {\bf Maximum} \\
+%\hline
+%\small 2005 & 1.0 & 4.0 & 13.2 & 20.7 & 24.9 \\
+%\small 2006 & -6.0 & -0.5 & 10.1 & 20.6 & 23.9 \\
+%\small 2007 & -1.2 & 1.1 & 9.7 & 18.3 & 21.4 \\
+%\small 2008 & 0.1 & 2.6 & 10.4 & 19.3 & 24.6 \\
+%\small 2009 & -2.3 & -0.3 & 9.4 & 19.8 & 24.9 \\
+%\small 2010 & -1.7 & -0.2 & 8.7 & 18.7 & 20.5 \\
+%\small 2011 & -1.4 & -1.0 & 9.6 & 19.0 & 22.6 \\
+%\small 2012 & -1.0 & 0.4 & 9.2 & 18.5 & 21.4 \\
+%\small 2013 & -1.3 & -0.4 & 9.3 & 19.4 & 22.2 \\
+%\small 2014 & -1.1 & 1.2 & 10.6 & 21.7 & 26.4 \\
+%\small 2015 & 0.7 & 3.5 & 10.5 & 18.7 & 20.8 \\
+%\hline
+%\end{tabular}
+%\end{table}
+
+\newpage
 \subsubsection{Water temperature in the Inner Oslofjord}
 
 Temperature measurements at three beaches in the Inner Oslofjord (Fig.~\ref{fig:kart_strand}) are performed in a cooperation between Asker and B\ae rum kommune, and Finnerud Elektronikk. The digital thermometers (Maxim Integrated DS18B20) have an accuracy of $\pm 0.5^o$C and are placed 40 cm beneath the water surface in positions where the water depths are several meters. Temperatures are measured every three hours from 09:00 to 18:00 during the summer months. 
@@ -358,18 +392,19 @@ Observed temperature at three beaches in the Inner Oslofjord}
 %\end{center}
 %\end{table}
 
+\newpage
 \subsubsection{Ferrybox - Andr\'{e}}
 
 \subsection{Drifting lanes - Nils/Karina}
 Godafoss ...
-De to drifterne i f\o erste tokt ...
+De to drifterne i f\o rste tokt ... og kanskje de siste i Svelvik.
 
 
 \clearpage
 \section{Evaluation}
 \subsection{Water level and tide}
 
-Time series from the three permanent stations measuring water level have been analysed and compared with simulated time series of water level extracted from locations near the three permanent stations. Time series of water level are analysed using t\_tide \citep{pavlo:etal:2002} in order to extract the tidal components. The same period in time are applied for both the simulations and the observations. 
+Time series from the three permanent stations measuring water level have been analysed and compared with simulated time series of water level extracted from locations near the three permanent stations. Both simulated and observed time series of water level are analysed using t\_tide \citep{pavlo:etal:2002} in order to extract the tidal components. The same period in time are applied for both the simulations and the observations (April 2014 to December 2015). 
 
 \begin{figure}[hb] 
 \centerline{ 
@@ -379,12 +414,11 @@ Time series from the three permanent stations measuring water level have been an
 \includegraphics*[trim=3cm 0cm 2.5cm 0cm,clip=true,width=\textwidth]{Figurer/Oscarsborg_WL_rest_jan15} 
 } 
 \caption{\small 
-Simulated (black) and observed (red) time series of tides (upper) and residual (lower) at Oscarsborg. The tidal elevation includes only the eleven components included in the tidal forcing. The residual includes the total water level minus the tidal elevation.} 
+Simulated (black) and observed (red) time series of tides (upper) and residual (lower) at Oscarsborg. Here the tidal elevation includes only the eleven components included in the tidal forcing. The residual includes the total water level minus the tidal elevation.} 
 \label{fig:Waterlevel_jan15} 
 \end{figure} 
 
 Eleven tidal components are included in the model at the southern open boundary using their corresponding amplitudes and phases for both depth integrated currents and water level \citep{roed:etal:2016}. The time series of tidal components included in the tidal forcing are in fairly good agreement (Fig.~\ref{fig:Waterlevel_jan15},upper, and Tab.\-\ref{tab:Tide}). In addition to the tidal components included in the tidal forcing, more tidal components are present in the time series (Fig.~\ref{fig:Waterlevel_tide}). Tidal components with periods of approximately one year (SA) and half a year (SSA) respectively are present in both the observations and the simulations (Tab.\-\ref{tab:Tide}). In addition, the observations have more components with shorter periods which are not included in the tidal forcing and thereby not present in the simulations. This is consistent with the frequency series of the Fourier transformed water level (Fig.~\ref{fig:Waterlevel_freq}).
-
 
 \begin{figure}[tbh] 
 \centerline{ 
@@ -407,7 +441,18 @@ Frequency series of Fourier transformed observed (upper) and simulated (lower) w
 \label{fig:Waterlevel_freq} 
 \end{figure} 
 
+\newpage 
+The amplitude of M$_2$ increases from south to north in the Inner Oslofjord both in the simulations and the observations (Fig.~\ref{fig:M2field} and Tab.~\ref{tab:Tide}). The lowest M$_2$ amplitude in the area of interest, is in the Drammensfjord north of the threshold in Svelvik. The M$_2$ phase has a sudden increase at the thresholds of Svelvik and Dr\o bak (Fig.~\ref{fig:M2field}). The same yields for the majority of the other relevant tidal components.
 
+\begin{figure}[hb] 
+\centerline{ 
+\includegraphics*[trim=1cm 0cm 0cm 0cm,clip=true,width=0.49\textwidth]{Figurer/M2amp_felt}  
+\includegraphics*[trim=0.8cm 0cm 0cm 0cm,clip=true,width=0.49\textwidth]{Figurer/M2fase_felt} 
+} 
+\caption{\small 
+Simulated field of M$_2$ amplitude (left) and phase (right). The corresponding observed values for M$_2$ amplitude and phase are marked with circles at Viker, Oscarsborg, and Oslo.} 
+\label{fig:M2field} 
+\end{figure} 
 
 \begin{table}[ht] 
 %\vspace{-1.5cm} 
@@ -419,32 +464,32 @@ Frequency series of Fourier transformed observed (upper) and simulated (lower) w
 &&& \multicolumn{2}{|c|}{\bf Viker} & \multicolumn{2}{|c|}{\bf Oscarsborg} & \multicolumn{2}{|c|}{\bf Oslo} & {\bf Included} \\  
 {\bf Comp.} & {\bf Period} &  {\bf sim/} & {\bf amp.} & {\bf phase.} & {\bf amp.} & {\bf phase.} & {\bf amp.} & {\bf phase.} & {\bf in tidal} \\ 
 & {\bf [h]} & {\bf obs} & {\bf [cm]} & {\bf [deg]} & {\bf [cm]} & {\bf [deg]} & {\bf [cm]} & {\bf [deg]} & {\bf forcing} \\ \hline 
-\small SA   & 8764      & sim & 15.6 & 286 & 15.5 & 284 & 15.4 & 286 & no   \\
-\small      &           & obs & 11.0 & 322 & 10.0 & 319 & 11.4 & 324 &    \\
-\small SSA  & 4382      & sim & 9.2 & 200 & 8.8 & 197 & 9.4 & 200 & no   \\
-\small      &           & obs & 8.0 & 189 & 7.5 & 188 & 8.2 & 190 &    \\
-\small K2   & 11.9672   & sim & 2.0 & 13 & 1.6 & 10 & 2.1 & 15 & yes  \\
-\small      &           & obs & 0.8 & 66 & 0.7 & 45 & 0.9 & 66 &    \\
-\small S2   & 12.000    & sim & 3.9 & 69 & 3.3 & 64 & 4.2 & 70 & yes  \\
-\small      &           & obs & 3.3 & 65 & 2.9 & 46 & 3.5 & 69 &    \\
-\small M2   & 12.4206   & sim & 13.2 & 112 & 11.5 & 105 & 13.9 & 114 & yes  \\
-\small      &           & obs & 13.8 & 121 & 11.9 & 105 & 14.4 & 125 &    \\
-\small N2   & 12.6584   & sim & 3.5 & 75 & 3.0 & 69 & 3.7 & 76 & yes  \\
-\small      &           & obs & 3.4 & 76 & 3.0 & 60 & 3.6 & 80 &    \\
-\small K1   & 23.9345   & sim & 0.1 & 175 & 0.2 & 187 & 0.2 & 157 & yes  \\
-\small      &           & obs & 0.7 & 130 & 0.4 & 127 & 0.8 & 130 &    \\
-\small P1   & 24.0659   & sim & 0.6 & 334 & 0.6 & 322 & 0.7 & 342 & yes  \\
-\small      &           & obs & 0.3 & 102 & 0.2 & 129 & 0.4 & 97 &    \\
-\small O1   & 25.8193   & sim & 3.8 & 339 & 3.5 & 337 & 3.8 & 339 & yes  \\
-\small      &           & obs & 2.3 & 281 & 2.2 & 277 & 2.4 & 282 &    \\
-\small Q1   & 26.8684   & sim & 0.0 & 216 & 0.0 & 231 & 0.1 & 215 & no   \\
-\small      &           & obs & 1.2 & 198 & 1.1 & 190 & 1.3 & 200 &    \\
-\small MN4  & 6.2692    & sim & 0.5 & 32 & 0.2 & 5 & 0.6 & 35 & yes  \\
-\small      &           & obs & 0.6 & 289 & 0.4 & 249 & 0.7 & 297 &    \\
-\small M4   & 6.2103    & sim & 1.9 & 18 & 1.0 & 355 & 2.5 & 23 & yes  \\
-\small      &           & obs & 1.8 & 324 & 1.2 & 281 & 2.3 & 332 &    \\
-\small MS4  & 6.1033    & sim & 1.2 & 107 & 0.6 & 80 & 1.6 & 111 & yes  \\
-\small      &           & obs & 0.5 & 44 & 0.3 & 360 & 0.7 & 56 &    \\
+\small SA   & 8764	 	& sim & 15.5 & 284 & 15.6 & 286 & 15.4 & 286 & no   \\
+\small      &        	& obs & 10.0 & 319 & 11 & 322 & 11.4 & 324 &    \\
+\small SSA  & 4382 		& sim & 8.8 & 197 & 9.2 & 200 & 9.4 & 200 & no   \\
+\small      &        	& obs & 7.5 & 188 & 8.0 & 189 & 8.2 & 190 &    \\
+\small K2   & 11.9672 	& sim & 1.6 & 10 & 2.0 & 13 & 2.1 & 15 & yes  \\
+\small      &        	& obs & 0.7 & 45 & 0.8 & 66 & 0.9 & 66 &    \\
+\small S2   & 12.0000 	& sim & 3.3 & 64 & 3.9 & 69 & 4.2 & 70 & yes  \\
+\small      &        	& obs & 2.9 & 46 & 3.3 & 65 & 3.5 & 69 &    \\
+\small M2   & 12.4206 	& sim & 11.5 & 105 & 13.2 & 112 & 13.9 & 114 & yes  \\
+\small      &        	& obs & 11.9 & 105 & 13.8 & 121 & 14.4 & 125 &    \\
+\small N2   & 12.6584 	& sim & 3.0 & 69 & 3.5 & 75 & 3.7 & 76 & yes  \\
+\small      &        	& obs & 3.0 & 60 & 3.4 & 76 & 3.6 & 80 &    \\
+\small K1   & 23.9345 	& sim & 0.2 & 187 & 0.1 & 175 & 0.2 & 157 & yes  \\
+\small      &        	& obs & 0.4 & 127 & 0.7 & 130 & 0.8 & 130 &    \\
+\small P1   & 24.0659 	& sim & 0.6 & 322 & 0.6 & 334 & 0.7 & 342 & yes  \\
+\small      &        	& obs & 0.2 & 129 & 0.3 & 102 & 0.4 & 97 &    \\
+\small O1   & 25.8193 	& sim & 3.5 & 337 & 3.8 & 339 & 3.8 & 339 & yes  \\
+\small      &        	& obs & 2.2 & 277 & 2.3 & 281 & 2.4 & 282 &    \\
+\small Q1   & 26.8684 	& sim & 0.0 & 231 & 0.0 & 216 & 0.1 & 215 & no   \\
+\small      &        	& obs & 1.1 & 190 & 1.2 & 198 & 1.3 & 200 &    \\
+\small MN4  & 6.2692 	& sim & 0.2 & 5 & 0.5 & 32 & 0.6 & 35 & yes  \\
+\small      &        	& obs & 0.4 & 249 & 0.6 & 289 & 0.7 & 297 &    \\
+\small M4   & 6.2103 	& sim & 1.0 & 355 & 1.9 & 18 & 2.5 & 23 & yes  \\
+\small      &        	& obs & 1.2 & 281 & 1.8 & 324 & 2.3 & 332 &    \\
+\small MS4  & 6.1033 	& sim & 0.6 & 80 & 1.2 & 107 & 1.6 & 111 & yes  \\
+\small      &        	& obs & 0.3 & 360 & 0.5 & 44 & 0.7 & 56 &    \\
 \hline
 \end{tabular}
 \end{table}
@@ -548,7 +593,7 @@ The temperature observations from Scanmar AS are compared with simulated data ex
 
 Time series reveal that the simulated and observed temperature are in fairly good agreement (Fig.~\ref{fig:temp_2015}). During winter and spring, but the model underestimate the temperature in the summer and fall with a few degrees  and \ref{fig:temp-QQ_scatter}). The model captures the timing of the daily variations in temperature, but seems to overestimate heating and cooling causing too large daily variations (Fig.~\ref{fig:temp_jun2015}). 
 
-2014 had a warmer summer than 2015. This is evident in both the observations and the simulations (Tab.~\ref{tab:temp}). The summer months of 2014 also had the largest variance in both the observed and the simulated temperature during 2014 and 2015. Generally, the simulated monthly temperature had a larger variance than the observed montly temperature. The mean of the observed and simulated temperatures are 10.0$^o$C and 8.6$^o$C respectively, while the variances are 27.2$^o$C and 21.1$^o$C respectively.  
+2014 had a warmer summer than 2015. This is evident in both the observations and the simulations (Tab.~\ref{tab:temp}). The summer months of 2014 also had the largest variance in both the observed and the simulated temperature during 2014 and 2015. Generally, the simulated monthly temperature had a larger variance than the observed monthly temperature. The mean of the observed and simulated temperatures are 10.0$^o$C and 8.6$^o$C respectively, while the variances are 27.2$^o$C and 21.1$^o$C respectively.  
 
 \begin{figure}[ht]
 %\centerline{
