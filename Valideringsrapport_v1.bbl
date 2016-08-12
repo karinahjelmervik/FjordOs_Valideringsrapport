@@ -1,4 +1,4 @@
-\begin{thebibliography}{11}
+\begin{thebibliography}{12}
 \providecommand{\natexlab}[1]{#1}
 \expandafter\ifx\csname urlstyle\endcsname\relax
   \providecommand{\doi}[1]{doi:\discretionary{}{}{}#1}\else
@@ -40,9 +40,9 @@ Haidvogel, D.~B., H.~Arango, P.~W. Budgell, B.~D. Cornuelle, E.~Curchitser,
 \bibitem[{\textit{Hjelmervik et~al.}(2016)\textit{Hjelmervik, Kristensen, and
   Staalstr{\o}m}}]{hjelm:etal:2016}
 Hjelmervik, K.~B., N.~M. Kristensen, and A.~Staalstr{\o}m (2016), Comparison of
-  simulations and observations in the oslofjord, \textit{Technical report},
-  Norwegian Meteorological Institute, MET Norway, P.O.Box 43 Blindern, NO-0313
-  Oslo, Norway.
+  simulations and observations in the oslofjord. fjordos technical report no.
+  3, \textit{MET Report~13}, Norwegian Meteorological Institute, MET Norway,
+  P.O.Box 43 Blindern, NO-0313 Oslo, Norway.
 
 \bibitem[{\textit{M{\"u}ller et~al.}(2015)\textit{M{\"u}ller, Homleid,
   Ivarsson, K{\o}ltzow, Lindskog, Andrae, Aspelien, Bj{\o}rge, Dahlgren,
@@ -62,9 +62,9 @@ Pawlowicz, R., B.~Beardsley, and S.~Lentz (2002), Classical tidal harmonic
 \bibitem[{\textit{R{\o}ed et~al.}(2016)\textit{R{\o}ed, Kristensen, Hjelmervik,
   and Staalstr{\o}m}}]{roed:etal:2016}
 R{\o}ed, L.~P., N.~M. Kristensen, K.~B. Hjelmervik, and A.~Staalstr{\o}m
-  (2016), A high-resolution, curvilinear roms model for the oslofjord,
-  \textit{Technical Report~4}, Norwegian Meteorological Institute, MET Norway,
-  P.O.Box 43 Blindern, NO-0313 Oslo, Norway.
+  (2016), A high-resolution, curvilinear roms model for the oslofjord. fjordos
+  technical report no. 2, \textit{MET Report~4}, Norwegian Meteorological
+  Institute, MET Norway, P.O.Box 43 Blindern, NO-0313 Oslo, Norway.
 
 \bibitem[{\textit{Shchepetkin and McWilliams}(2003)}]{shche:mcwil:2003}
 Shchepetkin, A.~F., and J.~C. McWilliams (2003), A method for computing
@@ -84,5 +84,10 @@ Shchepetkin, A.~F., and J.~C. McWilliams (2009), Correction and commentary for
   assessment of the regional ocean modeling system" by {H}aidvogel et al., {J}.
   {C}omp. {P}hys. 227, pp. 3595-3624, \textit{J. Comp. Phys.},
   \textit{228}(24), 8985 -- 9000, \doi{10.1016/j.jcp.2009.09.002}.
+
+\bibitem[{\textit{Staalstr{\o}m and Ghaffari}(2015)}]{staalstrom:2015}
+Staalstr{\o}m, A., and P.~Ghaffari (2015), Current conditions in the oslofjord
+  - focus on current strength along the bottom, \textit{Technical Report SNO
+  6799-2015}, NIVA, Gaustadalléen 21, NO-0349 Oslo, Norway.
 
 \end{thebibliography}
