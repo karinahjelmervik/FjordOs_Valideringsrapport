@@ -216,11 +216,11 @@ Abstract text...
 \pagenumbering{arabic}
 
 \section{Introduction - Andr\'{e}/Karina}
-Provided is an evaluation of the FjordOs-model \citep{roed:etal:2016}. This study is a part of the FjordOs project. FjordOs is a cooperation between MET Norway, University College of Southeast Norway (HSN), The Norwegian Institute for Water Research (NIVA), The Norwegian Coastal Administration (Kystverket), Exxonmobil, Norwegian Defence Research Establishment (FFI), Vestfold, Buskerud, and \O stfold county, and AGNES AB Milj\o konsulent.
+Provided is an evaluation of the FjordOs model \citep{roed:etal:2016}. The aim of this study is to reveal any weaknesses of the FjordOs model and clarify the extent to which the model can be be trusted. The study is a part of the FjordOs project. FjordOs is a cooperation between MET Norway, University College of Southeast Norway (HSN), The Norwegian Institute for Water Research (NIVA), The Norwegian Coastal Administration (Kystverket), Exxonmobil, Norwegian Defence Research Establishment (FFI), Vestfold, Buskerud, and \O stfold county, and AGNES AB Milj\o konsulent.
 
 The evaluation is based on existing observations in the area of interst and results from the FjordOs model \citep{roed:etal:2016}. The observations are gathered from different sources and not carried out as a part of the FjordOs project. The observations includes measurements of water level, current measurements, water temperature, and CTD measurements. A short scientific cruise on board the research vessel (R/V) Trygve Braarud in September 2015 provided additional observations of hydrography and trajectories of drifters. These observations are compared with simulated results in \cite{hjelm:etal:2016}.
 
-The aim of this study is to reveal any weaknesses of the FjordOs and clarify the extent to which the model can be be trusted.
+
 
 \newpage
 \section{Area of interest}
@@ -278,14 +278,46 @@ Positions for observations are marked.
 \subsection{Water level}
 The Norwegian Mapping Authority has three permanent stations measuring sea level in the area of interest (Fig.~\ref{fig:kart_obs}). The station at Viker is placed close to the open boundary of the model area. The station at Oscarsborg is placed halfway in the Inner Oslofjord, and the station at Oslo is placed in the innermost part of the fjord.
 
+\clearpage
+
 \subsection{Currents}
 
-\subsubsection{Currents in two cross sections - Andr\'{e}/Karina}
-Current measurements were performed by Statnett in two cross sections. To be continued ...
+\subsubsection{Currents in two cross sections}
+In the period from Monday 15 to Thursday 18 of September 2014 altogether seven rigs with instruments was deployed at seven positions in Oslofjorden (Tab.~\ref{tab:Statnett}). All but one rig had profiling current meters, while the last rig had TinyTag temperature loggers deployed at seven different depths between 20 and 120 m. At one station a single point current meter was deployed just below the profiling current meter. 
 
+The rigs were deployed as a part of a project conducted by Statnett, NIVA, Akvaplan NIVA, and the University of Oslo. The research vessel F/F Trygve Braarud was used during deployment and recovery of the rigs. Details on the applied rigs and corresponding instruments can be found in \cite{staalstrom:2015}.
 
-\subsubsection{Currents at Slagentangen - Karina}
-Using a bottom-mounted doppler Exxonmobil has measured the currents in two depths since 1997. The device is placed 50-80 meters northwest of Turning Dolphin at the Slagen Refinery (Fig.~\ref{fig:Slagen-kart}). Bliksekilen nature reserve is located west of Slagen Refinery. It is a shallow water area with rare flora and fauna. 
+\begin{table}[ht] 
+\caption{Target positions (WGS84) of the instrument rigs. Depths at the stations are from the Statnett terrain model.} 
+\label{tab:Statnett} 
+\centering 
+\begin{tabular}{|llcccl|} 
+\hline  
+{\bf Station} & {\bf Name} & {\bf Latitude} & {\bf Longitude} & {\bf Depth} & {\bf Instruments} \\ 
+&& {\bf [$^o$N]} & {\bf [$^o$E]} & {\bf [m]} & \\ \hline
+Kp11.2 & Sm\aa skj\ae r & 59.350124 & 10.497661 & 20 & Aquadopp600 AQP1531 \\
+(Ri1) &&&&& Transducer LRT2 \\ \hline
+Kp5.7 & Laksetrappa & 59.343452 & 10.581023 & 75 & Aquadopp400 AQP4689 \\
+(Rl1) &&&&& Transducer LRT3 \\
+      &&&&& Aanderaa Seaguard \\  \hline
+Kp2.6 & Botnegrunnen & 59.352375 & 10.626822 & 96 & Continental WAV6117 \\
+(Rm1) &&&&& Transducer LRT4 \\ \hline
+Kp0.7 & Evje & 59.363182 & 10.653576 & 64 & Aquadopp400 AQP2931 \\
+(Rn1) &&&&& Transducer LRT5 \\ \hline
+Kn2 & Brenntangen & 59.581803 & 10.646087 & 54 & Aquadopp400 AQP5608 \\
+      &&&&& Transducer LRT6 \\ \hline
+Km1 & Filtvedt & 59.582064 & 10.627372 & 153 & Continental CNL6037 \\
+      & (current) &&&& Transducer 207-2 \\ \hline
+Km2 & Filtvedt & 59.580778 & 10.626239 & 125 & 7 TinyTags UIO1-7 \\
+      & (temperature) &&&& Transducer 203-2 \\
+\hline
+\end{tabular}
+\end{table}
+
+\clearpage
+
+\subsubsection{Currents at Slagentangen}
+Using a bottom-mounted doppler Exxonmobil has measured the currents in two depths since 1997. The device is placed 50-80 meters northwest of Turning Dolphin at the Slagen Refinery (Fig.~\ref{fig:Slagen-kart}). Note that Bliksekilen nature reserve is located west of Slagen Refinery. It is a shallow water area with rare flora and fauna. 
 
 \begin{figure}[htb]
 \centerline{
@@ -500,12 +532,40 @@ Simulated field of M$_2$ amplitude (left) and phase (right). The corresponding o
 \subsection{Currents}
 
 \subsubsection{Currents in two cross sections - Andr\'{e}/Karina}
+
+At Filtvedt the observered and simulated currents are of the same magnitude in strength (Fig.~\ref{fig:Filtvedt-cur}). The observations are dominated by noise in the upper 35-40 meters. Only depths larger than 40 meters are therefore inlcuded. 
+
+
+
+
+
 To be continued... Andr\'{e}?
 
-\subsubsection{Current at Slagentangen - Karina}
-The observed currents at Slagentangen are compared with simulated data from 1st October 2014 until 30th November 2015 at approximately the same location and depth (Fig.~\ref{fig:Slagen-kart}).
 
-Testing with popcorn indicate that the preferred direction of the surface currents are towards Bliksekilen located west of the Slagen Refinery.
+\begin{figure}[ht]
+\centerline{
+\includegraphics*[trim=0 0 0 0,clip=true,width=\textwidth]{Figurer/Filtvedt_obs_cur}}
+\centerline{
+\includegraphics*[trim=0 0 0 0,clip=true,width=\textwidth]{Figurer/Filtvedt_sim_cur}}
+\caption{\small
+Observed (upper) and simulated (lower) currents at Filtvedt. Since the observations near the surface where dominated by noise, only depths larger than 40 meters are included in the upper plot. $z$ = 40 meters is marked with a black line in the lower plot. Note that the model depth is only 155 meters at the position the observations where performed.}
+\label{fig:Filtvedt-cur}
+\end{figure}
+
+\begin{figure}[ht]
+\centerline{
+\includegraphics*[trim=0 0 0 0,clip=true,width=\textwidth]{Figurer/Filtvedt_obs_tide}}
+\centerline{
+\includegraphics*[trim=0 0 0 0,clip=true,width=\textwidth]{Figurer/Filtvedt_sim_tide}}
+\caption{\small
+Observed (upper) and simulated (lower) tidal currents at Filtvedt.}
+\label{fig:Filtvedt-tide}
+\end{figure}
+
+
+\clearpage 
+\subsubsection{Current at Slagentangen}
+The observed currents at Slagentangen are compared with simulated data from 1st October 2014 until 30th November 2015 at approximately the same location and depth (Fig.~\ref{fig:Slagen-kart}).
 
 %\begin{figure}[ht]
 %\centerline{
@@ -519,7 +579,7 @@ Testing with popcorn indicate that the preferred direction of the surface curren
 \centerline{
 \includegraphics*[trim=3cm 0cm 3cm 0cm,clip=true,width=\textwidth]{Figurer/Slagen_tid}}
 \caption{\small
-Timeseries of observed velocities at Slagen from 1st of January 2014 to 31st of December 2015.}
+Timeseries of observed and simulated velocity magnitudes at Slagen.}
 \label{fig:Slagen-tid}
 \end{figure}
 
@@ -529,13 +589,13 @@ Timeseries of observed velocities at Slagen from 1st of January 2014 to 31st of 
 \includegraphics*[trim=2cm 1cm 3cm 0cm,clip=true,height=4cm]{Figurer/Slagen_Rose_sim}
 }
 \caption{\small
-Current roses for observed (left) and simulated (right) velocities at two depths from 1st of October 2014 to 1st of October 2015.}
+Current roses for observed (left) and simulated (right) velocity magnitude at the two depths from 1st of October 2014 to 1st of October 2015.}
 \label{fig:Slagen-rose}
 \end{figure}
 
 \begin{figure}[t]
 \centerline{
-\includegraphics*[trim=3cm 0cm 3cm 0cm,clip=true,width=\textwidth]{Figurer/Slagen_pdf} 
+\includegraphics*[trim=2cm 0cm 2cm 0cm,clip=true,width=\textwidth]{Figurer/Slagen_pdf} 
 }
 \caption{\small
 Probability density functions of velocities and directions at Slagen for 1st of October 2014 to 1st of October 2015. The bin width is 0.01 knots for velocity and 3 degrees for direction.}
@@ -544,41 +604,43 @@ Probability density functions of velocities and directions at Slagen for 1st of 
 
 \begin{table}[ht]
 %\vspace{-1.5cm}
-\caption{Maximum observed velocity at Slagen.}
+\caption{Yearly maximum observed velocity at Slagen.}
 \label{tab:Slagen_max}
 \centering
 \begin{tabular}{|l|lll|lll|}
 \hline 
 & \multicolumn{3}{|l|}{\bf Max. velocity at 10m depth} & \multicolumn{3}{|l|}{\bf Max. velocity at 2.5m depth} \\
-{\bf Year} & {\bf Date} & {\bf [knots]} & {\bf [deg]} & {\bf Date} & {\bf [knots]} & {\bf [deg]} \\ \hline 
-\small 2006 & 21 January  & 0.81 & 139 & 31 October & 1.10 & 140 \\
-\small 2007 & 14 January  & 0.81 & 172 & 21 August   & 2.00 & 359 \\
-\small 2008 & 22 March    & 0.70 & 149 & 19 December & 1.10 & 160 \\
-\small 2009 & 17 December & 0.87 & 142 & 24 March    & 1.10 & 139 \\
-\small 2010 & 09 November & 0.81 & 138 & 09 November & 1.05 & 138 \\
-\small 2011 & 01 January  & 0.76 & 146 & 30 March    & 1.21 & 185 \\
-\small 2012 & 05 December & 0.75 & 138 & 29 May      & 1.11 & 140 \\
-\small 2013 & 10 October  & 0.82 & 143 & 10 October & 0.95 & 144 \\
-\small 2014 & 18 April    & 0.85 & 147 & 26 March    & 1.07 & 143 \\
-\small 2015 & 24 January  & 0.65 & 128 & 21 March    & 1.07 & 141 \\
+{\bf Year} & {\bf Date} & {\bf [m/s} & {\bf [deg]} & {\bf Date} & {\bf [m/s]} & {\bf [deg]} \\ \hline 
+\small 2006 & 21 Jan 2006 & 0.42 & 139 & 31 Oct 2006 & 0.57 & 140 \\
+\small 2007 & 14 Jan 2007 & 0.42 & 172 & 21 Aug 2007 & 1.03 & 359 \\
+\small 2008 & 22 Mar 2008 & 0.36 & 149 & 19 Dec 2008 & 0.57 & 160 \\
+\small 2009 & 17 Dec 2009 & 0.45 & 142 & 24 Mar 2009 & 0.56 & 139 \\
+\small 2010 & 09 Nov 2010 & 0.41 & 138 & 09 Nov 2010 & 0.54 & 138 \\
+\small 2011 & 01 Jan 2011 & 0.39 & 146 & 30 Mar 2011 & 0.62 & 185 \\
+\small 2012 & 05 Dec 2012 & 0.39 & 138 & 29 May 2012 & 0.57 & 140 \\
+\small 2013 & 10 Oct 2013 & 0.42 & 143 & 10 Oct 2013 & 0.49 & 144 \\
+\small 2014 & 18 Apr 2014 & 0.44 & 147 & 26 Mar 2014 & 0.55 & 143 \\
+\small 2015 & 24 Jan 2015 & 0.33 & 128 & 21 Mar 2015 & 0.55 & 141 \\
 \hline
 \end{tabular}
 \end{table}
 
 \begin{figure}[ht]
 \centerline{
-\includegraphics*[trim=0cm 0cm 0cm 0cm,clip=true,width=0.5\textwidth]{Figurer/Slagen_QQ}}
+\includegraphics*[trim=0cm 0cm 0cm 0cm,clip=true,width=0.8\textwidth]{Figurer/Slagen_QQ}}
 \caption{\small
 Combined QQ- and scatter plot of observed and simulated current at Slagen from 1st of October 2014 to 1st of October 2015.}
 \label{fig:Slagen_QQ}
 \end{figure}
 
-Time series show that the observed velocities varies and follows no striking pattern (Fig.~\ref{fig:Slagen-tid}).
-Current roses show that the both the observed and the simulated velocities are stronger in the upper layer (Fig.~\ref{fig:Slagen-rose}). The simulated velocities are stronger than the observed velocities. This is in accordance with the probability density functions (Fig.~\ref{fig:Slagen-pdf}). The maximum velocities are approximately 0.8 and 1.1 knots at 10 and 2.5 meters depth respectively (Tab.~\ref{tab:Slagen_max}). During 2014 and 2015 maximum observed velocity at 2.5 meters depth was 1.07 knots in southeast direction (143$^o$N) the 26th of March 2014. The velocity at 10 meters depth was 0.15 knot at the time of maximum velocity at 2.5 meters depth indicating that the velocities are different in the two layers.
+Time series reveal that the observed velocities varies and follows no striking pattern (Fig.~\ref{fig:Slagen-tid}).
+Current roses show that both the observed and the simulated velocities are stronger in the upper layer (Fig.~\ref{fig:Slagen-rose}). The simulated velocities are stronger than the observed velocities. This is in accordance with the probability density functions (Fig.~\ref{fig:Slagen-pdf}). The yearly maximum observed velocities are approximately 0.4 and 0.6 m/s at 10 and 2.5 meters depth respectively (Tab.~\ref{tab:Slagen_max}). During 2014 and 2015 maximum observed velocity at 2.5 meters depth was 0.55 m/s in southeast direction (143$^o$N) the 26th of March 2014. The velocity at 10 meters depth was 0.08 m/s (153$^o$N) at the time of maximum velocity at 2.5 meters depth indicating that the velocities are different in the two layers.
 
-The mean directions are to the south east. At approximately 2.5 meters depth the mean directions are 146$^o$N and 141$^o$N for observed and simulated directions respectively which is in fairly good agreement. At approximately 10 meters depth the observed mean direction shifts to 170$^o$N while the simulated mean direction is 149$^o$N. The probability density functions reveals that the model captures the distribution of directions in the upper layer, but does not capture the change in direction between the two depths (Fig.~\ref{fig:Slagen-pdf}). The standard deviations  at 2.5 and 10 meters are 55 and 66 degrees respectively for the observed directions, and 58 and 65 for the simulated directions.
+The mean directions are to the south east. At approximately 2.5 meters depth the mean directions are 146$^o$N and 139$^o$N for observed and simulated directions respectively which is in fairly good agreement. At approximately 10 meters depth the observed mean direction shifts to 170$^o$N while the simulated mean direction is 148$^o$N. 
+Testing with popcorn indicate that the preferred direction of the surface currents are towards Bliksekilen located west of the Slagen Refinery. This is not the case neither in the observations nor the simulations.
+The probability density functions reveals that the model captures the distribution of directions in the upper layer, but does not capture the change in direction between the two depths (Fig.~\ref{fig:Slagen-pdf}). The standard deviations at 2.5 and 10 meters are 55 and 66 degrees respectively for the observed directions, and 56 and 61 for the simulated directions.
 
-The scatter plots reveal that the correlation in time is not satisfying (Fig.~\ref{fig:Slagen_QQ}). The model seen to have difficulties with capturing the right phenomena influencing the currents to the right time. This is a well known problem when it comes to forecasting currents. The QQ-plots also confirms that the simulated currents are stronger than the observed currents. 
+The time series scatter plots reveal that the correlation in time is not satisfying (Fig.~\ref{fig:Slagen-tid} and \ref{fig:Slagen_QQ}). The model seem to have difficulties with capturing the right phenomena influencing the currents to the right time. This is a well known problem when it comes to forecasting currents. The QQ-plots also confirms that the simulated currents are stronger than the observed currents. 
 
 
 \clearpage
