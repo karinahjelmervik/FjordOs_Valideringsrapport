@@ -283,9 +283,11 @@ The Norwegian Mapping Authority has three permanent stations measuring sea level
 \subsection{Currents}
 
 \subsubsection{Currents in two cross sections}
-In the period from Monday 15 to Thursday 18 of September 2014 altogether seven rigs with instruments was deployed at seven positions in Oslofjorden (Tab.~\ref{tab:Statnett}). All but one rig had profiling current meters, while the last rig had TinyTag temperature loggers deployed at seven different depths between 20 and 120 m. At one station a single point current meter was deployed just below the profiling current meter. 
+In the period from Monday 15 to Thursday 18 of September 2014 altogether seven rigs with instruments was deployed at seven positions in Oslofjorden (Tab.~\ref{tab:Statnett}). In the period from Monday 24 to Wednesday 16 of November the seven rigs with instruments were recovered. All but one rig had profiling current meters, while the last rig had TinyTag temperature loggers deployed at seven different depths between 20 and 120 m. At one station a single point current meter was deployed just below the profiling current meter. 
 
 The rigs were deployed as a part of a project conducted by Statnett, NIVA, Akvaplan NIVA, and the University of Oslo. The research vessel F/F Trygve Braarud was used during deployment and recovery of the rigs. Details on the applied rigs and corresponding instruments can be found in \cite{staalstrom:2015}.
+
+The strongest currents were found where the fjord is relatively narrow, in the Dr\o bak Sound at the stations Filtvedt (Km1) and Brenntangen (Kn2). The stronger current in the more narrow part of the fjord can be explained by a stronger tidal signal due to the fjord geometry. In both the two transects across the fjord, it was the shallowest stations that had the highest current velocities. This can be explained by the fact that the horizontal pressure gradient has a tendency to decrease with depth.
 
 \begin{table}[ht] 
 \caption{Target positions (WGS84) of the instrument rigs. Depths at the stations are from the Statnett terrain model.} 
@@ -438,7 +440,7 @@ De to drifterne i f\o rste tokt ... og kanskje de siste i Svelvik.
 \section{Evaluation}
 \subsection{Water level and tide}
 
-Time series from the three permanent stations measuring water level have been analysed and compared with simulated time series of water level extracted from locations near the three permanent stations. Both simulated and observed time series of water level are analysed using t\_tide \citep{pavlo:etal:2002} in order to extract the tidal components. The same period in time are applied for both the simulations and the observations (April 2014 to December 2015). 
+Time series from the three permanent stations measuring water level have been analysed and compared with simulated time series of water level extracted from locations near the three permanent stations. Both simulated and observed time series of water level are analysed using t\_tide \citep{pavlo:etal:2002} in order to extract the tidal components. The same period in time is applied for both the simulations and the observations (April 2014 to December 2015). 
 
 \begin{figure}[hb] 
 \centerline{ 
@@ -535,14 +537,9 @@ Simulated field of M$_2$ amplitude (left) and phase (right). The corresponding o
 
 \subsubsection{Currents in two cross sections - Andr\'{e}/Karina}
 
-At Filtvedt the observered and simulated currents are of the same magnitude in strength (Fig.~\ref{fig:Filtvedt-cur}). The observations are dominated by noise in the upper 35-40 meters. Only depths larger than 40 meters are therefore inlcuded. 
+The observed and simulated currents at Filtvedt and Brenntangen are of the same magnitude in strength, but the flow pattern differs. Figure~\ref{fig:Filtvedt-cur} shows the observed and simulated currents at Filtvedt as an example. The observed currents at Brenntagen is similar in strength, but the peaks in current strengt do not occur at the same time. The observations are dominated by noise in the upper 35-40 meters. Only depths larger than 40 meters are therefore inlcuded in the comparison.
 
-
-
-
-
-To be continued... Andr\'{e}?
-
+Note that the 3D current field is complex, the currents vary horizontally, vertically and with time. Figure~\ref{fig:Filtvedt-simcur} shows the simulated currents at three different depths. In general, the currents in the upper layer are stronger than further down. In the upper layers the currents are towards north, at 40 meters depth the currents towards south, and at 100 meters depth towards north. Because of the complex flow pattern, the currents at a given coordinates cannot be taken at representative for the whole area. At 100 meters depth the currents at Filtvedt are weak and towards south even though the currents at 100 meters depth is generally stronger and towards north. At 40 meters depth the currents at Brenntangen is weaker than in the rest of the cross section. Note that the depth at Brenntangen is only 58 meters in the observations while in the depth is 46 meters at the corresponding point in the simulations. 
 
 \begin{figure}[ht]
 \centerline{
@@ -556,6 +553,19 @@ Observed (upper) and simulated (lower) currents at Filtvedt. Since the observati
 
 \begin{figure}[ht]
 \centerline{
+\includegraphics*[trim=2cm 3cm 1cm 3.3cm,clip=true,height=5cm]{Figurer/Filtvedt_t4611_z2_current}
+\includegraphics*[trim=3.8cm 3cm 6cm 3.3cm,clip=true,height=5cm]{Figurer/Filtvedt_t4611_z40_current}
+\includegraphics*[trim=3.8cm 3cm 1cm 3.3cm,clip=true,height=5cm]{Figurer/Filtvedt_t4611_z100_current}}
+\caption{\small
+Simulated currents at 2 (left), 40, and 100 (right) meters depth at 10 October 2014 12:00. Note that the two plots to the right have the same colorbar.}
+\label{fig:Filtvedt-simcur}
+\end{figure}
+
+The tides are evident in the observed and simulated currents at all observation points. Both simulated and observed time series of the currents at the seven observation points are analyzed using t\_tide \cite{pavlo:etal:2002} in order to extract the tidal components for each depth. The same period in time is applied for both simulations and observations (mid-September to the end of November 2014). Figure~\ref{fig:Filtvedt-tide} shows the tidal currents at Filtvedt. At Filtvedt the tidal impact in the observations occurs earlier at larger depths, but in the simulatations the tidal impact occurs earlier at more shallow depths. This might be due to the flow pattern at the different depths and the fact that the flow pattern depends strongly on the bottom topography which is smoothed in the simulations. Note also that the calculations of the tides are based on only six weeks of data.
+
+
+\begin{figure}[ht]
+\centerline{
 \includegraphics*[trim=0 0 0 0,clip=true,width=\textwidth]{Figurer/Filtvedt_obs_tide}}
 \centerline{
 \includegraphics*[trim=0 0 0 0,clip=true,width=\textwidth]{Figurer/Filtvedt_sim_tide}}
@@ -563,6 +573,9 @@ Observed (upper) and simulated (lower) currents at Filtvedt. Since the observati
 Observed (upper) and simulated (lower) tidal currents at Filtvedt.}
 \label{fig:Filtvedt-tide}
 \end{figure}
+
+\clearpage
+
 
 
 \clearpage 
