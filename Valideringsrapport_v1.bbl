@@ -1,4 +1,4 @@
-\begin{thebibliography}{12}
+\begin{thebibliography}{13}
 \providecommand{\natexlab}[1]{#1}
 \expandafter\ifx\csname urlstyle\endcsname\relax
   \providecommand{\doi}[1]{doi:\discretionary{}{}{}#1}\else
@@ -89,5 +89,9 @@ Shchepetkin, A.~F., and J.~C. McWilliams (2009), Correction and commentary for
 Staalstr{\o}m, A., and P.~Ghaffari (2015), Current conditions in the oslofjord
   - focus on current strength along the bottom, \textit{Technical Report SNO
   6799-2015}, NIVA, Gaustadalléen 21, NO-0349 Oslo, Norway.
+
+\bibitem[{\textit{Staalstr{\o}m and Hjelmervik}(-)}]{staalstrom:2017}
+Staalstr{\o}m, A., and K.~Hjelmervik (-), Strømforholdene i innløpet til
+  drammensfjorden (in norwegian), \textit{Submitted}, \textit{-}, --.
 
 \end{thebibliography}

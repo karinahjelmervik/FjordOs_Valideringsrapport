@@ -1,0 +1,422 @@
+\section{Evaluation}
+\subsection{Water level and tide}
+
+Time series from the three permanent stations measuring water level have been analysed and compared with simulated time series of water level extracted from locations near the three permanent stations. Both simulated and observed time series of water level are analysed using t\_tide \citep{pavlo:etal:2002} in order to extract the tidal components. The same period in time is applied for both the simulations and the observations (April 2014 to December 2015). 
+
+\begin{figure}[hb] 
+\centerline{ 
+\includegraphics*[trim=3cm 0cm 2.5cm 0cm,clip=true,width=\textwidth]{Figurer/Oscarsborg_Tide_selected_jan15}  
+} 
+\centerline{ 
+\includegraphics*[trim=3cm 0cm 2.5cm 0cm,clip=true,width=\textwidth]{Figurer/Oscarsborg_WL_rest_jan15} 
+} 
+\caption{\small 
+Simulated (black) and observed (red) time series of tides (upper) and residual (lower) at Oscarsborg. Here the tidal elevation includes only the eleven components included in the tidal forcing. The residual includes the total water level minus the tidal elevation.} 
+\label{fig:Waterlevel_jan15} 
+\end{figure} 
+
+Eleven tidal components are included in the model at the southern open boundary using their corresponding amplitudes and phases for both depth integrated currents and water level \citep{roed:etal:2016}. The time series of tidal components included in the tidal forcing are in fairly good agreement (Fig.~\ref{fig:Waterlevel_jan15},upper, and Tab.\-\ref{tab:Tide}). In addition to the tidal components included in the tidal forcing, more tidal components are present in the time series (Fig.~\ref{fig:Waterlevel_tide}). Tidal components with periods of approximately one year (SA) and half a year (SSA) respectively are present in both the observations and the simulations (Tab.\-\ref{tab:Tide}). In addition, the observations have more components with shorter periods which are not included in the tidal forcing and thereby not present in the simulations. This is consistent with the frequency series of the Fourier transformed water level (Fig.~\ref{fig:Waterlevel_freq}).
+
+\begin{figure}[tbh] 
+\centerline{ 
+\includegraphics*[trim=3cm 0cm 2.5cm 0cm,clip=true,width=\textwidth]{Figurer/Oscarsborg_Tide_not_included}  
+} 
+\caption{\small 
+Time series at Oscarsborg of the tidal components not included in the tidal tidal forcing.} 
+\label{fig:Waterlevel_tide} 
+\end{figure} 
+
+\begin{figure}[tbh] 
+\centerline{ 
+\includegraphics*[trim=3cm 0cm 2.5cm 0cm,clip=true,width=\textwidth]{Figurer/Oscarsborg_Tide_Frequency_obs.png}  
+} 
+\centerline{ 
+\includegraphics*[trim=3cm 0cm 2.5cm 0cm,clip=true,width=\textwidth]{Figurer/Oscarsborg_Tide_Frequency_sim.png} 
+} 
+\caption{\small 
+Frequency series of Fourier transformed observed (upper) and simulated (lower) water levels at Oscarsborg} 
+\label{fig:Waterlevel_freq} 
+\end{figure} 
+
+\newpage 
+The amplitude of M$_2$ increases from south to north in the Inner Oslofjord both in the simulations and the observations (Fig.~\ref{fig:M2field} and Tab.~\ref{tab:Tide}). The lowest M$_2$ amplitude in the area of interest, is in the Drammensfjord north of the threshold in Svelvik. The M$_2$ phase has a sudden increase at the thresholds of Svelvik and Dr\o bak (Fig.~\ref{fig:M2field}). The same yields for the majority of the other relevant tidal components.
+
+\begin{figure}[hb] 
+\centerline{ 
+\includegraphics*[trim=1cm 0cm 0cm 0cm,clip=true,width=0.49\textwidth]{Figurer/M2amp_felt}  
+\includegraphics*[trim=0.8cm 0cm 0cm 0cm,clip=true,width=0.49\textwidth]{Figurer/M2fase_felt} 
+} 
+\caption{\small 
+Simulated field of M$_2$ amplitude (left) and phase (right). The corresponding observed values for M$_2$ amplitude and phase are marked with circles at Viker, Oscarsborg, and Oslo.} 
+\label{fig:M2field} 
+\end{figure} 
+
+\begin{table}[ht] 
+%\vspace{-1.5cm} 
+\caption{Simulated and observed tidal amplitude and phase for selected tidal components.} 
+\label{tab:Tide} 
+\centering 
+\begin{tabular}{|c|c|l|cc|cc|cc|c|} 
+\hline  
+&&& \multicolumn{2}{|c|}{\bf Viker} & \multicolumn{2}{|c|}{\bf Oscarsborg} & \multicolumn{2}{|c|}{\bf Oslo} & {\bf Included} \\  
+{\bf Comp.} & {\bf Period} &  {\bf sim/} & {\bf amp.} & {\bf phase.} & {\bf amp.} & {\bf phase.} & {\bf amp.} & {\bf phase.} & {\bf in tidal} \\ 
+& {\bf [h]} & {\bf obs} & {\bf [cm]} & {\bf [deg]} & {\bf [cm]} & {\bf [deg]} & {\bf [cm]} & {\bf [deg]} & {\bf forcing} \\ \hline 
+\small SA   & 8764	 	& sim & 15.5 & 284 & 15.6 & 286 & 15.4 & 286 & no   \\
+\small      &        	& obs & 10.0 & 319 & 11 & 322 & 11.4 & 324 &    \\
+\small SSA  & 4382 		& sim & 8.8 & 197 & 9.2 & 200 & 9.4 & 200 & no   \\
+\small      &        	& obs & 7.5 & 188 & 8.0 & 189 & 8.2 & 190 &    \\
+\small K2   & 11.9672 	& sim & 1.6 & 10 & 2.0 & 13 & 2.1 & 15 & yes  \\
+\small      &        	& obs & 0.7 & 45 & 0.8 & 66 & 0.9 & 66 &    \\
+\small S2   & 12.0000 	& sim & 3.3 & 64 & 3.9 & 69 & 4.2 & 70 & yes  \\
+\small      &        	& obs & 2.9 & 46 & 3.3 & 65 & 3.5 & 69 &    \\
+\small M2   & 12.4206 	& sim & 11.5 & 105 & 13.2 & 112 & 13.9 & 114 & yes  \\
+\small      &        	& obs & 11.9 & 105 & 13.8 & 121 & 14.4 & 125 &    \\
+\small N2   & 12.6584 	& sim & 3.0 & 69 & 3.5 & 75 & 3.7 & 76 & yes  \\
+\small      &        	& obs & 3.0 & 60 & 3.4 & 76 & 3.6 & 80 &    \\
+\small K1   & 23.9345 	& sim & 0.2 & 187 & 0.1 & 175 & 0.2 & 157 & yes  \\
+\small      &        	& obs & 0.4 & 127 & 0.7 & 130 & 0.8 & 130 &    \\
+\small P1   & 24.0659 	& sim & 0.6 & 322 & 0.6 & 334 & 0.7 & 342 & yes  \\
+\small      &        	& obs & 0.2 & 129 & 0.3 & 102 & 0.4 & 97 &    \\
+\small O1   & 25.8193 	& sim & 3.5 & 337 & 3.8 & 339 & 3.8 & 339 & yes  \\
+\small      &        	& obs & 2.2 & 277 & 2.3 & 281 & 2.4 & 282 &    \\
+\small Q1   & 26.8684 	& sim & 0.0 & 231 & 0.0 & 216 & 0.1 & 215 & no   \\
+\small      &        	& obs & 1.1 & 190 & 1.2 & 198 & 1.3 & 200 &    \\
+\small MN4  & 6.2692 	& sim & 0.2 & 5 & 0.5 & 32 & 0.6 & 35 & yes  \\
+\small      &        	& obs & 0.4 & 249 & 0.6 & 289 & 0.7 & 297 &    \\
+\small M4   & 6.2103 	& sim & 1.0 & 355 & 1.9 & 18 & 2.5 & 23 & yes  \\
+\small      &        	& obs & 1.2 & 281 & 1.8 & 324 & 2.3 & 332 &    \\
+\small MS4  & 6.1033 	& sim & 0.6 & 80 & 1.2 & 107 & 1.6 & 111 & yes  \\
+\small      &        	& obs & 0.3 & 360 & 0.5 & 44 & 0.7 & 56 &    \\
+\hline
+\end{tabular}
+\end{table}
+
+
+
+\clearpage 
+\subsection{Currents}
+
+\subsubsection{Currents in two cross sections - Andr\'{e}/Karina}
+
+The observed and simulated currents at Filtvedt and Brenntangen are of the same magnitude in strength, but the flow pattern differs. Figure~\ref{fig:Filtvedt-cur} shows the observed and simulated currents at Filtvedt as an example. The observed currents at Brenntagen is similar in strength, but the peaks in current strengt do not occur at the same time. The observations are dominated by noise in the upper 35-40 meters. Only depths larger than 40 meters are therefore inlcuded in the comparison.
+
+Note that the 3D current field is complex, the currents vary horizontally, vertically and with time. Figure~\ref{fig:Filtvedt-simcur} shows the simulated currents at three different depths. In general, the currents in the upper layer are stronger than further down. In the upper layers the currents are towards north, at 40 meters depth the currents towards south, and at 100 meters depth towards north. Because of the complex flow pattern, the currents at a given coordinates cannot be taken at representative for the whole area. At 100 meters depth the currents at Filtvedt are weak and towards south even though the currents at 100 meters depth is generally stronger and towards north. At 40 meters depth the currents at Brenntangen is weaker than in the rest of the cross section. Note that the depth at Brenntangen is only 58 meters in the observations while in the depth is 46 meters at the corresponding point in the simulations. 
+
+\begin{figure}[ht]
+\centerline{
+\includegraphics*[trim=0 0 0 0,clip=true,width=\textwidth]{Figurer/Filtvedt_obs_cur}}
+\centerline{
+\includegraphics*[trim=0 0 0 0,clip=true,width=\textwidth]{Figurer/Filtvedt_sim_cur}}
+\caption{\small
+Observed (upper) and simulated (lower) currents at Filtvedt. Since the observations near the surface where dominated by noise, only depths larger than 40 meters are included in the upper plot. $z$ = 40 meters is marked with a black line in the lower plot. Note that the model depth is only 155 meters at the position the observations where performed.}
+\label{fig:Filtvedt-cur}
+\end{figure}
+
+\begin{figure}[ht]
+\centerline{
+\includegraphics*[trim=2cm 3cm 1cm 3.3cm,clip=true,height=5cm]{Figurer/Filtvedt_t4611_z2_current}
+\includegraphics*[trim=3.8cm 3cm 6cm 3.3cm,clip=true,height=5cm]{Figurer/Filtvedt_t4611_z40_current}
+\includegraphics*[trim=3.8cm 3cm 1cm 3.3cm,clip=true,height=5cm]{Figurer/Filtvedt_t4611_z100_current}}
+\caption{\small
+Simulated currents at 2 (left), 40, and 100 (right) meters depth at 10 October 2014 12:00. Note that the two plots to the right have the same colorbar.}
+\label{fig:Filtvedt-simcur}
+\end{figure}
+
+The tides are evident in the observed and simulated currents at all observation points. Both simulated and observed time series of the currents at the seven observation points are analyzed using t\_tide \cite{pavlo:etal:2002} in order to extract the tidal components for each depth. The same period in time is applied for both simulations and observations (mid-September to the end of November 2014). Figure~\ref{fig:Filtvedt-tide} shows the tidal currents at Filtvedt. At Filtvedt the tidal impact in the observations occurs earlier at larger depths, but in the simulatations the tidal impact occurs earlier at more shallow depths. This might be due to the flow pattern at the different depths and the fact that the flow pattern depends strongly on the bottom topography which is smoothed in the simulations. Note also that the calculations of the tides are based on only six weeks of data.
+
+
+\begin{figure}[ht]
+\centerline{
+\includegraphics*[trim=0 0 0 0,clip=true,width=\textwidth]{Figurer/Filtvedt_obs_tide}}
+\centerline{
+\includegraphics*[trim=0 0 0 0,clip=true,width=\textwidth]{Figurer/Filtvedt_sim_tide}}
+\caption{\small
+Observed (upper) and simulated (lower) tidal currents at Filtvedt.}
+\label{fig:Filtvedt-tide}
+\end{figure}
+
+\clearpage
+
+
+
+\clearpage 
+\subsubsection{Current at Slagentangen}
+The observed currents at Slagentangen are compared with simulated data from 1st October 2014 until 30th November 2015 at approximately the same location and depth (Fig.~\ref{fig:Slagen-kart}).
+
+%\begin{figure}[ht]
+%\centerline{
+%\includegraphics*[trim=1cm 0cm 1cm 0cm,clip=true,width=0.5\textwidth]{Figurer/Slagen_kart}}
+%\caption{\small
+%Map retrived from the Norwegian Coastal Administration. The red dot marks the position corresponding to the extracted simulated data.}
+%\label{fig:Slagen-kart}
+%\end{figure}
+
+\begin{figure}[ht]
+\centerline{
+\includegraphics*[trim=3cm 0cm 3cm 0cm,clip=true,width=\textwidth]{Figurer/Slagen_tid}}
+\caption{\small
+Timeseries of observed and simulated velocity magnitudes at Slagen.}
+\label{fig:Slagen-tid}
+\end{figure}
+
+\begin{figure}[ht]
+\centerline{
+\includegraphics*[trim=2cm 1cm 1cm 0cm,clip=true,height=4cm]{Figurer/Slagen_Rose_obs} 
+\includegraphics*[trim=2cm 1cm 3cm 0cm,clip=true,height=4cm]{Figurer/Slagen_Rose_sim}
+}
+\caption{\small
+Current roses for observed (left) and simulated (right) velocity magnitude at the two depths from 1st of October 2014 to 1st of October 2015.}
+\label{fig:Slagen-rose}
+\end{figure}
+
+\begin{figure}[t]
+\centerline{
+\includegraphics*[trim=2cm 0cm 2cm 0cm,clip=true,width=\textwidth]{Figurer/Slagen_pdf} 
+}
+\caption{\small
+Probability density functions of velocities and directions at Slagen for 1st of October 2014 to 1st of October 2015. The bin width is 0.01 knots for velocity and 3 degrees for direction.}
+\label{fig:Slagen-pdf}
+\end{figure}
+
+\begin{table}[ht]
+%\vspace{-1.5cm}
+\caption{Yearly maximum observed velocity at Slagen.}
+\label{tab:Slagen_max}
+\centering
+\begin{tabular}{|l|lll|lll|}
+\hline 
+& \multicolumn{3}{|l|}{\bf Max. velocity at 10m depth} & \multicolumn{3}{|l|}{\bf Max. velocity at 2.5m depth} \\
+{\bf Year} & {\bf Date} & {\bf [m/s} & {\bf [deg]} & {\bf Date} & {\bf [m/s]} & {\bf [deg]} \\ \hline 
+\small 2006 & 21 Jan 2006 & 0.42 & 139 & 31 Oct 2006 & 0.57 & 140 \\
+\small 2007 & 14 Jan 2007 & 0.42 & 172 & 21 Aug 2007 & 1.03 & 359 \\
+\small 2008 & 22 Mar 2008 & 0.36 & 149 & 19 Dec 2008 & 0.57 & 160 \\
+\small 2009 & 17 Dec 2009 & 0.45 & 142 & 24 Mar 2009 & 0.56 & 139 \\
+\small 2010 & 09 Nov 2010 & 0.41 & 138 & 09 Nov 2010 & 0.54 & 138 \\
+\small 2011 & 01 Jan 2011 & 0.39 & 146 & 30 Mar 2011 & 0.62 & 185 \\
+\small 2012 & 05 Dec 2012 & 0.39 & 138 & 29 May 2012 & 0.57 & 140 \\
+\small 2013 & 10 Oct 2013 & 0.42 & 143 & 10 Oct 2013 & 0.49 & 144 \\
+\small 2014 & 18 Apr 2014 & 0.44 & 147 & 26 Mar 2014 & 0.55 & 143 \\
+\small 2015 & 24 Jan 2015 & 0.33 & 128 & 21 Mar 2015 & 0.55 & 141 \\
+\hline
+\end{tabular}
+\end{table}
+
+\begin{figure}[ht]
+\centerline{
+\includegraphics*[trim=0cm 0cm 0cm 0cm,clip=true,width=0.8\textwidth]{Figurer/Slagen_QQ}}
+\caption{\small
+Combined QQ- and scatter plot of observed and simulated current at Slagen from 1st of October 2014 to 1st of October 2015.}
+\label{fig:Slagen_QQ}
+\end{figure}
+
+Time series reveal that the observed velocities varies and follows no striking pattern (Fig.~\ref{fig:Slagen-tid}).
+Current roses show that both the observed and the simulated velocities are stronger in the upper layer (Fig.~\ref{fig:Slagen-rose}). The simulated velocities are stronger than the observed velocities. This is in accordance with the probability density functions (Fig.~\ref{fig:Slagen-pdf}). The yearly maximum observed velocities are approximately 0.4 and 0.6 m/s at 10 and 2.5 meters depth respectively (Tab.~\ref{tab:Slagen_max}). During 2014 and 2015 maximum observed velocity at 2.5 meters depth was 0.55 m/s in southeast direction (143$^o$N) the 26th of March 2014. The velocity at 10 meters depth was 0.08 m/s (153$^o$N) at the time of maximum velocity at 2.5 meters depth indicating that the velocities are different in the two layers.
+
+The mean directions are to the south east. At approximately 2.5 meters depth the mean directions are 146$^o$N and 139$^o$N for observed and simulated directions respectively which is in fairly good agreement. At approximately 10 meters depth the observed mean direction shifts to 170$^o$N while the simulated mean direction is 148$^o$N. 
+Testing with popcorn indicate that the preferred direction of the surface currents are towards Bliksekilen located west of the Slagen Refinery. This is not the case neither in the observations nor the simulations.
+The probability density functions reveals that the model captures the distribution of directions in the upper layer, but does not capture the change in direction between the two depths (Fig.~\ref{fig:Slagen-pdf}). The standard deviations at 2.5 and 10 meters are 55 and 66 degrees respectively for the observed directions, and 56 and 61 for the simulated directions.
+
+The time series scatter plots reveal that the correlation in time is not satisfying (Fig.~\ref{fig:Slagen-tid} and \ref{fig:Slagen_QQ}). The model seem to have difficulties with capturing the right phenomena influencing the currents to the right time. This is a well known problem when it comes to forecasting currents. The QQ-plots also confirms that the simulated currents are stronger than the observed currents. 
+
+
+\clearpage
+\subsection{Hydrography}
+
+\subsubsection{CTD-measurements - Andr\'{e}}
+To be continued... Andr\'{e}
+
+\clearpage 
+
+\subsubsection{Water temperature near \AA sg\aa rdstrand}
+
+The temperature observations from Scanmar AS are compared with simulated data extracted from 1.15 meters depth at approximately the same location as the observations.
+
+Time series reveal that the simulated and observed temperature are in fairly good agreement (Fig.~\ref{fig:temp_2015}). During winter and spring, but the model underestimate the temperature in the summer and fall with a few degrees  and \ref{fig:temp-QQ_scatter}). The model captures the timing of the daily variations in temperature, but seems to overestimate heating and cooling causing too large daily variations (Fig.~\ref{fig:temp_jun2015}). 
+
+2014 had a warmer summer than 2015. This is evident in both the observations and the simulations (Tab.~\ref{tab:temp}). The summer months of 2014 also had the largest variance in both the observed and the simulated temperature during 2014 and 2015. Generally, the simulated monthly temperature had a larger variance than the observed monthly temperature. The mean of the observed and simulated temperatures are 10.0$^o$C and 8.6$^o$C respectively, while the variances are 27.2$^o$C and 21.1$^o$C respectively.  
+
+\begin{figure}[ht]
+%\centerline{
+%\includegraphics*[trim=0cm 0cm 0cm 0cm,clip=true,width=\textwidth]{Figurer/Temperatur_2014}}
+\centerline{
+\includegraphics*[trim=0cm 0cm 0cm 0cm,clip=true,width=\textwidth]{Figurer/Temperatur_2015}}
+\caption{\small
+Time series of observed and simulated temperature at \AA sg\aa dstrand. The difference is smoothed over 10 days.}
+\label{fig:temp_2015}
+\end{figure}
+
+\begin{figure}[htb]
+\centerline{
+\includegraphics*[trim=1cm 0cm 1cm 0cm,clip=true,width=0.7\textwidth]{Figurer/Temperatur_QQ_scatter}}
+\caption{\small
+Combined QQ- and scatter plot of observed and simulated temperature at \AA sg\aa dstrand.}
+\label{fig:temp-QQ_scatter}
+\end{figure}
+
+\begin{figure}[htb]
+\centerline{
+\includegraphics*[trim=0cm 0cm 0cm 0cm,clip=true,width=\textwidth]{Figurer/Temperatur_jun2015}}
+\caption{\small
+Time series of observed and simulated temperature at \AA sg\aa dstrand in June 2015.}
+\label{fig:temp_jun2015}
+\end{figure}
+
+\newpage 
+
+\begin{table}
+\caption{Monthly statistics for observed and simulated temperature at \AA sg\aa rdstrand.}
+\label{tab:temp}
+\centering
+\begin{tabular}{|ll|rrr|rrr|}
+\hline 
+&& \multicolumn{3}{|c|}{\bf 2014} & \multicolumn{3}{|c|}{\bf 2015} \\
+&& {\bf quantity} & {\bf mean} & {\bf variance}  
+& {\bf quantity} & {\bf mean} & {\bf variance} \\ \hline 
+\small Jan & obs & 558 & 2.5 & 6.2 & 558 & 4.9 & 2.5 \\
+\small     & sim & 745 & - & - & 745 & 4 & 0.7 \\
+\small Feb & obs & 504 & 1.8 & 0.5 & 504 & 4 & 1.8 \\
+\small     & sim & 673 & - & - & 673 & 3.6 & 0.6 \\
+\small Mar & obs & 496 & 3.7 & 0.6 & 496 & 4.2 & 0.4 \\
+\small     & sim & 745 & - & - & 745 & 4.7 & 0.3 \\
+\small Apr & obs & 515 & 7.5 & 4.1 & 515 & 7 & 2.1 \\
+\small     & sim & 721 & 7.6 & 7.1 & 721 & 7.4 & 2.8 \\
+\small May & obs & 544 & 12.1 & 9.3 & 544 & 10.3 & 1.3 \\
+\small     & sim & 745 & 11.3 & 10.4 & 745 & 9.9 & 3.5 \\
+\small Jun & obs & 531 & 16.2 & 4.2 & 531 & 14 & 3.9 \\
+\small     & sim & 721 & 15.5 & 8.3 & 721 & 12.8 & 6 \\
+\small Jul & obs & 558 & 20.2 & 10.5 & 558 & 17.1 & 2 \\
+\small     & sim & 745 & 17 & 24.3 & 745 & 14.6 & 5.1 \\
+\small Aug & obs & 512 & 20 & 3.2 & 512 & 18.2 & 1.3 \\
+\small     & sim & 745 & 16.4 & 5.6 & 745 & 15.5 & 8.7 \\
+\small Sep & obs & 536 & 16.3 & 1.9 & 536 & 15.1 & 1.2 \\
+\small     & sim & 721 & 12.9 & 8.9 & 721 & 12.7 & 2.5 \\
+\small Oct & obs & 557 & 12.3 & 1.7 & 557 & 10.6 & 0.8 \\
+\small     & sim & 745 & 9 & 1.5 & 745 & 8.6 & 2.7 \\
+\small Nov & obs & 540 & 8.3 & 2.9 & 540 & 8.8 & 2.4 \\
+\small     & sim & 721 & 6.3 & 2 & 721 & 6.1 & 1.3 \\
+\small Dec & obs & 490 & 4.4 & 3.6 & 490 & 7.8 & 0.4 \\
+\small     & sim & 733 & 3.4 & 1.5 & 733 & 4.8 & 0.8 \\
+\hline
+\end{tabular}
+\end{table}
+
+\clearpage
+
+\subsubsection{Water temperature in the Inner Oslofjord}
+
+The observed and simulated temperature at three beaches in the Inner Oslofjord are in relatively good agreement (Fig.~\ref{fig:badetemp_2014} - \ref{fig:badetemp_2015}). 
+
+Close to the shoreline and only 40 cm under the surface, the temperature is heavily influenced by the weather situation and local circulation patterns. 
+
+The temperature differences during the day are larger in the model than in the observations. The observed temperature increases 1-3 degrees from 09:00 to 18:00 and is not measured during the night, while the modelled temperature increases up to six degrees from 06:00 to 23:00. The fact that temperature is not measured during the night, but only from 09:00 to 18:00, might explain differences i temperature rise during the day, but the difference might indicate too much heating in the model.
+
+%Since the temperature is observed close to the shoreline, some near river outlets, and only 40 cm under the surface, the temperature ise heavily influenced by the weather situation and local circulation patterns. The model is not expected to capture such detailed effects. Still there are similarities between the modelled and the observed temperatures both in temperature level and in fluctuations. 
+
+During the summer 2014 the model predicts higher temperatures at Sj\o strand than was observed. The observations in Hvalstrand have some of the same trends as the modelled temperature with temperatures up to 25 degrees. The air temperatures in 2014 was higher than in 2015 and resulted in higher water temperatures, especially in shallow areas. 
+
+\begin{figure}[ht]
+\centerline{
+\includegraphics*[trim=0 0 0 0,clip=true,width=\textwidth]{Figurer/badetemp_2014}
+}
+\caption{\small
+The observed and modelled temperature at three beaches in the Inner Oslofjord during the summer 2014}
+\label{fig:badetemp_2014}
+\end{figure}
+
+\begin{figure}[ht]
+\centerline{
+\includegraphics*[trim=0 0 0 0,clip=true,width=0.8\textwidth]{Figurer/badetemp_2015}
+}
+\caption{\small
+The observed and modelled temperature at three beaches in the Inner Oslofjord during the summer 2015}
+\label{fig:badetemp_2015}
+\end{figure}
+
+
+\subsubsection{Ferrybox - Andr\'{e}?}
+To be continued... Andr\'{e}?
+
+\begin{figure}[ht]
+\centerline{
+\includegraphics*[trim=1cm 0cm 1cm 0cm,clip=true,height=10cm]{Figurer/FjordOs_with_FA_track}}
+\caption{\small
+The track of Color Fantasy.}
+\label{fig:Ferrybox_track}
+\end{figure}
+
+\begin{figure}[ht]
+\centerline{
+\includegraphics*[trim=1cm 0cm 1cm 0cm,clip=true,width=.5\textwidth]{Figurer/FjordOs_vs_Ferrybox_TEMP}
+\includegraphics*[trim=1cm 0cm 1cm 0cm,clip=true,width=.5\textwidth]{Figurer/FjordOs_vs_Ferrybox_SALT}}
+\caption{\small
+Simulated daily mean compared with observations from ferryboxes for temperature (left) and salinity (right).}
+\label{fig:Ferrybox_temp_salt}
+\end{figure}
+
+
+\clearpage 
+
+\subsection{Drifting lanes - Karina/Nils}
+
+De to drifterne i f\o rste tokt
+
+Oppsummer v\ae rforhold og oljedriften etter Godefoss. Sammenlign med lignende tilfelle i 2014/15, samt alternative drivbaner under andre forhold.
+
+Utslipp fra Slangentangen havner alltid i Bliksekilen if\o lge erfaring (Exxonmobil). Vi skal gj\o re noen beregninger om hvor utslipp fra Slagentangen havner if\o lge modellen. 
+
+\clearpage 
+\paragraph{Godafoss}
+
+\begin{figure}[ht]
+\centerline{
+\includegraphics*[width=.5\textwidth]{Figurer/opendrift/opendrift_godafoss_shortest_time_crop}
+\includegraphics*[width=.5\textwidth]{Figurer/opendrift/opendrift_godafoss_consentration_crop}
+}
+\centerline{
+\includegraphics*[width=.5\textwidth]{Figurer/opendrift/opendrift_godafoss_shortest_time_zoom_crop}
+\includegraphics*[width=.5\textwidth]{Figurer/opendrift/opendrift_godafoss_consentration_zoom_crop}
+}
+\caption{\small
+Number of hours from particle release, to particle in given area (left panels), and the number of particles that has been inside a given 140x140m area (right panel). Godafoss. Based on one year (April 1st 2015 - April 1st 2016) of simulations, with a maximum lifetime of 15 days og the released particles. This amounts to a total number of 8760 released particles. Please note the different scales of each figure.}
+\label{fig:opendrift_godafoss1}
+\end{figure}
+
+\begin{figure}[ht]
+\centerline{
+\includegraphics*[width=.5\textwidth]{Figurer/opendrift/opendrift_godafoss_shortest_time_zoom_endpos_crop}
+\includegraphics*[width=.5\textwidth]{Figurer/opendrift/opendrift_godafoss_consentration_zoom_endpos_crop}
+}
+\caption{\small
+For endposition of each trajectory: Number of hours from particle release, to particle in given area (left panels), and the number of particles that has been inside a given 140x140m area (right panel). Godafoss. Based on one year (April 1st 2015 - April 1st 2016) of simulations, with a maximum lifetime of 15 days og the released particles. This amounts to a total number of 8760 released particles. Please note the different scales of each figure.}
+\label{fig:opendrift_godafoss2}
+\end{figure}
+
+\clearpage 
+\paragraph{Slagen}
+
+\begin{figure}[ht]
+\centerline{
+\includegraphics*[width=.5\textwidth]{Figurer/opendrift/opendrift_slagen_shortest_time_crop}
+\includegraphics*[width=.5\textwidth]{Figurer/opendrift/opendrift_slagen_consentration_crop}
+}
+\centerline{
+\includegraphics*[width=.5\textwidth]{Figurer/opendrift/opendrift_slagen_shortest_time_zoom_crop}
+\includegraphics*[width=.5\textwidth]{Figurer/opendrift/opendrift_slagen_consentration_zoom_crop}
+}
+\caption{\small
+Number of hours from particle release, to particle in given area (left panels), and the number of particles that has been inside a given 140x140m area (right panel). Slagentangen. Based on one year (April 1st 2015 - April 1st 2016) of simulations, with a maximum lifetime of 15 days og the released particles. This amounts to a total number of 8760 released particles. Please note the different scales of each figure.}
+\label{fig:opendrift_slagen1}
+\end{figure}
+
+\begin{figure}[ht]
+\centerline{
+\includegraphics*[width=.5\textwidth]{Figurer/opendrift/opendrift_slagen_shortest_time_zoom_endpos_crop}
+\includegraphics*[width=.5\textwidth]{Figurer/opendrift/opendrift_slagen_consentration_zoom_endpos_crop}
+}
+\caption{\small
+For endposition of each trajectory: Number of hours from particle release, to particle in given area (left panels), and the number of particles that has been inside a given 140x140m area (right panel). Slagentangen. Based on one year (April 1st 2015 - April 1st 2016) of simulations, with a maximum lifetime of 15 days og the released particles. This amounts to a total number of 8760 released particles. Please note the different scales of each figure.}
+\label{fig:opendrift_slagen2}
+\end{figure}
+
+
+\clearpage 

@@ -1,0 +1,19 @@
+\section{Model}
+
+The FjordOs model is a curvilinear, free-surface, and terrain-following model based on the Rutgers Regional Ocean Modeling System (ROMS) \citep{haidv:etal:2008,shche:mcwil:2003,shche:mcwil:2005,shche:mcwil:2009} adapted to the Oslofjord \citep{roed:etal:2016}. 
+
+The model applies several external inputs, such as atmospheric input, river input, tides, and input of sea level, currents and hydrography at the model's open lateral boundaries, in addition to bathymetry (Fig.~\ref{fig:oppbygging}). Mean values of sea level, currents, and hydrography from the NorKyst800 model \citep{albre:etal:2011} is applied on the open boundary towards Skagerak. The necessary atmospheric input is extracted from the AROME-MetCoOp model that runs operationally at MET Norway \citep{mulle:etal:2015}. The tidal input is based on the TPXO Atlantic database \citep{egber:erofe:2002} and modified using the measurements at Viker close to the southern boundary. The freshwater discharges from the rivers are based on the discharge data from a database constructed by use of the hydrological model HBV \citep{beldr:etal:2003}. For more details on the FjordOs model, see \cite{roed:etal:2016}.
+
+The FjordOs model covers the area of interest (Fig.~\ref{fig:kart}). The model period in this study is April 2014 to December 2015.
+
+\begin{figure}[htb]
+\centerline{
+\includegraphics*[width=0.9\textwidth]{Figurer/oppbygging}
+}
+\caption{\small
+Illustration of external inputs to the FjordOs model.
+}
+\label{fig:oppbygging}
+\end{figure}
+
+\newpage
