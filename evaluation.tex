@@ -388,33 +388,33 @@ Simulated daily mean compared with observations from ferryboxes for temperature 
 \clearpage 
 
 \subsection{Drifting lanes}
-
-De to drifterne i f\o rste tokt
-
-Oppsummer v\ae rforhold og oljedriften etter Godefoss. Sammenlign med lignende tilfelle i 2014/15, samt alternative drivbaner under andre forhold.
-
-Skill-score for drifters
-
-\clearpage 
 \subsubsection{Godafoss}
 Our model simulation does not cover the time period when Godafoss ran aground, so we have instead released drifters in our model from the position of the oilspill from Godafoss for a period of one year. We think that over such a long period of time, there will be at least one weather and current situation similar to the weather and currents experienced during the Godafoss release. So by showing the models ability to advect oil to the observed locations during a one year run, we at least show that our ocean model is capable of recreating the right drift patterns.
 
 To simulate the drift of the oil, we have applied the open source trajectory-model OpenDrift. This is a trajectory model under development at MET Norway, and is described by its developers as "a software for modeling the trajectories and fate of objects or substances drifting in the ocean, or even in the atmosphere". It is distributed under a GPL v2.0 license, and is available on GitHub\footnote{https://github.com/knutfrode/opendrift}.
 
-The OpenDrift model was forced with currents from the FjordOs model and with wind from the Arome-MetCoOp 2.5km (Arome2.5) atmospheric model (the same atmospheric model was used as forcing when running the FjordOs hindcast). We have also provided daily mean currents from NorKyst-800m outside of the FjordOs-model, to properly treat the particles that are advected out of the FjordOs-model, so they can re-enter at the correct location. We can tune a number of parameters when running OpenDrift, e.g. random walk and the wind drift factor. Random walk was not used in our simulations, and wind drift factor was set to 0.01 (i.e. 1\%). Modelled drifters has been released once per hour from April 1st 2015 to April 1st 2016, a total number og 8760 particles. The lifetime of each particle is set to 15 days, i.e. after 15 days the particle is deactivated. This is done to reduce the computational cost of advecting a large number of particles. 
+The OpenDrift model was forced with currents from the FjordOs model and with wind from the Arome-MetCoOp 2.5km (Arome2.5) atmospheric model (the same atmospheric model was used as forcing when running the FjordOs hindcast). We have also provided daily mean currents from NorKyst-800m outside of the FjordOs-model, to properly treat the particles that are advected out of the FjordOs-model, so they can re-enter at the correct location. We can tune a number of parameters when running OpenDrift, e.g. random walk and the wind drift factor. Random walk was not used in our simulations, and wind drift factor was set to $0.01$ (i.e. $1\%$). Modelled drifters has been released once per hour from April 1st 2015 to April 1st 2016, a total number og 8760 particles. The lifetime of each particle is set to 15 days, i.e. after 15 days the particle is deactivated. This is done to reduce the computational cost of advecting a large number of particles. 
+
+The results from the drift model can be viewed in Figure \ref{fig:opendrift_godafoss_time} - \ref{fig:opendrift_godafoss_endpos}. In Figure \ref{fig:opendrift_godafoss_time} we show the number of hours from the particles was released, until they reach different areas of the domain. Figure \ref{fig:opendrift_godafoss_conc} show the likelihood of an area experincing oil. This is done by counting the number of particles that has been inside each grid cell during the simulation, and presenting this at concentrations. Figure \ref{fig:opendrift_godafoss_endpos} depict the same as the two previous figures, but only showing the values in the final position of each trajectory. This is to better visualize stranding sites. All these calculations are done on a $140m$ by $140m$ grid.
 
 \begin{figure}[ht]
 \centerline{
 \includegraphics*[width=.5\textwidth]{Figurer/opendrift/opendrift_godafoss_shortest_time_crop}
-\includegraphics*[width=.5\textwidth]{Figurer/opendrift/opendrift_godafoss_consentration_crop}
-}
-\centerline{
 \includegraphics*[width=.5\textwidth]{Figurer/opendrift/opendrift_godafoss_shortest_time_zoom_crop}
+}
+\caption{\small
+Number of hours from particle release, to particle is inside a given $140x140m$ area for the Godafoss scenario. Based on one year (April 1st 2015 - April 1st 2016) of simulations, with a maximum lifetime of 15 days of the released particles. This amounts to a total number of $8760$ released particles. Please note the different scales of each figure.}
+\label{fig:opendrift_godafoss_time}
+\end{figure}
+
+\begin{figure}[ht]
+\centerline{
+\includegraphics*[width=.5\textwidth]{Figurer/opendrift/opendrift_godafoss_consentration_crop}
 \includegraphics*[width=.5\textwidth]{Figurer/opendrift/opendrift_godafoss_consentration_zoom_crop}
 }
 \caption{\small
-Number of hours from particle release, to particle in given area (left panels), and the number of particles that has been inside a given 140x140m area (right panel). Godafoss. Based on one year (April 1st 2015 - April 1st 2016) of simulations, with a maximum lifetime of 15 days og the released particles. This amounts to a total number of 8760 released particles. Please note the different scales of each figure.}
-\label{fig:opendrift_godafoss1}
+Same as Figure \ref{fig:opendrift_godafoss_time}, but for number of particles that has been inside a given $140x140m$ area for the Godafoss scenario. Please note the different scales of each figure.}
+\label{fig:opendrift_godafoss_conc}
 \end{figure}
 
 \begin{figure}[ht]
@@ -423,11 +423,25 @@ Number of hours from particle release, to particle in given area (left panels), 
 \includegraphics*[width=.5\textwidth]{Figurer/opendrift/opendrift_godafoss_consentration_zoom_endpos_crop}
 }
 \caption{\small
-For endposition of each trajectory: Number of hours from particle release, to particle in given area (left panels), and the number of particles that has been inside a given 140x140m area (right panel). Godafoss. Based on one year (April 1st 2015 - April 1st 2016) of simulations, with a maximum lifetime of 15 days og the released particles. This amounts to a total number of 8760 released particles. Please note the different scales of each figure.}
-\label{fig:opendrift_godafoss2}
+Same as Figure \ref{fig:opendrift_godafoss_time} and \ref{fig:opendrift_godafoss_conc}, but only showing endposition of each trajectory: Number of hours from particle release, to particle in given area (left panels), and the number of particles that has been inside a given $140x140m$ area (right panel). Please note the different scales of each figure.}
+\label{fig:opendrift_godafoss_endpos}
 \end{figure}
 
 \clearpage 
+\subsubsection{Surface drifters}
+We evaluate the models ability to recreate the drifter trajectories by using a skill-score, as described in \cite{liu:weisberg:2011}: 
+
+$$s=\displaystyle\sum_{i=1}^{N} d_i \displaystyle\sum_{i=1}^{N} l_oi$$
+
+\[ ss = 
+  \begin{cases}
+    1 - \frac{s}{n}   & \quad (s \leq n)\\
+    -(n+1)/2          & \quad (s > n)   \\ 
+  \end{cases}
+  , \text{where $n$ is a tolerance treshold}
+\]
+
+A skill score of 1 means a perfect match, while a score of 0 means no skill. We have used a tolerance treshold $n=1$.
 
 
 \clearpage 
