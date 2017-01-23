@@ -1,0 +1,13 @@
+drop1i0 - FjordOs(11): 0.0328785627605, NorKyst(11): 0
+drop4i7 - FjordOs(2): 0.777611518077, NorKyst(1): 0.526305594798
+drop6i12 - FjordOs(3): 0, NorKyst(11): 0.44418490079
+drop7i10 - FjordOs(0): 0.500736617032, NorKyst(0): 0.555661092655
+drop8i1 - FjordOs(21): 0, NorKyst(21): 0
+drop31i4 - FjordOs(1): 0.489189784131, NorKyst(1): 0.582155100656
+drop51i4 - FjordOs(3): 0.539083242536, NorKyst(15): 0.589477758763
+drop52i8 - FjordOs(4): 0.484761177256, NorKyst(1): 0.499675137038
+drop61i4 - FjordOs(3): 0.540639244839, NorKyst(8): 0.587210039239
+drop61i5 - FjordOs(3): 0.54063943678, NorKyst(8): 0.587234133516
+drop91i11 - FjordOs(8): 0.842746895459, NorKyst(12): 0.649470019023
+drop101i6 - FjordOs(15): 0.649688133838, NorKyst(15): 0.803942455921
+drop102i9 - FjordOs(6): 0.702678956986, NorKyst(7): 0.661272335722
