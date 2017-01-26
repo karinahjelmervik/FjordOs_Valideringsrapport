@@ -1,4 +1,15 @@
-\section{A brief overview of a potential spill from the Slagen refinery}
+\section*{Driftling lanes from the Slagen refinery}
+A part of the Fjordos project has been to examine how known, and potential, oilspills would spread out in the Oslofjord. The Slagen refinery at Slagentangen is owned by ExxonMobil, and is described as following on their webpage\footnote{\url{http://www.exxonmobil.no/en-NO/company/operations/operating-locations/slagen-refinery?sc_lang=en-NO}, 26.01.2017}: "Slagen Refinery is situated on the west bank of the Oslofjord about 5 n. miles south of Horten. The marine terminal consists of a pier about 500 m long with loading/discharging berths on both sides. To the south of the long pier there is a small harbour where mooring boats and oil recovery equipment are kept. The terminal and its near surroundings are owned and controlled by Esso Norge AS. It has its own Harbour Office with Marine Supervisors on duty 24 hours a day." and "The Slagen Marine Terminal has approximately 800 tanker calls a year with size variation 100 to 250 000 DWT. The annual import of Crude oil (mainly from the Northsea) and Blendstock is about 6.5 mill. $m^3$ and about 5.7 mill. $m^3$ petroleum products are shipped out."
+
+To model the spread of oil from a potential spill at Slagentangen we have used the same approach as in Section \ref{sect:godafoss_model}. It is very important to point out that the work done in this appendix IS NOT SUFFICIENT to be used for any contingency planning or other work on possible oil spill scenarioes. It should be viewed as a "teaser" on possible future work that could be used for contingency planning of unwanted releases of substances from anywhere within the Oslofjord.
+
+Figure \ref{fig:opendrift_slagen1} show the release position of the particles used in the simulation marked with a black dot.  The left panel show the shortest number of hours from the time of the particle release to a particle is in a given position. The right panel show the corresponding consentrations. When viewing the zoomed in figures (lower figures), it is evident that the coastline of the ocean model does not perfectly match the real coastline, and also the OpenDrift model will at times advect particles onto land. This is linked to the length of the timestep used in OpenDrift. A more thorough work on potential oil spills should adress  these issues.
+When looking at the area closest to the release position, it clearly shows that most particles are transported towards the southeast, and this is also the direction of which the particles are transported fastest. This compares well to the observations of currents outside Slagen in Figure \ref{fig:Slagen-rose}.
+Figure \ref{fig:opendrift_slagen2} show the end positions of each trajectory, and the corresponding shortes time from release to that position, and consentration.
+
+This sort of maps could be made and categorized by weather pattern or another known factor, and in turn e.g. be used in the unlikely event of a spill in the time between the spill happening, and the forecast of oildrift is recieved. 
+
+
 
 \begin{figure}[ht]
 \centerline{
