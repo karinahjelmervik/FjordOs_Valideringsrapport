@@ -1,4 +1,4 @@
-\begin{thebibliography}{13}
+\begin{thebibliography}{14}
 \providecommand{\natexlab}[1]{#1}
 \expandafter\ifx\csname urlstyle\endcsname\relax
   \providecommand{\doi}[1]{doi:\discretionary{}{}{}#1}\else
@@ -43,6 +43,11 @@ Hjelmervik, K.~B., N.~M. Kristensen, and A.~Staalstr{\o}m (2016), Comparison of
   simulations and observations in the oslofjord. fjordos technical report no.
   3, \textit{MET Report~13}, Norwegian Meteorological Institute, MET Norway,
   P.O.Box 43 Blindern, NO-0313 Oslo, Norway.
+
+\bibitem[{\textit{Liu and Weisberg}(2011)}]{liu:2011}
+Liu, Y., and R.~H. Weisberg (2011), Evaluation of trajectory modeling in
+  different dynamic regions using normalized cumulative lagrangian separation,
+  \textit{Journal of Geophysical Research: Oceans}, \textit{116}(C9).
 
 \bibitem[{\textit{M{\"u}ller et~al.}(2015)\textit{M{\"u}ller, Homleid,
   Ivarsson, K{\o}ltzow, Lindskog, Andrae, Aspelien, Bj{\o}rge, Dahlgren,
@@ -90,8 +95,8 @@ Staalstr{\o}m, A., and P.~Ghaffari (2015), Current conditions in the oslofjord
   - focus on current strength along the bottom, \textit{Technical Report SNO
   6799-2015}, NIVA, Gaustadalléen 21, NO-0349 Oslo, Norway.
 
-\bibitem[{\textit{Staalstr{\o}m and Hjelmervik}(-)}]{staalstrom:2017}
-Staalstr{\o}m, A., and K.~Hjelmervik (-), Strømforholdene i innløpet til
-  drammensfjorden (in norwegian), \textit{Submitted}, \textit{-}, --.
+\bibitem[{\textit{Staalstr{\o}m and Hjelmervik}(2017)}]{staalstrom:2017}
+Staalstr{\o}m, A., and K.~Hjelmervik (2017), Strømforholdene i innløpet til
+  drammensfjorden (in norwegian), \textit{Vann (in review)}, \textit{-}, --.
 
 \end{thebibliography}
