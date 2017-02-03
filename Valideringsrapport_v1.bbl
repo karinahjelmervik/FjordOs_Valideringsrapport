@@ -1,4 +1,4 @@
-\begin{thebibliography}{14}
+\begin{thebibliography}{15}
 \providecommand{\natexlab}[1]{#1}
 \expandafter\ifx\csname urlstyle\endcsname\relax
   \providecommand{\doi}[1]{doi:\discretionary{}{}{}#1}\else
@@ -36,6 +36,12 @@ Haidvogel, D.~B., H.~Arango, P.~W. Budgell, B.~D. Cornuelle, E.~Curchitser,
   assessment of the {R}egional {O}cean {M}odeling {S}ystem, \textit{J. Comput.
   Phys.}, \textit{227}(7), 3595--3624,
   \doi{http://dx.doi.org/10.1016/j.jcp.2007.06.016}.
+
+\bibitem[{\textit{Hjelmervik et~al.}(2017)\textit{Hjelmervik, Kristensen,
+  Staalstr{\o}m, and R{\o}ed}}]{hjelm:etal:2017}
+Hjelmervik, K., N.~M. Kristensen, A.~Staalstr{\o}m, and L.~P. R{\o}ed (2017), A
+  simple approach to adjust tidal forcing in fjord models, \textit{Intended for
+  Ocean Dynamics}, \textit{(submitted)}.
 
 \bibitem[{\textit{Hjelmervik et~al.}(2016)\textit{Hjelmervik, Kristensen, and
   Staalstr{\o}m}}]{hjelm:etal:2016}
@@ -93,7 +99,8 @@ Shchepetkin, A.~F., and J.~C. McWilliams (2009), Correction and commentary for
 \bibitem[{\textit{Staalstr{\o}m and Ghaffari}(2015)}]{staalstrom:2015}
 Staalstr{\o}m, A., and P.~Ghaffari (2015), Current conditions in the oslofjord
   - focus on current strength along the bottom, \textit{Technical Report SNO
-  6799-2015}, NIVA, Gaustadalléen 21, NO-0349 Oslo, Norway.
+  6799-2015}, Norwegian Institute for Water Research, NIVA, Gaustadalléen 21,
+  NO-0349 Oslo, Norway.
 
 \bibitem[{\textit{Staalstr{\o}m and Hjelmervik}(2017)}]{staalstrom:2017}
 Staalstr{\o}m, A., and K.~Hjelmervik (2017), Strømforholdene i innløpet til
