@@ -1,0 +1,85 @@
+\begin{thebibliography}{12}
+\providecommand{\natexlab}[1]{#1}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi:\discretionary{}{}{}#1}\else
+  \providecommand{\doi}{doi:\discretionary{}{}{}\begingroup
+  \urlstyle{rm}\Url}\fi
+
+\bibitem[{\textit{Baalsrud and Magnusson}(2002)}]{baalsrud:2002}
+Baalsrud, K., and J.~Magnusson (2002), \textit{Indre Oslofjord (in Norwegian)},
+  Fagr{\aa}det for Indre Oslofjord.
+
+\bibitem[{\textit{Haidvogel et~al.}(2008)\textit{Haidvogel, Arango, Budgell,
+  Cornuelle, Curchitser, Lorenzo, Fennel, Geyer, Hermann, Lanerolle, Levin,
+  McWilliams, Miller, Moore, Powell, Shchepetkin, Sherwood, Signell, Warner,
+  and Wilkin}}]{haidv:etal:2008}
+Haidvogel, D.~B., H.~Arango, P.~W. Budgell, B.~D. Cornuelle, E.~Curchitser,
+  E.~D. Lorenzo, K.~Fennel, W.~R. Geyer, A.~J. Hermann, L.~Lanerolle, J.~Levin,
+  J.~C. McWilliams, A.~J. Miller, A.~M. Moore, T.~M. Powell, A.~F. Shchepetkin,
+  C.~R. Sherwood, R.~P. Signell, J.~C. Warner, and J.~Wilkin (2008), Ocean
+  forecasting in terrain-following coordinates: Formulation and skill
+  assessment of the {R}egional {O}cean {M}odeling {S}ystem, \textit{J. Comput.
+  Phys.}, \textit{227}(7), 3595--3624,
+  \doi{http://dx.doi.org/10.1016/j.jcp.2007.06.016}.
+
+\bibitem[{\textit{Hjelmervik et~al.}(2017)\textit{Hjelmervik, Kristensen,
+  Staalstr{\o}m, and R{\o}ed}}]{hjelm:etal:2017}
+Hjelmervik, K., N.~M. Kristensen, A.~Staalstr{\o}m, and L.~P. R{\o}ed (2017), A
+  simple approach to adjust tidal forcing in fjord models, \textit{Intended for
+  Ocean Dynamics}, \textit{(submitted)}.
+
+\bibitem[{\textit{Hjelmervik et~al.}(2016)\textit{Hjelmervik, Kristensen, and
+  Staalstr{\o}m}}]{hjelm:etal:2016}
+Hjelmervik, K.~B., N.~M. Kristensen, and A.~Staalstr{\o}m (2016), Comparison of
+  simulations and observations in the oslofjord. fjordos technical report no.
+  3, \textit{MET Report~13}, Norwegian Meteorological Institute, MET Norway,
+  P.O.Box 43 Blindern, NO-0313 Oslo, Norway.
+
+\bibitem[{\textit{Liu and Weisberg}(2011)}]{liu:2011}
+Liu, Y., and R.~H. Weisberg (2011), Evaluation of trajectory modeling in
+  different dynamic regions using normalized cumulative lagrangian separation,
+  \textit{Journal of Geophysical Research: Oceans}, \textit{116}(C9).
+
+\bibitem[{\textit{Pawlowicz et~al.}(2002)\textit{Pawlowicz, Beardsley, and
+  Lentz}}]{pavlo:etal:2002}
+Pawlowicz, R., B.~Beardsley, and S.~Lentz (2002), Classical tidal harmonic
+  analysis including error estimates in {MATLAB} using {T{\_}TIDE},
+  \textit{Computers and Geosciences}, \textit{28}(8), 929--937.
+
+\bibitem[{\textit{R{\o}ed et~al.}(2016)\textit{R{\o}ed, Kristensen, Hjelmervik,
+  and Staalstr{\o}m}}]{roed:etal:2016}
+R{\o}ed, L.~P., N.~M. Kristensen, K.~B. Hjelmervik, and A.~Staalstr{\o}m
+  (2016), A high-resolution, curvilinear roms model for the oslofjord. fjordos
+  technical report no. 2, \textit{MET Report~4}, Norwegian Meteorological
+  Institute, MET Norway, P.O.Box 43 Blindern, NO-0313 Oslo, Norway.
+
+\bibitem[{\textit{Shchepetkin and McWilliams}(2003)}]{shche:mcwil:2003}
+Shchepetkin, A.~F., and J.~C. McWilliams (2003), A method for computing
+  horizontal pressure-gradient force in an oceanic model with a nonaligned
+  vertical coordinate, \textit{J. Geophys. Res.}, \textit{108}, 3090,
+  \doi{10.1029/2001JC001047}.
+
+\bibitem[{\textit{Shchepetkin and McWilliams}(2005)}]{shche:mcwil:2005}
+Shchepetkin, A.~F., and J.~C. McWilliams (2005), The {R}egional {O}cean
+  {M}odeling {S}ystem ({ROMS}): A split-explicit, free-surface,
+  topography-following coordinate ocean model, \textit{Ocean Modelling},
+  \textit{9}, 347--404.
+
+\bibitem[{\textit{Shchepetkin and McWilliams}(2009)}]{shche:mcwil:2009}
+Shchepetkin, A.~F., and J.~C. McWilliams (2009), Correction and commentary for
+  "{O}cean forecasting in terrain-following coordinates: Formulation and skill
+  assessment of the regional ocean modeling system" by {H}aidvogel et al., {J}.
+  {C}omp. {P}hys. 227, pp. 3595-3624, \textit{J. Comp. Phys.},
+  \textit{228}(24), 8985 -- 9000, \doi{10.1016/j.jcp.2009.09.002}.
+
+\bibitem[{\textit{Staalstr{\o}m and Ghaffari}(2015)}]{staalstrom:2015}
+Staalstr{\o}m, A., and P.~Ghaffari (2015), Current conditions in the oslofjord
+  - focus on current strength along the bottom, \textit{Technical Report SNO
+  6799-2015}, Norwegian Institute for Water Research, NIVA, Gaustadalléen 21,
+  NO-0349 Oslo, Norway.
+
+\bibitem[{\textit{Staalstr{\o}m and Hjelmervik}(2017)}]{staalstrom:2017}
+Staalstr{\o}m, A., and K.~Hjelmervik (2017), Strømforholdene i innløpet til
+  drammensfjorden (in norwegian), \textit{Vann (in review)}, \textit{-}, --.
+
+\end{thebibliography}
