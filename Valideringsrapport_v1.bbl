@@ -1,28 +1,13 @@
-\begin{thebibliography}{15}
+\begin{thebibliography}{12}
 \providecommand{\natexlab}[1]{#1}
 \expandafter\ifx\csname urlstyle\endcsname\relax
   \providecommand{\doi}[1]{doi:\discretionary{}{}{}#1}\else
   \providecommand{\doi}{doi:\discretionary{}{}{}\begingroup
   \urlstyle{rm}\Url}\fi
 
-\bibitem[{\textit{Albretsen et~al.}(2011)\textit{Albretsen, Sperrevik,
-  Staalstr{\o}m, Sandvik, Vikeb{\o}, and Asplin}}]{albre:etal:2011}
-Albretsen, J., A.~K. Sperrevik, A.~Staalstr{\o}m, A.~D. Sandvik, F.~Vikeb{\o},
-  and L.~C. Asplin (2011), Norkyst-800 {R}eport {N}o. 1: {U}ser manual and
-  technical descriptions, \textit{Tech. Rep. Fisken og Havet 2/2011}, Institute
-  of Marine Research, Pb. 1870 Nordnes, N-5817 Bergen, Norway.
-
-\bibitem[{\textit{Beldring et~al.}(2003)\textit{Beldring, Engeland, Roald,
-  S{\ae}lthun, and Voks{\o}}}]{beldr:etal:2003}
-Beldring, S., K.~Engeland, L.~A. Roald, N.~R. S{\ae}lthun, and A.~Voks{\o}
-  (2003), Estimation of parameters in a distributed precipitation-runoff model
-  for norway, \textit{Hydrology and Earth System Sciences Discussions},
-  \textit{7}(3), 304--316.
-
-\bibitem[{\textit{Egbert and Erofeeva}(2002)}]{egber:erofe:2002}
-Egbert, G.~D., and S.~Y. Erofeeva (2002), Efficient inverse modeling of
-  barotropic ocean tides, \textit{J. Atmos. Oceanic Tech.}, \textit{19}(2),
-  183--204, \doi{10.1175/1520-0426(2002)019<0183:EIMOBO>2.0.CO;2}.
+\bibitem[{\textit{Ballsrud and Magnusson}(2002)}]{baalsrud:2002}
+Ballsrud, K., and J.~Magnusson (2002), \textit{Indre Oslofjord (in Norwegian)},
+  Fagr{\aa}det for Indre Oslofjord.
 
 \bibitem[{\textit{Haidvogel et~al.}(2008)\textit{Haidvogel, Arango, Budgell,
   Cornuelle, Curchitser, Lorenzo, Fennel, Geyer, Hermann, Lanerolle, Levin,
@@ -54,15 +39,6 @@ Hjelmervik, K.~B., N.~M. Kristensen, and A.~Staalstr{\o}m (2016), Comparison of
 Liu, Y., and R.~H. Weisberg (2011), Evaluation of trajectory modeling in
   different dynamic regions using normalized cumulative lagrangian separation,
   \textit{Journal of Geophysical Research: Oceans}, \textit{116}(C9).
-
-\bibitem[{\textit{M{\"u}ller et~al.}(2015)\textit{M{\"u}ller, Homleid,
-  Ivarsson, K{\o}ltzow, Lindskog, Andrae, Aspelien, Bj{\o}rge, Dahlgren,
-  Kristiansen, Randriamampianina, Ridal, and Vignes}}]{mulle:etal:2015}
-M{\"u}ller, M., M.~Homleid, K.-I. Ivarsson, M.~A. K{\o}ltzow, M.~Lindskog,
-  U.~Andrae, T.~Aspelien, D.~Bj{\o}rge, P.~Dahlgren, J.~Kristiansen,
-  R.~Randriamampianina, M.~Ridal, and O.~Vignes (2015), {AROME}-{M}et{C}o{O}p:
-  {A} {N}ordic convective scale operational weather prediction model,
-  \textit{Submitted}, \textit{-}, --.
 
 \bibitem[{\textit{Pawlowicz et~al.}(2002)\textit{Pawlowicz, Beardsley, and
   Lentz}}]{pavlo:etal:2002}
