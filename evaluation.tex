@@ -1,50 +1,84 @@
-\newpage
+%\newpage
 \section{Evaluation}
 \label{sec:evalu}
+% % % % % % % % % % % % %
 \subsection{Water level and tide}
-\label{subsec:wlevee}
-
-Time series from the three permanent stations measuring water level have been analysed and compared with simulated time series of water level extracted from locations near the three permanent stations. Both simulated and observed time series of water level are analysed using t\_tide \citep{pavlo:etal:2002} in order to extract the tidal components. The same period in time is applied for both the simulations and the observations (April 2014 to December 2015). 
-
-\begin{figure}[hb] 
-\centerline{ 
-\includegraphics*[trim=3cm 0cm 2.5cm 0cm,clip=true,width=\textwidth]{Figurer/Oscarsborg_Tide_selected_jan15}  
-} 
-\centerline{ 
-\includegraphics*[trim=3cm 0cm 2.5cm 0cm,clip=true,width=\textwidth]{Figurer/Oscarsborg_WL_rest_jan15} 
-} 
-\caption{\small 
-Simulated (black) and observed (red) time series of tides (upper panel) and residual (lower panel) at Oscarsborg (\ref{fig:kart_obs}). The tidal elevation is composed of the eleven components included in the tidal forcing only. The residual is the total water level from which is subtracted the tidal elevation due to these eleven constituents.} 
-\label{fig:Waterlevel_jan15} 
-\end{figure} 
+\label{subsec:wlevele}
+Time series of water level from the three tide gauge stations mentioned above (Section \ref{subsec:wlevelo}) were extracted for the period April 2014 through December 2015. We also extracted time series for the same period from locations near the three stations from the simulation. To compare the two time series we first analysed them using t\_tide \citep{pavlo:etal:2002} to extract the tidal components. We then subtracted the water level due to these eleven tidal constituents to derive time series of the residual water level.   
 
 %Eleven tidal components are included in the model at the southern open boundary using their corresponding amplitudes and phases for both depth integrated currents and water level (Røed et al., 2016). The time series of tidal components included in the tidal forcing are in fairly good agreement (Fig.~\ref{fig:Waterlevel_tide}, upper, and Tab.\-\ref{tab:Tide}). In addition to the tidal components included in the tidal forcing, more tidal components are present in the time series (Fig. 11). Tidal components with periods of approximately one year (SA) and half a year (SSA) respectively are present in both the observations and the simulations (Tab.3). In addition, the observations have more components with shorter periods which are not included in the tidal forcing and thereby not present in the simulations. This is consistent with the frequency series of the Fourier transformed water level (Fig. 12).
 
-The tidal forcing at the southern open boundary of the model includes eleven tidal components. Corresponding amplitudes and phases are used for the depth integrated currents and water level as described by \cite{roed:etal:2016}. As depicted by the time series shown in the upper panel of Fig.~\ref{fig:Waterlevel_jan15}, showing the tidal elevation due to these eleven components at Oscarsborg, model and observations are in fairly good agreement. We also note that, as shown by the lower panel of Fig.~\ref{fig:Waterlevel_jan15}, the residuals compares fairly well. This is further corroborated by a comparison of the simulated and observed tidal amplitudes and phases for thirteen individual tidal constitutents at all the three tidal gauge stations Viker, Oscarsborg and Oslo as displayed by Tab.\-\ref{tab:Tide}. Note that Tab.\-\ref{tab:Tide} shows the result for three tidal components not included in the tidal forcing. For instance tidal components with periods of approximately one year (SA) and half a year (SSA) are present in both the observations and the simulations. In addition, the observations have more tidal components with shorter periods which are not included in the tidal forcing, and thereby not present in the simulations (Fig.~\ref{fig:Waterlevel_freq}). This is consistent with the frequency series of the Fourier transformed water level (Fig.~\ref{fig:Waterlevel_tide}).
+Recall that the tidal forcing at the southern open boundary of the model includes only eleven tidal constitutents, and that we have adjusted the tidal forcing by use of the observed tides at Viken for these eleven constitutents \citep{roed:etal:2016}. Furthermore we used corresponding amplitudes and phases for the depth integrated currents and water level. As depicted by Fig.~\ref{fig:Waterlevel_jan15}, showing the tidal elevation for January 2015 due to these eleven components at Oscarsborg, model and observations are in fairly good agreement. We also note that the residuals, as shown by the lower panel of Fig.~\ref{fig:Waterlevel_jan15}, compare favourably. 
 
-\begin{figure}[tbh] 
-\centerline{ 
-\includegraphics*[trim=3cm 0cm 2.5cm 0cm,clip=true,width=\textwidth]{Figurer/Oscarsborg_Tide_not_included}  
-} 
-\caption{\small 
-Time series at Oscarsborg of the tidal components not included in the tidal tidal forcing.} 
-\label{fig:Waterlevel_tide} 
+\begin{figure}[hb] 
+	\centerline{ \includegraphics*[trim=3cm 0cm 2.5cm 0cm,clip=true,width=\textwidth]{Figurer/Oscarsborg_Tide_selected_jan15} } 
+	\centerline{ \includegraphics*[trim=3cm 0cm 2.5cm 0cm,clip=true,width=\textwidth]{Figurer/Oscarsborg_WL_rest_jan15} } 
+ 	\caption{\small Simulated (black) and observed (red) time series of tides (upper panel) and residual (lower panel) at Oscarsborg (\ref{fig:kart_obs}). The tidal elevation is composed of the eleven components included in the tidal forcing only. The residual is the total water level from which is subtracted the tidal elevation due to these eleven constituents.} 
+	\label{fig:Waterlevel_jan15} 
 \end{figure} 
 
+This is further corroborated by a comparison of the simulated and observed tidal amplitudes and phases for thirteen individual tidal constitutents at all the three tidal gauge stations (Tab.~\ref{tab:Tide}) of which three of them are not included in the tidal forcing. For instance Tab.~\ref{tab:Tide} include tidal components with periods of approximately one year (SA) and half a year (SSA). Surprisingly they also show up in the model simulations despite not being included in the tidal forcing. This may be explained by the fact that we in addition to the tides as forcing on the southern boundary of the FjordOs model also use daily mean water level, hydrography and currents from the NorKyst800 model when nesting the FjordOs model to the former \citep{roed:etal:2016}. 
+
+\begin{table}[t] 
+%\vspace{-1.5cm} 
+	\caption{\small Simulated and observed tidal amplitude and phase for selected tidal components.} 
+	\label{tab:Tide} 
+	\centering 
+	\begin{tabular}{|c|c|l|cc|cc|cc|c|} 
+\hline  
+	  &	&	& \multicolumn{2}{|c|}{\small \bf Viker} & \multicolumn{2}{|c|}{\small \bf Oscarsborg} & \multicolumn{2}{|c|}{\small \bf Oslo} & {\small \bf Included} \\  
+{\small \bf Comp.} & {\small \bf Period} & {\small \bf sim/} & {\small \bf amp.} & {\small \bf phase.} & {\small \bf amp.} & {\small \bf phase.} & {\small \bf amp.} & {\small \bf phase.} & {\small \bf in tidal} \\ 
+	    & {\small \bf [h]} & {\small \bf obs} & {\small \bf [cm]} & {\small \bf [deg]} & {\small \bf [cm]} & {\small \bf [deg]} & {\small \bf [cm]}   & {\small \bf [deg]} & {\small \bf forcing} \\ \hline 
+\small SA   & \small 8764	 	& sim & 15.5 & 284 & 15.6 & 286 & 15.4 & 286 & no   \\
+\small      &        	& obs & 10.0 & 319 & 11 & 322 & 11.4 & 324 &    \\
+\small SSA  & \small 4382 		& sim & 8.8 & 197 & 9.2 & 200 & 9.4 & 200 & no   \\
+\small      &        	& obs & 7.5 & 188 & 8.0 & 189 & 8.2 & 190 &    \\
+\small K2   & \small 11.9672 	& sim & 1.6 & 10 & 2.0 & 13 & 2.1 & 15 & yes  \\
+\small      &        	& obs & 0.7 & 45 & 0.8 & 66 & 0.9 & 66 &    \\
+\small S2   & \small 12.0000 	& sim & 3.3 & 64 & 3.9 & 69 & 4.2 & 70 & yes  \\
+\small      &        	& obs & 2.9 & 46 & 3.3 & 65 & 3.5 & 69 &    \\
+\small M2   & \small 12.4206 	& sim & 11.5 & 105 & 13.2 & 112 & 13.9 & 114 & yes  \\
+\small      &        	& obs & 11.9 & 105 & 13.8 & 121 & 14.4 & 125 &    \\
+\small N2   & \small 12.6584 	& sim & 3.0 & 69 & 3.5 & 75 & 3.7 & 76 & yes  \\
+\small      &        	& obs & 3.0 & 60 & 3.4 & 76 & 3.6 & 80 &    \\
+\small K1   & \small 23.9345 	& sim & 0.2 & 187 & 0.1 & 175 & 0.2 & 157 & yes  \\
+\small      &        	& obs & 0.4 & 127 & 0.7 & 130 & 0.8 & 130 &    \\
+\small P1   & \small 24.0659 	& sim & 0.6 & 322 & 0.6 & 334 & 0.7 & 342 & yes  \\
+\small      &        	& obs & 0.2 & 129 & 0.3 & 102 & 0.4 & 97 &    \\
+\small O1   & \small 25.8193 	& sim & 3.5 & 337 & 3.8 & 339 & 3.8 & 339 & yes  \\
+\small      &        	& obs & 2.2 & 277 & 2.3 & 281 & 2.4 & 282 &    \\
+\small Q1   & \small 26.8684 	& sim & 0.0 & 231 & 0.0 & 216 & 0.1 & 215 & no   \\
+\small      &        	& obs & 1.1 & 190 & 1.2 & 198 & 1.3 & 200 &    \\
+\small MN4  & \small 6.2692 	& sim & 0.2 & 5 & 0.5 & 32 & 0.6 & 35 & yes  \\
+\small      &        	& obs & 0.4 & 249 & 0.6 & 289 & 0.7 & 297 &    \\
+\small M4   & \small 6.2103 	& sim & 1.0 & 355 & 1.9 & 18 & 2.5 & 23 & yes  \\
+\small      &        	& obs & 1.2 & 281 & 1.8 & 324 & 2.3 & 332 &    \\
+\small MS4  & \small 6.1033 	& sim & 0.6 & 80 & 1.2 & 107 & 1.6 & 111 & yes  \\
+\small      &        	& obs & 0.3 & 360 & 0.5 & 44 & 0.7 & 56 &    \\
+\hline
+\end{tabular}
+\end{table}
+
+In addition, and as shown by Fig.~\ref{fig:Waterlevel_tide}, the observations have more tidal components with shorter periods which are not included in the tidal forcing, and thereby not present in the simulations. %This is consistent with the frequency series of the Fourier transformed water level (Fig.~\ref{fig:Waterlevel_tide}).
+
 \begin{figure}[tbh] 
-\centerline{ 
-\includegraphics*[trim=3cm 0cm 2.5cm 0cm,clip=true,width=\textwidth]{Figurer/Oscarsborg_Tide_Frequency_obs.png}  
-} 
-\centerline{ 
-\includegraphics*[trim=3cm 0cm 2.5cm 0cm,clip=true,width=\textwidth]{Figurer/Oscarsborg_Tide_Frequency_sim.png} 
-} 
-\caption{\small 
-Frequency series of Fourier transformed observed (upperpanel) and simulated (lower panel) water levels at Oscarsborg} 
-\label{fig:Waterlevel_freq} 
+	\centerline{ \includegraphics*[trim=3cm 0cm 2.5cm 0cm,clip=true,width=\textwidth]{Figurer/Oscarsborg_Tide_not_included} } 
+	\caption{\small Time series at Oscarsborg of the tidal components not included in the tidal forcing.} 
+	\label{fig:Waterlevel_tide} 
 \end{figure} 
 
-\newpage 
-As revealed by Tab.\-\ref{tab:Tide} the observed M$_2$ amplitude increases from south to north. This is reflected in the simulations as well as displayed by Fig. Fig.~\ref{fig:M2field}. It is interesting to note that the lowest M$_2$ amplitude is found in the Drammensfjord north of the threshold in Svelvik. In fact the M$_2$ phase has a sudden increase at the thresholds of Svelvik and Dr{\o}bak (Fig.~\ref{fig:M2field}). The same is true for the majority of the other relevant tidal components.
+\begin{comment}
+
+\begin{figure}[tbh] 
+  \centerline{ \includegraphics*[trim=3cm 0cm 2.5cm 0cm,clip=true,width=\textwidth]{Figurer/Oscarsborg_Tide_Frequency_obs.png} } 
+  \centerline{ \includegraphics*[trim=3cm 0cm 2.5cm 0cm,clip=true,width=\textwidth]{Figurer/Oscarsborg_Tide_Frequency_sim.png} } 
+  \caption{\small Frequency series of Fourier transformed observed (upperpanel) and simulated (lower panel) water levels at Oscarsborg} 
+  \label{fig:Waterlevel_freq} 
+\end{figure} 
+
+\end{comment}
+%\newpage 
+As revealed by Tab.~\ref{tab:Tide} the observed M$_2$ amplitude increases from south to north. This is reflected in the simulations as well as displayed by Fig. Fig.~\ref{fig:M2field}. It is interesting to note that the lowest M$_2$ amplitude is found in the Drammensfjord north of the threshold in Svelvik. In fact the M$_2$ phase has a sudden increase at the thresholds of Svelvik and Dr{\o}bak (Fig.~\ref{fig:M2field}). The same is true for the majority of the other relevant tidal components.
 
 %The amplitude of M$_2$ increases from south to north in the Inner Oslofjord both in the simulations and the observations (Fig.~\ref{fig:M2field} and Tab.~\ref{tab:Tide}). The lowest M$_2$ amplitude in the area of interest, is in the Drammensfjord north of the threshold in Svelvik. The M$_2$ phase has a sudden increase at the thresholds of Svelvik and Dr{\o}bak (Fig.~\ref{fig:M2field}). The same yields for the majority of the other relevant tidal components.
 
@@ -58,45 +92,6 @@ Simulated fields of M$_2$ amplitude (left-hand panel) and phase (right-hand pane
 \label{fig:M2field} 
 \end{figure} 
 
-\begin{table}[ht] 
-%\vspace{-1.5cm} 
-\caption{Simulated and observed tidal amplitude and phase for selected tidal components.} 
-\label{tab:Tide} 
-\centering 
-\begin{tabular}{|c|c|l|cc|cc|cc|c|} 
-\hline  
-&&& \multicolumn{2}{|c|}{\bf Viker} & \multicolumn{2}{|c|}{\bf Oscarsborg} & \multicolumn{2}{|c|}{\bf Oslo} & {\bf Included} \\  
-{\bf Comp.} & {\bf Period} &  {\bf sim/} & {\bf amp.} & {\bf phase.} & {\bf amp.} & {\bf phase.} & {\bf amp.} & {\bf phase.} & {\bf in tidal} \\ 
-& {\bf [h]} & {\bf obs} & {\bf [cm]} & {\bf [deg]} & {\bf [cm]} & {\bf [deg]} & {\bf [cm]} & {\bf [deg]} & {\bf forcing} \\ \hline 
-\small SA   & 8764	 	& sim & 15.5 & 284 & 15.6 & 286 & 15.4 & 286 & no   \\
-\small      &        	& obs & 10.0 & 319 & 11 & 322 & 11.4 & 324 &    \\
-\small SSA  & 4382 		& sim & 8.8 & 197 & 9.2 & 200 & 9.4 & 200 & no   \\
-\small      &        	& obs & 7.5 & 188 & 8.0 & 189 & 8.2 & 190 &    \\
-\small K2   & 11.9672 	& sim & 1.6 & 10 & 2.0 & 13 & 2.1 & 15 & yes  \\
-\small      &        	& obs & 0.7 & 45 & 0.8 & 66 & 0.9 & 66 &    \\
-\small S2   & 12.0000 	& sim & 3.3 & 64 & 3.9 & 69 & 4.2 & 70 & yes  \\
-\small      &        	& obs & 2.9 & 46 & 3.3 & 65 & 3.5 & 69 &    \\
-\small M2   & 12.4206 	& sim & 11.5 & 105 & 13.2 & 112 & 13.9 & 114 & yes  \\
-\small      &        	& obs & 11.9 & 105 & 13.8 & 121 & 14.4 & 125 &    \\
-\small N2   & 12.6584 	& sim & 3.0 & 69 & 3.5 & 75 & 3.7 & 76 & yes  \\
-\small      &        	& obs & 3.0 & 60 & 3.4 & 76 & 3.6 & 80 &    \\
-\small K1   & 23.9345 	& sim & 0.2 & 187 & 0.1 & 175 & 0.2 & 157 & yes  \\
-\small      &        	& obs & 0.4 & 127 & 0.7 & 130 & 0.8 & 130 &    \\
-\small P1   & 24.0659 	& sim & 0.6 & 322 & 0.6 & 334 & 0.7 & 342 & yes  \\
-\small      &        	& obs & 0.2 & 129 & 0.3 & 102 & 0.4 & 97 &    \\
-\small O1   & 25.8193 	& sim & 3.5 & 337 & 3.8 & 339 & 3.8 & 339 & yes  \\
-\small      &        	& obs & 2.2 & 277 & 2.3 & 281 & 2.4 & 282 &    \\
-\small Q1   & 26.8684 	& sim & 0.0 & 231 & 0.0 & 216 & 0.1 & 215 & no   \\
-\small      &        	& obs & 1.1 & 190 & 1.2 & 198 & 1.3 & 200 &    \\
-\small MN4  & 6.2692 	& sim & 0.2 & 5 & 0.5 & 32 & 0.6 & 35 & yes  \\
-\small      &        	& obs & 0.4 & 249 & 0.6 & 289 & 0.7 & 297 &    \\
-\small M4   & 6.2103 	& sim & 1.0 & 355 & 1.9 & 18 & 2.5 & 23 & yes  \\
-\small      &        	& obs & 1.2 & 281 & 1.8 & 324 & 2.3 & 332 &    \\
-\small MS4  & 6.1033 	& sim & 0.6 & 80 & 1.2 & 107 & 1.6 & 111 & yes  \\
-\small      &        	& obs & 0.3 & 360 & 0.5 & 44 & 0.7 & 56 &    \\
-\hline
-\end{tabular}
-\end{table}
 
 
 % % % % % % % % % % % %
@@ -116,7 +111,7 @@ In the remaining part we restrict the comparison regarding currents to three of 
 
 Since the observed and simulated currents at Filtvedt and Brenntangen are of the same magnitude in strength, we only show the observed and simulated currents at Filtvedt (Fig.~\ref{fig:Filtvedt-cur}). We emphasize though that the flow pattern at the two moorings differs. Although the observed currents at Brenntagen is similar in strength, the peaks in current speed do not occur at the same time. Moreover, since the observations are dominated by noise in the upper 35-40 meters, we only include observed currents for depths larger than 40 meters in the comparison.
 
-As revealed by Figure \ref{fig:Filtvedt-cur} the 3D current field is complex, and varies horizontally as well as vertically and in time. First we note that the simulated currents are undeniably smoother than the observed currents. This is to be expected since tidal constituents of higher frequencies are present in the observed currents (Section \ref{subsec:wlevee}). Given this we nevertheless observe that there is a lot of similarities between the two. For one both have a three layered structure with an intermediate layer in which the flow is southward (blue, green and black colors), a deep layer dominated by lower frequency tides, and an upper layer with a more variable structure, but mostly northward flows in the modelled currents. Secondly, we note that the depth of the intermediate layer is not constant in time but varies similarly in the observations and the simulations.  
+As revealed by Figure \ref{fig:Filtvedt-cur} the 3D current field is complex, and varies horizontally as well as vertically and in time. First we note that the simulated currents are undeniably smoother than the observed currents. This is to be expected since tidal constituents of higher frequencies are present in the observed currents (Section \ref{subsec:wlevele}). Given this we nevertheless observe that there is a lot of similarities between the two. For one both have a three layered structure with an intermediate layer in which the flow is southward (blue, green and black colors), a deep layer dominated by lower frequency tides, and an upper layer with a more variable structure, but mostly northward flows in the modelled currents. Secondly, we note that the depth of the intermediate layer is not constant in time but varies similarly in the observations and the simulations.  
 
 According to the simulations (Fig.~\ref{fig:Filtvedt-simcur}) this three layer structure is not singular for Filtvedt, but is rather the rule in the area at the entrance to the Dr{\o}bak Sound. The figure also reveals that generally the currents in the upper layer are stronger than further down. Furthermore the figure disclose the horizontal variability in the flow pattern telling us that the currents at Filtvedt cannot be taken at representative for the whole area. For instance it should be noted that the tidal currents do not reverse at the same time across the fjord, which explains why the currents at Filtvedt is still southward while in the deeper areas the tides are already toward north at this particular instant. At 100 meters depth the currents at Filtvedt are weak and towards south even though the currents at 100 meters depth is generally stronger and towards north. At 40 meters depth the currents at Brenntangen is weaker than in the rest of the cross section. Note that the depth at Brenntangen is only 58 meters in the observations while in the depth is 46 meters at the corresponding point in the simulations. 
 
@@ -233,17 +228,11 @@ The probability density functions reveals that the model captures the distributi
 The time series scatter plots reveal that the correlation in time is not satisfying (Fig.~\ref{fig:Slagen-tid} and \ref{fig:Slagen_QQ}). The model seem to have difficulties with capturing the right phenomena influencing the currents to the right time. This is a well known problem when it comes to forecasting currents. The QQ-plots also confirms that the simulated currents are stronger than the observed currents. 
 
 
-\clearpage
-
-%\subsection{Hydrography}
-
+%\clearpage
+% % % % % % % % % % % % % % %
 \subsection{CTD-measurements}
 \label{subsec:CTDe}
-%\subsubsection{CTD-measurements}
-
-Positions where CTD measurements are taken in the monitoring program for the Outer Oslofjord are listed in Table ~\ref{tab:CTD_pos}. 
-Simulated temperature and salinity profiles at some of these stations are extracted from the model run. 
-Comparison between simulated and observed profiles are shown in Figs.~\ref{fig:CTD_OF-1}-~\ref{fig:CTD_D-3}, for the stations OF-1 in the outer part of the fjord, LA-1 in Larvikfjord and D-2 inside the Svelvik Sill in the inner Drammensfjord. 
+For comparison we extracted temperature and salinity profiles from the model simulation at some of the CTD stations listed by Table ~\ref{tab:CTD_pos}, namely OF-1 in the outer part of the fjord, LA-1 in Larvikfjord and D-2 inside the Svelvik Sill in the inner Drammensfjord. Comparison between simulated and observed profiles are shown in Figs.~\ref{fig:CTD_OF-1}-~\ref{fig:CTD_D-3}. 
 
 During the summer, the water in the upper layers are heated. 
 The maximum surface temperature is observed towards the end of the summer. 
