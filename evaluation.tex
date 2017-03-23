@@ -1,27 +1,19 @@
 %\newpage
+%\clearpage
 \section{Evaluation}
 \label{sec:evalu}
 % % % % % % % % % % % % %
 \subsection{Water level and tide}
 \label{subsec:wlevele}
-Time series of water level from the three tide gauge stations mentioned above (Section \ref{subsec:wlevelo}) were extracted for the period April 2014 through December 2015. We also extracted time series for the same period from locations near the three stations from the simulation. To compare the two time series we first analysed them using t\_tide \citep{pavlo:etal:2002} to extract the tidal components. We then subtracted the water level due to these eleven tidal constituents to derive time series of the residual water level.   
+Time series of water level from the three tide gauge stations mentioned above (Section \ref{subsec:wlevelo}) were extracted for the period April 2014 through December 2015. To evaluate the model performance we also extracted water level time series from the model simulation for the same period from locations near the three stations. To compare the two time series we first analysed them using t\_tide \citep{pavlo:etal:2002} to extract the tidal constituents. We then subtracted the combined water level due to these constituents to derive time series of the "residual" water level. 
 
-%Eleven tidal components are included in the model at the southern open boundary using their corresponding amplitudes and phases for both depth integrated currents and water level (Røed et al., 2016). The time series of tidal components included in the tidal forcing are in fairly good agreement (Fig.~\ref{fig:Waterlevel_tide}, upper, and Tab.\-\ref{tab:Tide}). In addition to the tidal components included in the tidal forcing, more tidal components are present in the time series (Fig. 11). Tidal components with periods of approximately one year (SA) and half a year (SSA) respectively are present in both the observations and the simulations (Tab.3). In addition, the observations have more components with shorter periods which are not included in the tidal forcing and thereby not present in the simulations. This is consistent with the frequency series of the Fourier transformed water level (Fig. 12).
+As detailed in \cite{roed:etal:2016} the tidal forcing we used at the southern open boundary of the model included only eleven tidal constitutents (Table~\ref{tab:Tide} on page \pageref{tab:Tide}). Notice that we in addition adjusted the tidal forcing using the observed tides at Viken for these constitutents before applying them. Furthermore we used corresponding amplitudes and phases for the depth integrated currents and water level in the tidal forcing. 
 
-Recall that the tidal forcing at the southern open boundary of the model includes only eleven tidal constitutents, and that we have adjusted the tidal forcing by use of the observed tides at Viken for these eleven constitutents \citep{roed:etal:2016}. Furthermore we used corresponding amplitudes and phases for the depth integrated currents and water level. As depicted by Fig.~\ref{fig:Waterlevel_jan15}, showing the tidal elevation for January 2015 due to these eleven components at Oscarsborg, model and observations are in fairly good agreement. We also note that the residuals, as shown by the lower panel of Fig.~\ref{fig:Waterlevel_jan15}, compare favourably. 
-
-\begin{figure}[hb] 
-	\centerline{ \includegraphics*[trim=3cm 0cm 2.5cm 0cm,clip=true,width=\textwidth]{Figurer/Oscarsborg_Tide_selected_jan15} } 
-	\centerline{ \includegraphics*[trim=3cm 0cm 2.5cm 0cm,clip=true,width=\textwidth]{Figurer/Oscarsborg_WL_rest_jan15} } 
- 	\caption{\small Simulated (black) and observed (red) time series of tides (upper panel) and residual (lower panel) at Oscarsborg (\ref{fig:kart_obs}). The tidal elevation is composed of the eleven components included in the tidal forcing only. The residual is the total water level from which is subtracted the tidal elevation due to these eleven constituents.} 
-	\label{fig:Waterlevel_jan15} 
-\end{figure} 
-
-This is further corroborated by a comparison of the simulated and observed tidal amplitudes and phases for thirteen individual tidal constitutents at all the three tidal gauge stations (Tab.~\ref{tab:Tide}) of which three of them are not included in the tidal forcing. For instance Tab.~\ref{tab:Tide} include tidal components with periods of approximately one year (SA) and half a year (SSA). Surprisingly they also show up in the model simulations despite not being included in the tidal forcing. This may be explained by the fact that we in addition to the tides as forcing on the southern boundary of the FjordOs model also use daily mean water level, hydrography and currents from the NorKyst800 model when nesting the FjordOs model to the former \citep{roed:etal:2016}. 
+As revealed by Table~\ref{tab:Tide} the dominant constituent is M2. It is therefore noteworthy that the model simulation represents this influential constituent to a satisfactory degree, and in particular at the stations Oscarsborg and Oslo which are both located far from the southern boundary. We also note that the constituents S2, N2 and O1 contribute, and that their contributions are in fairly good agreement with the observations as well. 
 
 \begin{table}[t] 
 %\vspace{-1.5cm} 
-	\caption{\small Simulated and observed tidal amplitude and phase for selected tidal components.} 
+	\caption{\small Simulated and observed tidal amplitude and phase for selected tidal components at three tide gauge stations.} 
 	\label{tab:Tide} 
 	\centering 
 	\begin{tabular}{|c|c|l|cc|cc|cc|c|} 
@@ -59,7 +51,18 @@ This is further corroborated by a comparison of the simulated and observed tidal
 \end{tabular}
 \end{table}
 
-In addition, and as shown by Fig.~\ref{fig:Waterlevel_tide}, the observations have more tidal components with shorter periods which are not included in the tidal forcing, and thereby not present in the simulations. %This is consistent with the frequency series of the Fourier transformed water level (Fig.~\ref{fig:Waterlevel_tide}).
+In addition to the eleven constituents included in the tidal forcing Table~\ref{tab:Tide} also includes three longer periodic tidal constitutent, for instance tides with periods of approximately one year (SA) and half a year (SSA). Surprisingly they also show up in the model simulations despite not being included in the tidal forcing. This may be explained by the fact that we in addition to the tides also use daily mean water level, hydrography and currents extracted from the NorKyst800 model as forcing on the southern boundary \citep{roed:etal:2016}. 
+
+The fairly good agreement is further corroborated by Figure~\ref{fig:Waterlevel_jan15} comparing times series of the simulated and observed water level at Oscarsborg due to the eleven tidal constituents included in the tidal forcing and the residual. Note that to be able to discriminate between observations and simulated water levels the time series is truncated to January 2015. We note that the residuals compare favourably too, despite the fact that the longer period tides and in particular the shorter period tides (Figure~\ref{fig:Waterlevel_tide}) are not included in the forcing. 
+
+\begin{figure}[tb] 
+	\centerline{ \includegraphics*[trim=3cm 0cm 2.5cm 0cm,clip=true,width=\textwidth]{Figurer/Oscarsborg_Tide_selected_jan15} } 
+	\centerline{ \includegraphics*[trim=3cm 0cm 2.5cm 0cm,clip=true,width=\textwidth]{Figurer/Oscarsborg_WL_rest_jan15} } 
+ 	\caption{\small Simulated (black) and observed (red) time series of tides (upper panel) and residual (lower panel) at Oscarsborg (Figure~\ref{fig:kart_obs}) for the month of January 2015. The tidal elevation is composed of the eleven components included in the tidal forcing only. The residual is the total water level from which is subtracted the tidal elevation due to these constituents.} 
+	\label{fig:Waterlevel_jan15} 
+\end{figure} 
+
+%In addition, and as shown by, the observations have more tidal components with shorter periods which are not included in the tidal forcing, and thereby not present in the simulations. This is consistent with the frequency series of the Fourier transformed water level (Fig.~\ref{fig:Waterlevel_tide}).
 
 \begin{figure}[tbh] 
 	\centerline{ \includegraphics*[trim=3cm 0cm 2.5cm 0cm,clip=true,width=\textwidth]{Figurer/Oscarsborg_Tide_not_included} } 
@@ -78,7 +81,7 @@ In addition, and as shown by Fig.~\ref{fig:Waterlevel_tide}, the observations ha
 
 \end{comment}
 %\newpage 
-As revealed by Tab.~\ref{tab:Tide} the observed M$_2$ amplitude increases from south to north. This is reflected in the simulations as well as displayed by Fig. Fig.~\ref{fig:M2field}. It is interesting to note that the lowest M$_2$ amplitude is found in the Drammensfjord north of the threshold in Svelvik. In fact the M$_2$ phase has a sudden increase at the thresholds of Svelvik and Dr{\o}bak (Fig.~\ref{fig:M2field}). The same is true for the majority of the other relevant tidal components.
+As revealed by Table~\ref{tab:Tide} the observed M2 amplitude increases from south to north. This is reflected in the simulations as well as displayed by Fig. Fig.~\ref{fig:M2field}. It is interesting to note that the lowest M2 amplitude is found in the Drammensfjord north of the threshold in Svelvik. In fact the M$_2$ phase has a sudden increase at the thresholds of Svelvik and Dr{\o}bak (Figure~\ref{fig:M2field}). The same is true for the majority of the other relevant tidal components.
 
 %The amplitude of M$_2$ increases from south to north in the Inner Oslofjord both in the simulations and the observations (Fig.~\ref{fig:M2field} and Tab.~\ref{tab:Tide}). The lowest M$_2$ amplitude in the area of interest, is in the Drammensfjord north of the threshold in Svelvik. The M$_2$ phase has a sudden increase at the thresholds of Svelvik and Dr{\o}bak (Fig.~\ref{fig:M2field}). The same yields for the majority of the other relevant tidal components.
 
@@ -88,7 +91,7 @@ As revealed by Tab.~\ref{tab:Tide} the observed M$_2$ amplitude increases from s
 \includegraphics*[trim=0.8cm 0cm 0cm 0cm,clip=true,width=0.49\textwidth]{Figurer/M2fase_felt} 
 } 
 \caption{\small 
-Simulated fields of M$_2$ amplitude (left-hand panel) and phase (right-hand panel). Corresponding observed values for M$_2$ amplitude and phase are marked with circles at Viker, Oscarsborg, and Oslo.} 
+Simulated fields of M2 amplitude (left-hand panel) and phase (right-hand panel). Corresponding observed values for M2 amplitude and phase are marked with circles at Viker, Oscarsborg, and Oslo.} 
 \label{fig:M2field} 
 \end{figure} 
 
@@ -228,8 +231,8 @@ The probability density functions reveals that the model captures the distributi
 The time series scatter plots reveal that the correlation in time is not satisfying (Fig.~\ref{fig:Slagen-tid} and \ref{fig:Slagen_QQ}). The model seem to have difficulties with capturing the right phenomena influencing the currents to the right time. This is a well known problem when it comes to forecasting currents. The QQ-plots also confirms that the simulated currents are stronger than the observed currents. 
 
 
-%\clearpage
 % % % % % % % % % % % % % % %
+%\clearpage
 \subsection{CTD-measurements}
 \label{subsec:CTDe}
 For comparison we extracted temperature and salinity profiles from the model simulation at some of the CTD stations listed by Table ~\ref{tab:CTD_pos}, namely OF-1 in the outer part of the fjord, LA-1 in Larvikfjord and D-2 inside the Svelvik Sill in the inner Drammensfjord. Comparison between simulated and observed profiles are shown in Figs.~\ref{fig:CTD_OF-1}-~\ref{fig:CTD_D-3}. 
@@ -339,8 +342,8 @@ Modelled temperature at three stations in the Oslofjord. Contour lines mark 5 an
 \end{figure}
 
 
+% % % % % % % % % % % % % % %
 \clearpage 
-
 \subsubsection{Water temperature near \AA sg\aa rdstrand}
 
 The temperature observations from Scanmar AS are compared with simulated data extracted from 1.15 meters depth at approximately the same location as the observations.
@@ -414,8 +417,8 @@ Time series of observed and simulated temperature at \AA sg\aa dstrand in June 2
 \end{tabular}
 \end{table}
 
+% % % % % % % % % % % % % % %
 \clearpage
-
 \subsubsection{Water temperature in the Inner Oslofjord}
 
 The observed and simulated temperature at three beaches in the Inner Oslofjord are in relatively good agreement (Fig.~\ref{fig:badetemp_2014} - \ref{fig:badetemp_2015}). 
@@ -468,55 +471,52 @@ The observed and modelled temperature at three beaches in the Inner Oslofjord du
 %\end{figure}
 
 
+% % % % % % % % % % % % % % %
 \clearpage 
-
-\subsection{Drifting lanes}
-\subsubsection{Godafoss}
+\subsection{The Godafoss oil spill}
 \label{sect:godafoss_model}
-Since the time period of the model does not cover the time period when the container ship Godafoss ran aground, we have instead released drifters in our model from the position of the oil spill from Godafoss for a period of one year. We argue that over such a long period of time, there will be at least one weather and current situation similar to the weather and currents experienced during the Godafoss release. By showing the models ability to advect oil to the observed locations during a one year run, we at least show that our ocean model is capable of recreating the right drift patterns.
+Unfortunately there is no overlap between the time period covered by the FjordOs hindcast and the time when the container ship Godafoss ran aground. So no direct comparison between simulated oil drift based on input from the FjordOs model is possible as part of this evaluation. Nevertheless, to investigate whether the FjordOs model provides results that are similar to the data gathered during the Godafoss oil spill, and presented in Section \ref{sect:godafoss_obs}, we have opted to map the pathway of a feigned oil spill. To this end we have released Lagrangian particles for a time period of one year (April 1st 2015 to April 1st 2016) at the location where the Godafoss grounded, and simulated particle trajectories using the open source trajectory-model OpenDrift\footnote{OpenDrift is distributed under a GPL v2.0 license, and is available on GitHub (https://github.com/knutfrode/opendrift). This is a trajectory model under development at MET Norway, and is described by its developers as "a software for modelling the trajectories and fate of objects or substances drifting in the ocean, or even in the atmosphere".}. We argue that over such a long period of time, there will be at least one situation similar to the weather and currents experienced during the Godafoss release.
 
-To simulate the drift of the oil, we have applied the open source trajectory-model OpenDrift. This is a trajectory model under development at MET Norway, and is described by its developers as "a software for modelling the trajectories and fate of objects or substances drifting in the ocean, or even in the atmosphere". It is distributed under a GPL v2.0 license, and is available on GitHub\footnote{https://github.com/knutfrode/opendrift}.
-
-The OpenDrift model was forced with currents from the FjordOs model and with wind from the Arome-MetCoOp 2.5km (Arome2.5) atmospheric model (the same atmospheric model was used as forcing when running the FjordOs hindcast). We have also provided daily mean currents from NorKyst-800m outside of the FjordOs-model, to properly treat the particles that are advected out of the FjordOs-model, so they can re-enter at the correct location. We can tune a number of parameters when running OpenDrift, e.g. random walk and the wind drift factor. Random walk was not used in our simulations of drifting lanes, and the wind drift factor was set to $0.01$ (i.e. $1\%$). Modelled drifters has been released once per hour from April 1st 2015 to April 1st 2016, a total number of 8760 particles. The lifetime of each particle is set to 15 days, i.e. after 15 days the particle is deactivated. This is done to reduce the computational cost of advecting a large number of particles. 
-
-The results from the drift model can be viewed in Figure \ref{fig:opendrift_godafoss_time} - \ref{fig:opendrift_godafoss_endpos}. In Figure \ref{fig:opendrift_godafoss_time}, we show the number of hours from the particles were released until they reached different areas of the domain. Figure \ref{fig:opendrift_godafoss_conc} show the likelihood of an area experiencing oil. This is done by counting the number of particles that has been inside each grid cell during the simulation, and presenting this as concentrations. Figure \ref{fig:opendrift_godafoss_endpos} depicts the same as the two previous figures, but only showing the values in the final position of each trajectory. This is to better visualise stranding sites. All these calculations are done on a $140m$ by $140m$ grid.
-
-When comparing the results in Figure \ref{fig:opendrift_godafoss_time} - \ref{fig:opendrift_godafoss_endpos} to the observed oil in Figure \ref{fig:godafoss_oil}, we clearly see that there are some similarities between the observations and the simulations. Especially by looking at Figure \ref{fig:opendrift_godafoss_endpos}, right panel, we can see that a substantial number of particles are transported westward from the release position at Hvaler, and strand along the Vestfold coast, the islands around Tj{\o}me, and the F{\ae}rder lighthouse. We would also like to point out the very low number of particles that strand at the peninsula west of Stavern (the area far left in Figure \ref{fig:opendrift_godafoss_endpos}). This corresponds well with where the oil was observed.
-In the left panel of Figure \ref{fig:opendrift_godafoss_endpos}, we provide the shortest time from the release of particles, to stranding. We would like to point out two areas: Stavern (western part of Figure 
-\ref{fig:opendrift_godafoss_endpos}) and Bustein (northwest of the F{\ae}rder lighthouse). In Figure \ref{fig:godafoss_oil}, the oil at Bustein was discovered two days after the initial spill, while at Stavern (Korntin) the oil was observed after five days. This corresponds well with the timing in Figure \ref{fig:opendrift_godafoss_endpos}.
-
-\begin{figure}[ht]
-\centerline{
-\includegraphics*[width=.5\textwidth]{Figurer/opendrift/opendrift_godafoss_shortest_time_crop}
-\includegraphics*[width=.5\textwidth]{Figurer/opendrift/opendrift_godafoss_shortest_time_zoom_crop}
-}
-\caption{\small
-Number of hours from particle release, to particle is inside a given $140x140m$ area for the Godafoss scenario. Based on one year (April 1st 2015 - April 1st 2016) of simulations, with a maximum lifetime of 15 days of the released particles. This amounts to a total number of $8760$ released particles. Please note the different scales of each figure.}
-\label{fig:opendrift_godafoss_time}
+\begin{figure}[hb]
+  \begin{center}
+    \begin{tabular}{cc}
+      \includegraphics*[width=7.2cm]{Figurer/opendrift/opendrift_godafoss_shortest_time_crop}  & \includegraphics*[width=7.2cm]{Figurer/opendrift/opendrift_godafoss_shortest_time_zoom_crop}\\ 
+    \end{tabular}
+    \caption{\small Displayed is the time it takes a Lagrangian particle to reach inside a given 140 x 140 m area after it is released based on a one year simulation. The location of the release is marked by a black solid circle, and corresponds to the location where Godafoss ran aground. The color bar indicates the time in hours. Left-hand panel shows the time up to and including 47.5 hours, while the right-hand panel shows the time up to and including 12 hrs and for a smaller domain.}
+    \label{fig:opendrift_godafoss_time}
+  \end{center}
 \end{figure}
 
-\begin{figure}[ht]
-\centerline{
-\includegraphics*[width=.5\textwidth]{Figurer/opendrift/opendrift_godafoss_consentration_crop}
-\includegraphics*[width=.5\textwidth]{Figurer/opendrift/opendrift_godafoss_consentration_zoom_crop}
-}
-\caption{\small
-Same as Figure \ref{fig:opendrift_godafoss_time}, but for number of particles that has been inside a given $140x140m$ area for the Godafoss scenario. Please note the different scales of each figure.}
-\label{fig:opendrift_godafoss_conc}
+The OpenDrift model was forced with currents from the FjordOs model and with winds from the Arome-MetCoOp 2.5km (Arome2.5) atmospheric model \citep{mulle:etal:2017}. The latter is the same atmospheric model we used as forcing when running the FjordOs hindcast. To properly treat the particles that are advected out of the FjordOs-model domain, and to enable them to re-enter at the correct location, we provided daily mean currents from NorKyst-800m outside of the FjordOs-model domain. 
+
+\begin{figure}[htb]
+  \begin{center}
+    \begin{tabular}{cc}
+      \includegraphics*[width=7.2cm]{Figurer/opendrift/opendrift_godafoss_consentration_crop}  & \includegraphics*[width=7.2cm]{Figurer/opendrift/opendrift_godafoss_consentration_zoom_crop}\\ 
+    \end{tabular}
+    \caption{\small As Figure~\ref{fig:opendrift_godafoss_time}, but showing the number of particles that has been inside a given 140x140 m area during the simulation. The colourbar indicates number of particles from 0 (blue) to 50 (red). Right-hand panel is a zoom in of the left-hand panel.}
+    \label{fig:opendrift_godafoss_conc}
+  \end{center}
 \end{figure}
 
-\begin{figure}[ht]
-\centerline{
-\includegraphics*[width=.5\textwidth]{Figurer/opendrift/opendrift_godafoss_shortest_time_zoom_endpos_crop}
-\includegraphics*[width=.5\textwidth]{Figurer/opendrift/opendrift_godafoss_consentration_zoom_endpos_crop}
-}
-\caption{\small
-Similar to Figure \ref{fig:opendrift_godafoss_time} and \ref{fig:opendrift_godafoss_conc}, but only showing end position of each trajectory: Number of days from particle release (note different time scale) to particle in given area (left panels), and the number of particles that have been inside a given $140x140m$ area (right panel). Please note the different scales of each figure.}
-\label{fig:opendrift_godafoss_endpos}
+There are a number of parameters that may be tuned when running OpenDrift. One such parameter is the wind drift factor, which we set to $0.01$ (i.e. $1\%$). Otherwise we used the default parameter values. Particles are released once per hour throughout the one year simulation for a total of 8760 particles. The lifetime of each particle is set to 15 days, that is, after 15 days the particle is deactivated. This is done to reduce the computational cost of advecting a large number of particles. We further divided our area into a rectangular cells, and measured the number of hours from the particles were released until they reached the different cells. In addition we counted the number of particles that had been inside each cell during the simulation. The latter gives insight into the probability of experience oil in the individual cells. The size of the cells were chosen to be 140 x 140 meters, a balance between having too small or too large cells. If too small we might end up having too few particles in some cells, or if too large cells too many particles ends up in the same cell. The results are presented by Figures~\ref{fig:opendrift_godafoss_time} through \ref{fig:opendrift_godafoss_endpos}.
+
+\begin{figure}[htb]
+  \begin{center}
+    \begin{tabular}{cc}
+      \includegraphics*[width=7.2cm]{Figurer/opendrift/opendrift_godafoss_shortest_time_zoom_endpos_crop}  & \includegraphics*[width=7.2cm]{Figurer/opendrift/opendrift_godafoss_consentration_zoom_endpos_crop}\\ 
+    \end{tabular}
+    \caption{\small As Figures~\ref{fig:opendrift_godafoss_time} (left-hand panel) and \ref{fig:opendrift_godafoss_conc} (right-hand panel), but showing only the end position of each particle trajectory. The colourbar attached to the left-hand panel indicates the number of \emph{days} ranging from 0 (red) to 10 (blue) it takes a particle to reach a given cell of size 140 x 140 meter, while the colourbar attached to the right-hand panel indicates the number of particles ranging from 0 (blue) to 10 (red) that has been inside a given cell of size 140 x 140 meter.}
+    \label{fig:opendrift_godafoss_endpos}
+  \end{center}
 \end{figure}
 
-\clearpage 
-\subsubsection{Surface drifters}
+Comparing the results to the observed oil displayed by Figure~\ref{fig:godafoss_oil}, we observe that there are some obvious similarities between the observations and the simulations. For instance the right-hand panel of Figure~\ref{fig:opendrift_godafoss_endpos} shows, in similarity with the observations, that a substantial number of particles are transported westward from the release position and strand along the Vestfold coast, the islands around Tj{\o}me, and the F{\ae}rder lighthouse. We also note the very low number of particles that strand at the peninsula west of Stavern (the area far left in Figure~\ref{fig:opendrift_godafoss_endpos}). This corresponds well with where the oil was observed or not. Looking at the left-hand panel of Figure~\ref{fig:opendrift_godafoss_endpos} we would like to draw attention to two areas, namely Stavern and Bustein located, respectively, in the far lower left and the middle of Figure~\ref{fig:opendrift_godafoss_endpos}. As displayed by Figure~\ref{fig:opendrift_godafoss_endpos} the feigned oil strands at Bustein after approximately two days, while at Stavern (Korntin) the oil strands after about four to five days. These stranding times corresponds well with the timing shown by Figure~\ref{fig:godafoss_oil}.
+
+% % % % % % % % % % % % % % %
+%\clearpage 
+\subsection{Surface drifters}
+\label{subsec:surfdr}
 We evaluate the models ability to recreate the drifter trajectories by using a skill-score, as described in \cite{liu:2011}: 
 
 $$s=\displaystyle\sum_{i=1}^{N} d_i / \displaystyle\sum_{i=1}^{N} l_{oi}$$
