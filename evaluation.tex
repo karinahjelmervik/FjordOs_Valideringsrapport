@@ -5,64 +5,24 @@
 % % % % % % % % % % % % %
 \subsection{Water level and tide}
 \label{subsec:wlevele}
-Time series of water level from the three tide gauge stations mentioned above (Section \ref{subsec:wlevelo}) were extracted for the period April 2014 through December 2015. To evaluate the model performance we also extracted water level time series from the model simulation for the same period from locations near the three stations. To compare the two time series we first analysed them using t\_tide \citep{pavlo:etal:2002} to extract the tidal constituents. We then subtracted the combined water level due to these constituents to derive time series of the "residual" water level. 
+Time series of water level from the three tide gauge stations (Section \ref{subsec:wlevelo}) were extracted for the period April 2014 through December 2015. To evaluate the model performance we also extracted time series of water level at locations near the three stations from the model simulation for the same time period. We emphasize that the tidal forcing we used at the southern open boundary of the FjordOs model includes eleven tidal constitutents only, and that the tidal forcing was adjusted by use of the observed tide at Viker close to the southern boundary \citep{roed:etal:2016}. 
 
-As detailed in \cite{roed:etal:2016} the tidal forcing we used at the southern open boundary of the model included only eleven tidal constitutents (Table~\ref{tab:Tide} on page \pageref{tab:Tide}). Notice that we in addition adjusted the tidal forcing using the observed tides at Viken for these constitutents before applying them. Furthermore we used corresponding amplitudes and phases for the depth integrated currents and water level in the tidal forcing. 
+\begin{figure}[htb]
+  \begin{center}
+    \begin{tabular}{c}
+      \includegraphics*[trim=3cm 0cm 2.5cm 0cm,clip=true,width=15cm]{Figurer/Oscarsborg_Tide_selected_jan15} \\ 
+      \includegraphics*[trim=3cm 0cm 2.5cm 0cm,clip=true,width=15cm]{Figurer/Oscarsborg_WL_rest_jan15} \\ 
+    \end{tabular}
+    \caption{\small Simulated (black) and observed (red) time series of the combined tidal water elevation (upper panel) and residual water level (lower panel) at Oscarsborg (cf. Figure~\ref{fig:kart_obs}) for the month of January 2015.}
+    \label{fig:Waterlevel_jan15}
+  \end{center}
+\end{figure}
 
-As revealed by Table~\ref{tab:Tide} the dominant constituent is M2. It is therefore noteworthy that the model simulation represents this influential constituent to a satisfactory degree, and in particular at the stations Oscarsborg and Oslo which are both located far from the southern boundary. We also note that the constituents S2, N2 and O1 contribute, and that their contributions are in fairly good agreement with the observations as well. 
+To compare model and observation we first analysed the two time series by use of t\_tide \citep{pavlo:etal:2002} to extract the amplitudes and phases of the individual harmonic tidal components. Next we superimposed the water elevation due to each of the eleven tidal constituents included in the tidal forcing to obtain what we term the combined water elevation. We finally subtracted the resulting combined water elevation from the total water elevation of each time series to derive comparabel ``residual'' water elevations. As revealed by Figure~\ref{fig:Waterlevel_jan15} the combined water elevation compares favourably with the observation. This is also true for the residual, but to a lesser degree. The latter is to be expected since the observations include all the tidal water elevations due to tides of longer and shorter periods than the eleven included in the tidal forcing. Note that to be able to discriminate between observations and simulated water levels the time series shown by Figure~\ref{fig:Waterlevel_jan15} is truncated to January 2015.
 
-\begin{table}[t] 
-%\vspace{-1.5cm} 
-	\caption{\small Simulated and observed tidal amplitude and phase for selected tidal components at three tide gauge stations.} 
-	\label{tab:Tide} 
-	\centering 
-	\begin{tabular}{|c|c|l|cc|cc|cc|c|} 
-\hline  
-	  &	&	& \multicolumn{2}{|c|}{\small \bf Viker} & \multicolumn{2}{|c|}{\small \bf Oscarsborg} & \multicolumn{2}{|c|}{\small \bf Oslo} & {\small \bf Included} \\  
-{\small \bf Comp.} & {\small \bf Period} & {\small \bf sim/} & {\small \bf amp.} & {\small \bf phase.} & {\small \bf amp.} & {\small \bf phase.} & {\small \bf amp.} & {\small \bf phase.} & {\small \bf in tidal} \\ 
-	    & {\small \bf [h]} & {\small \bf obs} & {\small \bf [cm]} & {\small \bf [deg]} & {\small \bf [cm]} & {\small \bf [deg]} & {\small \bf [cm]}   & {\small \bf [deg]} & {\small \bf forcing} \\ \hline 
-\small SA   & \small 8764	 	& sim & 15.5 & 284 & 15.6 & 286 & 15.4 & 286 & no   \\
-\small      &        	& obs & 10.0 & 319 & 11 & 322 & 11.4 & 324 &    \\
-\small SSA  & \small 4382 		& sim & 8.8 & 197 & 9.2 & 200 & 9.4 & 200 & no   \\
-\small      &        	& obs & 7.5 & 188 & 8.0 & 189 & 8.2 & 190 &    \\
-\small K2   & \small 11.9672 	& sim & 1.6 & 10 & 2.0 & 13 & 2.1 & 15 & yes  \\
-\small      &        	& obs & 0.7 & 45 & 0.8 & 66 & 0.9 & 66 &    \\
-\small S2   & \small 12.0000 	& sim & 3.3 & 64 & 3.9 & 69 & 4.2 & 70 & yes  \\
-\small      &        	& obs & 2.9 & 46 & 3.3 & 65 & 3.5 & 69 &    \\
-\small M2   & \small 12.4206 	& sim & 11.5 & 105 & 13.2 & 112 & 13.9 & 114 & yes  \\
-\small      &        	& obs & 11.9 & 105 & 13.8 & 121 & 14.4 & 125 &    \\
-\small N2   & \small 12.6584 	& sim & 3.0 & 69 & 3.5 & 75 & 3.7 & 76 & yes  \\
-\small      &        	& obs & 3.0 & 60 & 3.4 & 76 & 3.6 & 80 &    \\
-\small K1   & \small 23.9345 	& sim & 0.2 & 187 & 0.1 & 175 & 0.2 & 157 & yes  \\
-\small      &        	& obs & 0.4 & 127 & 0.7 & 130 & 0.8 & 130 &    \\
-\small P1   & \small 24.0659 	& sim & 0.6 & 322 & 0.6 & 334 & 0.7 & 342 & yes  \\
-\small      &        	& obs & 0.2 & 129 & 0.3 & 102 & 0.4 & 97 &    \\
-\small O1   & \small 25.8193 	& sim & 3.5 & 337 & 3.8 & 339 & 3.8 & 339 & yes  \\
-\small      &        	& obs & 2.2 & 277 & 2.3 & 281 & 2.4 & 282 &    \\
-\small Q1   & \small 26.8684 	& sim & 0.0 & 231 & 0.0 & 216 & 0.1 & 215 & no   \\
-\small      &        	& obs & 1.1 & 190 & 1.2 & 198 & 1.3 & 200 &    \\
-\small MN4  & \small 6.2692 	& sim & 0.2 & 5 & 0.5 & 32 & 0.6 & 35 & yes  \\
-\small      &        	& obs & 0.4 & 249 & 0.6 & 289 & 0.7 & 297 &    \\
-\small M4   & \small 6.2103 	& sim & 1.0 & 355 & 1.9 & 18 & 2.5 & 23 & yes  \\
-\small      &        	& obs & 1.2 & 281 & 1.8 & 324 & 2.3 & 332 &    \\
-\small MS4  & \small 6.1033 	& sim & 0.6 & 80 & 1.2 & 107 & 1.6 & 111 & yes  \\
-\small      &        	& obs & 0.3 & 360 & 0.5 & 44 & 0.7 & 56 &    \\
-\hline
-\end{tabular}
-\end{table}
+Of the eleven tidal components included in the tidal forcing M2 is, in terms of amplitude, the dominant constituent. It is therefore noteworthy, as revealed by Table~\ref{tab:Tide} on page \pageref{tab:Tide}, that the model represents this influential constituent to a very satisfactory degree both regarding amplitude and phase. This is true even at the stations Oscarsborg and Oslo that are both far from the models southern boundary. We also note that the constituents S2, N2 and O1 contribute, and that their contributions are in fairly good agreement with the observations as well. 
 
-In addition to the eleven constituents included in the tidal forcing Table~\ref{tab:Tide} also includes three longer periodic tidal constitutent, for instance tides with periods of approximately one year (SA) and half a year (SSA). Surprisingly they also show up in the model simulations despite not being included in the tidal forcing. This may be explained by the fact that we in addition to the tides also use daily mean water level, hydrography and currents extracted from the NorKyst800 model as forcing on the southern boundary \citep{roed:etal:2016}. 
-
-The fairly good agreement is further corroborated by Figure~\ref{fig:Waterlevel_jan15} comparing times series of the simulated and observed water level at Oscarsborg due to the eleven tidal constituents included in the tidal forcing and the residual. Note that to be able to discriminate between observations and simulated water levels the time series is truncated to January 2015. We note that the residuals compare favourably too, despite the fact that the longer period tides and in particular the shorter period tides (Figure~\ref{fig:Waterlevel_tide}) are not included in the forcing. 
-
-\begin{figure}[tb] 
-	\centerline{ \includegraphics*[trim=3cm 0cm 2.5cm 0cm,clip=true,width=\textwidth]{Figurer/Oscarsborg_Tide_selected_jan15} } 
-	\centerline{ \includegraphics*[trim=3cm 0cm 2.5cm 0cm,clip=true,width=\textwidth]{Figurer/Oscarsborg_WL_rest_jan15} } 
- 	\caption{\small Simulated (black) and observed (red) time series of tides (upper panel) and residual (lower panel) at Oscarsborg (Figure~\ref{fig:kart_obs}) for the month of January 2015. The tidal elevation is composed of the eleven components included in the tidal forcing only. The residual is the total water level from which is subtracted the tidal elevation due to these constituents.} 
-	\label{fig:Waterlevel_jan15} 
-\end{figure} 
-
-%In addition, and as shown by, the observations have more tidal components with shorter periods which are not included in the tidal forcing, and thereby not present in the simulations. This is consistent with the frequency series of the Fourier transformed water level (Fig.~\ref{fig:Waterlevel_tide}).
+Table~\ref{tab:Tide} and Figure~\ref{fig:Waterlevel_tide} also show that even the longer period tidal constituents, e.g., SS and SSA, are to some degree picked up by the model despite the fact that they are not incorporated in the tidal forcing. This may be explained by the fact that we in addition to the tides also use daily mean water level, hydrography and currents extracted from the NorKyst800 model as forcing on the southern boundary \citep{roed:etal:2016}. In contrast, and as expected tides of periods shorter than 6 hours are not picked up by the model at all (Figure~\ref{fig:Waterlevel_tide}).
 
 \begin{figure}[tbh] 
 	\centerline{ \includegraphics*[trim=3cm 0cm 2.5cm 0cm,clip=true,width=\textwidth]{Figurer/Oscarsborg_Tide_not_included} } 
@@ -70,29 +30,66 @@ The fairly good agreement is further corroborated by Figure~\ref{fig:Waterlevel_
 	\label{fig:Waterlevel_tide} 
 \end{figure} 
 
-\begin{comment}
+\begin{table}[htb] 
+	\caption{\small Simulated and observed tidal amplitudes and phases at three tide gauge stations for selected tidal components sorted by period.} 
+	\label{tab:Tide} 
+	\centering 
+	\begin{tabular}{|c|c|l|cc|cc|cc|c|} 
+\hline  
+	  &	&	& \multicolumn{2}{|c|}{\small \bf Viker} & \multicolumn{2}{|c|}{\small \bf Oscarsborg} & \multicolumn{2}{|c|}{\small \bf Oslo} & {\small \bf Included} \\  
+{\small \bf Comp.} & {\small \bf Period} & {\small \bf sim/} & {\small \bf amp.} & {\small \bf phase.} & {\small \bf amp.} & {\small \bf phase.} & {\small \bf amp.} & {\small \bf phase.} & {\small \bf in tidal} \\ 
+	    & {\small \bf [h]} & {\small \bf obs} & {\small \bf [cm]} & {\small \bf [deg]} & {\small \bf [cm]} & {\small \bf [deg]} & {\small \bf [cm]}   & {\small \bf [deg]} & {\small \bf forcing} \\ \hline 
+\small SA   & \small 8764    & \small sim & \small 15.5 & \small 284 & \small 15.6 & \small 286 & \small 15.4 & \small 286 & \small no  \\
+\small      &        	     & \small obs & \small 10.0 & \small 319 & \small 11   & \small 322 & \small 11.4 & \small 324 &    	\\
+\hline
+\small SSA  & \small 4382    & \small sim & \small 8.8  & \small 197 & \small 9.2  & \small 200 & \small 9.4  & \small 200 & \small no  \\
+\small      &		     & \small obs & \small 7.5  & \small 188 & \small 8.0  & \small 189 & \small 8.2  & \small 190 &    	\\
+\hline
+\small Q1   & \small 26.8684 & \small sim & \small 0.0  & \small 231 & \small 0.0  & \small 216 & \small 0.1  & \small 215 & \small no	\\
+\small      &        	     & \small obs & \small 1.1  & \small 190 & \small 1.2  & \small 198 & \small 1.3  & \small 200 &    	\\
+\hline
+\small O1   & \small 25.8193 & \small sim & \small 3.5  & \small 337 & \small 3.8  & \small 339 & \small 3.8  & \small 339 & \small yes	\\
+\small      &        	     & \small obs & \small 2.2  & \small 277 & \small 2.3  & \small 281 & \small 2.4  & \small 282 &    	\\
+\hline
+\small P1   & \small 24.0659 & \small sim & \small 0.6  & \small 322 & \small 0.6  & \small 334 & \small 0.7  & \small 342 & \small yes	\\
+\small      &        	     & \small obs & \small 0.2  & \small 129 & \small 0.3  & \small 102 & \small 0.4  & \small 97  &    	\\
+\hline
+\small K1   & \small 23.9345 & \small sim & \small 0.2  & \small 187 & \small 0.1  & \small 175 & \small 0.2  & \small 157 & \small yes	\\
+\small      &        	     & \small obs & \small 0.4  & \small 127 & \small 0.7  & \small 130 & \small 0.8  & \small 130 &    	\\
+\hline
+\small N2   & \small 12.6584 & \small sim & \small 3.0  & \small 69  & \small 3.5  & \small 75  & \small 3.7  & \small 76  & \small yes	\\
+\small      &        	     & \small obs & \small 3.0  & \small 60  & \small 3.4  & \small 76  & \small 3.6  & \small 80  &    	\\
+\hline
+\small M2   & \small 12.4206 & \small sim & \small 11.5 & \small 105 & \small 13.2 & \small 112 & \small 13.9 & \small 114 & \small yes \\
+\small      &        	     & \small obs & \small 11.9 & \small 105 & \small 13.8 & \small 121 & \small 14.4 & \small 125 &    	\\
+\hline
+\small S2   & \small 12.0000 & \small sim & \small 3.3  & \small 64  & \small 3.9  & \small 69  & \small 4.2  & \small 70  & \small yes \\
+\small      &        	     & \small obs & \small 2.9  & \small 46  & \small 3.3  & \small 65  & \small 3.5  & \small 69  &    	\\
+\hline
+\small K2   & \small 11.9672 & \small sim & \small 1.6  & \small 10  & \small 2.0  & \small 13  & \small 2.1  & \small 15  & \small yes \\
+\small      &        	     & \small obs & \small 0.7  & \small 45  & \small 0.8  & \small 66  & \small 0.9  & \small 66  &    	\\
+\hline
+\small MN4  & \small 6.2692  & \small sim & \small 0.2  & \small 5   & \small 0.5  & \small 32  & \small 0.6  & \small 35  & \small yes	\\
+\small      &        	     & \small obs & \small 0.4  & \small 249 & \small 0.6  & \small 289 & \small 0.7  & \small 297 &    	\\
+\hline
+\small M4   & \small 6.2103  & \small sim & \small 1.0  & \small 355 & \small 1.9  & \small 18  & \small 2.5  & \small 23  & \small yes	\\
+\small      &        	     & \small obs & \small 1.2  & \small 281 & \small 1.8  & \small 324 & \small 2.3  & \small 332 &    	\\
+\hline
+\small MS4  & \small 6.1033  & \small sim & \small 0.6  & \small 80  & \small 1.2  & \small 107 & \small 1.6  & \small 111 & \small yes	\\
+\small      &        	     & \small obs & \small 0.3  & \small 360 & \small 0.5  & \small 44  & \small 0.7  & \small 56  &    	\\
+\hline
+\end{tabular}
+\end{table}
 
-\begin{figure}[tbh] 
-  \centerline{ \includegraphics*[trim=3cm 0cm 2.5cm 0cm,clip=true,width=\textwidth]{Figurer/Oscarsborg_Tide_Frequency_obs.png} } 
-  \centerline{ \includegraphics*[trim=3cm 0cm 2.5cm 0cm,clip=true,width=\textwidth]{Figurer/Oscarsborg_Tide_Frequency_sim.png} } 
-  \caption{\small Frequency series of Fourier transformed observed (upperpanel) and simulated (lower panel) water levels at Oscarsborg} 
-  \label{fig:Waterlevel_freq} 
-\end{figure} 
-
-\end{comment}
-%\newpage 
-As revealed by Table~\ref{tab:Tide} the observed M2 amplitude increases from south to north. This is reflected in the simulations as well as displayed by Fig. Fig.~\ref{fig:M2field}. It is interesting to note that the lowest M2 amplitude is found in the Drammensfjord north of the threshold in Svelvik. In fact the M$_2$ phase has a sudden increase at the thresholds of Svelvik and Dr{\o}bak (Figure~\ref{fig:M2field}). The same is true for the majority of the other relevant tidal components.
-
-%The amplitude of M$_2$ increases from south to north in the Inner Oslofjord both in the simulations and the observations (Fig.~\ref{fig:M2field} and Tab.~\ref{tab:Tide}). The lowest M$_2$ amplitude in the area of interest, is in the Drammensfjord north of the threshold in Svelvik. The M$_2$ phase has a sudden increase at the thresholds of Svelvik and Dr{\o}bak (Fig.~\ref{fig:M2field}). The same yields for the majority of the other relevant tidal components.
+Finally we note, as revealed by Table~\ref{tab:Tide}, that the observed M2 amplitude increases from south to north. This is reflected in the simulations as well as displayed by Figure~\ref{fig:M2field}. It is interesting to note that the lowest M2 amplitude is found in the Drammensfjord north of the threshold in Svelvik. In fact the M2 phase has a sudden increase at the thresholds of Svelvik and Dr{\o}bak. The same is true for the majority of the other relevant tidal components (not shown).
 
 \begin{figure}[hb] 
-\centerline{ 
-\includegraphics*[trim=1cm 0cm 0cm 0cm,clip=true,width=0.49\textwidth]{Figurer/M2amp_felt}  
-\includegraphics*[trim=0.8cm 0cm 0cm 0cm,clip=true,width=0.49\textwidth]{Figurer/M2fase_felt} 
-} 
-\caption{\small 
-Simulated fields of M2 amplitude (left-hand panel) and phase (right-hand panel). Corresponding observed values for M2 amplitude and phase are marked with circles at Viker, Oscarsborg, and Oslo.} 
-\label{fig:M2field} 
+	\centerline{ 
+		\includegraphics*[trim=1cm 0cm 0cm 0cm,clip=true,width=0.49\textwidth]{Figurer/M2amp_felt}  
+		\includegraphics*[trim=0.8cm 0cm 0cm 0cm,clip=true,width=0.49\textwidth]{Figurer/M2fase_felt} 
+		} 
+	\caption{\small Simulated fields of M2 amplitude (left-hand panel) and phase (right-hand panel). Corresponding observed values for M2 amplitude and phase are marked with circles at Viker, Oscarsborg, and Oslo.} 
+	\label{fig:M2field} 
 \end{figure} 
 
 
@@ -101,8 +98,6 @@ Simulated fields of M2 amplitude (left-hand panel) and phase (right-hand panel).
 \clearpage 
 \subsection{Currents}
 \label{subsec:curree}
-
-%\subsubsection{Currents in two cross sections}
 
 %Current measurements were performed in two cross sections. Here the model results are evaluated using the measurements at the northern cross section, Brenntangen-Filtvedt. The results are similar at the southern cross section.
 
@@ -230,9 +225,8 @@ The probability density functions reveals that the model captures the distributi
 
 The time series scatter plots reveal that the correlation in time is not satisfying (Fig.~\ref{fig:Slagen-tid} and \ref{fig:Slagen_QQ}). The model seem to have difficulties with capturing the right phenomena influencing the currents to the right time. This is a well known problem when it comes to forecasting currents. The QQ-plots also confirms that the simulated currents are stronger than the observed currents. 
 
-
 % % % % % % % % % % % % % % %
-%\clearpage
+\clearpage
 \subsection{CTD-measurements}
 \label{subsec:CTDe}
 For comparison we extracted temperature and salinity profiles from the model simulation at some of the CTD stations listed by Table ~\ref{tab:CTD_pos}, namely OF-1 in the outer part of the fjord, LA-1 in Larvikfjord and D-2 inside the Svelvik Sill in the inner Drammensfjord. Comparison between simulated and observed profiles are shown in Figs.~\ref{fig:CTD_OF-1}-~\ref{fig:CTD_D-3}. 
@@ -249,7 +243,6 @@ In such shallow waters, observations reveal that the whole water column is heate
 The water masses below sill depth in the Drammensfjord are known to have very low vertical diffusivity leading to low oxygen conditions in the depth.
 Fig.~\ref{fig:CTD_D-3} reveals that the vertical diffusivity in the same basin in the model is two high.
 In the model water with low salinity is mixed down all the way to the bottom. 
-
 
 \begin{figure}[tbh]
 \centerline{
@@ -341,9 +334,10 @@ Modelled temperature at three stations in the Oslofjord. Contour lines mark 5 an
 \label{fig:Temp_Mod_2014_2015}
 \end{figure}
 
-
 % % % % % % % % % % % % % % %
-\clearpage 
+\clearpage
+\subsection{Temperature measurements}
+\label{subsec:tempee}
 \subsubsection{Water temperature near \AA sg\aa rdstrand}
 
 The temperature observations from Scanmar AS are compared with simulated data extracted from 1.15 meters depth at approximately the same location as the observations.
@@ -418,7 +412,7 @@ Time series of observed and simulated temperature at \AA sg\aa dstrand in June 2
 \end{table}
 
 % % % % % % % % % % % % % % %
-\clearpage
+%\clearpage
 \subsubsection{Water temperature in the Inner Oslofjord}
 As revealed by Figures~\ref{fig:badetemp_2014} - \ref{fig:badetemp_2015} the observed and simulated temperature at the three beaches in the Inner Oslofjord are in relatively good agreement. 
 
@@ -490,7 +484,7 @@ There are a number of parameters that may be tuned when running OpenDrift. One s
 Comparing the results to the observed oil displayed by Figure~\ref{fig:godafoss_oil}, we observe that there are some obvious similarities between the observations and the simulations. For instance the right-hand panel of Figure~\ref{fig:opendrift_godafoss_endpos} shows, in similarity with the observations, that a substantial number of particles are transported westward from the release position and strand along the Vestfold coast, the islands around Tj{\o}me, and the F{\ae}rder lighthouse. We also note the very low number of particles that strand at the peninsula west of Stavern (the area far left in Figure~\ref{fig:opendrift_godafoss_endpos}). This corresponds well with where the oil was observed or not. Looking at the left-hand panel of Figure~\ref{fig:opendrift_godafoss_endpos} we would like to draw attention to two areas, namely Stavern and Bustein located, respectively, in the far lower left and the middle of Figure~\ref{fig:opendrift_godafoss_endpos}. As displayed by Figure~\ref{fig:opendrift_godafoss_endpos} the feigned oil strands at Bustein after approximately two days, while at Stavern (Korntin) the oil strands after about four to five days. These stranding times corresponds well with the timing shown by Figure~\ref{fig:godafoss_oil}.
 
 % % % % % % % % % % % % % % %
-%\clearpage 
+\clearpage 
 \subsection{Surface drifters}
 \label{subsec:surfdr}
 We evaluate the models ability to recreate the drifter trajectories by using a skill-score developed by \cite{liu:2011}. It is defined by 
