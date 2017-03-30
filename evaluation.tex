@@ -420,8 +420,7 @@ Time series of observed and simulated temperature at \AA sg\aa dstrand in June 2
 % % % % % % % % % % % % % % %
 \clearpage
 \subsubsection{Water temperature in the Inner Oslofjord}
-
-The observed and simulated temperature at three beaches in the Inner Oslofjord are in relatively good agreement (Fig.~\ref{fig:badetemp_2014} - \ref{fig:badetemp_2015}). 
+As revealed by Figures~\ref{fig:badetemp_2014} - \ref{fig:badetemp_2015} the observed and simulated temperature at the three beaches in the Inner Oslofjord are in relatively good agreement. 
 
 Close to the shoreline and only 40 cm under the surface, the temperature is heavily influenced by the weather situation and local circulation patterns. 
 
@@ -432,43 +431,20 @@ The temperature differences during the day are larger in the model than in the o
 During the summer 2014 the model predicts higher temperatures at Sj\o strand than was observed. The observations in Hvalstrand have some of the same trends as the modelled temperature with temperatures up to 25 degrees. The air temperatures in 2014 was higher than in 2015 and resulted in higher water temperatures, especially in shallow areas. 
 
 \begin{figure}[ht]
-\centerline{
-\includegraphics*[trim=0 0 0 0,clip=true,width=\textwidth]{Figurer/badetemp_2014}
-}
-\caption{\small
-The observed and modelled temperature at three beaches in the Inner Oslofjord during the summer 2014}
+	\centerline{
+		\includegraphics*[trim=0 0 0 0,clip=true,width=\textwidth]{Figurer/badetemp_2014}
+		}
+	\caption{\small The observed and modelled temperature at three beaches in the Inner Oslofjord during the summer 2014}
 \label{fig:badetemp_2014}
 \end{figure}
 
 \begin{figure}[ht]
-\centerline{
-\includegraphics*[trim=0 0 0 0,clip=true,width=\textwidth]{Figurer/badetemp_2015}
-}
-\caption{\small
-The observed and modelled temperature at three beaches in the Inner Oslofjord during the summer 2015}
+	\centerline{
+		\includegraphics*[trim=0 0 0 0,clip=true,width=\textwidth]{Figurer/badetemp_2015}
+		}
+	\caption{\small The observed and modelled temperature at three beaches in the Inner Oslofjord during the summer 2015}
 \label{fig:badetemp_2015}
 \end{figure}
-
-
-%\subsubsection{Ferrybox - Andr\'{e}?}
-%To be continued... Andr\'{e}?
-%
-%\begin{figure}[ht]
-%\centerline{
-%\includegraphics*[trim=1cm 0cm 1cm 0cm,clip=true,height=10cm]{Figurer/FjordOs_with_FA_track}}
-%\caption{\small
-%The track of Color Fantasy.}
-%\label{fig:Ferrybox_track}
-%\end{figure}
-%
-%\begin{figure}[ht]
-%\centerline{
-%\includegraphics*[trim=1cm 0cm 1cm 0cm,clip=true,width=.5\textwidth]{Figurer/FjordOs_vs_Ferrybox_TEMP}
-%\includegraphics*[trim=1cm 0cm 1cm 0cm,clip=true,width=.5\textwidth]{Figurer/FjordOs_vs_Ferrybox_SALT}}
-%\caption{\small
-%Simulated daily mean compared with observations from ferryboxes for temperature (left) and salinity (right).}
-%\label{fig:Ferrybox_temp_salt}
-%\end{figure}
 
 
 % % % % % % % % % % % % % % %
@@ -528,105 +504,62 @@ ss =
 \ee
 Here $N$ is the total number of time steps, $d_i$ the distance between the modelled and observed endpoints of the Lagrangian trajectories at time step $i$ after the release, $l_{oi}$ the length of the observed trajectory at time step $i$, and $n$ a tolerance threshold. Thus if $ss=1$ it implies a perfect match while $ss=0$ means no skill. To investigate the skill of the FjordOs model we released Lagrangian particles into OpenDrift and computed the skill-score for each of the 15 drifters released as part of the FjordOs project (Section \ref{subsec:drifto}) using the FjordOs hindcast as input. Furthermore, to investigate whether the FjordOs model has a better skill than a coarser resolution model we also computed the skill-score using the NorKyst800 model results as input. In computing the skill-score we used a tolerance threshold $n=2$ to get positive values for most trajectories. 
 
-Regarding the 13 drifters released in September 2015 we used both wind and currents as input. Note that the wind used in OpenDrift is the same we used to force both FjordOs and NorKyst800. The resulting skill-scores for 10 out of the 13 drifters are presented by Tables~\ref{tab:skillscore_full} and \ref{tab:skillscore_1hr}, while the trajectories are displayed by Figures \ref{fig:opendrift_trajectories1} - \ref{fig:opendrift_trajectories3}. The rationale for limiting the number of drifters to 10 is that some of them stranded too soon after the release to compute a meaningful skill-score. 
-
-\begin{comment}\begin{table}[htb]
-  \begin{center}
-    \begin{tabular}{ | c | c | c |}
-    \hline
-      {\bf Drop no.} & {\bf FjordOs} & {\bf NorKyst-800} \\ \hline
-      1 & 0.77 (11) & 0.68 (11) \\ 
-      4 & 0.78 (2) & 0.53 (1) \\
-      6 & 0.00 (3) & 0.84 (11) \\
-      8 & 0.82 (21) & 0.58 (21) \\
-     51 & 0.58 (3) & 0.73 (15) \\
-     52 & 0.38 (4) & 0.50 (1) \\
-     61 & 0.58 (3) & 0.70 (8) \\
-     91 & 0.51 (8) & 0.50 (12) \\
-    101 & 0.61 (15) & 0.78 (15) \\
-    102 & 0.59 (6) & 0.75 (7) \\ \hline
-    {\bf Avg.} & {\bf 0.56} & {\bf 0.66} \\
-    \hline
-    \end{tabular}
-    \caption{\small Skill-score of drifter trajectories released during the September 2015 cruise. The numbers in parenthesis indicate how many hours the model trajectory is followed.}
-    \label{tab:skillscore_full}
-  \end{center}
-\end{table}\end{comment}
-
 \begin{table}[htb]
   \begin{center}
     \begin{tabular}{ | c | c | c | c | c |}
     \hline
-                     & \multicolumn{2}{|c|}{\bf \small{Full trajectory}}  & \multicolumn{2}{|c|}{\bf \small{First hour only}} \\ 
-      {\bf Drop no.} & {\bf FjordOs} & {\bf NorKyst-800} & {\bf FjordOs} & {\bf NorKyst-800}\\ \hline
-      1 	     & 0.77 (11)     & 0.68 (11)         & 0.17		 & 0.14 \\ 
-      4 	     & 0.78 (2)      & 0.53 (1)		 & 0.55		 & 0.45 \\
-      6 & 0.00 (3)  & 0.84 (11) & 0.07 & 0.46 \\
-      8 & 0.82 (21) & 0.58 (21) & 0.00 & 0.00 \\
-     51 & 0.58 (3)  & 0.73 (15) & 0.49 & 0.58 \\
-     52 & 0.38 (4)  & 0.50 (1)  & 0.37 & 0.47 \\
-     61 & 0.58 (3)  & 0.70 (8)  & 0.49 & 0.58 \\
-     91 & 0.51 (8)  & 0.50 (12) & 0.73 & 0.67 \\
-    101 & 0.61 (15) & 0.78 (15) & 0.63 & 0.78 \\
-    102 & 0.59 (6)  & 0.75 (7)  & 0.87 & 0.77 \\ \hline
-    {\bf Avg.}      & {\bf 0.56}     & {\bf 0.66}	 & {\bf 0.43}	 & {\bf 0.49}\\
+		& \multicolumn{2}{|c|}{\bf \small{Full trajectory}}  & \multicolumn{2}{|c|}{\bf \small{First hour only}} \\ 
+   {\bf \small Drop no.} & {\bf \small FjordOs} & {\bf \small NorKyst-800} & {\bf \small FjordOs} & {\bf \small NorKyst-800}\\ \hline
+{\small	1}	& {\small 0.77 (11)}	& {\small 0.68 (11)}	& {\small 0.17}	& {\small 0.14} \\ 
+{\small	4}	& {\small 0.78 (2)}	& {\small 0.53 (1)}	& {\small 0.55}	& {\small 0.45} \\
+{\small	6}	& {\small 0.00 (3)}	& {\small 0.84 (11)}	& {\small 0.07}	& {\small 0.46} \\
+{\small	8}	& {\small 0.82 (21)}	& {\small 0.58 (21)}	& {\small 0.00}	& {\small 0.00} \\
+{\small	51}	& {\small 0.58 (3)}	& {\small 0.73 (15)}	& {\small 0.49}	& {\small 0.58} \\
+{\small	52}	& {\small 0.38 (4)}	& {\small 0.50 (1)}	& {\small 0.37}	& {\small 0.47} \\
+{\small	61}	& {\small 0.58 (3)}	& {\small 0.70 (8)}	& {\small 0.49}	& {\small 0.58} \\
+{\small	91}	& {\small 0.51 (8)}	& {\small 0.50 (12)}	& {\small 0.73}	& {\small 0.67} \\
+{\small	101}	& {\small 0.61 (15)}	& {\small 0.78 (15)}	& {\small 0.63}	& {\small 0.78} \\
+{\small	102}	& {\small 0.59 (6)}	& {\small 0.75 (7)}	& {\small 0.87}	& {\small 0.77} \\ \hline
+{\bf\small Avg.}& {\bf\small 0.56}	& {\bf \small 0.66}	& {\bf \small 0.43}	& {\bf \small 0.49}\\
     \hline
     \end{tabular}
-    \caption{\small Skill-score of drifter trajectories released during the September 2015 cruise. The numbers in parenthesis in column two and three indicate how many hours we were able to follow the model trajectory.}
+    \caption{\small Skill-score of drifter trajectories released during the September 2015 cruise. The numbers in parenthesis in column two and three indicate how many hours we were able to follow each model trajectory. The last two columns reveal the skill-scores following each trajectory for the first hour only.}
     \label{tab:skillscore_full}
   \end{center}
 \end{table}
 
-\begin{comment}\begin{table}[htb]
-\begin{center}
-  \begin{tabular}{ | c | c | c |}
-    \hline
-    {\bf Drop no.} & {\bf FjordOs} & {\bf NorKyst-800} \\ \hline
-    1 & 0.17 & 0.14 \\ 
-    4 & 0.55 & 0.45 \\
-    6 & 0.07 & 0.46 \\
-    8 & 0.00 & 0.00 \\
-    51 & 0.49 & 0.58 \\
-    52 & 0.37 & 0.47 \\
-    61 & 0.49 & 0.58 \\
-    91 & 0.73 & 0.67 \\
-    101 & 0.63 & 0.78 \\
-    102 & 0.87 & 0.77 \\ \hline
-    {\bf Avg.} & {\bf 0.43} & {\bf 0.49} \\
-    \hline
-  \end{tabular}
-  \caption{\small Same as Table \ref{tab:skillscore_full}, but only considering the first hour of the trajectory.}
-  \label{tab:skillscore_1hr}
-\end{center}
-\end{table}\end{comment}
+Regarding the 13 drifters released in September 2015 we used both wind and currents as input. Note that the wind input used in OpenDrift is the same as the one we used to force both FjordOs and NorKyst800. The resulting skill-scores for 10 out of the 13 drifters are presented by Table~\ref{tab:skillscore_full}, while the trajectories are displayed by Figures \ref{fig:opendrift_trajectories1} - \ref{fig:opendrift_trajectories3}. The rationale for limiting the number of drifters to 10 is that some of them stranded too soon after the release to compute a meaningful skill-score. 
 
-\clearpage
-As revealed by Table~\ref{tab:skillscore_full} we observe that the NorKyst-800 model has a higher average skill-score than FjordOs. This is also true when we consider the average skill-score of the first hour of the trajectories only (Table~\ref{tab:skillscore_1hr}). Nevertheless, when we perform a visual comparison between the trajectories (Figures \ref{fig:opendrift_trajectories1} - \ref{fig:opendrift_trajectories3}) we are tempted to conclude that the trajectories based on the FjordOs model more often compares well to the observed trajectories than those based on NorKyst-800. We leave this up to the reader to decide, and merely state that the skill-score alone is not enough to make a conclusive statement.
+As revealed by Table~\ref{tab:skillscore_full} we observe that the \emph{average} NorKyst-800 skill-scores are higher compared to FjordOs. This is also true when we consider the \emph{average} skill-score of the first hour of the trajectories. Nevertheless we notice that FjordOs has a higher skill-score for some of the full trajectories, e.g., drop nos. 1, 2, and 8, and also for the 1 hour trajecories, e.g., 1, 2, 91, and 102. Furthermore by performing a visual comparison between the trajectories (Figures \ref{fig:opendrift_trajectories1} - \ref{fig:opendrift_trajectories3}) we are tempted to conclude that the trajectories based on the FjordOs model more often compares well to the observed trajectories than those based on NorKyst-800. We leave this up to the reader to decide. We merely state that the skill-scores alone appear to be insufficient to make a conclusive statement.
 
 \begin{figure}[htb]
 	\centerline{
 		\includegraphics*[width=.5\textwidth]{Figurer/opendrift/skillscore/drop1i0}
 		\includegraphics*[width=.5\textwidth]{Figurer/opendrift/skillscore/drop4i7}
 		}
-	\caption{\small Displayed is the modelled and observed drifter trajectories during the September 2015 cruise. Green trajectories are based on NorKyst-800, red trajectories on the FjordOs model, while red trajectories are are the observed ones. Dotted lines form a grid of equal distances with origo at the release point. Left-hand panel is drop 1 (5 km grid), while right-hand panel is drop 4 (0.5 km).}
+	\caption{\small Displayed are modelled and observed drifter trajectories September 2015. The colours indicate trajectories based on NorKyst-800 (green), FjordOs (blue), and observed (red). Dotted lines form a grid of equal distances with origo at the release point. Drop 1 is to the left (5 km grid), while drop 4 is to the right (0.5 km).}
 	\label{fig:opendrift_trajectories1}
 \end{figure}
+
+\begin{comment}\begin{figure}[htb]
+	\centerline{
+		\includegraphics*[width=.5\textwidth]{Figurer/opendrift/skillscore/drop6i12}
+		\includegraphics*[width=.5\textwidth]{Figurer/opendrift/skillscore/drop8i1}
+		}
+	\caption{\small As Figure~\ref{fig:opendrift_trajectories1}, but showing drop 6 (left, 2 km grid), and drop 8 (right, 5 km grid).}
+	\label{fig:opendrift_trajectories1a}
+\end{figure}\end{comment}
 
 \begin{figure}[htb]
 	\centerline{
 		\includegraphics*[width=.5\textwidth]{Figurer/opendrift/skillscore/drop6i12}
 		\includegraphics*[width=.5\textwidth]{Figurer/opendrift/skillscore/drop8i1}
 		}
-	\caption{\small As Figure~\ref{fig:opendrift_trajectories1}, but showing drop 6 (left-hand panel, 2 km grid), and  is drop 8 (right-hand panel, 5 km grid).}
-	\label{fig:opendrift_trajectories1a}
-\end{figure}
-
-\begin{figure}[htb]
 	\centerline{
 		\includegraphics*[width=.5\textwidth]{Figurer/opendrift/skillscore/drop51i4}
 		\includegraphics*[width=.5\textwidth]{Figurer/opendrift/skillscore/drop52i8}
 		}
-	\caption{\small As Figure \ref{fig:opendrift_trajectories1}, but showing drop 51 (left-hand panel, 2 km grid) and drop 52 (right-hand panel, 1 km grid).}
+	\caption{\small As Figure \ref{fig:opendrift_trajectories1}, but showing drop 6 (top left, 2 km grid), and drop 8 (top right, 5 km grid), drop 51 (bottom left, 2 km grid) and drop 52 (bottom right, 1 km grid).}
 	\label{fig:opendrift_trajectories2}
 \end{figure}
 
@@ -648,7 +581,7 @@ As revealed by Table~\ref{tab:skillscore_full} we observe that the NorKyst-800 m
 	\label{fig:opendrift_trajectories3}
 \end{figure}
 
-Regarding the two drifters released in September 2014 we only used current as input. The resulting skill-scores are presented by Tables~\ref{tab:skillscore2014_1h} and \ref{tab:skillscore2014_24h}, while Figures~\ref{fig:opendrift_trajectories2014} and \ref{fig:opendrift_trajectories2014a} displays the modelled and observed trajectories. As revealed the FjordOs model performs better than the NorKyst-800, but there is a clear weakness here since hourly data from NorKyst-800 is not available. Also, there are only two drifters. The FjordOs model has the highest skill-score based on both hourly and daily average data, and was the only model to transport the drifters as far south as the observed drift. 
+Regarding the two drifters released in September 2014 we only used current as input. The resulting skill-scores are presented by Tables~\ref{tab:skillscore2014_1h} and \ref{tab:skillscore2014_24h}, while Figures~\ref{fig:opendrift_trajectories2014} and \ref{fig:opendrift_trajectories2014a} displays the modelled and observed trajectories. As revealed the FjordOs model performs better than the NorKyst-800, but there is a clear weakness here since hourly data from NorKyst-800 is not available. Also, there are only two drifters. WE observe that the FjordOs model has the highest skill-score based on both hourly and daily average data, and was the only model to transport the drifters as far south as the observed drift. 
 
 \begin{table}[htb]
 \begin{center}
@@ -689,7 +622,6 @@ Regarding the two drifters released in September 2014 we only used current as in
 	\label{fig:opendrift_trajectories2014}
 \end{figure}
 
-
 \begin{figure}[htb]
 	\centerline{
 		\includegraphics*[width=.5\textwidth]{Figurer/opendrift/skillscore/2014drop2i1}
@@ -700,5 +632,3 @@ Regarding the two drifters released in September 2014 we only used current as in
 \end{figure}
 
 We conclude that none of the models gives a perfect match, and that the currents in NorKyst-800 appears to be too weak during these drifter releases. Furthermore we think it is safe to conclude that the FjordOs model provides a better skill overall. It should be kept in mind though that, given the low number of drifters and their limited spatial and temporal distribution, more drifter studies should be performed in which the released drifters should have a better temporal and spatial distribution. In particular it would be interesting to release drifters in some of the narrow straits and sounds, and in the Archipelagoes.
-
-%\clearpage 
