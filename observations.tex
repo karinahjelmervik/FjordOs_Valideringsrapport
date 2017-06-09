@@ -2,109 +2,44 @@
 \section{Observations}
 \label{sec:obser}
 
-Model simulations are performed for the period April 2014 through December 2015. Observations gathered independent of the FjordOs project, and available for this period, are shown by Figure~\ref{fig:kart_obs}. They encompass water level as detailed in Section \ref{subsec:wlevelo}, profiles of currents (Section \ref{subsec:curreo}), temperature and salinity (Section \ref{subsec:CTDo}), and temperature at fixed positions (Section \ref{subsec:tempeo}). Also data from the Godafoss oil spill in February 2011 are available to us (Section \ref{sect:godafoss_obs}). Finally, through the FjordOs project, we have collected surface drifter trajectory data during two cruises, one in September 2014 and another in September 2015 (Section \ref{subsec:drifto}). Note that all these measurements are mostly scattered in time and space. The exceptions are water level at Viker, Oscarsborg and Oslo and currents at Slagen, that are gathered regularly in time and for a much longer period.
-
-\begin{figure}[htb]
-  \begin{center}
-    \begin{tabular}{c}
-      \includegraphics*[height=11cm]{Figurer/kart_obs} \\ 
-    \end{tabular}
-    \caption{\small Names and locations where observations independent of the FjordOs project are available for the simulation period. Dark purple solid circles correspond to fixed temperature stations, green triangles to hydrographic stations (CTD stations), blue squares to water level stations, and red diamonds to moorings equipped with an Acoustic Doppler Current Profiler (ADCP).}
-    \label{fig:kart_obs}
-  \end{center}
-\end{figure}
+Model simulations are performed for the period April 2014 through December 2015. Locations of observations available for this period, are shown by Figure~\ref{fig:kart_obs}. They encompass water level as detailed in Section \ref{subsec:wlevelo}, profiles of currents (Section \ref{subsec:curreo}), temperature and salinity (Section \ref{subsec:CTDo}), and temperature at fixed positions (Section \ref{subsec:tempeo}). Also data from the Godafoss oil spill in February 2011 are available to us (Section \ref{sect:godafoss_obs}). These observations are all gathered independent of the FjordOs project, and most of them are scattered in time and space. The exceptions are water level at Viker, Oscarsborg and Oslo and currents at Slagen. They are gathered regularly in time and for a much longer period. Finally, through the FjordOs project, we have collected surface drifter trajectory data during two cruises, one in September 2014 and another in September 2015 as detailed in Section \ref{subsec:drifto}.
+\input{Fig_kart_obs.tex}
 
 % % % % % % % % % % % % % % % % % % % % %
 \subsection{Water level}
 \label{subsec:wlevelo}
-The Norwegian Mapping Authority has three permanent stations measuring sea level in the Oslofjord (Figure~\ref{fig:kart_obs}), namely Viker, Oscarsborg and Oslo. As shown the station at Viker is located close to the open boundary of the model area, while Oscarsborg is located halfway into the Inner Oslofjord and the station at Oslo in the Oslo Harbour. The station at Viker was used to adjust the tidal input to the FjordOs model in accord with \cite{hjelm:etal:2017}.
-
-\begin{table}[hb] 
-\caption{\small Target positions (WGS84) of the instrument moorings. Depths at the stations are from the Statnett terrain model. Note that the model depth at the same location may differ due to the smoothing of the model topography.} 
-\label{tab:Statnett} 
-\centering 
-\begin{tabular}{|llcccl|} 
-\hline  
-\small{{\bf Mooring}} & \small{{\bf Name}} & \small{{\bf Latitude}} & \small{{\bf Longitude}} & \small{{\bf Depth}} & \small{{\bf Instruments}}\\ 
-\small{{\bf ref}}    &		           & \small{{\bf [$^o$N]}}  & \small{{\bf [$^o$E]}}   & \small{{\bf [m]}} &	\\ \hline
-\small{Kp11.2} & \small{Sm{\aa}skj{\ae}r} & \small{59.350124} & \small{10.497661} & \small{20}	& \small{Aquadopp600 AQP1531}	\\
-\small{(Ri1)}  &                          &		      &			  &		& \small{Transducer LRT2}	\\ \hline
-\small{Kp5.7}  & \small{Laksetrappa}      & \small{59.343452} & \small{10.581023} & \small{75}  & \small{Aquadopp400 AQP4689}	\\
-\small{(Rl1)}  &			  &		      &			  &     	& \small{Transducer LRT3}	\\
-	       &			  &		      &			  &     	& \small{Aanderaa Seaguard}	\\ \hline
-\small{Kp2.6}  & \small{Botnegrunnen}     & \small{59.352375} & \small{10.626822} & \small{96}  & \small{Continental WAV6117}	\\
-\small{(Rm1)}  &			  &		      &			  &     	& \small{Transducer LRT4}	\\ \hline
-\small{Kp0.7}  & \small{Evje}             & \small{59.363182} & \small{10.653576} & \small{64}  & \small{Aquadopp400 AQP2931}	\\
-\small{(Rn1)}  &			  &	      	      &			  &		& \small{Transducer LRT5}	\\ \hline
-\small{Kn2}    & \small{Brenntangen} 	  & \small{59.581803} & \small{10.646087} & \small{54}  & \small{Aquadopp400 AQP5608}	\\
-	       &			  &		      &			  &		& \small{Transducer LRT6}	\\ \hline
-\small{Km1}    & \small{Filtvedt}	  & \small{59.582064} & \small{10.627372} & \small{153} & \small{Continental CNL6037}	\\
-	       & (current) 		  &		      &			  &		& \small{Transducer 207-2}	\\ \hline
-\small{Km2}    & \small{Filtvedt}	  & \small{59.580778} & \small{10.626239} & \small{125} & \small{TinyTags UIO1-7}	\\
-	       & (temperature) 		  &		      &			  &		& \small{Transducer 203-2}	\\
-\hline
-\end{tabular}
-\end{table}
+The Norwegian Mapping Authority has three permanent stations measuring sea level in the Oslofjord (Figure~\ref{fig:kart_obs}), namely Viker, Oscarsborg and Oslo. As shown the station at Viker is located close to the open boundary of the model area, while Oscarsborg is located halfway into the Inner Oslofjord. The station Oslo is located in the Oslo Harbour. The station Viker was used to adjust the tidal input to the FjordOs model in accord with \cite{hjelm:etal:2017}.
 
 % % % % % % % % % % % % % % % % % % % % % % % % % % % %
 \subsection{Currents}
 \label{subsec:curreo}
-During the period mid September through late November 2014 six moorings, each fitted with an upward looking Acoustic Doppler Current Progiler (ADCP), were deployed in the positions shown by Figure~\ref{fig:kart_obs}. Information about mooring reference, names and locations of these moorings (in terms of latitude and longitude) and instrument type are tabulated by Table~\ref{tab:Statnett}. Two of the moorings (Filtvedt and Brenntangen) were deployed at the entrance to the Dr{\o}bak Sound. The remaining four (Sm{\aa}skj{\ae}r, Laksetrappa, Botnegrunnen, and Evje) were deployed further south forming an east-west section across the fjord along a line with deep basins on either side (Figure~\ref{fig:kart_obs}). The moorings were all deployed as a part of a project conducted by Statnett, NIVA, Akvaplan NIVA, and the University of Oslo (UiO). The R/V Trygve Braarud, UiO was used during deployment and recovery of the moorings. For further details about the moorings and corresponding instruments the reader is referred to \cite{staalstrom:2015}.
+%  %  %  %  %  %  %  %  %  %  %  %  % 
+\subsubsection{Statnett moorings}
+During the period mid September through late November 2014 six moorings, each fitted with an upward looking Acoustic Doppler Current Progiler (ADCP), were deployed in the positions shown by Figure~\ref{fig:kart_obs}. Information about mooring reference, names and locations of these moorings (in terms of latitude and longitude) and instrument type are tabulated by Table~\ref{tab:Statnett}. Two of the moorings (Filtvedt and Brenntangen) were deployed at the entrance to the Dr{\o}bak Sound. The remaining four (Sm{\aa}skj{\ae}r, Laksetrappa, Botnegrunnen, and Evje) were deployed further south forming an east-west section across the fjord along a line with deep basins on either side (Figure~\ref{fig:kart_obs}). The moorings were all deployed as part of a project conducted by Statnett, NIVA, Akvaplan NIVA, and the University of Oslo (UiO). The R/V Trygve Braarud, UiO was used during deployment and recovery of the moorings. For further details about the moorings and corresponding instruments the reader is referred to \cite{staalstrom:2015}.
+\input{Tab_ADCP_Statnett.tex}
 
-%%% (LPR: Moved to the Evaluation section) The strongest currents were found at the two northernmost stations at the entrance to the Dr{\o}bak Sound, namely Filtvedt and Brenntangen. Here the fjord is relatively narrow, and hence the somewhat stronger current may be explained by a stronger tidal signal due to the tapering of the width of the fjord at the entrance to the Dr{\o}bak Sound. We also note that the stations with the smallest depths exhibits the highest current velocities. This may be explained by the fact that the horizontal pressure gradient has a tendency to decrease with depth.
-
-%At one station (Botnegrunnen) a single point current meter was deployed just below the profiling current meter.while the 
-
-Data from an additional bottom-mounted ADCP, named Slagen (Figure~\ref{fig:kart_obs}), and made available to us by Exxonmobil, Slagentangen, is also used for comparison with model results. It has measured currents regularly at two depths since 1997, and is located northwest of Turning Dolphin at the Slagen Refinery as shown by Figure~\ref{fig:Slagen-kart}. Note the Bliksekilen nature reserve, which is a shallow water area with rare flora and fauna, which is located west of the Slagen Refinery. 
-
-\begin{figure}[htb]
-  \begin{center}
-    \begin{tabular}{c}
-      \includegraphics*[height=9cm]{Figurer/Slagen_kart} \\ 
-    \end{tabular}
-    \caption{\small Zoom in of the location of the bottom-mounted ADCP close to the Slagen Refinery (red dot). Source: Norwegian Coastal Administration.}
-    \label{fig:Slagen-kart}
-  \end{center}
-\end{figure}
+%  %  %  %  %  %  %  %  %  %  %  %  % 
+\subsubsection{ExxonMobil mooring}
+Data from an additional bottom-mounted ADCP, named Slagen (Figure~\ref{fig:kart_obs}), and made available to us by ExxonMobil, Slagentangen, is also used for comparison with model results. It has measured currents regularly at two depths since 1997, and is located northwest of Turning Dolphin at the Slagen Refinery as shown by Figure~\ref{fig:Slagen-kart}. Note the Bliksekilen nature reserve, which is a shallow water area with rare flora and fauna, which is located west of the Slagen Refinery. 
+\input{Fig_ExxonMobil.tex}
 
 % % % % % % % % % % % % % % % % % % % % % % % % % % % %
 \subsection{CTD measurements}
 \label{subsec:CTDo}
 On behalf of Fagr{\aa}det for Ytre Olsofjord NIVA collects CTD measurements at a number of selected positions in the Oslofjord. The work is part of a program monitoring the eutrophication state of the Outer Oslofjord and the Drammensfjord. The data collected are available through a web portal\footnote{http://www.aquamonitor.no/ytreoslofjord/}. We use data from ten of these as listed by Table ~\ref{tab:CTD_pos}. Their resepctive locations are shown in Fig.~\ref{fig:kart_obs} as green triangles. The measurements include profiles of temperature and salinity as well as water quality parameters. During the simulation period April 2014 through December 2015 12 CTD profiles was available covering the months January, February, June, July, August, September, and November. No data are unfortunately available in spring and early summer. 
-
-\begin{table}
-\caption{\small Positions (latitude, longitude) and number of profiles taken at each of the ten CTD measurement sites used.} 
-\label{tab:CTD_pos} 
-\centering 
-\begin{tabular}{|llcccc@{}c|} 
-\hline  
-{\bf \small{Tag}} & {\bf \small{Station}} & {\bf \small{Latitude}} & {\bf \small{Longitude}} & \multicolumn{2}{c}{\bf \small{Number of measurements}} &\\ 
- 	&	& {\bf \small{[$^o$N]}} & {\bf \small{[$^o$E]}} & \small{2014}  & \small{2015} &\\ \hline
-\small{D-2}	& \small{Inner Drammensfjord} & \small{59.6280}	& \small{10.4210} & \small{5} & \small{7}  &	\\ 
-\small{D-3}	& \small{Solumstrand} 	      & \small{59.7060} & \small{10.3140} & \small{5} & \small{6}  &	\\ \hline
-\small{LA-1}	& \small{Larviksfjord}	      & \small{59.0190}	& \small{10.0520} & \small{5} & \small{7}  &	\\ 
-\small{MO-2}	& \small{Kippenes}	      & \small{59.4840}	& \small{10.6780} & \small{5} & \small{7}  &	\\ \hline
-\small{OF-1}	& \small{Torbj{\o}rnskj{\ae}r}& \small{59.0410}	& \small{10.7540} & \small{5} & \small{7}  &	\\ 
-%\small{OF-2}	& \small{Missingene}	      & \small{59.1870}	& \small{10.6920} & \small{0} & \small{14} &	\\ 
-\small{OF-5}	& \small{Breiangen}	      & \small{59.4870}	& \small{10.4580} & \small{5} & \small{7}  &	\\ \hline
-\small{S-9}	& \small{Haslau, Singlefjord} & \small{59.1140}	& \small{11.1620} & \small{7} & \small{10} &	\\ 
-\small{SF-1}	& \small{Sandefjord}	      & \small{59.0770}	& \small{10.2460} & \small{5} & \small{7}  &	\\ \hline
-\small{T{\O}-1}	& \small{Vestfjord}	      & \small{59.2030}	& \small{10.3550} & \small{5} & \small{7}  &	\\ 
-\small{{\O}-1}	& \small{Leira. Vesterelva}   & \small{59.1370}	& \small{10.8340} & \small{7} & \small{10} &	\\ \hline
-\end{tabular}
-\end{table}
+\input{Tab_CTD_moorings.tex}
 
 We note that only a few of the CTD stations are located in the open part of the fjord. In fact seven of the ten stations are located inside narrow straits and sounds, or inside lesser subfjords or inlets. Of the remaining three stations only two are in the open parts of the fjord, namely Torbj{\o}rnskj{\ae}r (OF-1) and Breiangen (OF-5), while the last ({\O}-1) is positioned in a semi-open location west of the Hvaler Archipelago. The latter is interesting in that it is influenced by the fresh water discharged by the western branch of the river Glomma. In this respect also the stations D-2 and D-3 are interesting being located inside the sill in the Drammensfjord in which the river Drammenselva discharges its fresh water.   
 
 % % % % % % % % % % % % % % % % % % % % % % % % % % % %
 \subsection{Temperature measurements}
 \label{subsec:tempeo}
-Available to us are also temperature measurements at four fixed position. Three of them are located in the inner Oslofjord as shown by Figure~\ref{fig:kart_strand}, while the fourth is located three kilometres south of {\AA}sg{\aa}rdstrand (Figure~\ref{fig:kart_obs}).
+Temperature measurements at four fixed position are available to us. One of them is oerated by Scanmar AS and is located three kilometres south of {\AA}sg{\aa}rdstrand (Figure~\ref{fig:kart_obs}). The remaining three are located in the Inner Oslofjord (Figure~\ref{fig:kart_strand}).
+\input{Fig_temp_Inner_Oslofjord.tex}
 
-The latter has measured temperature hourly at one meter depth over the last ten years by Scanmar AS. The device has an accuracy of $\pm 0.15^{\textrm{o}}$C in the range from -5 to +30$^{\textrm{o}}$C. The former are measurements at three beaches in the Inner Oslofjord, namely Sj{\o}strand, Hvalstrand and Stor{\o}yodden (Figure~\ref{fig:kart_strand}). These measurements are the result of a collaboration between Asker and B{\ae}rum kommune and Finnerud Elektronikk. The measurement device is a digital thermometer (Maxim Integrated DS18B20) with an accuracy of $\pm 0.5^{\textrm{o}}$C. They measure water temperature at 40 cm beneath the surface in water depths of several meters. Temperatures are measured every three hours from 09:00 to 18:00 during the summer months. We note that the site Sj{\o}strand is the only one located in a semi-open position, while the two other beaches are well within archipelagoes that are somewhat sheltered from the rest of the fjord.
-
-%Note that 2014 had a warmer summer followed by a warm winter resulting in higher maximum and lower minimum than 2015 (Fig.~\ref{fig:Scan_temp}). 
-% Bør kanskje skrive noe om fluktuasjonene her...
+%  %  %  %  %  %  %  %  %  %  %  %  % 
+\subsubsection{The Scanmar mooring}
+The Scanmar mooring measures temperature hourly at one meter depth, and has done so over the last ten years. The device has an accuracy of $\pm 0.15^{\textrm{o}}$C in the range from -5 to +30$^{\textrm{o}}$C. 
 
 \begin{comment}
 
@@ -131,25 +66,14 @@ The latter has measured temperature hourly at one meter depth over the last ten 
 \end{tabular}
 \end{table}
 
+\end{comment}
 %\newpage
-%\subsubsection{Water temperature in the Inner Oslofjord}\end{comment}
 
-\begin{figure}[htb]
-    \centerline{
-	\begin{minipage}[l]{0.59\textwidth}
-		\includegraphics*[trim=0 0 0 1cm,clip=true,width=\textwidth]{Figurer/badestrand_kart}
-	\end{minipage}
-	\begin{minipage}[r]{0.4\textwidth}
-		\fbox{\includegraphics*[trim=1 0 0 3cm,clip=true,width=\textwidth]{Figurer/kart_Storoyodden.png}} \\
-		\fbox{\includegraphics*[trim=0 0 0 3cm,clip=true,width=\textwidth]{Figurer/kart_Hvalstrand.png}} \\
-		\fbox{\includegraphics*[trim=1 1cm 0 1.5cm,clip=true,width=\textwidth]{Figurer/kart_Sjostrand.png}} \\
-	\end{minipage}
-	}
-    \caption{\small The positions at three beaches in the Inner Oslofjord where the temperature measurements are performed.}
-    \label{fig:kart_strand}
-\end{figure}
+%  %  %  %  %  %  %  %  %  %  %  %  % 
+\subsubsection{Temperatures in the Inner Oslofjord}
+In addition to the Scanmar mooring we have access to temperature measurements at three beaches in the Inner Oslofjord, namely Sj{\o}strand, Hvalstrand and Stor{\o}yodden (Figure~\ref{fig:kart_strand}). These measurements are the result of a collaboration between Asker and B{\ae}rum kommune and Finnerud Elektronikk. The measurement device is a digital thermometer (Maxim Integrated DS18B20) with an accuracy of $\pm 0.5^{\textrm{o}}$C. They measure water temperature at 40 cm beneath the surface in water depths of several meters. Temperatures are measured every three hours from 09:00 to 18:00 during the summer months. We note that the site Sj{\o}strand is the only one located in a semi-open position, while the two other beaches are well within archipelagoes that are somewhat sheltered from the rest of the fjord.
 
-Finally one mooring at Filtvedt had TinyTag temperature loggers deployed at seven different depths between 20 and 120 m (rig Km2, Tab.~\ref{tab:Statnett})
+%Finally one mooring at Filtvedt had TinyTag temperature loggers deployed at seven different depths between 20 and 120 m (rig Km2, Tab.~\ref{tab:Statnett})
 
 \begin{comment}The trends of the observed temperatures at the three beaches are similar, but the temperature is generally lower at the southern beach, Sj{\o}strand, than at the northern beach, Stor{\o}yodden (Fig.~\ref{fig:temp_strand}). In 2014 there were two local maximuma during July, and the maximum observed temperatures in 2014 were higher than in both 2013 and 2015. The temperature increases 1-3 degrees during the day and decreases during the night.
 
@@ -199,52 +123,18 @@ Time period & 2013 & 2014 & 2015 & 2013 & 2014 & 2015 & 2013 & 2014 & 2015 \\ \h
 % % % % % % % % % % % % % % % % % % 
 \subsection{Godafoss oil spill}
 \label{sect:godafoss_obs}
-On Thursday the 17th of February 2011 at 19:52 local time, the containership Godafoss ran aground at the Kv{\ae}rnskj{\ae}rgrunnen rock in L{\o}peren, between the islands of Asmal{\o}y and Kirk{\o}y in Hvaler municipality in southeastern Norway (Figure \ref{fig:godafoss_oil}). One of the effects of this grounding was an acute release of oil from the ship, which drifted westward from the accident site. The oil slick has been observed from aeroplane by the Norwegian Coastal Administration (Kystverket), and the sites where stranded oil has been observed, are also registered (Figure \ref{fig:godafoss_oil}). This accident was on of the motivation factors for the project FjordOs, and hence, although no simulations are performed for this particular event, we will, nevertheless simulate trajectories from this location using the simulations performed for the period April 2015 through December 2015 (Section \ref{sec:evalu}). 
+On Thursday the 17th of February 2011 at 19:52 local time, the containership Godafoss ran aground at the Kv{\ae}rnskj{\ae}rgrunnen rock in L{\o}peren. It us located between the islands of Asmal{\o}y and Kirk{\o}y in the Hvaler municipality in southeastern Norway (Figure \ref{fig:godafoss_oil}). One of the effects of this grounding was an acute release of oil from the ship, which drifted westward from the accident site. The oil slick has been observed from aeroplane by the Norwegian Coastal Administration (Kystverket), and the sites where stranded oil has been observed, are also registered (Figure \ref{fig:godafoss_oil}). This accident was on of the motivation factors for the project FjordOs, and hence, although no simulations are performed for this particular event, we will, nevertheless simulate trajectories from this location using the simulations performed for the period April 2015 through December 2015 (Section \ref{sec:evalu}). 
 
 At the time of the grounding there were clear skies and temperatures around -3$^o$C. Observations of wind from Str{\o}mtangen lighthouse (15 km away from the grounding site) indicate 6-7 m/s winds from the north-east.
-
-\begin{figure}[htb]
-	\centerline{ \includegraphics*[width=1.0\textwidth]{Figurer/Godafoss} }
-	\caption{\small The observed oil spill from the Godafoss accident 17th of February 2011. The red arrow on the right-hand side indicates the grounding position (Kv{\ae}rnskj{\ae}rgrunnen). The grey areas are oil slicks observed from aircraft, while green areas indicate stranded oil. The name of the locations where oil was observed and at which time are included as text. Source: The Norwegian Coastal Administration}
-	\label{fig:godafoss_oil}
-\end{figure}
+\input{Fig_Godafoss_obs_oil_spill.tex}
 
 % % % % % % % % % % % % % % % % % % 
 %\newpage
 \subsection{Surface drifters}
 \label{subsec:drifto}
 As part of the FjordOs project two cruises in the Oslofjord were performed. During these cruises a total number of 15 surface drifters were released (Figure \ref{fig:drifters_design}). Two were released during a cruise in September 2014, and the remaining 13 was released in a cruise in September 2015 (Figure \ref{fig:drifters_tracks}). The second cruise is documented in \cite{hjelm:etal:2016}, which also describes the drifters used in detail. The focus area of the drifter campaigns is the Breiangen area, and the area between Horten and Moss.
+\input{Fig_surface_drifters.tex}
+\input{Fig_drifter_trajectories.tex}
 
-\begin{figure}[htb]
-	\centerline{
-		\includegraphics*[width=0.3\textwidth]{Figurer/Driftere_ombord}\hspace{2cm}
-		\includegraphics*[width=0.3\textwidth]{Figurer/Driftere_vann}
-		}
-	\caption{\small The "home-made" drifters on the deck of the R/V Trygve Braarud (left-hand panel) and in the water after deployment (right-hand panel). In all 15 of these were dropped and tracked during the FjordOs project, two in 2014 and 13 in 2015.}
-	\label{fig:drifters_design}
-\end{figure}
-
-\begin{figure}[htb]
-  \begin{center}
-    \begin{tabular}{cc}
-      \includegraphics*[height=8cm]{Figurer/drifters_sept2014} & 
-      \includegraphics*[height=8cm]{Figurer/drifters_low_crop} \\ 
-    \end{tabular}
-    \caption{\small Trajectories of the two drifters released in September 2014 (left-hand panel) and the 13 drifters released in September 2015 (right-hand panel).}
-    \label{fig:drifters_tracks}
-  \end{center}
-\end{figure}
-
-\begin{comment}
-
-\begin{figure}[ht]
-	\centerline{
-		\includegraphics*[width=0.4\textwidth]{Figurer/drifters_sept2014}
-		\includegraphics*[width=0.4\textwidth]{Figurer/drifters_low_crop}
-		}
-	\caption{\small Trajectories of drifters released in September 2014 (left-hand panel, two drifters) and September 2015 (right-hand panel, 13 drifteres).}
-	\label{fig:drifters_tracks-2}
-\end{figure}
-\end{comment}
-
+\clearpage
 

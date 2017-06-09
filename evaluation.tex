@@ -1,5 +1,3 @@
-%\newpage
-%\clearpage
 \section{Evaluation}
 \label{sec:evalu}
 % % % % % % % % % % % % %
@@ -7,262 +5,102 @@
 \label{subsec:wlevele}
 Time series of water level from the three tide gauge stations (Section \ref{subsec:wlevelo}) were extracted for the period April 2014 through December 2015. To evaluate the model performance we also extracted time series of water level at locations near the three stations from the model simulation for the same time period. We emphasize that the tidal forcing we used at the southern open boundary of the FjordOs model includes eleven tidal constitutents only, and that the tidal forcing was adjusted by use of the observed tide at Viker close to the southern boundary \citep{roed:etal:2016}. 
 
-\begin{figure}[htb]
-  \begin{center}
-    \begin{tabular}{c}
-      \includegraphics*[trim=3cm 0cm 2.5cm 0cm,clip=true,width=15cm]{Figurer/Oscarsborg_Tide_selected_jan15} \\ 
-      \includegraphics*[trim=3cm 0cm 2.5cm 0cm,clip=true,width=15cm]{Figurer/Oscarsborg_WL_rest_jan15} \\ 
-    \end{tabular}
-    \caption{\small Simulated (black) and observed (red) time series of the combined tidal water elevation (upper panel) and residual water level (lower panel) at Oscarsborg (cf. Figure~\ref{fig:kart_obs}) for the month of January 2015.}
-    \label{fig:Waterlevel_jan15}
-  \end{center}
-\end{figure}
+To compare model and observation we first analysed the two time series by use of t\_tide \citep{pavlo:etal:2002} to extract the amplitudes and phases of the individual harmonic tidal components. Next we superimposed the water elevation due to each of the eleven tidal constituents included in the tidal forcing to obtain what we term the combined water elevation. We finally subtracted the resulting combined water elevation from the total water elevation of each time series to derive comparabel ``residual'' water elevations. 
 
-To compare model and observation we first analysed the two time series by use of t\_tide \citep{pavlo:etal:2002} to extract the amplitudes and phases of the individual harmonic tidal components. Next we superimposed the water elevation due to each of the eleven tidal constituents included in the tidal forcing to obtain what we term the combined water elevation. We finally subtracted the resulting combined water elevation from the total water elevation of each time series to derive comparabel ``residual'' water elevations. As revealed by Figure~\ref{fig:Waterlevel_jan15} the combined water elevation compares favourably with the observation. This is also true for the residual, but to a lesser degree. The latter is to be expected since the observations include all the tidal water elevations due to tides of longer and shorter periods than the eleven included in the tidal forcing. Note that to be able to discriminate between observations and simulated water levels the time series shown by Figure~\ref{fig:Waterlevel_jan15} is truncated to January 2015.
+As revealed by Figure~\ref{fig:Waterlevel_jan15} the combined water elevation compares favourably with the observation. This is also true for the residual, but to a lesser degree. The latter is to be expected since the observations include all the tidal water elevations due to tides of longer and shorter periods than the eleven included in the tidal forcing. Note that to be able to discriminate between observations and simulated water levels the time series shown by Figure~\ref{fig:Waterlevel_jan15} is truncated to January 2015.
+% FIGURE showing time series of water level at Oscarsborg January 2015
+\input{Fig_Waterlevel_jan15.tex}
 
 Of the eleven tidal components included in the tidal forcing M2 is, in terms of amplitude, the dominant constituent. It is therefore noteworthy, as revealed by Table~\ref{tab:Tide} on page \pageref{tab:Tide}, that the model represents this influential constituent to a very satisfactory degree both regarding amplitude and phase. This is true even at the stations Oscarsborg and Oslo that are both far from the models southern boundary. We also note that the constituents S2, N2 and O1 contribute, and that their contributions are in fairly good agreement with the observations as well. 
+% TABLE comparing the observed and modelled tidal amplitudes and phases at Viker, Oscarsborg and Oslo   
+\input{Tab_tide.tex}
 
 Table~\ref{tab:Tide} and Figure~\ref{fig:Waterlevel_tide} also show that even the longer period tidal constituents, e.g., SS and SSA, are to some degree picked up by the model despite the fact that they are not incorporated in the tidal forcing. This may be explained by the fact that we in addition to the tides also use daily mean water level, hydrography and currents extracted from the NorKyst800 model as forcing on the southern boundary \citep{roed:etal:2016}. In contrast, and as expected tides of periods shorter than 6 hours are not picked up by the model at all (Figure~\ref{fig:Waterlevel_tide}).
-
-\begin{figure}[tbh] 
-	\centerline{ \includegraphics*[trim=3cm 0cm 2.5cm 0cm,clip=true,width=\textwidth]{Figurer/Oscarsborg_Tide_not_included} } 
-	\caption{\small Time series at Oscarsborg of the tidal components not included in the tidal forcing.} 
-	\label{fig:Waterlevel_tide} 
-\end{figure} 
-
-\begin{table}[htb] 
-	\caption{\small Simulated and observed tidal amplitudes and phases at three tide gauge stations for selected tidal components sorted by period.} 
-	\label{tab:Tide} 
-	\centering 
-	\begin{tabular}{|c|c|l|cc|cc|cc|c|} 
-\hline  
-	  &	&	& \multicolumn{2}{|c|}{\small \bf Viker} & \multicolumn{2}{|c|}{\small \bf Oscarsborg} & \multicolumn{2}{|c|}{\small \bf Oslo} & {\small \bf Included} \\  
-{\small \bf Comp.} & {\small \bf Period} & {\small \bf sim/} & {\small \bf amp.} & {\small \bf phase.} & {\small \bf amp.} & {\small \bf phase.} & {\small \bf amp.} & {\small \bf phase.} & {\small \bf in tidal} \\ 
-	    & {\small \bf [h]} & {\small \bf obs} & {\small \bf [cm]} & {\small \bf [deg]} & {\small \bf [cm]} & {\small \bf [deg]} & {\small \bf [cm]}   & {\small \bf [deg]} & {\small \bf forcing} \\ \hline 
-\small SA   & \small 8764    & \small sim & \small 15.5 & \small 284 & \small 15.6 & \small 286 & \small 15.4 & \small 286 & \small no  \\
-\small      &        	     & \small obs & \small 10.0 & \small 319 & \small 11   & \small 322 & \small 11.4 & \small 324 &    	\\
-\hline
-\small SSA  & \small 4382    & \small sim & \small 8.8  & \small 197 & \small 9.2  & \small 200 & \small 9.4  & \small 200 & \small no  \\
-\small      &		     & \small obs & \small 7.5  & \small 188 & \small 8.0  & \small 189 & \small 8.2  & \small 190 &    	\\
-\hline
-\small Q1   & \small 26.8684 & \small sim & \small 0.0  & \small 231 & \small 0.0  & \small 216 & \small 0.1  & \small 215 & \small no	\\
-\small      &        	     & \small obs & \small 1.1  & \small 190 & \small 1.2  & \small 198 & \small 1.3  & \small 200 &    	\\
-\hline
-\small O1   & \small 25.8193 & \small sim & \small 3.5  & \small 337 & \small 3.8  & \small 339 & \small 3.8  & \small 339 & \small yes	\\
-\small      &        	     & \small obs & \small 2.2  & \small 277 & \small 2.3  & \small 281 & \small 2.4  & \small 282 &    	\\
-\hline
-\small P1   & \small 24.0659 & \small sim & \small 0.6  & \small 322 & \small 0.6  & \small 334 & \small 0.7  & \small 342 & \small yes	\\
-\small      &        	     & \small obs & \small 0.2  & \small 129 & \small 0.3  & \small 102 & \small 0.4  & \small 97  &    	\\
-\hline
-\small K1   & \small 23.9345 & \small sim & \small 0.2  & \small 187 & \small 0.1  & \small 175 & \small 0.2  & \small 157 & \small yes	\\
-\small      &        	     & \small obs & \small 0.4  & \small 127 & \small 0.7  & \small 130 & \small 0.8  & \small 130 &    	\\
-\hline
-\small N2   & \small 12.6584 & \small sim & \small 3.0  & \small 69  & \small 3.5  & \small 75  & \small 3.7  & \small 76  & \small yes	\\
-\small      &        	     & \small obs & \small 3.0  & \small 60  & \small 3.4  & \small 76  & \small 3.6  & \small 80  &    	\\
-\hline
-\small M2   & \small 12.4206 & \small sim & \small 11.5 & \small 105 & \small 13.2 & \small 112 & \small 13.9 & \small 114 & \small yes \\
-\small      &        	     & \small obs & \small 11.9 & \small 105 & \small 13.8 & \small 121 & \small 14.4 & \small 125 &    	\\
-\hline
-\small S2   & \small 12.0000 & \small sim & \small 3.3  & \small 64  & \small 3.9  & \small 69  & \small 4.2  & \small 70  & \small yes \\
-\small      &        	     & \small obs & \small 2.9  & \small 46  & \small 3.3  & \small 65  & \small 3.5  & \small 69  &    	\\
-\hline
-\small K2   & \small 11.9672 & \small sim & \small 1.6  & \small 10  & \small 2.0  & \small 13  & \small 2.1  & \small 15  & \small yes \\
-\small      &        	     & \small obs & \small 0.7  & \small 45  & \small 0.8  & \small 66  & \small 0.9  & \small 66  &    	\\
-\hline
-\small MN4  & \small 6.2692  & \small sim & \small 0.2  & \small 5   & \small 0.5  & \small 32  & \small 0.6  & \small 35  & \small yes	\\
-\small      &        	     & \small obs & \small 0.4  & \small 249 & \small 0.6  & \small 289 & \small 0.7  & \small 297 &    	\\
-\hline
-\small M4   & \small 6.2103  & \small sim & \small 1.0  & \small 355 & \small 1.9  & \small 18  & \small 2.5  & \small 23  & \small yes	\\
-\small      &        	     & \small obs & \small 1.2  & \small 281 & \small 1.8  & \small 324 & \small 2.3  & \small 332 &    	\\
-\hline
-\small MS4  & \small 6.1033  & \small sim & \small 0.6  & \small 80  & \small 1.2  & \small 107 & \small 1.6  & \small 111 & \small yes	\\
-\small      &        	     & \small obs & \small 0.3  & \small 360 & \small 0.5  & \small 44  & \small 0.7  & \small 56  &    	\\
-\hline
-\end{tabular}
-\end{table}
+% FIGURE showing tidal components shorter than the eleven tidal components included in the forcing
+\input{Fig_Waterlevel_tide.tex}
 
 Finally we note, as revealed by Table~\ref{tab:Tide}, that the observed M2 amplitude increases from south to north. This is reflected in the simulations as well as displayed by Figure~\ref{fig:M2field}. It is interesting to note that the lowest M2 amplitude is found in the Drammensfjord north of the threshold in Svelvik. In fact the M2 phase has a sudden increase at the thresholds of Svelvik and Dr{\o}bak. The same is true for the majority of the other relevant tidal components (not shown).
-
-\begin{figure}[hb] 
-	\centerline{ 
-		\includegraphics*[trim=1cm 0cm 0cm 0cm,clip=true,width=0.49\textwidth]{Figurer/M2amp_felt}  
-		\includegraphics*[trim=0.8cm 0cm 0cm 0cm,clip=true,width=0.49\textwidth]{Figurer/M2fase_felt} 
-		} 
-	\caption{\small Simulated fields of M2 amplitude (left-hand panel) and phase (right-hand panel). Corresponding observed values for M2 amplitude and phase are marked with circles at Viker, Oscarsborg, and Oslo.} 
-	\label{fig:M2field} 
-\end{figure} 
-
-
+% FIGURE comparing the observed and modelled M2 field in the Oslofjord
+\input{Fig_M2field.tex}
 
 % % % % % % % % % % % %
-\clearpage 
+\clearpage
 \subsection{Currents}
 \label{subsec:curree}
-%================================= New subsection (ANS) ====================
+%  %  %  %  %  %  %  %  %  %  %  %
 \subsubsection{Currents in the Oslofjord}
 \label{subsubsec:driving}
-In essence currents in the Oslofjord are caused by tides, storm surges, and differences in temperature and salinity. The tides are due the gravitational pull of the moon and sun. It is more often than not the most dominant current and moves the whole water column. It fluctuates with same period as the tides and transport large amounts of water in and out of the fjord. It is therefore especially strong in narrow parts of the fjord like the Dr{\o}bak Sound and Sill (Oscarsborg) and the Svelvik Sill. The strength of the tidal currents depends on whether the effects of the sun and moon are in phase (spring tides) or out of phase (neap tides). Even though the mean total tidal amplitude is less than 20 cm in the Oslofjord, the tidal currents are up to 1 m/s due to the narrow straits and sill depths. 
+In essence currents in the Oslofjord are caused by tides, wind, storm surges, and differences in density caused by differences in temperature and salinity. The tides are more often than not the most dominant current in the fjord. Moreover it moves the whole water column, transports large amounts of water in and out of the fjord, and fluctuates with same period as the tidal elevation. It is therefore stronger in narrower parts of the fjord like the Dr{\o}bak Sound, and in particular across the sills at Oscarsborg (the Dr{\o}bak Sill) and at Svelvik. Even though the mean total tidal amplitude is less than 20 cm in the Oslofjord, the tidal currents are up to 1 m/s due to the narrow straits and sill depths.
 
-The storm surge currents are due water level variations caused by atmospheric wind and pressure forces. It therefore fluctuates with the meteorological conditions. An example is when an atmospheric low pressure passes over the area. As with tides the storm surge currents affect the whole water column. The low air pressure cause water levels to rise and in addition the wind stress on the surface causes the water to a pile up of along the coast. If a storm surge event coincides with the spring tide the water level may become unusually high and lead to unusually strong currents. In connection with storm surge events, amplitudes of 1 m or higher are observed. One such extreme event happened in October 1987 when the water level in Oslo rose to 196 cm above normal water level. 
+Wind forced currents are caused by the traction of the wind on the surface, and hence fluctuates with the meteorological conditions. It is strongest near the surface but decreases rapidly with depth through the surface friction layer (about 10 to 30 m depth depending on wind strength). The wind forced currents near the surface is about 1-2\% of the wind speed, and usually has an angle of 20 degrees to the right of the wind. 
 
-Differences in temperature and salinity causes water masses of different density to be formed. In turn this causes horizontal pressure differences that forces the water to move. As a result we get currents that vary with depth. This may happen if water masses of different density than the original fjord water enters from the open sea, freshwater is discharged to the fjord via rivers, or dense water is upwelled for instance due to atmospheric winds. We may then measure currents at depth without this being observed at the surface. Vertical variations in depth may also be caused by bathymetry which may prevent the water mass from moving, even if a horizontal pressure gradient is present.
+The storm surge currents are due to water level variations caused by atmospheric wind and pressure forces. Like the wind forced currents it also fluctuates with the meteorological conditions. As with tides the storm surge currents affect the whole water column. An example is when an atmospheric low pressure passes over the area. The low air pressure cause water levels to rise and in addition the wind stress on the surface causes the water to a pile up of along the coast. If a storm surge event coincides with a high tide the water level may become unusually high and lead to uncommonly strong currents. In connection with storm surge events, amplitudes of 100 cm or higher are observed. One such extreme event happened in October 1987 when the water level in Oslo rose to 196 cm above normal water level. 
 
-Thus the currents in the Oslofjord varies both in time and in space. Since the tides and storm surges leads to currents of strength and direction that are independent of depth, it makes sense to split up the flow, say $\bu$, into a depth average component, say $\bu_0$ (henceforth referred to as the external or barotropic mode), and a depth varying deviation, say $u_n$ (henceforth refferred to as the internal or baroclinic mode), that is,
-\be
-	\label{eq:ubar_un}
-		\bu = \bu_0 + \bu_n.
-\ee
-The barotropic mode is simply estimated by calculating the average over all depths, or 
+Differences in density creates pressure differences which in turn forces the water to move. Density differences in the Oslofjord are created when rivers discharge freshwater into the fjord, when water masses of different density than the original fjord water enters from the open sea (Skagerrak), or dense water is upwelled locally for instance due to atmospheric winds. We may then measure currents at depth without this being observed at the surface. Vertical variations in depth may also be caused by bathymetry which may prevent the water mass from moving, even if a horizontal pressure gradient is present. For instance when Glomma and Drammenselva rivers discharge freshwater to the Oslofjord the resulting current entrains water with higher salinity from below, causing the volume flow to increase and the salinity to decrease. This is for example evident in \cite[][Figure 20]{roed:etal:2016} where it is possible to trace the water from these two main rivers far out into the fjord. To conserve the volume, the entrainment of water leads to a counter current below the surface layer transporting new water into the area, to compensate for the loss of volume that the seaward surface flow represents. The resulting flow pattern is one example of a baroclinic current, where the horizontal pressure varies with depth. 
+
+Another example of a density driven flow is the interaction between Skagerrak and the Oslofjord at the latter's open, southern boundary. The circulation in the Skagerrak is on average counterclockwise with brackish outflow from the Baltic Sea \cite[]{rodhe96, svendsen96, albre:roed:2010}. This flow pattern generate horizontal pressure gradients near the mouth of the Oslofjord \cite[]{baals90}, and by mechanisms described by \cite{klinck81} variation in the wind pattern generate mean density driven flow events that may be stronger than the tidal current, especially in the outer Oslofjord where the fjord is wide.
+
+In summary the currents in the Oslofjord are complex and may be caused by a multitude of effects that may mutually cancel or enhance each other. As a result they are highly varying in time and in horizontal space as well as depth. To evaluate the model results we therefore find it useful to (i) split the currents into a depth independent part (henceforth referred to as the external or barotropic mode) and a depth dependent part (henceforth referred to as the internal or baroclinic mode), and (ii) separate the current into a slowly and a rapidly varying part as detailed for instance by \cite{roed:fossu:2004}. Examples of barotropic current components are tidal currents and currents caused by storm surge events, while density driven currents are examples of baroclinic currents. 
+
+As is common we estimate the barotropic part by equaling it to the depth average current. The latter is defined by
 \be
 	\label{eq:ubar}
-		\bu_0 = \frac{1}{H} \int_{-H}^{0} \bu dz. 
+		\bu_0 = \frac{1}{h} \int_{-h}^{0} \bu dz, 
+\ee
+where $h$ is the total water depth and $\bu$ is the total current at any depth $z$. The depth varying deviation, or baroclinic mode, at any depth, say $u_n(z)$, is then simply estimated by subtracting the depth average current from the total current, that is,
+\be
+	\label{eq:ubar_un}
+		\bu_n = \bu - \bu_0.
 \ee
 
-When rivers discharging freshwater to the Oslofjord the resulting current entrains water with higher salinity from below, causing the volume flow to increase and the salinity to decrease. An example of this is evident in \cite[][Figure 20]{roed:etal:2016} where the water from the Drammen river can be traced far out into the fjord. To conserve the volume, the entrainment of water leads to a counter current below the surface layer transporting new water into the area, to compensate for the loss of volume that the seaward surface flow represents. This compensating volume flux is often defined as the estuarine circulation. The resulting flow pattern is one example of a baroclinic current, where the horizontal pressure varies with depth. 
-
-The Oslofjord has an open, southern boundary towards Skagerrak which lies in the north-eastern part of the North Sea. The circulation in the Skagerrak is on average counterclockwise with brackish outflow from the Baltic Sea \cite[]{rodhe96,svendsen96,albre:roed:2010}. This flow pattern generate horizontal pressure gradients near the mouth of the Oslofjord \cite[]{baals90}, and by mechanisms described by \cite{klinck81} variation in the wind pattern generate mean baroclinic flow events that that may be stronger than the barotropic tidal current, especially in the outer Oslofjord where the fjord width is broader.
-
-Fluctuations in currents due to river discharge normally varies on a much longer time scale than the tidal and storm surge currents. To reveal the estuarine circulation or the mean baroclinic flow it is therefore useful to separate the current in a slowly varying part, say $\overline{u}$, and rapidly varying part, say $u'$, as detailed for instance by \cite{roed:fossu:2004}. Thus
+To estimate the slowly varying part of the currents we first note that the density driven baroclinic currents varies on a time scale much longer than the barotropic tidal and storm surge currents. To reveal or estimate the estuarine circulation or the mean baroclinic flow, say $\overline{\bu}$, we may therefore simply make an average over a period much longer than the typical tidal period and wind periods, e.g., several days, that is, 
 \be
 	\label{eq:utime}
-		\bu = \overline{\bu} + \bu'
+		\overline{\bu} = \frac{1}{T}\int_{t-\frac{1}{2}T}^{t+\frac{1}{2}T}\bu dt
 \ee
-The mean flow may be estimated by calculating the average over a period much longer than the typical tidal period and wind periods, e.g., several days.
-%================================= New subsection ends (ANS) ===============
-
-%=================== New version of "two cross sections" (ANS) =============
-\clearpage
-\subsubsection{The two cross section: Filtvedt-Brenntangen and Sm{\aa}skj{\ae}r-Evje}
+where $T$ is the averaging time period and $t$ is time. 
+ 
+%  %  %  %  %  %  %  %  %  %  %  %
+%\subsubsection{The two cross section: Filtvedt-Brenntangen and Sm{\aa}skj{\ae}r-Evje}
+\subsubsection{The Statnett moorings}
 \label{subsubsec:filtve}
-The first transect Filtvedt-Brenntangen is located at the entrance to the Dr{\o}bak Sound that forms the eastern branch of the inner Oslofjord (Figure~\ref{fig:kart_obs}). The fjord width in this location is 1.8 km, and the deepest part is found in the middle with a fjord depth of 208 m (Figure~\ref{fig:Two_transect}). The slope of the sea bed is very steep at the sidewalls of the channel. Note that the model bathymetry is a smoothed version of the real bathymetry which is actually steeper. Station Km1 is located on the west side of the channel, and the posistion where model results are extracted is indicated with a white vertical line in the figure.The true position of station Km1 is a little to the west where the real bathymetry has the same depth as in the model. In the same figure the along fjord current is shown with a colorbar where red indicated current into the fjord and blue current out of the fjord. The current is extracted from the model run from the date 24th October, 2014, when the mean flow was directed out of the fjord. At this instance the current is relativly uniform across the fjord, and observations at station Km1 can be said to be representaive for the whole transect.
+As revealed by Figure~\ref{fig:Two_transect} the fjord width at the first transect Filtvedt-Brenntangen (henceforth FB) is 1.8 km, while the second transect Sm{\aa}skj{\ae}r-Evje (henceforth SE) is about 10 km wide. The deepest part of the FB transect is found in the middle with and observed depth of 208 m, while the deepest part of the SE transect is found to the east of the middle with an observed depth of 204 m.  
 
-The second transect Sm{\aa}skj{\ae}r-Evje is located further south, approximatly in the middle of the fjord (cf. Figure~\ref{fig:kart_obs}), where the fjord is about 10 km wide. The deepest part of the transect is found to the east of the middle, with a depth of 204 m. Station Rl1 (see Table~\ref{tab:Statnett} and Figure~\ref{fig:kart_obs}) is located to the west of the deepest part where the bottom slope is steep. The bathymetry of the transect is shown in the lower panel in Figure~\ref{fig:Two_transect}, where the model bathymetry is again plotted as a thick black line and the real batymetry as a thin grey line. The current speed along the fjord is shown in the transect. It is evident from the figure that the current is not uniform across the fjord, and the observations at station Rl1 can not be said to be representative for the whole transect.
+Figure~\ref{fig:Two_transect} also shows that the observed and modelled bathymetry do not coincide. In fact the observed slopes are everywhere steeper. This is caused by the necessity of smoothing the model bathymetry with respect to the real topography to avoid the so called pressure gradient error referred to in Section \ref{sec:area}. As shown the result is that the model maximum/mimimum depths are shallower/deeper than the observed maximum/minimum depths. Note also that the positions where the model results are extracted (indicated by the white vertical lines) may differ somewhat from the true positions of the observations. For instance the tru position of the Station Km1 is a little to the west of the model Km1 position. In fact its true position is where the real bathymetry has the same depth as the model bathymetry.
+% Figure showing the along fjord currents at the two transects 
+\input{Fig_Two_transects.tex}
 
-\clearpage 
+The along fjord currents shown by Figure~\ref{fig:Two_transect} are extracted when the mean flow is directed out of the fjord. At this instance the current through the FB transect is relativly uniform across the fjord, and observations at station Km1 can be said to be representaive for the whole transect. This is in contrast to the along fjord currents across the SE transect. Here it is evident that the current is not uniform across, and hence the observations at individual stations, for instance station Rl1, is not representative for the whole transect.
 
-% FIGURE SHOWING THE TRANSECTS
-\begin{figure}[ht]
-	\centerline{
-		\includegraphics*[trim=0 0 0 0,clip=true,width=\textwidth]{Figurer/AndreS/Two_transectas_cur}}
-	\caption{\small A snapshot of the observed current speed across the two transect Filtvedt and Brenntangen (upper panel) and Sm{\aa}skj{\ae}r-Evje (bottom panel). The location of the transects are shown in Figure~\ref{fig:kart_obs}. The bathymetry of the model is drawn with a thick black line, while the real bathymetry is drawn with a thin grey line. The current speed is indicated with a colorbar ranging from red (into the fjord) to blue (out of the fjord). A thin black line indicates where the current speed is zero. The location of the stations listed by Table~\ref{tab:Statnett} is indicated with white vertical lines.}
-	\label{fig:Two_transect}
-\end{figure}
+As alluded to the 3D current field is complex, and this is also captured by the FjordOs model. As an example Figure~\ref{fig:Filtvedt-simcur} shows the simulated currents at three different depths near Filtvedt. In general, the currents in the upper layer are stronger than further down. In the upper layers the currents are towards north, at 40 meters depth the currents towards south, and at 100 meters depth towards north again. Because of the complex flow pattern, the currents at a given coordinate is not necessarily representative for the whole area or transect. However, regarding the FB transect the currents across the fjord between station Km1 an Kn2 are relativly uniform except at 100 m depth. At 100 meters depth the currents at Filtvedt are weak and towards south even though the currents at 100 meters depth are generally stronger and towards north. At 40 meters depth the currents at Brenntangen is weaker than in the rest of the transect. Note that the depth at Brenntangen is 58 meters in the observations while the depth is only 46 meters at the corresponding point in the simulations due to the smoothing of the model bathymetry. 
+% FIGures showing simulated current speed and direction (arrows) at 2m, 40m and 100m depth
+\input{Fig_Filtvedt-simcur.tex}
 
-% FIGURE SHOWING CURRENT ARROWS AT 2m, 40m and 100m
-\begin{figure}[ht]
-	\centerline{
-		\includegraphics*[trim=2cm 3cm 1cm 3.3cm,clip=true,height=5cm]{Figurer/Filtvedt_t4611_z2_current}
-		\includegraphics*[trim=3.8cm 3cm 6cm 3.3cm,clip=true,height=5cm]{Figurer/Filtvedt_t4611_z40_current}
-		\includegraphics*[trim=3.8cm 3cm 1cm 3.3cm,clip=true,height=5cm]{Figurer/Filtvedt_t4611_z100_current}}
-	\caption{\small Simulated currents at 2 (left), 40, and 100 (right) meters depth at 10 October 2014 12:00. Note that the two plots to the right have the same colorbar.}
-	\label{fig:Filtvedt-simcur}
-\end{figure}
+For a further detailed description of the observed current variability at the six stations forming the two transects we refer \cite{staalstrom:2015}. We note that they found that the tidal currents dominate in the FB transect, while the tidal currents across the SE transec are less pronounced and more or less masked by the mean flow. This due to the wideness of the the fjord across the SE transect, which is five times wider there than width of the FB transect. This is also reflected in the simulated current, for instance by comparing the observed and simulated currents at the two stations Km1 (Figure~\ref{fig:Km1}), associated with the FB transect, and Rl1 (Figure~\ref{fig:Rl1}), associated with the SE transect.
+% FIGures comparing currents at Km1 and Rl1
+\input{Fig_Km1.tex}
+\input{Fig_Rl1.tex}
 
-Note that the 3D current field is complex, the currents vary horizontally, vertically and with time. Figure~\ref{fig:Filtvedt-simcur} shows the simulated currents at three different depths near Filtvedt at 10 October 2014. In general, the currents in the upper layer are stronger than further down. In the upper layers the currents are towards north, at 40 meters depth the currents towards south, and at 100 meters depth towards north. Because of the complex flow pattern, the currents at a given coordinates cannot be taken at representative for the whole area, but current across the fjord between station Km1 an Kn2 is relativly uniform execept at 100 m depth. At 100 meters depth the currents at Filtvedt are weak and towards south even though the currents at 100 meters depth is generally stronger and towards north. At 40 meters depth the currents at Brenntangen is weaker than in the rest of the cross section. Note that the depth at Brenntangen is only 58 meters in the observations while in the depth is 46 meters at the corresponding point in the simulations. This is due to the smoothing of the model bathymetry. 
+We have also estimated the mean flows of both the observed and the simulated currents at the two stations. In this we utilise (\ref{eq:utime}) applying a running mean with a period of 49 hours. The result is shown by Figure~\ref{fig:Km1_mean} (FB transect) and Figure~\ref{fig:Rl1_mean} (SE transect). We note that at the FB transect the model do not capture the mean flow correctly in that the mean flow is stronger in the model than in the observations. The model do however capture many of the baroclinic mean flow events observed at station Rl1 in the SE transect, in particular in the last part. It is promising that the model to some extent capture the mean flow events in the part of the fjord where this phenomena dominates. But it must be remarked that the model performance needs to be improved. These kind of events depends on the stratification in the model as well as fresh water input and the influence from the open boundary. It is expected that model performance concerning mean flow will be improved if the stratification in the model is improved. 
+% FIGures comparing mean currents at Km1 and Rl1
+\input{Fig_Km1_mean.tex}
+\input{Fig_Rl1_mean.tex}
 
-\clearpage 
+We now focus on the tidal currents in the FB transect at Station Km1 (Figure~\ref{fig:Filtvedt-tide}). To construct the figure we first subtract the mean flow ($\overline{\bu}$), as shown in Figure~\ref{fig:Km1_mean}, from the total flow leaving the residual parts (here denoted $\bu'$). The tidal part ($\widetilde{\bu}$) is then extracted from the $\bu'$ time series exactly as described in Section \ref{subsec:wlevele} both for the observed and modelled currents by use of t\_tide \cite[]{pavlo:etal:2002} giving the tidal components for each depth. The time series is rather short and spans the period mid-September to the end of November 2014. 
 
-The current variability at the six stations in these two transects are described by \cite{staalstrom:2015}. They found that the tides dominates in the northern transect, where the fjord width is narrow. The tides are less pronounced in the southern transect where the tidal variation is masked by the mean flow. In figure~\ref{fig:Km1} and~\ref{fig:Rl1} the current along the fjord based on observations and model results, for the two stations Km1 and Rl1 are shown. This illustrate that the station in the Filtvedt transect is dominated by a tidal signal, with a typical diurnal period, while the tidal signal is masked by the mean flow in the station in the Bast{\o}y transect. The same pattern is present in the model results.
+As displayed by Figure~\ref{fig:Filtvedt-tide} the observation at station Km1 has a phase shift in the vertical structure of the current speed approximatly at about 55 m depth. This is the same depth at which a phase shift in the currents was reported by \cite{staal:etal:2012} at a station close to Station Kn2 in September 2009. He found that the current in this location is influenced by internal tides generated at the Dr{\o}bak Sill propagating southward. The phase shift of the simulated current at Km1 is found somewhat deeper in the water column, in the depth range 80-100 m. This is an additional indication that the stratification in the model do not capture the real stratification correctly.
 
-In figure~\ref{fig:Km1_mean} and~\ref{fig:Rl1_mean} the mean flow, $\overline{u}$ from equation~\ref{eq:utime}, is estimated by applying a running mean with a period of 49 hours, on both the observations and the model results. At the Filtvedt transect the model do not capture the mean flow correctly (Figure~\ref{fig:Km1_mean}), and the mean flow is stronger in the model than in the observations.
+\cite{hjelm:etal:2017} used (\ref{eq:ubar}) to estimate the barotropic current at station Km1, and t\_tide was used to find the tidal components. The results are shown in Table~\ref{tab:UbarTide}. The model performance for the semi diurnal components (S$_2$, M$_2$ and N$_2$) of the barotropic tides are very good. The amplitude of diurnal components (K$_1$ and O$_1$) are to weak and the phase is wrong. The model performance for the components with periods around 6 hours are relativly good.
+% TABle comparing observed and simulated tidal current components at Km1
+\input{Tab_Km1_tidal_currents.tex}
+% FIGure comparing observed and simulated tidal currents at Km1  
+\input{Fig_Filtvedt-tide.tex}
 
-The model do capture many of the baroclinic mean flow events observed at station Rl1 in the Bast{\o}y transect, espesially in the last part of the period shown in figure~\ref{fig:Rl1_mean}. It is promising that the model to some extent capture the mean flow events in the part of the fjord where this phenomena dominates. But it must be remarked that the model performance needs to be improved. These kind of events depends on the stratification in the model as well as fresh water input and the influence from the open boundary. It is expected that model performance concerning mean flow will be improved if the stratification in the model is improved. 
-  
-\clearpage 
-
-\begin{figure}[ht]
-	\centerline{
-		\includegraphics*[trim=0 0 0 0,clip=true,width=\textwidth]{Figurer/AndreS/Km1_Obs_vs_Mod_v2}}
-	\caption{\small Observations (upper panel) and model results (lower panel) from station Km1. The colorbar indicates the current speed along the channel, on a color scale where red is flow into the fjord, and blue out of the fjord. The black contourline shows where the current speed is zero. The shallowest observations is at 16 m depth. This depth is indicated in the lower panel with a horizontal line.}
-	\label{fig:Km1}
-\end{figure}
-
-%\begin{figure}[ht]
-%\centerline{
-%\includegraphics*[trim=0 0 0 0,clip=true,width=\textwidth]{Figurer/Filtvedt_obs_cur}}
-%\centerline{
-%\includegraphics*[trim=0 0 0 0,clip=true,width=\textwidth]{Figurer/Filtvedt_sim_cur}}
-%\caption{\small
-%Observed (upper) and simulated (lower) currents at Filtvedt. Since the observations near the surface where dominated by noise, only depths larger than 40 meters are included in the upper plot. $z$ = 40 meters is marked with a black line in the lower plot. Note that the model depth is only 155 meters at the position the observations where performed.}
-%\label{fig:Filtvedt-cur}
-%\end{figure}
-
-\clearpage 
-
-\begin{figure}[ht]
-	\centerline{
-		\includegraphics*[trim=0 0 0 0,clip=true,width=\textwidth]{Figurer/AndreS/Rl1_Obs_vs_Mod_v2}}
-	\caption{\small Observations (upper panel) and model results (lower panel) from station Rl1. The colorbar indicates the current speed along the channel, on a color scale where red is flow into the fjord, and blue out of the fjord. The black contourline shows where the current speed is zero. The shallowest observations is at 10 m depth. This depth is indicated in the lower panel with a horizontal line.}
-	\label{fig:Rl1}
-\end{figure}
-
-
-\clearpage 
-
-\begin{figure}[ht]
-	\centerline{
-		\includegraphics*[trim=0 0 0 0,clip=true,width=\textwidth]{Figurer/AndreS/Km1_Obs_vs_Mod_mean_v2}}
-	\caption{\small Observed (upper panel) and simulated (lower panel) mean flow from station Km1. The mean flow is estimated by taking a running mean of 49 hours. The colorbar indicates the current speed along the channel, on a color scale where red is flow into the fjord, and blue out of the fjord. The black contourline shows where the mean flow is zero. The shallowest observations is at 16 m depth.
-This depth is indicated in the lower panel with a horizontal line.}
-	\label{fig:Km1_mean}
-\end{figure}
-
-\clearpage 
-
-\begin{figure}[ht]
-	\centerline{
-		\includegraphics*[trim=0 0 0 0,clip=true,width=\textwidth]{Figurer/AndreS/Rl1_Obs_vs_Mod_mean_v2}}
-	\caption{\small Observed (upper panel) and simulated (lower panel) mean flow from station Rl1. The mean flow is estimated by taking a running mean of 49 hours. The colorbar indicates the current speed along the channel, on a color scale where red is flow into the fjord, and blue out of the fjord. The black contourline shows where the mean flow is zero. The shallowest observations is at 10 m depth. This depth is indicated in the lower panel with a horizontal line.}
-	\label{fig:Rl1_mean}
-\end{figure}
-
-\clearpage 
-
-Now we will focus on the tidal currents in the cross section between Filtvedt and Brenntangen. In this location the tidal variation is dominating, and the current is relativly uniform across the channel. The mean flow ($\overline{u}$) as it is shown in Figure~\ref{fig:Km1_mean} is subtracted from the flow, leaving the residual parts according to (\ref{eq:utime}). The tidal part ($\widetilde{u}$) is extracted by analysing the current using t\_tide \cite[]{pavlo:etal:2002} that gives the tidal components for each depth. The same period in time is applied for both simulations and observations (mid-September to the end of November 2014). 
-
-Figure~\ref{fig:Filtvedt-tide} shows the tidal currents at Filtvedt. The vertical stratification and current from observations from September 2009 at a station close to Kn2, was reported by \cite{staal:etal:2012}. It was found that the current in this location is influenced by internal tides generated at the Dr{\o}bak Sill propagating southward. The vertical structure of the displacement of the density surfaces had a maximum amplitude around 55 m depth, and there was also observed a phase shift in the current at the same depth. The observations at station Km1 from 2014 at the other side of the channel, have a phase shift in the current speed approximatly at the same depth. The phase shift of the simulated current at Km1 is found deeper in the water column, in the depth range 80-100 m. This is another indication that the stratification in the model do not capture the real stratification correctly.
-
-\cite{hjelm:etal:2017} used (\ref{eq:ubar}) to estimate the barotropic current at station Km1, and t\_tide was used to find the tidal components. The results are shown in table~\ref{tab:UbarTide}. The model performance for the semi diurnal components (S$_2$, M$_2$ and N$_2$) of the barotropic tides are very good. The amplitude of diurnal components (K$_1$ and O$_1$) are to weak and the phase is wrong. The model performance for the components with periods around 6 hours are relativly good.
-  
-\begin{table}[ht]
-%\vspace{-1.5cm}
-	\caption{\small Tidal major amplitudes (cm/s) and phases (deg) for the barotropic current at Km1.}
-	\label{tab:UbarTide}
-	\centering
-	\begin{tabular}{crrrrr} \hline
-       		& \small Period     & \multicolumn{2}{c}{\small Observed}	& \multicolumn{2}{c}{\small Simulated}  \\
-\small Comp.	& \small [h] $\;\;$ & \small [cm/s] 	& \small [deg]	& \small [cm/s] 	& \small [deg]   \\ \hline 
-\small SS$_2$  & 12.0000    &  0.5 	& 280	&   0.5 & 334   \\
-M$_2$  & 12.4206    &  1.8 	&   9	&   2.0 &  16   \\
-N$_2$  & 12.6584    &  0.5 	& 293	&   0.5 & 343   \\
-K$_1$  & 23.9345    &  0.5 	&  61	&   0.0 & 261   \\
-O$_1$  & 25.8193    &  0.1 	& 120	&   0.2 & 250   \\
-MN$_4$ &  6.2692    &  0.3 	& 166	&   0.2 & 305   \\
-M$_4$  &  6.2103    &  0.7 	& 220	&   0.7 & 290   \\
-MS$_4$ &  6.1033    &  0.0 	& 252	&   0.4 &  19   \\ \hline 
-\end{tabular}
-\end{table}
-  
-\begin{figure}[ht]
-	\centerline{
-		\includegraphics*[trim=0 0 0 0,clip=true,width=\textwidth]{Figurer/Filtvedt_obs_tide}}
-	\centerline{
-		\includegraphics*[trim=0 0 0 0,clip=true,width=\textwidth]{Figurer/Filtvedt_sim_tide}}
-	\caption{\small Extracted tides from the observations (upper panel) and the model results (lower panel) at station Km1.
-The colorbar indicates the current speed along the channel, on a color scale where red is flow into the fjord, and blue out of the fjord.
-The black contourline shows where the mean flow is zero. The shallowest observations is at 16 m depth. This depth is indicated in the lower panel with a horizontal line. %(Denne figuren vil jeg gjerne plotte selv, Andre.)
-}
-	\label{fig:Filtvedt-tide}
-\end{figure}
-
-
-%=================== New version of "two cross sections"  ends (ANS) =======
-
-%============================== Currents at Slagentangen =======================
-\clearpage 
-\subsubsection{Current at Slagentangen}
+%  %  %  %  %  %  %  %  %  %  %  % Currents at Slagentangen (ExxonMobil mooring)
+\clearpage
+\subsubsection{ExxonMobil mooring}
 \label{subsubsec:slagen}
-The observed currents at Slagentangen are compared with simulated data from 1st October 2014 until 30th November 2015 at approximately the same location and depth (Figure~\ref{fig:Slagen-kart}).
+The observed currents at Slagentangen are compared with simulated data at approximately the same location and depth (Figure~\ref{fig:Slagen-kart}).
 
 %\begin{figure}[ht]
 %\centerline{
@@ -272,242 +110,92 @@ The observed currents at Slagentangen are compared with simulated data from 1st 
 %\label{fig:Slagen-kart}
 %\end{figure}
 
-\begin{figure}[ht]
-	\centerline{
-		\includegraphics*[trim=3cm 0cm 3cm 0cm,clip=true,width=\textwidth]{Figurer/Slagen_tid}}
-	\caption{\small Timeseries of observed and simulated velocity magnitudes at Slagen.}
-	\label{fig:Slagen-tid}
-\end{figure}
+Moving to the ExxonMobil mooring outside of Slagentangen we observe that the time series reveal, as shown by Figure~\ref{fig:Slagen-tid}, that the observed velocities varies and follows no striking pattern. The time series covers the period from 1st October 2014 until 30th November 2015. Current roses (Figure~\ref{fig:Slagen-rose}) reveal that both the observed and the simulated velocities are stronger in the upper layer, but that the simulated velocities are stronger than the observed velocities. The yearly maximum observed velocities are approximately 0.4 and 0.6 m/s at 10 and 2.5 meters depth respectively (Tab.~\ref{tab:Slagen_max}). During 2014 and 2015 maximum observed velocity at 2.5 meters depth was 0.55 m/s in southeast direction (143$^o$N) the 26th of March 2014. The velocity at 10 meters depth was 0.08 m/s (153$^o$N) at the time of maximum velocity at 2.5 meters depth indicating that the velocities are different in the two layers, that is, baroclinic.
+% FIGure show time series of currents using data from the ExxonMobil mooring
+\input{Fig_Slagen-tid.tex}
+% FIGure show current roses using data from the ExxonMobil mooring
+\input{Fig_Slagen-rose.tex}
+% TABle listing the yearly maximum current speeds at the ExxonMobil mooring 
+\input{Tab_Slagen_max.tex}
 
-\begin{figure}[ht]
-	\centerline{
-		\includegraphics*[trim=2cm 1cm 1cm 0cm,clip=true,height=4cm]{Figurer/Slagen_Rose_obs} 
-		\includegraphics*[trim=2cm 1cm 3cm 0cm,clip=true,height=4cm]{Figurer/Slagen_Rose_sim} }
-	\caption{\small Current roses for observed (left) and simulated (right) velocity magnitude at the two depths from 1st of October 2014 to 1st of October 2015.}
-	\label{fig:Slagen-rose}
-\end{figure}
+The mean directions are to the south east. At approximately 2.5 meters depth the mean directions are 146$^o$N and 139$^o$N for observed and simulated directions, respectively, which is in fairly good agreement. At approximately 10 meters depth the observed mean direction shifts to 170$^o$N while the simulated mean direction is 148$^o$N. 
 
-\begin{figure}[t]
-	\centerline{
-		\includegraphics*[trim=2cm 0cm 2cm 0cm,clip=true,width=\textwidth]{Figurer/Slagen_pdf} }
-	\caption{\small Probability density functions of velocities and directions at Slagen for 1st of October 2014 to 1st of October 2015. The bin width is 0.01 knots for velocity and 3 degrees for direction.}
-	\label{fig:Slagen-pdf}
-\end{figure}
+The probability density function (PDF) shown in Figure~\ref{fig:Slagen-pdf} first of all corroborates the finding of the previous paragraph that both the observed and the simulated velocities are stronger in the upper layer and that the simulated velocities are stronger than the observed velocities. The directional PDF reveals in addition that the model captures well the directions in the upper layer, but does not capture the change in direction between the two depths. The standard deviations at 2.5 and 10 meters are 55 and 66 degrees respectively for the observed directions, and 56 and 61 for the simulated directions, which is a fairly good agreement.
+% FIGure show the probability density function of current speed and direction using data from the ExxonMobil mooring
+\input{Fig_Slagen-pdf.tex}
 
-\begin{table}[ht]
-%\vspace{-1.5cm}
-\caption{Yearly maximum observed velocity at Slagen.}
-\label{tab:Slagen_max}
-\centering
-\begin{tabular}{|l|lll|lll|}
-\hline 
-& \multicolumn{3}{|l|}{\bf Max. velocity at 10m depth} & \multicolumn{3}{|l|}{\bf Max. velocity at 2.5m depth} \\
-{\bf Year} & {\bf Date} & {\bf [m/s} & {\bf [deg]} & {\bf Date} & {\bf [m/s]} & {\bf [deg]} \\ \hline 
-\small 2006 & 21 Jan 2006 & 0.42 & 139 & 31 Oct 2006 & 0.57 & 140 \\
-\small 2007 & 14 Jan 2007 & 0.42 & 172 & 21 Aug 2007 & 1.03 & 359 \\
-\small 2008 & 22 Mar 2008 & 0.36 & 149 & 19 Dec 2008 & 0.57 & 160 \\
-\small 2009 & 17 Dec 2009 & 0.45 & 142 & 24 Mar 2009 & 0.56 & 139 \\
-\small 2010 & 09 Nov 2010 & 0.41 & 138 & 09 Nov 2010 & 0.54 & 138 \\
-\small 2011 & 01 Jan 2011 & 0.39 & 146 & 30 Mar 2011 & 0.62 & 185 \\
-\small 2012 & 05 Dec 2012 & 0.39 & 138 & 29 May 2012 & 0.57 & 140 \\
-\small 2013 & 10 Oct 2013 & 0.42 & 143 & 10 Oct 2013 & 0.49 & 144 \\
-\small 2014 & 18 Apr 2014 & 0.44 & 147 & 26 Mar 2014 & 0.55 & 143 \\
-\small 2015 & 24 Jan 2015 & 0.33 & 128 & 21 Mar 2015 & 0.55 & 141 \\
-\hline
-\end{tabular}
-\end{table}
-
-\begin{figure}[ht]
-	\centerline{
-		\includegraphics*[trim=0cm 0cm 0cm 0cm,clip=true,width=0.8\textwidth]{Figurer/Slagen_QQ} }
-	\caption{\small Combined QQ- and scatter plot of observed and simulated current at Slagen from 1st of October 2014 to 1st of October 2015.}
-	\label{fig:Slagen_QQ}
-\end{figure}
-
-Time series reveal that the observed velocities varies and follows no striking pattern (Figure~\ref{fig:Slagen-tid}). Current roses show that both the observed and the simulated velocities are stronger in the upper layer (Figure~\ref{fig:Slagen-rose}). The simulated velocities are stronger than the observed velocities. This is in accordance with the probability density functions (Figure~\ref{fig:Slagen-pdf}). The yearly maximum observed velocities are approximately 0.4 and 0.6 m/s at 10 and 2.5 meters depth respectively (Tab.~\ref{tab:Slagen_max}). During 2014 and 2015 maximum observed velocity at 2.5 meters depth was 0.55 m/s in southeast direction (143$^o$N) the 26th of March 2014. The velocity at 10 meters depth was 0.08 m/s (153$^o$N) at the time of maximum velocity at 2.5 meters depth indicating that the velocities are different in the two layers.
-
-The mean directions are to the south east. At approximately 2.5 meters depth the mean directions are 146$^o$N and 139$^o$N for observed and simulated directions respectively which is in fairly good agreement. At approximately 10 meters depth the observed mean direction shifts to 170$^o$N while the simulated mean direction is 148$^o$N. Testing with popcorn indicate that the preferred direction of the surface currents are towards Bliksekilen located west of the Slagen Refinery. This is not the case neither in the observations nor the simulations. The probability density functions reveals that the model captures the distribution of directions in the upper layer, but does not capture the change in direction between the two depths (Figure~\ref{fig:Slagen-pdf}). The standard deviations at 2.5 and 10 meters are 55 and 66 degrees respectively for the observed directions, and 56 and 61 for the simulated directions.
-
-The time series scatter plots reveal that the correlation in time is not satisfying (Figure~\ref{fig:Slagen-tid} and \ref{fig:Slagen_QQ}). The model seem to have difficulties with capturing the right phenomena influencing the currents to the right time. This is a well known problem when it comes to forecasting currents. The QQ-plots also confirms that the simulated currents are stronger than the observed currents. 
+Finally the scatter plots reveal that the correlation in time is not satisfying (Figure~\ref{fig:Slagen_QQ}). The model appears to have a problem in capturing the right phenomena influencing the currents at the right time. This is a well established fact and is not particular to the FjordOs model. All models of resolution high enough to capture the so called mesoscale and submesoscale activities (eddies, meaders and jet currents) is plagued by the same problem. The QQ-plot like the PDF plot confirms that the simulated currents are stronger than the observed currents. 
+% FIGure showing the combined qq and scatter plots
+\input{Fig_Slagen_QQ.tex}
 
 % % % % % % % % % % % % % % %
 \clearpage
 \subsection{CTD-measurements}
 \label{subsec:CTDe}
-For comparison we extracted temperature and salinity profiles from the model simulation at some of the CTD stations listed by Table ~\ref{tab:CTD_pos}, namely OF-1 in the outer part of the fjord, LA-1 in Larvikfjord and D-2 inside the Svelvik Sill in the inner Drammensfjord. Comparison between simulated and observed profiles are shown in Figs.~\ref{fig:CTD_OF-1}-~\ref{fig:CTD_D-3}. 
+%  %  %  %  %  %  %  %  %  %  %  % Currents at Slagentangen (ExxonMobil mooring)
+\subsubsection{Profiles of salinity and temperature}
+\label{subsubsec:profi}
+To evaluate the model's representation of the hydrography and stratification we have extracted temperature and salinity profiles from the model simulation at three of the CTD stations, namely OF-1, LA-1 and D-2. The locations of these three stations are shown by Figure~\ref{fig:kart_obs} and listed by Table ~\ref{tab:CTD_pos}. 
 
-During the summer, the water in the upper layers are heated. The maximum surface temperature is observed towards the end of the summer. The profiles in the outer parts of the fjord indicate that the upper layer is too thin in the simulated data (Figure~\ref{fig:CTD_OF-1}). At larger depths, the water is too cold and the salinity is too high. This might indicate that the open boundary input and the representation of vertical mixing should be modified. 
+As revealed by Figures~\ref{fig:CTD_OF-1} through ~\ref{fig:CTD_D-3} the observations show in general that the upper layers are heated during the summer with maximum surface temperatures towards the end of the summer (August). This is also reflected in the simulations at all stations, but to a lesser degree. In addition the profiles in the outer parts of the fjord indicate that the upper layer is too thin in the simulated data. At larger depths, the water is too cold and the salinity is too high. This might indicate that the open boundary input and the representation of vertical mixing should be modified.
+% FIGure showing the salinity and temperature profiles at CTD station OF-1
+\input{Fig_CTD_OF-1.tex} 
 
-Some of the observations are taken from smaller fjord branches, such as in the Larviksfjord close to the open boundary in the outer part of the Oslofjord. In such shallow waters, observations reveal that the whole water column is heated during summer and cooled during winter, but the simulated temperature varies only in the upper 20 meters (Figure~\ref{fig:CTD_OF-1}). 
+The observations at LA-1 is taken in the Larviksfjord, which is on the western side of the Oslofjord and close to the southern open boundary of the FjordOs model. In such shallow waters the observations reveal that the whole water column is heated during summer and cooled during winter. In contrast the simulated temperature profile varies only in the upper 20 meters (Figure~\ref{fig:CTD_LA-1}). 
+% FIGure showing the salinity and temperature profiles at CTD station LA-1
+\input{Fig_CTD_LA-1.tex}
 
-The water masses below sill depth in the Drammensfjord are known to have very low vertical diffusivity leading to low oxygen conditions in the depth. Figure~\ref{fig:CTD_D-3} reveals that the vertical diffusivity in the same basin in the model is two high. In the model water with low salinity is mixed down all the way to the bottom. 
+The third CTD station chosen (D-3) is inside of the Svelvik Sill in the Drammensfjord (Figure~\ref{fig:CTD_D-3}). The water masses below sill depth in the Drammensfjord are known to be stagnant over longer periods and hence to become nearly anoxic. The reason is probably the same as explained in \cite{staal:roed:2016}, that is, a too weak vertical mixing below sill depth obstructing frequent deep water renewals. In contrast the simulated profiles reveals that below sill depth the salinity is much lower and the temperature somewhat higher than what is observed leading to a water mass that is much lighter. Following \cite{staal:roed:2016} this can only be explained by postulating that the vertical mixing in the model is too high.  
+% FIGure showing the salinity and temperature profiles at CTD station D-3
+\input{Fig_CTD_D-3.tex}
 
-\begin{figure}[tbh]
-	\centerline{
-		\includegraphics*[trim=0cm 0cm 0cm 0cm,clip=true,width=\textwidth]{Figurer/CTD_OF-1} }
-	\caption{\small Observed (solid) and simulated (dashed) salinity and temperature profiles at station OF-1 Torbj{\o}rnskj{\ae}r in the outer part of the Oslofjord. All profiles are from 2015.}
-	\label{fig:CTD_OF-1}
-\end{figure}
+%  %  %  %  %  %  %  %  %  %  %  % 
+\clearpage
+\subsubsection{Time evolution of salinity and temperature}
+\label{subsubsec:evolu}
+To assess how the model simulates the time evolution of the water masses properties we have chosen to plot so called Hovm{\o}ller diagrams of the observed and simulated salinities and temperatures at the three stations D-3, OF-5 and OF-1 (). Note that Station OF-5 is in the middle of Breidangen. 
 
-\begin{figure}[tbh]
-	\centerline{
-		\includegraphics*[trim=0cm 0cm 0cm 0cm,clip=true,width=\textwidth]{Figurer/CTD_LA-1} }
-	\caption{\small Observed (solid) and simulated (dashed) salinity and temperature profiles at station LA-1 Larviksfjord in a fjord branch in the outer part of the Oslofjord. All profiles are from 2015.}
-	\label{fig:CTD_LA-1}
-\end{figure}
+Comparing the \emph{observed} salinity at stations OF-5 and OF-1, as shown by Figures.~\ref{fig:Salt_YO_2014_2015} and ~\ref{fig:Temp_YO_2014_2015}, we notice that the variations at for instance at 40 m depth at OF-5 follow the variations at OF-1, but is approximately 1 psu fresher. This indicate a relatively good water exchange in the outer part of the fjord system. The water masses below sill depth at D-3 in the Drammensjord is different. The salinity below 40 m depth is lower than at the same depth in Breidangen and changes very little in time. These in support of the hypothesis that the water masses inside of the sill and below sill depth (12 m) in the Drammensfjord is more or less stagnant. This is in contrast to Stations OF-5 and OF-1 where the seasonal temperature changes in the surface layer is diffused down in the water masses (middle and lower panel of Figure~\ref{fig:Temp_YO_2014_2015}). The temperature at 100 m depth has a seasonal change, but the maximum value is shifted in time, so the highest temperatures are found in the start of January at this depth.
+% FIGure showing the time evolution of the observed salinity at D-3, OF-5 and OF-1
+\input{Fig_Salt_YO_2014_2015.tex}
+% FIGure showing the time evolution of the observed temperature at D-3, OF-5 and OF-1
+\input{Fig_Temp_YO_2014_2015.tex}
 
-\begin{figure}[tbh]
-	\centerline{
-		\includegraphics*[trim=0cm 0cm 0cm 0cm,clip=true,width=\textwidth]{Figurer/CTD_D-3}}
-	\caption{\small Observed (solid) and simulated (dashed) salinity and temperature profiles at station D-3 Solumstrand. All profiles are from 2015.}
-	\label{fig:CTD_D-3}
-\end{figure}
+Regarding the \emph{simulated} water mass properties we notice, as shown by Figures~\ref{fig:Salt_Mod_2014_2015} and ~\ref{fig:Temp_Mod_2014_2015}, that the water exchange in the model between the two stations OF-5 and OF-1 is relatively good. We also notice that the variations at OF-5 follow the variations at OF-1 as for the observations. The modelled salinity however is to high at mid depth compared to the observations. This may be due to wrong open boundary input or too weak vertical mixing. The upper panel in Figure~\ref{fig:Salt_Mod_2014_2015} shows that the deep water masses in the Drammensfjord (D-3) have a high salinity at model initialisation, but that fresh water from the surface is quickly mixed down.
+% FIGure showing the time evolution of the simulated salinity at D-3, OF-5 and OF-1
+\input{Fig_Salt_Mod_2014_2015.tex}
 
-To get a better idea of how the properties of the water masses varies with time, contour plots of salinity and temperature are made as a function of depth and time. Three of the stations in the monitoring program are chosen to describe how the salinity and temperature in different parts of the fjord system evolves through two seasons. Station D-3 outside Solumstrand in the inner Drammensfjord, station OF-5 in Breiangen and station OF-1 near Torbj{\o}rnskj{\ae}r close to the open boundary of the model domain, are chosen.
-
-Observed salinity and temperature at the three chosen stations are shown in Figs.~\ref{fig:Salt_YO_2014_2015} and ~\ref{fig:Temp_YO_2014_2015} respectively. If the salinity of the stations OF-5 and OF-1 are compared (middle and lower panel in Figure ~\ref{fig:Salt_YO_2014_2015}) it can be seen that the variations at for instance 40 m depth in Breiangen follow the variations further out in the fjord, but is approximately 1 psu fresher. This indicate a relatively good water exchange in the outer part of the fjord system. The water masses below sill depth in the Drammensjord is different. The salinity below 40 m depth is lower than at the same depth in Breiangen, and the salinity change very little with time. These are clear signs of a stagnant water mass, and is expected given the shallow sill depth of only 12 m at Svelvik.   
-
-The seasonal temperature changes in the surface layer is slowly diffused down in the water masses in the outer part of the fjord system (middle and lower panel in Figure~\ref{fig:Temp_YO_2014_2015}). The temperature at 100 m depth has a seasonal change, but the maximum value is shifted in time, so the highest temperatures are found in the start of January at this depth. As seen in the upper panel in Figure~\ref{fig:Temp_YO_2014_2015} the temperature variations in the surface layer in the Drammensfjord is prevented from penetrating further down than about 40 m depth due to the low vertical diffusivity.
-
-Figure~\ref{fig:Salt_Mod_2014_2015} shows the salinity at the three chosen stations extracted from the model. The water exchange in the model between the two stations OF-5 and OF-1 is relatively good, and the variations at OF-1 follow the variations further out in the fjord. This was the same we saw from the observations. The salinity however is to high at mid depth and this can as mentioned above be due to wrong open boundary input or vertical diffusivity. The upper panel in Figure~\ref{fig:Salt_Mod_2014_2015} shows that the deep water masses in the Drammensfjord have a high salinity at model initialisation, but fresh water from the surface is quickly mixed down.   
-
-Figure~\ref{fig:Temp_Mod_2014_2015} shows the temperature at the three chosen stations extracted from the model. When the modelled temperature evolution in the outer part of the fjord system is compared with the observations, the vertical mixing seems to be too low, and the heating of the surface water during summer do not penetrate deep enough during the winter. While inside the Svelvik Sill the surface waters are mixed down too deep.
-
-
-\begin{figure}[tbh]
-	\centerline{
-		\includegraphics*[trim=0cm 0cm 0cm 0cm,clip=true,width=\textwidth]{Figurer/Salt_YO_2014_2015} }
-	\caption{\small Observed salinity at three stations in the Oslofjord. Contour lines mark 20, 30, and 34 psu. The white vertical lines indicate the positions when CTD casts were taken.}
-	\label{fig:Salt_YO_2014_2015}
-\end{figure}
-
-\begin{figure}[tbh]
-	\centerline{
-		\includegraphics*[trim=0cm 0cm 0cm 0cm,clip=true,width=\textwidth]{Figurer/Temp_YO_2014_2015} }
-\caption{\small Observed temperature at three stations in the Oslofjord. Contour lines mark 5 and 10 $^o$ C. The white vertical lines indicate the positions when CTD casts were taken. }
-	\label{fig:Temp_YO_2014_2015}
-\end{figure}
-
-\begin{figure}[tbh]
-	\centerline{
-		\includegraphics*[trim=0cm 0cm 0cm 0cm,clip=true,width=\textwidth]{Figurer/Salt_Mod_2014_2015} }
-	\caption{\small Modelled salinity at three stations in the Oslofjord. Contour lines mark 20, 30, and 34 psu.}
-	\label{fig:Salt_Mod_2014_2015}
-\end{figure}
-
-\begin{figure}[tbh]
-	\centerline{
-		\includegraphics*[trim=0cm 0cm 0cm 0cm,clip=true,width=\textwidth]{Figurer/Temp_Mod_2014_2015}}
-	\caption{\small Modelled temperature at three stations in the Oslofjord. Contour lines mark 5 and 10 $^{\textrm{o}}$ C.}
-	\label{fig:Temp_Mod_2014_2015}
-\end{figure}
+Finally we note that when the modelled temperature evolution at OF-1 is compared with the observations, the vertical mixing seems to be too low, and the heating of the surface water during summer do not penetrate deep enough during the winter. While inside the Svelvik Sill (D-3) the surface waters are mixed down too deep. Thus the vertical mixing appears to be too weak in the open part of the fjord, while being too vigorous inside the sills.
+% FIGure showing the time evolution of the simulated temperature at D-3, OF-5 and OF-1
+\input{Fig_Temp_Mod_2014_2015.tex}
 
 % % % % % % % % % % % % % % %
 \clearpage
 \subsection{Temperature measurements}
 \label{subsec:tempee}
-\subsubsection{Water temperature near \AA sg\aa rdstrand}
 
-The temperature observations from Scanmar AS are compared with simulated data extracted from 1.15 meters depth at approximately the same location as the observations.
-
-Time series reveal that the simulated and observed temperature are in fairly good agreement (Figure~\ref{fig:temp_2015}). During winter and spring, but the model underestimate the temperature in the summer and fall with a few degrees  and \ref{fig:temp-QQ_scatter}). The model captures the timing of the daily variations in temperature, but seems to overestimate heating and cooling causing too large daily variations (Figure~\ref{fig:temp_jun2015}). 
+%  %  %  %  %  %  %  %  %  %  %  % 
+\subsubsection{The Scanmar mooring}
+The temperature observations from Scanmar AS are compared with simulated data extracted from 1.15 meters depth at approximately the same location as the observations. The time series shown by Figure~\ref{fig:temp_2015} reveal that the simulated and observed temperature are in fairly good agreement, in particular during winter and spring. In the summer and fall the model underestimates the temperature with a few degrees. This is underscored by the combined qq and scatter plots shown by Figure~\ref{fig:temp-QQ_scatter}). Finally, as is evident in the zoomed time series shown by the lower panel of Figure~\ref{fig:temp_2015}, the model captures the timing of the daily variations in temperature well, but appears to overestimate the heating and cooling. The latter is probably caused by too large daily variations in the forcing.
+% FIGure comparing temperatures at the location of the Scanmar mooring: Time series 2015
+\input{Fig_temp_2015.tex} 
+% FIGure comparing temperatures at the location of the Scanmar mooring: qq and scatter
+\input{Fig_temp-QQ_scatter.tex} 
 
 2014 had a warmer summer than 2015. This is evident in both the observations and the simulations (Tab.~\ref{tab:temp}). The summer months of 2014 also had the largest variance in both the observed and the simulated temperature during 2014 and 2015. Generally, the simulated monthly temperature had a larger variance than the observed monthly temperature. The mean of the observed and simulated temperatures are 10.0$^o$C and 8.6$^o$C respectively, while the variances are 27.2$^o$C and 21.1$^o$C respectively.  
+% TABle comparing temperatures at the location of the Scanmar mooring: Table showing 2014 and 2015
+\input{Tab_temp.tex}
 
-\begin{figure}[ht]
-%\centerline{
-%\includegraphics*[trim=0cm 0cm 0cm 0cm,clip=true,width=\textwidth]{Figurer/Temperatur_2014}}
-\centerline{
-\includegraphics*[trim=0cm 0cm 0cm 0cm,clip=true,width=\textwidth]{Figurer/Temperatur_2015}}
-\caption{\small
-Time series of observed and simulated temperature at \AA sg\aa dstrand. The difference is smoothed over 10 days.}
-\label{fig:temp_2015}
-\end{figure}
-
-\begin{figure}[htb]
-\centerline{
-\includegraphics*[trim=1cm 0cm 1cm 0cm,clip=true,width=0.7\textwidth]{Figurer/Temperatur_QQ_scatter}}
-\caption{\small
-Combined QQ- and scatter plot of observed and simulated temperature at \AA sg\aa dstrand.}
-\label{fig:temp-QQ_scatter}
-\end{figure}
-
-\begin{figure}[htb]
-\centerline{
-\includegraphics*[trim=0cm 0cm 0cm 0cm,clip=true,width=\textwidth]{Figurer/Temperatur_jun2015}}
-\caption{\small
-Time series of observed and simulated temperature at \AA sg\aa dstrand in June 2015.}
-\label{fig:temp_jun2015}
-\end{figure}
-
-\newpage 
-
-\begin{table}
-\caption{Monthly statistics for observed and simulated temperature at \AA sg\aa rdstrand.}
-\label{tab:temp}
-\centering
-\begin{tabular}{|ll|rrr|rrr|}
-\hline 
-&& \multicolumn{3}{|c|}{\bf 2014} & \multicolumn{3}{|c|}{\bf 2015} \\
-&& {\bf quantity} & {\bf mean} & {\bf variance}  
-& {\bf quantity} & {\bf mean} & {\bf variance} \\ \hline 
-\small Jan & obs & 558 & 2.5 & 6.2 & 558 & 4.9 & 2.5 \\
-\small     & sim & 745 & - & - & 745 & 4 & 0.7 \\
-\small Feb & obs & 504 & 1.8 & 0.5 & 504 & 4 & 1.8 \\
-\small     & sim & 673 & - & - & 673 & 3.6 & 0.6 \\
-\small Mar & obs & 496 & 3.7 & 0.6 & 496 & 4.2 & 0.4 \\
-\small     & sim & 745 & - & - & 745 & 4.7 & 0.3 \\
-\small Apr & obs & 515 & 7.5 & 4.1 & 515 & 7 & 2.1 \\
-\small     & sim & 721 & 7.6 & 7.1 & 721 & 7.4 & 2.8 \\
-\small May & obs & 544 & 12.1 & 9.3 & 544 & 10.3 & 1.3 \\
-\small     & sim & 745 & 11.3 & 10.4 & 745 & 9.9 & 3.5 \\
-\small Jun & obs & 531 & 16.2 & 4.2 & 531 & 14 & 3.9 \\
-\small     & sim & 721 & 15.5 & 8.3 & 721 & 12.8 & 6 \\
-\small Jul & obs & 558 & 20.2 & 10.5 & 558 & 17.1 & 2 \\
-\small     & sim & 745 & 17 & 24.3 & 745 & 14.6 & 5.1 \\
-\small Aug & obs & 512 & 20 & 3.2 & 512 & 18.2 & 1.3 \\
-\small     & sim & 745 & 16.4 & 5.6 & 745 & 15.5 & 8.7 \\
-\small Sep & obs & 536 & 16.3 & 1.9 & 536 & 15.1 & 1.2 \\
-\small     & sim & 721 & 12.9 & 8.9 & 721 & 12.7 & 2.5 \\
-\small Oct & obs & 557 & 12.3 & 1.7 & 557 & 10.6 & 0.8 \\
-\small     & sim & 745 & 9 & 1.5 & 745 & 8.6 & 2.7 \\
-\small Nov & obs & 540 & 8.3 & 2.9 & 540 & 8.8 & 2.4 \\
-\small     & sim & 721 & 6.3 & 2 & 721 & 6.1 & 1.3 \\
-\small Dec & obs & 490 & 4.4 & 3.6 & 490 & 7.8 & 0.4 \\
-\small     & sim & 733 & 3.4 & 1.5 & 733 & 4.8 & 0.8 \\
-\hline
-\end{tabular}
-\end{table}
-
-% % % % % % % % % % % % % % %
-%\clearpage
-\subsubsection{Water temperature in the Inner Oslofjord}
-As revealed by Figures~\ref{fig:badetemp_2014} - \ref{fig:badetemp_2015} the observed and simulated temperature at the three beaches in the Inner Oslofjord are in relatively good agreement. 
-
-Close to the shoreline and only 40 cm under the surface, the temperature is heavily influenced by the weather situation and local circulation patterns. 
+%  %  %  %  %  %  %  %  %  %  %  
+\clearpage
+\subsubsection{Temperatures in the Inner Oslofjord}
+We now turn our attention to the observed and simulated temperatures at the three beaches in the Inner Oslofjordt. Since the temperatures are observed close to the shoreline only 40 cm under the surface and near some river outlets, the temperature is heavily influenced by the weather conditions and the local circulation patterns. The model is therefore not expected to capture such detailed effects. Nevertheless, as revealed by Figures~\ref{fig:badetemp_2014}, observations and modelled results are in relatively good agreement both in temperature level and in the fluctuations.
+% FIGure of observed and modelled temperature at three beaches 2014
+\input{Fig_badetemp_2014_2015}
 
 The temperature differences during the day are larger in the model than in the observations. The observed temperature increases 1-3 degrees from 09:00 to 18:00 and is not measured during the night, while the modelled temperature increases up to six degrees from 06:00 to 23:00. The fact that temperature is not measured during the night, but only from 09:00 to 18:00, might explain differences i temperature rise during the day, but the difference might indicate too much heating in the model.
 
-%Since the temperature is observed close to the shoreline, some near river outlets, and only 40 cm under the surface, the temperature ise heavily influenced by the weather situation and local circulation patterns. The model is not expected to capture such detailed effects. Still there are similarities between the modelled and the observed temperatures both in temperature level and in fluctuations. 
-
 During the summer 2014 the model predicts higher temperatures at Sj\o strand than was observed. The observations in Hvalstrand have some of the same trends as the modelled temperature with temperatures up to 25 degrees. The air temperatures in 2014 was higher than in 2015 and resulted in higher water temperatures, especially in shallow areas. 
-
-\begin{figure}[ht]
-	\centerline{
-		\includegraphics*[trim=0 0 0 0,clip=true,width=\textwidth]{Figurer/badetemp_2014}
-		}
-	\caption{\small The observed and modelled temperature at three beaches in the Inner Oslofjord during the summer 2014}
-\label{fig:badetemp_2014}
-\end{figure}
-
-\begin{figure}[ht]
-	\centerline{
-		\includegraphics*[trim=0 0 0 0,clip=true,width=\textwidth]{Figurer/badetemp_2015}
-		}
-	\caption{\small The observed and modelled temperature at three beaches in the Inner Oslofjord during the summer 2015}
-\label{fig:badetemp_2015}
-\end{figure}
-
 
 % % % % % % % % % % % % % % %
 \clearpage 
@@ -515,41 +203,17 @@ During the summer 2014 the model predicts higher temperatures at Sj\o strand tha
 \label{sect:godafoss_model}
 Unfortunately there is no overlap between the time period covered by the FjordOs hindcast and the time when the container ship Godafoss ran aground. So no direct comparison between simulated oil drift based on input from the FjordOs model is possible as part of this evaluation. Nevertheless, to investigate whether the FjordOs model provides results that are similar to the data gathered during the Godafoss oil spill (Section \ref{sect:godafoss_obs}), we have opted to map the pathway of a feigned oil spill. To this end we have released Lagrangian particles for a time period of one year (April 1st 2015 to April 1st 2016) at the location where the Godafoss grounded, and simulated particle trajectories using the open source trajectory-model OpenDrift\footnote{OpenDrift is distributed under a GPL v2.0 license, and is available on GitHub (https://github.com/knutfrode/opendrift). This is a trajectory model under development at MET Norway, and is described by its developers as "a software for modelling the trajectories and fate of objects or substances drifting in the ocean, or even in the atmosphere".}. We argue that over such a long period of time, there will be at least one situation similar to the weather and currents experienced during the Godafoss release.
 
-\begin{figure}[hb]
-  \begin{center}
-    \begin{tabular}{cc}
-      \includegraphics*[width=7.2cm]{Figurer/opendrift/opendrift_godafoss_shortest_time_crop}  & \includegraphics*[width=7.2cm]{Figurer/opendrift/opendrift_godafoss_shortest_time_zoom_crop}\\ 
-    \end{tabular}
-    \caption{\small Displayed is the time it takes a Lagrangian particle to reach inside a given 140 x 140 m area after it is released based on a one year simulation. The location of the release is marked by a black solid circle, and corresponds to the location where Godafoss ran aground. The color bar indicates the time in hours. Left-hand panel shows the time up to and including 47.5 hours, while the right-hand panel shows the time up to and including 12 hrs and for a smaller domain.}
-    \label{fig:opendrift_godafoss_time}
-  \end{center}
-\end{figure}
-
 The OpenDrift model was forced with currents from the FjordOs model and with winds from the Arome-MetCoOp 2.5km (Arome2.5) atmospheric model \citep{mulle:etal:2017}. The latter is the same atmospheric model we used as forcing when running the FjordOs hindcast. To properly treat the particles that are advected out of the FjordOs-model domain, and to enable them to re-enter at the correct location, we provided daily mean currents from NorKyst-800m outside of the FjordOs-model domain. 
 
-\begin{figure}[htb]
-  \begin{center}
-    \begin{tabular}{cc}
-      \includegraphics*[width=7.2cm]{Figurer/opendrift/opendrift_godafoss_consentration_crop}  & \includegraphics*[width=7.2cm]{Figurer/opendrift/opendrift_godafoss_consentration_zoom_crop}\\ 
-    \end{tabular}
-    \caption{\small As Figure~\ref{fig:opendrift_godafoss_time}, but showing the number of particles that has been inside a given 140x140 m area during the simulation. The colourbar indicates number of particles from 0 (blue) to 50 (red). Right-hand panel is a zoom in of the left-hand panel.}
-    \label{fig:opendrift_godafoss_conc}
-  \end{center}
-\end{figure}
-
 There are a number of parameters that may be tuned when running OpenDrift. One such parameter is the wind drift factor, which we set to $0.01$ (i.e. $1\%$). Otherwise we used the default parameter values. Particles are released once per hour throughout the one year simulation for a total of 8760 particles. The lifetime of each particle is set to 15 days, that is, after 15 days the particle is deactivated. This is done to reduce the computational cost of advecting a large number of particles. We further divided our area into a rectangular cells, and measured the number of hours from the particles were released until they reached the different cells. In addition we counted the number of particles that had been inside each cell during the simulation. The latter gives insight into the probability of experience oil in the individual cells. The size of the cells were chosen to be 140 x 140 meters, a balance between having too small or too large cells. If too small we might end up having too few particles in some cells, or if too large too many particles ends up in the same cell. The results are presented by Figures~\ref{fig:opendrift_godafoss_time} through \ref{fig:opendrift_godafoss_endpos}.
-
-\begin{figure}[htb]
-  \begin{center}
-    \begin{tabular}{cc}
-      \includegraphics*[width=7.2cm]{Figurer/opendrift/opendrift_godafoss_shortest_time_zoom_endpos_crop}  & \includegraphics*[width=7.2cm]{Figurer/opendrift/opendrift_godafoss_consentration_zoom_endpos_crop}\\ 
-    \end{tabular}
-    \caption{\small As Figures~\ref{fig:opendrift_godafoss_time} (left-hand panel) and \ref{fig:opendrift_godafoss_conc} (right-hand panel), but showing only the end position of each particle trajectory. The colourbar attached to the left-hand panel indicates the number of \emph{days} ranging from 0 (red) to 10 (blue) it takes a particle to reach a given cell of size 140 x 140 meter, while the colourbar attached to the right-hand panel indicates the number of particles ranging from 0 (blue) to 10 (red) that has been inside a given cell of size 140 x 140 meter.}
-    \label{fig:opendrift_godafoss_endpos}
-  \end{center}
-\end{figure}
+% FIGure displaying the time it takes a Lagrangian particle to reach inside a given 140 x 140 m area
+\input{Fig_opendrift_godafoss_time.tex}
+% FIGure displaying the number of particles that has been inside a given 140x140 m area
+\input{Fig_opendrift_godafoss_conc.tex}
 
 Comparing the results to the observed oil displayed by Figure~\ref{fig:godafoss_oil}, we observe that there are some obvious similarities between the observations and the simulations. For instance the right-hand panel of Figure~\ref{fig:opendrift_godafoss_endpos} shows, in similarity with the observations, that a substantial number of particles are transported westward from the release position and strand along the Vestfold coast, the islands around Tj{\o}me, and the F{\ae}rder lighthouse. We also note the very low number of particles that strand at the peninsula west of Stavern (the area far left in Figure~\ref{fig:opendrift_godafoss_endpos}). This corresponds well with where the oil was observed or not. Looking at the left-hand panel of Figure~\ref{fig:opendrift_godafoss_endpos} we would like to draw attention to two areas, namely Stavern and Bustein located, respectively, in the far lower left and the middle of Figure~\ref{fig:opendrift_godafoss_endpos}. As displayed by Figure~\ref{fig:opendrift_godafoss_endpos} the feigned oil strands at Bustein after approximately two days, while at Stavern (Korntin) the oil strands after about four to five days. These stranding times corresponds well with the timing shown by Figure~\ref{fig:godafoss_oil}.
+% FIGure displaying the end position of each particle trajectory
+\input{Fig_opendrift_godafoss_endpos.tex}
 
 % % % % % % % % % % % % % % %
 \clearpage 
@@ -603,15 +267,6 @@ As revealed by Table~\ref{tab:skillscore_full} we observe that the \emph{average
 	\label{fig:opendrift_trajectories1}
 \end{figure}
 
-\begin{comment}\begin{figure}[htb]
-	\centerline{
-		\includegraphics*[width=.5\textwidth]{Figurer/opendrift/skillscore/drop6i12}
-		\includegraphics*[width=.5\textwidth]{Figurer/opendrift/skillscore/drop8i1}
-		}
-	\caption{\small As Figure~\ref{fig:opendrift_trajectories1}, but showing drop 6 (left, 2 km grid), and drop 8 (right, 5 km grid).}
-	\label{fig:opendrift_trajectories1a}
-\end{figure}\end{comment}
-
 \begin{figure}[htb]
 	\centerline{
 		\includegraphics*[width=.5\textwidth]{Figurer/opendrift/skillscore/drop6i12}
@@ -643,36 +298,36 @@ As revealed by Table~\ref{tab:skillscore_full} we observe that the \emph{average
 	\label{fig:opendrift_trajectories3}
 \end{figure}
 
-Regarding the two drifters released in September 2014 we only used current as input. The resulting skill-scores are presented by Tables~\ref{tab:skillscore2014_1h} and \ref{tab:skillscore2014_24h}, while Figures~\ref{fig:opendrift_trajectories2014} and \ref{fig:opendrift_trajectories2014a} displays the modelled and observed trajectories. As revealed the FjordOs model performs better than the NorKyst-800, but there is a clear weakness here since hourly data from NorKyst-800 is not available. Also, there are only two drifters. WE observe that the FjordOs model has the highest skill-score based on both hourly and daily average data, and was the only model to transport the drifters as far south as the observed drift. 
+Regarding the two drifters released in September 2014 we only used current as input. The resulting skill-scores are presented by Tables~\ref{tab:skillscore2014_1h} and \ref{tab:skillscore2014_24h}, while Figures~\ref{fig:opendrift_trajectories2014} and \ref{fig:opendrift_trajectories2014a} displays the modelled and observed trajectories. As revealed the FjordOs model performs better than the NorKyst-800, but there is a clear weakness here since hourly data from NorKyst-800 is not available. Also, there are only two drifters. We observe that the FjordOs model has the highest skill-score based on both hourly and daily average data, and was the only model to transport the drifters as far south as the observed drift. 
 
 \begin{table}[htb]
-\begin{center}
-  \begin{tabular}{ | c | c | c |}
-    \hline
-    {\bf Drop no.} & {\bf FjordOs 1h} & {\bf NorKyst-800m 24h} \\ \hline
-    1 & 0.79 (15) & 0.73 (15) \\ 
-    2 & 0.84 (19) & 0.76 (19) \\ \hline
-    {\bf Avg.} & {\bf 0.81} & {\bf 0.75} \\
-    \hline
-  \end{tabular}
-\caption{\small As Table \ref{tab:skillscore_full}, but for the drifter release during the September 2014 cruise. Note that the FjordOs data are based on hourly resolution as input, while the NorKyst-800 data are based on daily averages.}
-\label{tab:skillscore2014_1h}
-\end{center}
+	\begin{center}
+  		\begin{tabular}{ | c | c | c |}
+    		\hline
+    		{\bf \small Drop no.} & {\bf \small FjordOs 1h} & {\bf \small NorKyst-800m 24h} \\ \hline
+    		\small 1 & \small 0.79 (15) & \small 0.73 (15) \\ 
+    		\small 2 & \small 0.84 (19) & \small 0.76 (19) \\ \hline
+    		{\bf \small Avg.} & {\bf \small 0.81} & {\bf \small 0.75} \\
+    		\hline
+  	\end{tabular}
+	\caption{\small As Table \ref{tab:skillscore_full}, but for the drifter release during the September 2014 cruise. Note that the FjordOs data are based on hourly resolution as input, while the NorKyst-800 data are based on daily averages.}
+	\label{tab:skillscore2014_1h}
+	\end{center}
 \end{table}
 
 \begin{table}[htb]
-\begin{center}
-  \begin{tabular}{ | c | c | c |}
-    \hline
-    {\bf Drop no.} & {\bf FjordOs 24h} & {\bf NorKyst-800m 24h} \\ \hline
-    1 & 0.85 (15) & 0.73 (15) \\ 
-    2 & 0.91 (19) & 0.76 (19) \\ \hline
-    {\bf Avg.} & {\bf 0.88} & {\bf 0.75} \\
-    \hline
-  \end{tabular}
-\caption{\small As Table \ref{tab:skillscore2014_1h}, but modelled trajectories from FjordOs are based on daily average ocean currents to get a more fair comparison between the models.}
-\label{tab:skillscore2014_24h}
-\end{center}
+	\begin{center}
+  		\begin{tabular}{ | c | c | c |}
+    			\hline
+    			{\bf \small Drop no.} & {\bf \small FjordOs 24h} & {\bf \small NorKyst-800m 24h} \\ \hline
+    			\small 1 & \small 0.85 (15) & \small 0.73 (15) \\ 
+    			\small 2 & \small 0.91 (19) & \small 0.76 (19) \\ \hline
+    			{\bf \small Avg.} & {\bf \small 0.88} & {\bf \small 0.75} \\
+    			\hline
+  		\end{tabular}
+		\caption{\small As Table \ref{tab:skillscore2014_1h}, but modelled trajectories from FjordOs are based on daily average ocean currents to get a more fair comparison between the models.}
+		\label{tab:skillscore2014_24h}
+	\end{center}
 \end{table}
 
 \begin{figure}[htb]

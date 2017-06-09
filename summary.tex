@@ -1,5 +1,13 @@
-\section{Summary and final remarks}
-
-
-
 \clearpage
+\section{Summary and final remarks}
+\label{sec:summa}
+Considered is the performance of the FjordOs model, a new circulation model covering the Oslofjord, Norway. The FjordOs model is a version of the Regional Ocean Modeling System (ROMS) as documented by \cite{haidv:etal:2008} and \cite{shche:mcwil:2003, shche:mcwil:2005, shche:mcwil:2009}. It is adapted for Oslofjord by utilizing its curvilinear option as detailed in \cite{roed:etal:2016}. The model is developed to improve the ocean input (e.g., currents) to emergency models used to predict pathways of oil and/or other effluents. The utilization of the curvilinear option in ROMS was chosen to increase the resolution without inflating the computer demand. 
+
+The model has earlier been assessed to evaluate its representation of the tidal elevations \citep{hjelm:etal:2017}. They found that the tidal elevation is well represented in the model. This finding is underscored by the present study, in which we focus on an evaluation of the model's rendition of the circulation. To this end we compare model results from a near two-year long simulation to observations. The observations encompass water level, currents and temperature at various time periods at fixed stations, and not least observed trajectories of drifters. 
+
+In essence currents in the Oslofjord are composed of tidal currents, wind forced currents, currents induced by storm surge events, and currents due to differences in density. The last component is commonly caused by differences in temperature and salinity. It is emphasized that the tides are more often than not the most dominant current in the fjord. The evaluation reveals that the model is not perfect. While the tidal currents are well represented, the currents due to difference in density appears to be less well represented. We find that this lack of success is probably associated with the model's failure in representing a realistic stratification (or baroclinicity). One possibility for the latter weakness may be associate with the use of the coarser mesh model NorKyst800 to initialize the model and the fact that the FjordOs model is forced by the NorKyst800 at its southern open boundary bordering on the Skagerrak throughout the simulation. Thus any lack of success in representing the stratification in the NorKyst800 model will also be reflected in the FjordOs model. Another possibility is the vertical mixing in the model. For instance it appears that the vertical mixing inside of the sill in the Drammensfjord is too vigorous, while the vertical mixing in the outer part of the fjord is too weak. 
+
+Nevertheless we argue that its performance is adequate for its purpose. An important justification is that the higher resolution offers a decrease in the number of stranded trajectories compared to models of coarser resolution. Also of importance is that the model provides a realistic representation of the tidal currents and to certain degree the current depth profiles.
+
+
+

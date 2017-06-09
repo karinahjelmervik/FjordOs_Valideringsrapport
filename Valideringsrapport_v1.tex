@@ -174,7 +174,7 @@
 &
  \begin{minipage}[b]{28mm}
   \begin{flushright}
-   \footnotesize \sffamily No. X/2016 \\ ISSN 2387-4201 \\ Oceanography              % Report number and Category
+   \footnotesize \sffamily No. 11/2017 \\ ISSN 2387-4201 \\ Oceanography              % Report number and Category
   \end{flushright}
  \end{minipage}
 \end{tabular}
@@ -182,43 +182,34 @@
 \vfill
 
 \begin{flushright}
-{\fontsize{30pt}{36pt}\selectfont \bf \sffamily Evaluation of the FjordOs-model}          % Title
- 
-\vspace{5mm}
-{\fontsize{12.5pt}{15pt}\selectfont \sffamily July 2016                                          % Subtitle
+{\fontsize{20pt}{24pt}\selectfont \bf \sffamily Evaluation of the FjordOs-model}	% Title
+
+{\fontsize{14.0pt}{16.8pt}\selectfont \bf \sffamily FjordOs technical report No. 3% Subtitle
+\vspace{1mm}
 \\
-\sffamily Karina Hjelmervik$^1$, Nils M. Kristensen$^3$, Lars P. R{\o}ed$^{3,4}$, Andr{\'e} Staalstr{\o}m$^2$% Author name(s)
+
+\sffamily Lars Petter R{\o}ed$^{1,2}$, Nils Melsom Kristensen$^1$, \\Karina Bakkel{\o}kken Hjelmervik$^3$ and André Staalstr{\o}m$^4$	% Author name(s)
 }
 \end{flushright}
 
 %\vspace{25mm}
-\vspace{2mm}
-
 
 \begin{figure}[!h]
-%\includegraphics*[height=5.5cm,angle=7]{Figurer/Driftere_ombord} \\
-\vspace{3.5cm}
-\begin{center}
-\rput[bl](-7.5,-0.2){\includegraphics[height=1.7cm]{Figurer/logo_hsn}} 
-\rput[b](0,0.1){\includegraphics[height=1.2cm]{Figurer/logo_met}} 
-\rput[br](7.5,0){\includegraphics[height=1.2cm]{Figurer/logo_niva}} 
-\end{center}
+	\begin{center}
+%\includegraphics*{met_rapport_monster} % Graphic. Automatically uses PDF or EPS in same directory depending on latex or pdflatex.
+   {\centering { \includegraphics*[height=10cm]{Figurer/kart} } }\\ \vspace{5mm}
+   {\centering { \includegraphics*[height=1cm]{met_logo_eng} } \hspace{5mm} { \includegraphics*[height=1cm]{hsn_logo} } \hspace{5mm} { \includegraphics*[height=1cm]{niva_logo} } }
+	\end{center}	
 \end{figure}
-\vspace{-1cm}
-\noindent$^1$University College of Southeast Norway, 
-$^2$Norwegian Institute for Water Research, \\ 
-$^3$Norwegian Meteorological Institute,
-$^4$Department of Geosciences, University of Oslo
-\\
+%\vspace{1cm}
+\noindent$^1$Norwegian Meteorological Institute, $^2$Department of Geosciences, University of Oslo, $^3$University College of Southeast Norway, $^4$Norwegian Institute of Water Research
 
-
-
-
-%\newpage
-
-%\thispagestyle{empty}  % Hide page numbers
-
-\clearpage
+%% LPR: Added command to add an empty page
+%\clearpage
+\newpage
+\thispagestyle{empty}
+\noindent \textbf{\color{white} aa} 
+\thispagestyle{empty}  % Hide page numbers
 
 \setlength{\unitlength}{1mm}  %Needed for picture environment
 
@@ -233,10 +224,10 @@ $^4$Department of Geosciences, University of Oslo
 \sffamily{
 \begin{tabular}[t]{|p{110mm}|p{40mm}|} \hline
 {\bf \sffamily Title}                  & {\bf \sffamily Date}               \\ 
-Evaluation of the FjordOs-model
+Evaluation of the FjordOs-model: FjordOs technical report No. 3 
                              & \today                   \\ \hline
 {\bf \sffamily Section}                & {\bf \sffamily Report no.}         \\ 
- Ocean and Ice                        &  X/2015                  \\ \hline
+ Ocean and Ice                        &  11/2017                  \\ \hline
 {\bf \sffamily Author(s)}                 & {\bf \sffamily Classification}     \\ 
 Karina Hjelmervik, Nils Melsom Kristensen, Lars Petter R{\o}ed, Andr\'{e} Staalstr{\o}m                 
                              & \begin{picture}(20,4)(-2,-1.0)
@@ -251,43 +242,51 @@ Oslofjordfondet                  &               \\ \hline
 \end{tabular}
 
 \begin{tabular}[t]{|p{154.3mm}|}
-{\bf \sffamily Abstract}                                          \\
-%Provided is an evaluation of the capabilities of the newly developed ocean model for the Oslofjord. The model fields has been compared to observations of water level, salinity, temperature, currents and trajectories of drifters. Overall, the model provides a good agreement with the observations, but there are still room for improvements.
-%\\
-\small{Provided is an evaluation on the performance of the FjordOs model, a new circulation model covering the Oslofjord, Norway. The model is developed to improve the ocean input (e.g., currents) to emergency models used to predict pathways of oil and/or other effluents. The FjordOs model is a regional adaption of the Regional Ocean Modeling System (ROMS), and makes use of the model's curvilinear option to increase the resolution without inflating the computer demand significantly. To assess the model's rendition of the circulation we compare results from a simulation near two years long to available observations. The observations encompass water level, currents and temperature at various time periods at fixed stations, and observed trajectories of drifters. The evaluation reveals that the model is not perfect, but nevertheless we argue that its performance is adequate for its purpose. An important justification is that the higher resolution offers a decrease in the number of stranded trajectories compared to models of coarser resolution. Also of importance is that the model provides a realistic depth profile of the currents, and the tidal elevation.} 
+\input{abstr.tex}
+\begin{comment}{\bf \sffamily Abstract}                                          \\
+\small{Provided is an evaluation on the performance of the FjordOs model, a new circulation model covering the Oslofjord, Norway. The model is developed to improve the ocean input (e.g., currents) to emergency models used to predict pathways of oil and/or other effluents. The FjordOs model is a regional adaption of the Regional Ocean Modeling System (ROMS), and makes use of the model's curvilinear option to increase the resolution without inflating the computer demand significantly. To assess the model's rendition of the circulation we compare results from a simulation near two years long to available observations. The observations encompass water level, currents and temperature at various time periods at fixed stations, and observed trajectories of drifters. The evaluation reveals that the model is not perfect, but nevertheless we argue that its performance is adequate for its purpose. An important justification is that the higher resolution offers a decrease in the number of stranded trajectories compared to models of coarser resolution. Also of importance is that the model provides a realistic depth profile of the currents, and the tidal elevation.} \end{comment}
 %\\[50mm] % Add whitespace if necessary
 \\ \hline
 {\bf \sffamily Keywords}                                          \\ 
-  Ocean model, Oslofjord, ROMS, Validation, Fjordos    \\ 
+ {\small Ocean model, Oslofjord, ROMS, Validation, FjordOs}    \\ 
 \hline
 \end{tabular}
 }
 
 \begin{tabular}[t]{cc}
-                             &                            \\
-                             &                            \\
-                             &                            \\
-\line(1,0){70}               & \line(1,0){70}             \\ 
-Disciplinary signature       & Responsible signature      \\
-Kai H. Christensen           & Lars Anders Breivik        \\       % Add names if needed
-\hspace{75mm}                & \hspace{75mm}              \\
+                                    &                            \\
+                                    &                            \\
+\line(1,0){70}               	    & \line(1,0){70}             \\ 
+\small Disciplinary signature       & \small Responsible signature      \\
+\small Lars Anders Breivik          & \small Harald Schyberg            \\       % Add names if needed
+\hspace{75mm}                	    & \hspace{75mm}              \\
 
 \end{tabular}
 \end{table}
 
-\clearpage
+\cleardoublepage 
+%\clearpage
+
+
+\thispagestyle{empty} % Hide page numbers
+%\newpage
+%% LPR: Added command to add an empty page
+%\clearpage
+\newpage
+\thispagestyle{empty}
+\noindent \textbf{\color{white} aa} 
+
+\newpage
+\thispagestyle{empty}  % Hide page numbers
 
 \thispagestyle{fancy} % footer from fancyhdr package
 \headheight=15pt
 \renewcommand{\headrulewidth}{0pt}
 
-%\clearpage
 \section*{\hspace{17mm}Abstract}
-Provided is an evaluation on the performance of the FjordOs model, a new circulation model covering the Oslofjord, Norway. The model is developed to improve the ocean input (e.g., currents) to emergency models used to predict pathways of oil and/or other effluents. The FjordOs model is a regional adaption of the Regional Ocean Modeling System (ROMS), and makes use of the model's curvilinear option to increase the resolution without inflating the computer demand significantly. To assess the model's rendition of the circulation we compare results from a simulation near two years long to available observations. The observations encompass water level, currents and temperature at various time periods at fixed stations, and observed trajectories of drifters. The evaluation reveals that the model is not perfect, but nevertheless we argue that its performance is adequate for its purpose. An important justification is that the higher resolution offers a decrease in the number of stranded trajectories compared to models of coarser resolution. Also of importance is that the model provides a realistic depth profile of the currents, and the tidal elevation. 
+\input{abstr.tex}	% Abstract text...
 
-%\clearpage
-
-\vfill
+%\vfill
 
 \fancyfoot{
 % If abstract on separate page is not needed, move the following table to the page before
@@ -305,46 +304,59 @@ Provided is an evaluation on the performance of the FjordOs model, a new circula
 \end{tabular}
 }
 
-\clearpage
+
+%% LPR: Added command to add an empty page
+%\clearpage
+\newpage
+\thispagestyle{empty}
+\noindent \textbf{\color{white} aa} 
+
+\newpage
 \tableofcontents
 
+\begin{comment}%% LPR: Added command to add an empty page
+%\clearpage
+\newpage
+\thispagestyle{empty}
+\noindent \textbf{\color{white} aa}\end{comment} 
+
+\newpage
+\listoffigures
+
+%% LPR: Added command to add an empty page
+%\clearpage
+\newpage
+\thispagestyle{empty}
+\noindent \textbf{\color{white} aa} 
+
+\newpage
+\listoftables
+
+%% LPR: Added command to add an empty page
+%\clearpage
+\newpage
+\thispagestyle{empty}
+\noindent \textbf{\color{white} aa} 
+
 \clearpage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Set page style to 'plain' and page numbers to arabic digits (starts on 1)
+%\newpage
 \pagestyle{plain}
 \pagenumbering{arabic}
 
 \input{intro.tex}
 \input{areaANDmodel.tex}
-%\input{area.tex}
-%\input{model.tex}
 \input{observations.tex}
 \input{evaluation.tex}
 \input{summary.tex}
-
-\section*{\hspace{17mm}Acknowledgements}
-\addcontentsline{toc}{section}{Acknowledgements}
-The present study is funded in parts by the Regional Research Fund Oslofjordfondet through Research grant no. 226022, and through smaller contributions from MET Norway, NIVA, HSN, Kystverket, and ExxonMobil. We gratefully acknowledge the support. 
-
-We also like to thank the crew and captain of the R/V Trygve Braarud for excellent support during the cruises and for enduring all our requests. Moreover we would like to thank ExxonMobil for making their acoustic Doppler measurements outside of Slagentangen available to us. Likewise we thank NIVA who provided the CTD data, Norwegian Mapping Authority for available observations of water level, Scanmar AS for temperature measurements near {\AA}sg{\aa}rdstrand, and Finnerud Elektronikk for making the beach temperatures at Stor{\o}yodden, Hvalstrand, and Sj{\o}strand available to us. Finally we thank NIVA and Statnett for providing the data from the four acoustic Doppler profiling measurements across the fjord from Sm{\aa}skj{\ae}r to Evje, and from the two stations at Filtvedt and Brenntangen. 
+\clearpage
+\input{ackno.tex}
 
 \clearpage
 \section*{\hspace{17mm}Appendix}
 \addcontentsline{toc}{section}{Appendix}
 \input{appendix.tex}
-
-
-
-%\begin{table}[h]
-%\vspace{-1.5cm}
-%{\bf Table A1: ESD statistics.}\\
-%\label{tab:1}
-%\begin{tabular}{llll}
-%\small OSLO - BLINDERN 18700 & 
-%\small $T_m$ $R^2$= 71 -- 86 $T_x$ $R^2$= 69 -- 82 $T_n$ $R^2$= 49 -- 76 \\
-%\small $\Delta T_m$ $q_{0.05}$= 3.21 $q_{0.50}$= 1.33 $q_{0.95}$= 1.75 \\  
-%\small $\Delta T_x$ $q_{0.05}$= 3.09 $q_{0.50}$= 1.38 $q_{0.95}$= 2.16 \\  
-%\small $\Delta T_n$ $q_{0.05}$= 3.15 $q_{0.50}$= 1.12 $q_{0.95}$= 1.01 \\
-%\end{tabular}
-%\end{table}
 
 \clearpage
 \pagebreak
